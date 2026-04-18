@@ -1,0 +1,95 @@
+"use client";
+
+import React, { useState, useEffect } from 'react';
+import { Bebas_Neue, Lexend } from 'next/font/google';
+import { motion, AnimatePresence } from 'framer-motion';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
+
+const bebas = Bebas_Neue({ weight: '400', subsets: ['latin'] });
+const lexend = Lexend({ subsets: ['latin'] });
+
+const images = [
+  '/shop-1.jpg', // Replace with your shop signage images
+  '/shop-2.jpg',
+  '/shop-3.jpg',
+];
+
+export default function HeroSection() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const nextSlide = () => {
+    setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+  };
+
+  useEffect(() => {
+    const timer = setInterval(nextSlide, 5000);
+    return () => clearInterval(timer);
+  }, []);
+
+  return (
+    <section className="relative h-screen w-full overflow-hidden flex items-center justify-center text-center px-4">
+      {/* Background Carousel */}
+      <div className="absolute inset-0 z-0">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={currentIndex}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1 }}
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: `url(${images[currentIndex]})` }}
+          />
+        </AnimatePresence>
+        
+        {/* Dark Overlay - Reference uses a warm brownish tint */}
+        <div className="absolute inset-0 bg-[#5d4d4a]/70 mix-blend-multiply" />
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10 max-w-4xl mx-auto text-white">
+        <h1 className={`${bebas.className} text-6xl md:text-8xl lg:text-[120px] leading-none mb-6 tracking-tight`}>
+          Let’s Build Your Landmark
+        </h1>
+        
+        <p className={`${lexend.className} text-base md:text-xl font-light max-w-2xl mx-auto leading-relaxed mb-10 opacity-90`}>
+          We have signage solutions for all industries. Our network of stores 
+          across the US have been working hard to help business's bounce 
+          back after the pandemic.
+        </p>
+
+        <button className={`${lexend.className} bg-[#FFC121] hover:bg-[#e5ae1d] text-white px-10 py-4 rounded-full text-lg font-medium transition-all transform hover:scale-105 shadow-lg`}>
+          Get a Quote
+        </button>
+      </div>
+
+      {/* Navigation Arrows */}
+      <button 
+        onClick={prevSlide}
+        className="absolute left-6 z-20 p-2 rounded-full border border-white/30 text-white hover:bg-white/20 transition-colors"
+      >
+        <ChevronLeft size={32} />
+      </button>
+      <button 
+        onClick={nextSlide}
+        className="absolute right-6 z-20 p-2 rounded-full border border-white/30 text-white hover:bg-white/20 transition-colors"
+      >
+        <ChevronRight size={32} />
+      </button>
+
+      {/* Slide Indicators (Optional) */}
+      <div className="absolute bottom-10 flex gap-2 z-20">
+        {images.map((_, i) => (
+          <div 
+            key={i} 
+            className={`h-1 w-8 rounded-full transition-all ${i === currentIndex ? 'bg-[#FFC121]' : 'bg-white/30'}`}
+          />
+        ))}
+      </div>
+    </section>
+  );
+}

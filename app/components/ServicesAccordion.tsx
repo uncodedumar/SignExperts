@@ -1,0 +1,259 @@
+"use client";
+
+import React, { useState } from 'react';
+import { motion, AnimatePresence, type Variants } from 'framer-motion';
+import { Plus, Mail, Phone } from 'lucide-react';
+
+// --- Animation Variants ---
+
+const containerVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+      delayChildren: 0.2,
+    },
+  },
+  exit: {
+    opacity: 0,
+    transition: { staggerChildren: 0.05, staggerDirection: -1 },
+  },
+};
+
+const itemVariants: Variants = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      stiffness: 100,
+      damping: 15,
+    },
+  },
+};
+
+const accordionContentVariants: Variants = {
+  hidden: { height: 0, opacity: 0, scale: 0.98 },
+  visible: {
+    height: "auto",
+    opacity: 1,
+    scale: 1,
+    transition: {
+      height: { duration: 0.5, ease: [0.16, 1, 0.3, 1] },
+      opacity: { duration: 0.4, delay: 0.1 },
+      scale: { duration: 0.5 },
+    },
+  },
+  exit: {
+    height: 0,
+    opacity: 0,
+    scale: 0.98,
+    transition: {
+      height: { duration: 0.4, ease: [0.16, 1, 0.3, 1] },
+      opacity: { duration: 0.2 },
+    },
+  },
+};
+
+// --- Interfaces ---
+
+interface SubService {
+  id: string;
+  title: string;
+  highlight: string;
+  description: string;
+  visualText: string;
+}
+
+interface MainService {
+  id: string;
+  title: string;
+  quote: string;
+  subServices: SubService[];
+}
+
+const SERVICES_DATA: MainService[] = [
+  {
+    id: 'creative',
+    title: 'Creative Services',
+    quote: '"We\'re more than just sign makers. We\'re an extension of your marketing team."',
+    subServices: [
+      { id: 'custom', highlight: 'Bespoke Solutions', title: 'Tailored for your Brand', description: 'Sign Experts specializes in custom signs for your brand! Bring your business to life with custom signage designed specifically for your unique space.', visualText: '[ Custom Sign Visual ]' },
+      { id: 'fab', highlight: 'Precision Engineering', title: 'Expert Sign Fabrication', description: 'Sophisticated cutting and printing technology to create outstanding signs and letters. We shape raw materials into high-impact physical structures.', visualText: '[ Fabrication Gallery ]' },
+      { id: 'design', highlight: 'Visual Strategy', title: 'Branding and Visibility', description: 'Professional signage begins long before the first cut. Our design services transform abstract ideas into high-performance, readable signage.', visualText: '[ Design Portfolio ]' },
+      { id: 'writing', highlight: 'The Human Touch', title: 'Art of Communication', description: 'Hand-finished detail meets modern brand precision. We apply high-clarity typography to glass shopfronts and modern vehicle fleets.', visualText: '[ Sign Writing Art ]' },
+      { id: 'audit', highlight: 'Strategic Growth', title: 'Expert Consultation', description: 'Identify critical gaps and visibility opportunities. We evaluate existing signage for consistency, durability, and brand alignment.', visualText: '[ Audit Report Visual ]' },
+    ]
+  },
+  {
+    id: 'installation',
+    title: 'Installation Services',
+    quote: '"Precision from production to the final placement."',
+    subServices: [
+      { id: 'install-act', highlight: 'On-Site Excellence', title: 'Professional Placement', description: 'Our expert installers ensure your signage is mounted safely, securely, and with perfect alignment. We handle everything from high-rise banners to delicate interior lettering.', visualText: '[ Installation Team ]' },
+      { id: 'methods', highlight: 'Built to Last', title: 'Quality Construction', description: 'Utilizing industry-leading techniques, we build durability into every project. From weather-resistant coatings to structural welding, our methods guarantee longevity.', visualText: '[ Technical Workshop ]' },
+      { id: 'repair', highlight: 'Longevity Strategy', title: 'Keeping You Shining', description: "Maintain your brand's image with our repair and maintenance services. We handle LED replacements, cleaning, and structural repairs to ensure your sign looks brand new for years.", visualText: '[ Maintenance Services ]' },
+    ]
+  }
+];
+
+export default function ServicesAccordion() {
+  const [activeMain, setActiveMain] = useState<string | null>('creative');
+  const [activeSub, setActiveSub] = useState<string | null>(null);
+
+  const toggleMain = (id: string) => setActiveMain(activeMain === id ? null : id);
+  const toggleSub = (id: string) => setActiveSub(activeSub === id ? null : id);
+
+  return (
+    <div className="w-full bg-white py-20 px-4 min-h-screen">
+      <div className="max-w-[1200px] mx-auto font-sans text-black">
+        {SERVICES_DATA.map((section) => (
+          <section key={section.id} className="mb-16">
+            {/* Main Header - Removed border-b-[6px] and changed text to black */}
+            <motion.div 
+              whileHover={{ x: 10 }}
+              onClick={() => toggleMain(section.id)}
+              className="flex justify-between items-center pb-6 cursor-pointer group transition-all"
+            >
+              <h1 className="text-5xl md:text-8xl font-black tracking-tighter uppercase">
+                {section.title}
+              </h1>
+              <motion.span 
+                animate={{ 
+                  rotate: activeMain === section.id ? 135 : 0,
+                  scale: activeMain === section.id ? 1.2 : 1
+                }}
+                className="text-[#ffc107]"
+              >
+                <Plus size={64} strokeWidth={1.5} />
+              </motion.span>
+            </motion.div>
+
+            {/* Main Content Area */}
+            <AnimatePresence mode="wait">
+              {activeMain === section.id && (
+                <motion.div
+                  key={section.id}
+                  variants={accordionContentVariants}
+                  initial="hidden"
+                  animate="visible"
+                  exit="exit"
+                  className="overflow-hidden"
+                >
+                  <motion.p 
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    className="text-2xl italic text-gray-500 border-l-4 border-[#ffc107] pl-6 my-12 max-w-3xl"
+                  >
+                    {section.quote}
+                  </motion.p>
+
+                  <motion.div 
+                    variants={containerVariants}
+                    initial="hidden"
+                    animate="visible"
+                    className="space-y-6 flex flex-col items-center" 
+                  >
+                    {section.subServices.map((sub) => (
+                      <motion.div 
+                        key={sub.id} 
+                        variants={itemVariants}
+                        className="w-[90%] border border-black/5 rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl hover:border-[#ffc107]/30 transition-all duration-300"
+                      >
+                        <div 
+                          onClick={() => toggleSub(sub.id)}
+                          className="flex justify-between items-center p-8 cursor-pointer group/item"
+                        >
+                          <h3 className="text-3xl font-bold tracking-tight group-hover/item:text-[#ffc107] transition-colors">
+                            {sub.title}
+                          </h3>
+                          <motion.div 
+                            animate={{ 
+                              rotate: activeSub === sub.id ? 45 : 0,
+                              backgroundColor: activeSub === sub.id ? "#ffc107" : "transparent"
+                            }}
+                            className="p-2 rounded-full border border-[#ffc107] text-[#ffc107] group-hover/item:bg-[#ffc107] group-hover/item:text-white transition-colors"
+                          >
+                            <Plus size={24} />
+                          </motion.div>
+                        </div>
+
+                        <AnimatePresence>
+                          {activeSub === sub.id && (
+                            <motion.div
+                              variants={accordionContentVariants}
+                              initial="hidden"
+                              animate="visible"
+                              exit="exit"
+                              className="overflow-hidden"
+                            >
+                              <div className="flex flex-wrap lg:flex-nowrap gap-12 p-8 pt-0 items-center">
+                                {/* Visual Area */}
+                                <motion.div 
+                                  initial={{ scale: 0.9, opacity: 0 }}
+                                  animate={{ scale: 1, opacity: 1 }}
+                                  transition={{ duration: 0.6, ease: "easeOut" }}
+                                  className="w-full lg:w-1/2 h-[450px] bg-[#1a1a1a] rounded-3xl relative overflow-hidden flex items-center justify-center text-white/20 font-bold text-4xl group/img shadow-2xl"
+                                >
+                                  <span className="z-10">{sub.visualText}</span>
+                                  <motion.div 
+                                    animate={{ 
+                                      scale: [1, 1.1, 1],
+                                      rotate: [0, 2, 0]
+                                    }}
+                                    transition={{ duration: 10, repeat: Infinity }}
+                                    className="absolute inset-0 bg-gradient-to-tr from-[#ffc107]/20 to-transparent"
+                                  />
+                                </motion.div>
+
+                                {/* Content Area */}
+                                <div className="w-full lg:w-1/2 space-y-6">
+                                  <span className="bg-[#ffc107]/10 text-[#ffc107] px-4 py-1 rounded-full font-bold uppercase text-xs tracking-[0.2em]">
+                                    {sub.highlight}
+                                  </span>
+                                  <h2 className="text-4xl font-extrabold text-black leading-tight">
+                                    {sub.title}
+                                  </h2>
+                                  <p className="text-gray-600 leading-relaxed text-xl">
+                                    {sub.description}
+                                  </p>
+                                  
+                                  <div className="flex items-center gap-6 pt-6">
+                                    <motion.button 
+                                      whileHover={{ scale: 1.05 }}
+                                      whileTap={{ scale: 0.95 }}
+                                      className="bg-black text-white px-10 py-4 rounded-xl font-bold uppercase text-sm tracking-widest shadow-lg hover:bg-[#ffc107] hover:text-black transition-colors"
+                                    >
+                                      Launch Project
+                                    </motion.button>
+                                    <div className="flex gap-3">
+                                      {[Mail, Phone].map((Icon, i) => (
+                                        <motion.div 
+                                          key={i}
+                                          whileHover={{ y: -5, backgroundColor: "#ffc107", color: "#fff" }}
+                                          className="w-12 h-12 border-2 border-black/10 rounded-xl flex items-center justify-center cursor-pointer transition-colors"
+                                        >
+                                          <Icon size={20} />
+                                        </motion.div>
+                                      ))}
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </motion.div>
+                          )}
+                        </AnimatePresence>
+                      </motion.div>
+                    ))}
+                  </motion.div>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </section>
+        ))}
+      </div>
+    </div>
+  );
+}
