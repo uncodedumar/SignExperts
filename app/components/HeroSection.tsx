@@ -96,8 +96,6 @@ export default function HeroSection() {
             className="h-full w-full object-cover"
           />
           
-          {/* Your original Dark Overlay */}
-          <div className="absolute inset-0 bg-[#5d4d4a]/70 mix-blend-multiply" />
         </div>
 
         {/* Original Content UI */}
