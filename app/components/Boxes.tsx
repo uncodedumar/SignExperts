@@ -113,7 +113,7 @@ const BentoGrid = () => {
         <div className="col-span-4 md:col-span-4 row-span-1 bg-[#FFD700] rounded-xl flex items-center justify-center overflow-hidden">
             <img 
               src="/as.png" 
-              className="w-16 h-16 object-contain" 
+              className="w-30 h-30 object-contain" 
               alt="Culinary Tech Innovation Symbol" 
             />
         </div>
@@ -133,14 +133,14 @@ const BentoGrid = () => {
       {/* Pfizer Logo */}
 <div className="col-span-2 md:col-span-2 row-span-1 bg-purple border border-gray-100 rounded-xl flex items-center justify-center p-4">
   <a href="www.instagram.com/Sign Exprets" target="_blank" rel="noopener noreferrer">
-    <img src="/Images/instagram-brands-solid-full.svg" className="w-16 h-auto" alt="Pfizer Brand Partner" />
+    <img src="/pppp.png" className="w-16 h-auto" alt="Pfizer Brand Partner" />
   </a>
 </div>
 
 {/* Discord Logo */}
 <div className="col-span-2 md:col-span-2 row-span-1 bg-[#f7efdc] rounded-xl flex items-center justify-center p-4">
   <a href="https://www.whatsapp.com/channel/0029Vb6yA9DATRSgFD2X9b2B" target="_blank" rel="noopener noreferrer">
-    <img src="/Images/whatsapp-brands-solid-full.svg" className="w-16 h-auto" alt="Join our Discord Community" />
+    <img src="/qqqq.png" className="w-16 h-auto" alt="Join our Discord Community" />
   </a>
 </div>
 
