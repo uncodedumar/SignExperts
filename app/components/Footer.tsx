@@ -3,7 +3,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#28193d] text-white w-full font-sans uppercase text-[12px] font-medium tracking-wider">
+    <footer className="bg-[##101b55] text-white w-full font-sans uppercase text-[12px] font-medium tracking-wider">
       <div className="max-w-[1800px] mx-auto border-t border-white/20">
         
         {/* Main Grid Section */}
@@ -57,30 +57,30 @@ const Footer = () => {
               <nav className="p-6 sm:p-8 md:p-12 border-b sm:border-b-0 sm:border-r border-white/20 space-y-3" aria-label="Footer Main">
                 <p className="font-bold mb-4 md:mb-6 text-[14px]">Home</p>
                 <ul className="space-y-3">
-                  <li><a href="/Work" className="hover:opacity-70 transition-opacity block">Projects</a></li>
+                  <li><a href="/Work" className="hover:opacity-70 transition-opacity block">Home</a></li>
                   <li><a href="/about" className="hover:opacity-70 transition-opacity block">About</a></li>
-                  <li><a href="/Events" className="hover:opacity-70 transition-opacity block">Events</a></li>
-                  <li><a href="/Contact" className="hover:opacity-70 transition-opacity block">Contact</a></li>
+                  <li><a href="/Events" className="hover:opacity-70 transition-opacity block">Blog</a></li>
+                  <li><a href="/Contact" className="hover:opacity-70 transition-opacity block">Services</a></li>
                 </ul>
               </nav>
 
               {/* Industries Column */}
               <nav className="p-6 sm:p-8 md:p-12 border-b sm:border-b-0 lg:border-r border-white/20 space-y-3" aria-label="Industries">
-                <p className="font-bold mb-4 md:mb-6 text-[14px]">Industries</p>
+                <p className="font-bold mb-4 md:mb-6 text-[14px]">Signs</p>
                 <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-2 gap-x-4 gap-y-3">
                   <ul className="space-y-3">
-                    <li><a href="#" className="hover:opacity-70 transition-opacity block">AI</a></li>
-                    <li><a href="#" className="hover:opacity-70 transition-opacity block">Alt Medicine</a></li>
-                    <li><a href="#" className="hover:opacity-70 transition-opacity block">B2B</a></li>
-                    <li><a href="#" className="hover:opacity-70 transition-opacity block">Clinics & Hospitals</a></li>
-                    <li><a href="#" className="hover:opacity-70 transition-opacity block">Consumer Health</a></li>
+                    <li><a href="#" className="hover:opacity-70 transition-opacity block">Indoor Signs</a></li>
+                    <li><a href="#" className="hover:opacity-70 transition-opacity block">Outdoor Signs</a></li>
+                    <li><a href="#" className="hover:opacity-70 transition-opacity block">Promotional Signs</a></li>
+                    <li><a href="#" className="hover:opacity-70 transition-opacity block">Way Finder Signs</a></li>
+                    <li><a href="#" className="hover:opacity-70 transition-opacity block">Illuminated Signs</a></li>
                   </ul>
                   <ul className="space-y-3">
-                    <li><a href="#" className="hover:opacity-70 transition-opacity block">Financial Services</a></li>
-                    <li><a href="#" className="hover:opacity-70 transition-opacity block">Fintech</a></li>
-                    <li><a href="#" className="hover:opacity-70 transition-opacity block">HealthTech</a></li>
-                    <li><a href="#" className="hover:opacity-70 transition-opacity block">Real Estate</a></li>
-                    <li><a href="#" className="hover:opacity-70 transition-opacity block">Tech</a></li>
+                    <li><a href="#" className="hover:opacity-70 transition-opacity block">Non Illuminated Signs</a></li>
+                    <li><a href="#" className="hover:opacity-70 transition-opacity block">Vehicle Signs </a></li>
+                    <li><a href="#" className="hover:opacity-70 transition-opacity block">Saftey Signs</a></li>
+                    <li><a href="#" className="hover:opacity-70 transition-opacity block">Company Signs</a></li>
+                    <li><a href="#" className="hover:opacity-70 transition-opacity block">Directional Signs</a></li>
                   </ul>
                 </div>
               </nav>
@@ -88,7 +88,7 @@ const Footer = () => {
               {/* Copyright Column */}
               <div className="p-6 sm:p-8 md:p-12 relative min-h-[100px] lg:min-h-0">
                 <span className="static lg:absolute top-10 right-10 text-[12px] font-bold block text-left lg:text-right">
-                  ©INVANTROS2026
+                  ©Sign Experts 2026
                 </span>
               </div>
             </div>
@@ -101,8 +101,8 @@ const Footer = () => {
             <a href="#" className="hover:opacity-70 transition-opacity whitespace-nowrap">Privacy Policy</a>
             <a href="#" className="hover:opacity-70 transition-opacity whitespace-nowrap">Cookies</a>
             <a href="#" className="hover:opacity-70 transition-opacity whitespace-nowrap">Terms and Conditions</a>
-            <a href="https://www.antrosys.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity whitespace-nowrap">
-              Designed & Developed by Antrosys.com
+            <a href="https://www.bricklix.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity whitespace-nowrap">
+              Designed & Developed by Bricklix.com
             </a>
           </div>
         </div>

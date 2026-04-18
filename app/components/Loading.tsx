@@ -14,7 +14,7 @@ const LoadingScreen = ({ children }: LoadingScreenProps) => {
   const [showContent, setShowContent] = useState(false);
 
   // Darkened version of your original color
-  const primaryColor = "#2D1B36";
+  const primaryColor = "#101b55";
 
   const columnVariants: Variants = {
     initial: { height: "0%" },

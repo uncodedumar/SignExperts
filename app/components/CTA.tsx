@@ -14,8 +14,7 @@ const GetAQuoteCTA = () => {
           
           <div className="flex items-center gap-3 mt-2 w-full">
             <span className="text-white text-sm md:text-base font-light whitespace-nowrap">
-              Hit the damn Button
-            </span>
+Get your sign done by us             </span>
             {/* The horizontal decorative line */}
             <div className="h-[1px] bg-gray-500 w-24 md:w-32 hidden sm:block"></div>
           </div>

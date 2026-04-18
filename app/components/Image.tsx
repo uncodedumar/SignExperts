@@ -24,7 +24,7 @@ const SignageSection = () => {
             className="w-full h-full"
           >
             <Image
-              src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=2074&auto=format&fit=crop" 
+              src="/AA.jpg" 
               alt="Restaurant Signage"
               fill
               className="object-cover"

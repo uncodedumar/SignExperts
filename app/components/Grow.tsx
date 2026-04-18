@@ -73,7 +73,7 @@ const GrowSection = () => {
             style={{ scale, originX: 0 }}
             className="text-6xl md:text-[7rem] font-medium tracking-tighter text-black leading-[0.8] will-change-transform"
           >
-            Grow Today
+            Join Us
           </motion.h2>
         </div>
 
@@ -86,7 +86,7 @@ const GrowSection = () => {
               aria-label="Work with Antrosys and join the InvanTros community"
             >
               <span className="text-[10px] md:text-xs font-bold tracking-widest">
-                WORK WITH US
+                Get Your Sign
               </span>
             </button>
           </Link>

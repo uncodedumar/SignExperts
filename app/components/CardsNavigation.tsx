@@ -16,37 +16,37 @@ const signCategories: SignCategory[] = [
   { 
     id: 1, 
     title: "Way Finder & Safety Signs", 
-    image: "https://images.unsplash.com/photo-1542708993627-b6e5bbae43c4?q=80&w=800&auto=format&fit=crop", 
+    image: "/ws.jpg", // Removed "./" to prevent URL errors
     href: "/services/way-finder" 
   },
   { 
     id: 2, 
     title: "Vehicles Signs", 
-    image: "https://images.unsplash.com/photo-1599408162449-30238ee9d494?q=80&w=800&auto=format&fit=crop", 
+    image: "/pps.jpg", 
     href: "/services/vehicle-signs" 
   },
   { 
     id: 3, 
     title: "Indoor Signs", 
-    image: "https://images.unsplash.com/photo-1563245159-f793f19d8c37?q=80&w=800&auto=format&fit=crop", 
+    image: "/iis.jpg", 
     href: "/services/indoor-signs" 
   },
   { 
     id: 4, 
     title: "Promotional Signs", 
-    image: "https://images.unsplash.com/photo-1551601651-2a8555f1a136?q=80&w=800&auto=format&fit=crop", 
+    image: "/ps.jpg", 
     href: "/services/promotional-signs" 
   },
   { 
     id: 5, 
     title: "Illuminated Signs", 
-    image: "https://images.unsplash.com/photo-1563206767-5b18f218e8de?q=80&w=800&auto=format&fit=crop", 
+    image: "/is.jpg", 
     href: "/services/illuminated-signs" 
   },
   { 
     id: 6, 
     title: "Non Illuminated Signs", 
-    image: "https://images.unsplash.com/photo-1493606371202-6275828f90f3?q=80&w=800&auto=format&fit=crop", 
+    image: "/nis.jpg", 
     href: "/services/non-illuminated" 
   },
 ];
@@ -96,16 +96,17 @@ export default function SignageGrid() {
             className="flex justify-center"
           >
             <Link href={category.href} className="group block w-full max-w-[450px]">
-              <div className="relative overflow-hidden rounded-2xl aspect-square w-full bg-gray-50">
-                {/* Overlay for subtle depth on hover */}
-                <div className="absolute inset-0 z-10 bg-black/0 group-hover:bg-black/5 transition-colors duration-500" />
+              <div className="relative overflow-hidden rounded-2xl aspect-square w-full bg-gray-100">
+                {/* --- OVERLAY SECTION --- */}
+                {/* This creates a smooth dark gradient overlay on hover */}
+                <div className="absolute inset-0 z-10 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 
                 <Image
                   src={category.image}
                   alt={category.title}
                   fill
                   sizes="(max-width: 450px) 100vw, 450px"
-                  className="object-cover transition-transform duration-[1.2s] cubic-bezier(0.16, 1, 0.3, 1) group-hover:scale-110"
+                  className="object-cover transition-transform duration-[1.2s] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-110"
                 />
               </div>
               
@@ -122,7 +123,7 @@ export default function SignageGrid() {
                 </motion.h3>
                 
                 <p className="mt-2 text-sm text-gray-500 font-medium opacity-0 -translate-x-4 transition-all duration-500 group-hover:opacity-100 group-hover:translate-x-0">
-                  Explore Project →
+                  Explore More →
                 </p>
               </div>
             </Link>

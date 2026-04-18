@@ -41,7 +41,7 @@ const BentoGrid = () => {
         {/* Brain Image (Left Tall) */}
         <div className="col-span-4 md:col-span-2 row-span-2 rounded-xl overflow-hidden shadow-sm border border-gray-100">
           <img 
-            src="/antrosys.png" 
+            src="/g1.jpg" 
             className="w-full h-full object-cover" 
             alt="Advanced Neural AI Visualization - Antrosys Intelligence" 
             loading="lazy"
@@ -50,7 +50,7 @@ const BentoGrid = () => {
         {/* Brain Image (Left Tall) */}
         <div className="col-span-4 md:col-span-2 row-span-2 rounded-xl overflow-hidden shadow-sm border border-gray-100">
           <img 
-            src="/devmach3d.png" 
+            src="/g2.jpg" 
             className="w-full h-full object-cover" 
             alt="Advanced Neural AI Visualization - Antrosys Intelligence" 
             loading="lazy"

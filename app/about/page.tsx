@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import AboutHero from "../components/AboutHero";
+import AboutHero from "../components/AboutSection";
 import Count from "../components/Count";
 import FinancialFrontiers from "../components/FinancialFrontiers";
 import PortfolioSection from "../components/Portfolio";

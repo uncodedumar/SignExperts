@@ -6,7 +6,7 @@ export interface SupportContent {
   }
   
   export const supportData: SupportContent = {
-    imageUrl: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2070&auto=format&fit=crop",
+    imageUrl: "/ser.jpg",
     heading: "Need support to take your signage\n project from idea to installation?",
     subheading: "Whether you’re after a little design help or a reliable set of hands for a complex national project, it’s easy with our design and service team looking after you. We can take care of your project from first conversation to final installation.",
   };

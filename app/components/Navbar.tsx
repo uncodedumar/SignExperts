@@ -25,9 +25,9 @@ const Navbar = () => {
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <Image 
-            src="/logo.png" 
+            src="/Logo.png" 
             alt="Sign Experts Logo"
-            width={180} 
+            width={50} 
             height={50}
             className="object-contain"
             priority // Good practice for navbar logos
@@ -71,7 +71,7 @@ const Navbar = () => {
           {isDropdownOpen && (
             <div className="absolute top-full left-0 w-56 bg-[#050B33] border border-white/10 shadow-xl z-50 animate-in fade-in slide-in-from-top-2 duration-200">
               <Link 
-                href="/outdoor-signs/illuminated" 
+                href="/products/design-and-installation" 
                 className="block px-4 py-3 hover:bg-[#FFC107] hover:text-[#050B33] transition-colors border-b border-white/5"
               >
                 Illuminated Signs
@@ -87,7 +87,7 @@ const Navbar = () => {
         </div>
 
         {/* Secondary Links */}
-        <Link href="/way-safety-signs" className="hover:text-[#FFC107] uppercase tracking-widest">Way & safety signs</Link>
+        <Link href="/products/design-and-installation" className="hover:text-[#FFC107] uppercase tracking-widest">Way & safety signs</Link>
         <Link href="/indoor-sign" className="hover:text-[#FFC107] uppercase tracking-widest">Indoor sign</Link>
         <Link href="/vehicle-sign" className="hover:text-[#FFC107] uppercase tracking-widest">Vehicle sign</Link>
         <Link href="/promotional-sign" className="hover:text-[#FFC107] uppercase tracking-widest">Promotional sign</Link>

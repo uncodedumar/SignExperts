@@ -9,9 +9,9 @@ const bebas = Bebas_Neue({ weight: '400', subsets: ['latin'] });
 const lexend = Lexend({ subsets: ['latin'] });
 
 const images = [
-  '/shop-1.jpg', // Replace with your shop signage images
-  '/shop-2.jpg',
-  '/shop-3.jpg',
+  '/a.jpg', // Replace with your shop signage images
+  '/b.jpg',
+  '/c.jpg',
 ];
 
 export default function HeroSection() {
