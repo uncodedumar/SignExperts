@@ -16,7 +16,7 @@ export default function HeroSection() {
   // 1. Preload images from herobg folder
   useEffect(() => {
     const loadedImages: HTMLImageElement[] = [];
-    for (let i = 1; i <= FRAME_COUNT; i++) {
+    for (let i = 110; i <= FRAME_COUNT; i++) {
       const img = new Image();
       // Generates 001, 002, ... 176
       const frameIndex = i.toString().padStart(3, '0');
