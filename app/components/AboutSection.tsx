@@ -46,14 +46,13 @@ export default function HeroSection() {
           />
         </AnimatePresence>
         
-        {/* Dark Overlay - Reference uses a warm brownish tint */}
-        <div className="absolute inset-0 bg-[#5d4d4a]/70 mix-blend-multiply" />
+       
       </div>
 
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto text-white">
         <h1 className={`${bebas.className} text-6xl md:text-8xl lg:text-[120px] leading-none mb-6 tracking-tight`}>
-          Let’s Build Your Landmark
+        The Standards of Signage Excellence
         </h1>
         
         <p className={`${lexend.className} text-base md:text-xl font-light max-w-2xl mx-auto leading-relaxed mb-10 opacity-90`}>

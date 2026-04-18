@@ -17,13 +17,13 @@ const BentoGrid = () => {
   return (
     <section 
       className="min-h-fit bg-white pt-10 pb-0 px-4 overflow-hidden"
-      aria-label="InvanTros Startup and Tech Showcase"
+      aria-label="Sign Exprets Startup and Tech Showcase"
     >
       {/* SEO Keyword Cloud - Hidden from UI but visible to search engines */}
       <div className="sr-only">
-        <h1>InvanTros - Pakistan's Largest Tech and Entrepreneur Community</h1>
+        <h1>Sign Exprets - Pakistan's Largest Tech and Entrepreneur Community</h1>
         <p>
-          Join InvanTros, the ultimate hub for startups, developers, designers, and creative people in Pakistan. 
+          Join Sign Exprets, the ultimate hub for startups, developers, designers, and creative people in Pakistan. 
           A collaborative ecosystem powered by Antrosys, connecting entrepreneurs, researchers, and project teams.
           In partnership with 20+ universities including Air University, NASTP, FAST NUCES, NUST, Bahria University, 
           LUMS, PUCIT, PIEAS, GIKI, COMSATS, ITU, BNU, and more. 
@@ -64,7 +64,7 @@ const BentoGrid = () => {
   <div 
     className="absolute inset-0 z-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
     style={{ 
-      backgroundImage: `url('/clouds.png')`,
+      backgroundImage: `url('/g3.jpg')`,
       filter: 'blur(8px) brightness(0.9)' // Adjust blur and brightness here
     }}
   />
@@ -75,7 +75,7 @@ const BentoGrid = () => {
   {/* Content Layer */}
   <div className="relative z-20">
     <p className="text-[10px] font-bold leading-tight text-gray-900 drop-shadow-sm">
-    Joining Invantros has been a game-changer. The community's focus on high-level ...</p>
+    Joining Sign experts has been a game-changer. The community's focus on high-level ...</p>
     <div className="flex gap-2 text-[9px] mt-1 font-semibold text-gray-800" aria-label="Social engagement: 29 comments, 43 likes">
       <span role="img" aria-label="comments">💬</span> 29 
       <span role="img" aria-label="likes">😍</span> 43
@@ -85,7 +85,7 @@ const BentoGrid = () => {
 
         {/* Sequel Logo */}
         <div className="col-span-2 md:col-span-2 row-span-1 bg-blue-600 rounded-xl flex items-center justify-center p-4">
-            <h2 className="text-white font-black text-xl tracking-tighter">MONOLITHIC</h2>
+            <h2 className="text-white font-black text-xl tracking-tighter">Sign experts</h2>
         </div>
 
         {/* L + E S + E Center Box */}
@@ -98,21 +98,21 @@ const BentoGrid = () => {
         {/* Tropical Box Small */}
         <div className="col-span-2 md:col-span-2 row-span-1 rounded-xl overflow-hidden">
           <img 
-            src="/Images/bo1.avif" 
+            src="/g4.jpg" 
             className="w-full h-full object-cover" 
-            alt="Creative Digital Asset for InvanTros community" 
+            alt="Creative Digital Asset for Sign Exprts community" 
           />
         </div>
 
         {/* Eaz Logo */}
         <div className="col-span-2 md:col-span-2 row-span-1 bg-[#0047FF] rounded-xl flex items-center justify-center">
-            <span className="text-cyan-300 text-3xl font-serif italic">Cerebral</span>
+            <span className="text-cyan-300 text-3xl font-serif italic">Alsip, IL</span>
         </div>
 
         {/* Yellow Fork Box */}
         <div className="col-span-4 md:col-span-4 row-span-1 bg-[#FFD700] rounded-xl flex items-center justify-center overflow-hidden">
             <img 
-              src="/Images/asterisk.png" 
+              src="/as.png" 
               className="w-16 h-16 object-contain" 
               alt="Culinary Tech Innovation Symbol" 
             />
@@ -121,18 +121,18 @@ const BentoGrid = () => {
         {/* Quote 2 (Wide) */}
         <div className="col-span-4 md:col-span-4 row-span-1 bg-gradient-to-r from-purple-300 to-blue-300 p-4 rounded-xl flex flex-col justify-center items-start border border-white">
           <blockquote className="text-xs font-semibold italic text-gray-800 leading-tight">
-          Invantros didn't just expand my network—it elevated my entire approach to tech and design. The caliber of innovation here is unmatched.          </blockquote>
+          Sign Exprts didn't just expand my network—it elevated my entire approach to tech and design. The caliber of innovation here is unmatched.          </blockquote>
           <div className="flex gap-4 mt-2  opacity-60 text-[10px]">
             <span>🚀 23</span> <span>🦄 11</span> <span>🍊 43</span>
           </div>
         </div>
 
         {/* Video Column (Right Tall) */}
-        <VideoItem src="/Videos/bbV.mp4" className="col-span-4 md:col-span-2 row-span-2" />
+        <VideoItem src="/vv.mp4" className="col-span-4 md:col-span-2 row-span-2" />
 
       {/* Pfizer Logo */}
 <div className="col-span-2 md:col-span-2 row-span-1 bg-purple border border-gray-100 rounded-xl flex items-center justify-center p-4">
-  <a href="www.instagram.com/invantros" target="_blank" rel="noopener noreferrer">
+  <a href="www.instagram.com/Sign Exprets" target="_blank" rel="noopener noreferrer">
     <img src="/Images/instagram-brands-solid-full.svg" className="w-16 h-auto" alt="Pfizer Brand Partner" />
   </a>
 </div>
