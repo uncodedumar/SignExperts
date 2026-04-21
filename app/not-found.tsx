@@ -28,7 +28,7 @@ const NotFound = () => {
           
           <p className="max-w-md mx-auto text-purple-400 text-lg md:text-xl mb-10 leading-relaxed">
             I guess you got lost trying to find the best we got for you. 
-            Let's get you back on track to global-lead.
+            Let&apos;s get you back on track to global-lead.
           </p>
 
           {/* Action Button */}

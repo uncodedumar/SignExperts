@@ -3,137 +3,88 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#101b55] text-white w-full font-sans uppercase text-[12px] font-medium tracking-wider">
-      <div className="max-w-[1800px] mx-auto border-t border-white/20">
+    <footer className="bg-[#101b55] text-white w-full font-sans uppercase text-[11px] font-medium tracking-[0.1em]">
+      <div className="max-w-[1800px] mx-auto border-t border-white/10">
         
-        {/* Main Grid Section */}
-        <div className="grid grid-cols-1 md:grid-cols-12 min-h-[500px]">
+        {/* Main Content Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-12">
           
-          {/* Left Column: Subscription & Socials */}
-          <div className="col-span-1 md:col-span-5 p-6 sm:p-8 md:p-12 border-b md:border-b-0 md:border-r border-white/20 flex flex-col justify-between">
-            <div className="space-y-6">
-              <h3 className="text-[14px]">Subscribe to stay in touch.</h3>
-              <form className="relative max-w-sm" onSubmit={(e) => e.preventDefault()}>
-                <label htmlFor="email-subscribe" className="sr-only">Email Address</label>
+          {/* Left: Brand & Newsletter */}
+          <div className="col-span-1 md:col-span-4 p-8 md:p-12 border-b md:border-b-0 md:border-r border-white/10 flex flex-col justify-between min-h-[350px]">
+            <div className="space-y-8">
+              <h3 className="text-[13px] opacity-60">Join the circle</h3>
+              <form className="relative group" onSubmit={(e) => e.preventDefault()}>
                 <input 
-                  id="email-subscribe"
                   type="email" 
-                  placeholder="ENTER EMAIL ADDRESS.." 
-                  className="w-full bg-transparent border border-white rounded-full py-3 px-6 placeholder:text-white/70 focus:outline-none focus:ring-1 focus:ring-white"
+                  placeholder="EMAIL ADDRESS" 
+                  className="w-full bg-transparent border-b border-white/30 py-4 focus:border-white focus:outline-none transition-colors transition-all duration-300"
                   required
                 />
-                <button 
-                  type="submit"
-                  aria-label="Submit subscription"
-                  className="absolute right-4 top-1/2 -translate-y-1/2 text-xl hover:translate-x-1 transition-transform"
-                >
-                  →
+                <button type="submit" className="absolute right-0 bottom-4 hover:translate-x-2 transition-transform">
+                  —&gt;
                 </button>
               </form>
             </div>
 
-            <div className="flex flex-col sm:flex-row flex-wrap gap-8 sm:gap-x-16 lg:gap-x-24 mt-12">
-              <nav className="flex flex-col space-y-2" aria-label="Social Media">
-                <a href="#" className="hover:opacity-70 transition-opacity">LinkedIn —&gt;</a>
-                <a href="#" className="hover:opacity-70 transition-opacity">Instagram —&gt;</a>
-                <a href="#" className="hover:opacity-70 transition-opacity">Behance —&gt;</a>
-              </nav>
-              <div className="flex flex-col space-y-2">
-                <a href="#" className="hover:opacity-70 transition-opacity">Start A Project</a>
-                <p className="tabular-nums">Text or Call: +1 (415) 840 4427</p>
-                <a href="mailto:hello@invantros.com" className="hover:opacity-70 lowercase transition-opacity">hello@invantros.com</a>
-              </div>
+            <div className="flex flex-col gap-4 lowercase text-[14px] normal-case tracking-normal">
+              <a href="mailto:hello@signexperts.com" className="hover:italic transition-all">hello@signexperts.com</a>
+              <p className="opacity-50">+1 (415) 840 4427</p>
             </div>
           </div>
 
-          {/* Right Section: Navigation Grid */}
-          <div className="col-span-1 md:col-span-7 flex flex-col">
-            <div className="p-6 sm:p-8 md:p-12 border-b border-white/20">
-              <h3 className="text-[14px]">Navigation</h3>
-            </div>
-            
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 flex-grow">
-              {/* Home Column */}
-              <nav className="p-6 sm:p-8 md:p-12 border-b sm:border-b-0 sm:border-r border-white/20 space-y-3" aria-label="Footer Main">
-                <p className="font-bold mb-4 md:mb-6 text-[14px]">Home</p>
-                <ul className="space-y-3">
-                  <li><a href="/Work" className="hover:opacity-70 transition-opacity block">Home</a></li>
-                  <li><a href="/about" className="hover:opacity-70 transition-opacity block">About</a></li>
-                  <li><a href="/Events" className="hover:opacity-70 transition-opacity block">Blog</a></li>
-                  <li><a href="/Contact" className="hover:opacity-70 transition-opacity block">Services</a></li>
-                </ul>
-              </nav>
+          {/* Right: Condensed Navigation */}
+          <div className="col-span-1 md:col-span-8 grid grid-cols-2 md:grid-cols-3">
+            {/* Quick Links */}
+            <nav className="p-8 md:p-12 border-r border-white/10 space-y-6">
+              <p className="opacity-40">Menu</p>
+              <ul className="space-y-2">
+                {['About', 'Work', 'Services', 'Contact'].map(link => (
+                  <li key={link}><a href={`/${link.toLowerCase()}`} className="hover:pl-2 transition-all block">{link}</a></li>
+                ))}
+              </ul>
+            </nav>
 
-              {/* Industries Column */}
-              <nav className="p-6 sm:p-8 md:p-12 border-b sm:border-b-0 lg:border-r border-white/20 space-y-3" aria-label="Industries">
-                <p className="font-bold mb-4 md:mb-6 text-[14px]">Signs</p>
-                <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-2 gap-x-4 gap-y-3">
-                  <ul className="space-y-3">
-                    <li><a href="#" className="hover:opacity-70 transition-opacity block">Indoor Signs</a></li>
-                    <li><a href="#" className="hover:opacity-70 transition-opacity block">Outdoor Signs</a></li>
-                    <li><a href="#" className="hover:opacity-70 transition-opacity block">Promotional Signs</a></li>
-                    <li><a href="#" className="hover:opacity-70 transition-opacity block">Way Finder Signs</a></li>
-                    <li><a href="#" className="hover:opacity-70 transition-opacity block">Illuminated Signs</a></li>
-                  </ul>
-                  <ul className="space-y-3">
-                    <li><a href="#" className="hover:opacity-70 transition-opacity block">Non Illuminated Signs</a></li>
-                    <li><a href="#" className="hover:opacity-70 transition-opacity block">Vehicle Signs </a></li>
-                    <li><a href="#" className="hover:opacity-70 transition-opacity block">Saftey Signs</a></li>
-                    <li><a href="#" className="hover:opacity-70 transition-opacity block">Company Signs</a></li>
-                    <li><a href="#" className="hover:opacity-70 transition-opacity block">Directional Signs</a></li>
-                  </ul>
-                </div>
-              </nav>
+            {/* Product Focus */}
+            <nav className="p-8 md:p-12 border-r border-white/10 space-y-6">
+              <p className="opacity-40">Expertise</p>
+              <ul className="space-y-2 text-[10px]">
+                <li><a href="#" className="hover:opacity-50 transition-opacity">Indoor / Outdoor</a></li>
+                <li><a href="#" className="hover:opacity-50 transition-opacity">Illuminated</a></li>
+                <li><a href="#" className="hover:opacity-50 transition-opacity">Vehicle Wraps</a></li>
+                <li><a href="#" className="hover:opacity-50 transition-opacity">Wayfinding</a></li>
+              </ul>
+            </nav>
 
-              {/* Copyright Column */}
-              <div className="p-6 sm:p-8 md:p-12 relative min-h-[100px] lg:min-h-0">
-                <span className="static lg:absolute top-10 right-10 text-[12px] font-bold block text-left lg:text-right">
-                  ©Sign Experts 2026
-                </span>
-              </div>
+            {/* Socials & Copyright */}
+            <div className="col-span-2 md:col-span-1 p-8 md:p-12 flex flex-col justify-between">
+              <nav className="space-y-2">
+                <p className="opacity-40 mb-6">Social</p>
+                <a href="#" className="block hover:italic transition-all">Instagram ↗</a>
+                <a href="#" className="block hover:italic transition-all">LinkedIn ↗</a>
+              </nav>
+              <p className="text-[10px] opacity-40 mt-12 md:mt-0">©2026 SIGN EXPERTS</p>
             </div>
           </div>
         </div>
 
-        {/* Legal & Policies */}
-        <div className="border-y border-white/20 py-8 px-6 sm:px-8 md:px-12 md:ml-[41.66%]">
-          <div className="flex flex-wrap gap-x-8 gap-y-4 text-[11px] sm:text-[12px]">
-            <a href="#" className="hover:opacity-70 transition-opacity whitespace-nowrap">Privacy Policy</a>
-            <a href="#" className="hover:opacity-70 transition-opacity whitespace-nowrap">Cookies</a>
-            <a href="#" className="hover:opacity-70 transition-opacity whitespace-nowrap">Terms and Conditions</a>
-            <a href="https://www.bricklix.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-70 transition-opacity whitespace-nowrap">
-              Designed & Developed by Bricklix.com
-            </a>
+        {/* Bottom Bar: Ultra Slim */}
+        <div className="border-t border-white/10 px-8 md:px-12 py-6 flex flex-col md:flex-row justify-between items-center gap-4 text-[9px] opacity-50">
+          <div className="flex gap-8">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Cookies</a>
           </div>
+          <a href="https://bricklix.com" className="hover:opacity-100 transition-opacity">
+            Crafted by Bricklix
+          </a>
         </div>
 
-        {/* Big Massive Wordmark */}
-        <div className="w-full overflow-hidden py-4 sm:py-8">
-          <h1 className="text-[14vw] font-black leading-[0.8] tracking-tighter text-center select-none">
-            SIGN EXPERTS
+        {/* Wordmark: Tighter & More Aggressive */}
+        <div className="w-full overflow-hidden bg-white text-[#101b55]">
+          <h1 className="text-[12vw] font-black leading-[0.75] tracking-[-0.05em] text-center py-2">
+            SIGN E<span className="font-black ">X</span>PERTS
           </h1>
         </div>
-
-        {/* SEO Metadata Section (Visually hidden but Crawlable) */}
-        <section className="sr-only" aria-hidden="true">
-          <h2>Invantros: Pakistan's Largest Tech and Entrepreneur Community</h2>
-          <p>
-            Invantros is a leading ecosystem for startups, developers, designers, entrepreneurs, and researchers in Pakistan. 
-            In collaboration with 20+ prestigious universities including NUST, LUMS, GIKI, FAST NUCES, Air University, NASTP, 
-            Bahria University, PUCIT, PIEAS, COMSATS, ITU, and BNU.
-          </p>
-          <ul>
-            <li>Pakistan tech community for university students and researchers</li>
-            <li>Collaborative startup ecosystem for Pakistani entrepreneurs</li>
-            <li>Best community for UI/UX designers and full-stack developers in Pakistan</li>
-            <li>Tech incubation and project collaboration for Air University and NASTP students</li>
-            <li>Networking for NUST and LUMS alumni and startup founders</li>
-            <li>Pakistan's premier platform for creative professionals and AI researchers</li>
-            <li>Digital transformation and entrepreneurial growth at FAST NUCES and GIKI</li>
-            <li>Innovation hub for COMSATS, ITU, and BNU creative projects</li>
-            <li>Skill development for student-led projects and tech teams in Lahore, Karachi, Islamabad</li>
-          </ul>
-        </section>
       </div>
     </footer>
   );

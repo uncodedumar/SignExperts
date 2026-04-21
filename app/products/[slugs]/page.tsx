@@ -5,12 +5,14 @@ import PrdAccordian from '@/app/components/PrdAccordian';
 import Cards from "@/app/components/CardsNavigation";
 
 
-export default function Page({ params }: { params: { slug: string } }) {
+export default async function Page({ params }: { params: Promise<{ slugs: string }> }) {
+  const { slugs } = await params;
+
   return (
     <main>
-      <PrdSection slug={params.slug} />
+      <PrdSection slug={slugs} />
       <CTA/>
-      <PrdAccordian />
+      <PrdAccordian slug={slugs}  />
 
       <Cards/>
     </main>

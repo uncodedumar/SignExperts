@@ -2,210 +2,133 @@ import React from 'react';
 
 const ContactForm: React.FC = () => {
   return (
-    <div className="bg-white min-h-screen">
-      <div className="w-max-70% mx-auto p-8 font-['Lexend',_sans-serif]">
-        <h1 className="text-7xl font-bold text-center mb-16 tracking-tight text-black">
-          Get in touch to set up an intro call
-        </h1>
+    <div className="bg-white min-h-screen flex items-center justify-center p-6 md:p-12 font-sans">
+      <div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        
+        {/* Left Side: Content */}
+        <div className="space-y-8">
+          <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center shadow-md border border-gray-100">
+            <svg className="w-6 h-6 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+              <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+            </svg>
+          </div>
 
-        <form 
-          action="https://formspree.io/f/mreonybj" 
-          method="POST" 
-          className="space-y-8"
-        >
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-10">
-            
-            {/* First Name */}
-            <div className="flex flex-col group">
-              <label 
-                htmlFor="firstName" 
-                className="text-sm font-semibold mb-2 text-black transition-all duration-300 group-focus-within:translate-x-1 group-focus-within:text-blue-600"
-              >
-                First Name
+          <div className="space-y-4">
+            <h1 className="text-6xl font-bold text-gray-900 tracking-tight">
+              Contact us
+            </h1>
+            <p className="text-gray-500 text-lg max-w-md leading-relaxed">
+              We are always looking for ways to improve our products and services. 
+              Contact us and let us know how we can help you.
+            </p>
+          </div>
+
+          <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium text-gray-400">
+            <span>contact@yoursaas.ai</span>
+            <span>•</span>
+            <span>+1 (800) 123 XX21</span>
+            <span>•</span>
+            <span>support@yoursaas.ai</span>
+          </div>
+          
+          {/* World Map section has been removed from here */}
+        </div>
+
+        {/* Right Side: Form Card */}
+        <div className="bg-[#f0f2f5] p-8 md:p-10 rounded-[2.5rem] shadow-sm relative overflow-hidden">
+          {/* Decorative Grid Pattern Overlay */}
+          <div className="absolute inset-0 opacity-[0.05] pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/grid-me.png')]"></div>
+
+          <form 
+            action="https://formspree.io/f/mreonybj" 
+            method="POST" 
+            className="space-y-5 relative z-10"
+          >
+            {/* Full Name */}
+            <div className="flex flex-col space-y-1.5">
+              <label htmlFor="firstName" className="text-sm font-semibold text-gray-600 ml-1">
+                Full name
               </label>
               <input
                 type="text"
                 id="firstName"
                 name="firstName"
+                placeholder="Manu Arora"
+                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all bg-white text-gray-800"
                 required
-                className="border-b-2 border-black focus:outline-none py-1 bg-transparent text-black focus:border-blue-600 transition-colors"
-              />
-            </div>
-
-            {/* Last Name */}
-            <div className="flex flex-col group">
-              <label 
-                htmlFor="lastName" 
-                className="text-sm font-semibold mb-2 text-black transition-all duration-300 group-focus-within:translate-x-1 group-focus-within:text-blue-600"
-              >
-                Last Name
-              </label>
-              <input
-                type="text"
-                id="lastName"
-                name="lastName"
-                required
-                className="border-b-2 border-black focus:outline-none py-1 bg-transparent text-black focus:border-blue-600 transition-colors"
-              />
-            </div>
-
-            {/* Business Name */}
-            <div className="flex flex-col md:col-span-2 group">
-              <label 
-                htmlFor="businessName" 
-                className="text-sm font-semibold mb-2 text-black transition-all duration-300 group-focus-within:translate-x-1 group-focus-within:text-blue-600"
-              >
-                Business Name
-              </label>
-              <input
-                type="text"
-                id="businessName"
-                name="businessName"
-                required
-                className="border-b-2 border-black focus:outline-none py-1 bg-transparent text-black focus:border-blue-600 transition-colors"
-              />
-            </div>
-
-            {/* Contact Number */}
-            <div className="flex flex-col group">
-              <label 
-                htmlFor="contactNumber" 
-                className="text-sm font-semibold mb-2 text-black transition-all duration-300 group-focus-within:translate-x-1 group-focus-within:text-blue-600"
-              >
-                Contact Number
-              </label>
-              <input
-                type="tel"
-                id="contactNumber"
-                name="contactNumber"
-                className="border-b-2 border-black focus:outline-none py-1 bg-transparent text-black focus:border-blue-600 transition-colors"
               />
             </div>
 
             {/* Email Address */}
-            <div className="flex flex-col group">
-              <label 
-                htmlFor="email" 
-                className="text-sm font-semibold mb-2 text-black transition-all duration-300 group-focus-within:translate-x-1 group-focus-within:text-blue-600"
-              >
+            <div className="flex flex-col space-y-1.5">
+              <label htmlFor="email" className="text-sm font-semibold text-gray-600 ml-1">
                 Email Address
               </label>
               <input
                 type="email"
                 id="email"
                 name="email"
+                placeholder="support@aceternity.com"
+                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all bg-white text-gray-800"
                 required
-                className="border-b-2 border-black focus:outline-none py-1 bg-transparent text-black focus:border-blue-600 transition-colors"
               />
             </div>
 
-            {/* Business Address */}
-            <div className="flex flex-col md:col-span-1 group">
-              <label 
-                htmlFor="businessAddress" 
-                className="text-sm font-semibold mb-2 text-black transition-all duration-300 group-focus-within:translate-x-1 group-focus-within:text-blue-600"
-              >
-                Business Address
+            {/* Contact Number */}
+            <div className="flex flex-col space-y-1.5">
+              <label htmlFor="contactNumber" className="text-sm font-semibold text-gray-600 ml-1">
+                Contact Number
+              </label>
+              <input
+                type="tel"
+                id="contactNumber"
+                name="contactNumber"
+                placeholder="+1 (800) 123-4567"
+                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all bg-white text-gray-800"
+              />
+            </div>
+
+            {/* Business Name */}
+            <div className="flex flex-col space-y-1.5">
+              <label htmlFor="businessName" className="text-sm font-semibold text-gray-600 ml-1">
+                Business Name
               </label>
               <input
                 type="text"
-                id="businessAddress"
-                name="businessAddress"
-                className="border-b-2 border-black focus:outline-none py-1 bg-transparent text-black focus:border-blue-600 transition-colors"
+                id="businessName"
+                name="businessName"
+                placeholder="Aceternity Labs LLC"
+                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all bg-white text-gray-800"
               />
             </div>
 
-            {/* Zip and State Grid */}
-            <div className="grid grid-cols-2 gap-4">
-              <div className="flex flex-col group">
-                <label 
-                  htmlFor="zipCode" 
-                  className="text-sm font-semibold mb-2 text-center text-black transition-all duration-300 group-focus-within:scale-105 group-focus-within:text-blue-600"
-                >
-                  Zip Code
-                </label>
-                <input
-                  type="text"
-                  id="zipCode"
-                  name="zipCode"
-                  className="border-b-2 border-black focus:outline-none py-1 bg-transparent text-black focus:border-blue-600 transition-colors"
-                />
-              </div>
-              <div className="flex flex-col group">
-                <label 
-                  htmlFor="state" 
-                  className="text-sm font-semibold mb-2 text-center text-black transition-all duration-300 group-focus-within:scale-105 group-focus-within:text-blue-600"
-                >
-                  State
-                </label>
-                <input
-                  type="text"
-                  id="state"
-                  name="state"
-                  className="border-b-2 border-black focus:outline-none py-1 bg-transparent text-black focus:border-blue-600 transition-colors"
-                />
-              </div>
-            </div>
-
-            {/* Product Type (Dropdown) */}
-            <div className="flex flex-col group">
-              <label 
-                htmlFor="productType" 
-                className="text-sm font-semibold mb-2 text-black transition-all duration-300 group-focus-within:translate-x-1 group-focus-within:text-blue-600"
-              >
-                Product Type (eg. Window Signs)
-              </label>
-              <div className="relative">
-                <select
-                  id="productType"
-                  name="productType"
-                  className="w-full border-b-2 border-black focus:outline-none py-1 bg-transparent appearance-none text-black focus:border-blue-600 transition-colors"
-                >
-                  <option value="window-signs">Window Signs</option>
-                  <option value="other">Other</option>
-                </select>
-                <div className="absolute right-0 bottom-2 pointer-events-none text-black">
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-
-            <div className="flex items-end">
-              <label className="w-full border-2 border-black py-4 text-center cursor-pointer bg-[#d1d1d1] hover:bg-black hover:text-white transition-all duration-300 font-medium text-black">
-                Upload Files
-                <input type="file" name="attachment" className="hidden" />
-              </label>
-            </div>
-
-            {/* Requirements Textarea */}
-            <div className="flex flex-col md:col-span-2 group">
-              <label 
-                htmlFor="requirements" 
-                className="text-sm font-semibold mb-2 text-black transition-all duration-300 group-focus-within:translate-x-1 group-focus-within:text-blue-600"
-              >
-                Please Use This Area To Provide Any Other Information About Your Requirements
+            {/* Message Area */}
+            <div className="flex flex-col space-y-1.5">
+              <label htmlFor="requirements" className="text-sm font-semibold text-gray-600 ml-1">
+                Message
               </label>
               <textarea
                 id="requirements"
                 name="requirements"
-                rows={1}
-                className="border-b-2 border-black focus:outline-none py-1 bg-transparent resize-none overflow-hidden text-black focus:border-blue-600 transition-colors"
+                rows={4}
+                placeholder="Type your message here"
+                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all bg-white text-gray-800 resize-none"
               />
             </div>
-          </div>
 
-          {/* Submit Button */}
-          <div className="flex justify-end pt-4">
-            <button
-              type="submit"
-              className="w-full md:w-64 border-2 border-black py-3 px-8 bg-[#d1d1d1] hover:bg-black hover:text-white transition-all duration-300 font-semibold text-lg text-black"
-            >
-              Submit
-            </button>
-          </div>
-        </form>
+            {/* Submit Button */}
+            <div className="pt-2">
+              <button
+                type="submit"
+                className="bg-[#1a1a1a] text-white px-8 py-3 rounded-lg font-bold hover:bg-black transition-all shadow-md active:scale-95"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+
       </div>
     </div>
   );

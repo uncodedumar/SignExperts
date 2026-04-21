@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence, type Variants } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import Image from 'next/image';
 
 interface Testimonial {
   id: number;
@@ -109,9 +110,11 @@ export default function TestimonialSlider() {
                 variants={itemVariants}
                 className="w-24 h-24 bg-gray-100 rounded-2xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-500 shadow-lg"
               >
-                <img 
-                  src={testimonials[index].image} 
+                <Image
+                  src={testimonials[index].image}
                   alt={testimonials[index].author}
+                  width={96}
+                  height={96}
                   className="w-full h-full object-cover"
                 />
               </motion.div>
@@ -121,7 +124,7 @@ export default function TestimonialSlider() {
                 variants={itemVariants}
                 className="text-2xl md:text-4xl font-light text-black/90 max-w-3xl leading-snug tracking-tight"
               >
-                "{testimonials[index].text}"
+                &ldquo;{testimonials[index].text}&rdquo;
               </motion.p>
 
               {/* Author Name */}

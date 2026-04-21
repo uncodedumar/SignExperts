@@ -107,17 +107,17 @@ export default function ServicesAccordion() {
   const toggleSub = (id: string) => setActiveSub(activeSub === id ? null : id);
 
   return (
-    <div className="w-full bg-white py-20 px-4 min-h-screen">
+    <div className="w-full bg-white py-0 px-4">
       <div className="max-w-[1200px] mx-auto font-sans text-black">
         {SERVICES_DATA.map((section) => (
-          <section key={section.id} className="mb-16">
-            {/* Main Header - Removed border-b-[6px] and changed text to black */}
+          <section key={section.id} className="mb-0">
+            {/* Main Header */}
             <motion.div 
               whileHover={{ x: 10 }}
               onClick={() => toggleMain(section.id)}
-              className="flex justify-between items-center pb-6 cursor-pointer group transition-all"
+              className="flex justify-between items-center py-6 cursor-pointer group transition-all"
             >
-              <h1 className="text-5xl md:text-8xl font-black tracking-tighter uppercase">
+              <h1 className="text-2xl md:text-3xl font-black tracking-tighter uppercase">
                 {section.title}
               </h1>
               <motion.span 
@@ -145,7 +145,7 @@ export default function ServicesAccordion() {
                   <motion.p 
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
-                    className="text-2xl italic text-gray-500 border-l-4 border-[#ffc107] pl-6 my-12 max-w-3xl"
+                    className="text-2xl italic text-gray-500 border-l-4 border-[#ffc107] pl-6 my-6 max-w-3xl"
                   >
                     {section.quote}
                   </motion.p>
@@ -154,7 +154,7 @@ export default function ServicesAccordion() {
                     variants={containerVariants}
                     initial="hidden"
                     animate="visible"
-                    className="space-y-6 flex flex-col items-center" 
+                    className="space-y-6 flex flex-col items-center pb-12" 
                   >
                     {section.subServices.map((sub) => (
                       <motion.div 
@@ -166,7 +166,7 @@ export default function ServicesAccordion() {
                           onClick={() => toggleSub(sub.id)}
                           className="flex justify-between items-center p-8 cursor-pointer group/item"
                         >
-                          <h3 className="text-3xl font-bold tracking-tight group-hover/item:text-[#ffc107] transition-colors">
+                          <h3 className="text-2xl font-bold tracking-tight group-hover/item:text-[#ffc107] transition-colors">
                             {sub.title}
                           </h3>
                           <motion.div 
@@ -220,7 +220,7 @@ export default function ServicesAccordion() {
                                     {sub.description}
                                   </p>
                                   
-                                  <div className="flex items-center gap-6 pt-6">
+                                  <div className="flex items-center gap-6 pt-6 pb-4">
                                     <motion.button 
                                       whileHover={{ scale: 1.05 }}
                                       whileTap={{ scale: 0.95 }}

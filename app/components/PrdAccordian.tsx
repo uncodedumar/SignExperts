@@ -2,13 +2,20 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Plus, Mail, Phone } from 'lucide-react';
+import { Plus } from 'lucide-react';
+import Image from 'next/image';
 import { PrdData } from '../../lib/data';
 
-const ProductAccordion = () => {
-  const [openId, setOpenId] = useState<string | null>("acc-0");
-  // Fetching the main category data
-  const categoryData = PrdData["design-and-installation"];
+interface ProductAccordionProps {
+  slug: string;
+}
+
+const ProductAccordion = ({ slug }: ProductAccordionProps) => {
+  const normalizedSlug = decodeURIComponent(slug).trim().toLowerCase();
+  const categoryData = PrdData[normalizedSlug];
+  const [openId, setOpenId] = useState<string | null>(
+    categoryData?.accordions?.[0]?.id ?? "acc-0"
+  );
 
   const toggleAccordion = (id: string) => {
     setOpenId(openId === id ? null : id);
@@ -18,21 +25,21 @@ const ProductAccordion = () => {
     <section className="max-w-[100vw] overflow-x-hidden bg-white text-[#1a1a1a] font-sans selection:bg-black selection:text-white">
       <div className="max-w-[1600px] mx-auto px-6 md:px-12 py-24">
         <div className="flex flex-col gap-6">
-          {categoryData.accordions.map((acc, index) => (
+          {(categoryData?.accordions ?? []).map((acc, index) => (
             <div
               key={acc.id}
               className={`transition-all duration-700 ease-in-out border border-black/5 bg-white ${
                 openId === acc.id ? "rounded-[48px] shadow-2xl shadow-black/5" : "rounded-[24px]"
               } overflow-hidden`}
             >
-              {/* --- ACCORDION HEADER (Trigger) --- */}
+              {/* --- ACCORDION HEADER --- */}
               <button
                 onClick={() => toggleAccordion(acc.id)}
                 className="w-full flex items-center justify-between px-8 md:px-16 py-10 md:py-14 text-left group"
               >
                 <div className="flex items-center gap-8 md:gap-16">
                   <span className="text-sm font-mono text-black/20 font-bold">0{index + 1}</span>
-                  <h2 className="text-4xl md:text-[5vw] font-semibold tracking-[-0.03em] leading-none transition-transform duration-500 group-hover:translate-x-2">
+                  <h2 className="text-2xl md:text-[3vw] font-semibold tracking-[-0.03em] leading-none transition-transform duration-500 group-hover:translate-x-2">
                     {acc.title}
                   </h2>
                 </div>
@@ -58,20 +65,16 @@ const ProductAccordion = () => {
                     transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
                   >
                     <div className="px-8 md:px-16 pb-16">
-                      
-                      {/* Section Meta (Matches Top of Reference Image) */}
                       <div className="mb-12">
                         <p className="text-gray-500 text-lg mb-2">{acc.subheading || "Product Category"}</p>
                         <p className="text-gray-600 max-w-4xl text-xl leading-snug">
                           {acc.description}
                         </p>
-
-
                       </div>
 
                       <h3 className="text-2xl font-bold mb-8 uppercase tracking-tight">Our Products</h3>
 
-                      {/* --- PRODUCT GRID (The "100% Like Image" Style) --- */}
+                      {/* --- PRODUCT GRID --- */}
                       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {acc.products.map((product, idx) => (
                           <motion.div
@@ -81,17 +84,14 @@ const ProductAccordion = () => {
                             transition={{ delay: idx * 0.1 }}
                             className="group relative overflow-hidden rounded-3xl aspect-[4/5] bg-neutral-200 cursor-pointer"
                           >
-                            {/* Product Background Image */}
-                            <img
+                            <Image
                               src={product.imageUrl}
                               alt={product.title}
+                              fill
+                              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                             />
-                            
-                            {/* Dark Gradient Overlay */}
                             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
-
-                            {/* Text Content Overlay */}
                             <div className="absolute bottom-0 left-0 p-8 text-white w-full">
                               <h4 className="text-3xl font-bold mb-3 leading-tight">
                                 {product.title}

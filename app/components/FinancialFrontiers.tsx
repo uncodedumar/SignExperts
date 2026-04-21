@@ -89,7 +89,7 @@ const FinancialFrontiers = () => {
             variants={itemVariants}
             className="text-sm md:text-base text-gray-600 leading-relaxed max-w-sm"
           >
-            We believe in a minimalist, "less is more" philosophy where quality materials and clean lines do the talking. Our commitment to excellence ensures your legacy stays secured for years to come.
+            We believe in a minimalist, &quot;less is more&quot; philosophy where quality materials and clean lines do the talking. Our commitment to excellence ensures your legacy stays secured for years to come.
           </motion.p>
         </motion.div>
 
