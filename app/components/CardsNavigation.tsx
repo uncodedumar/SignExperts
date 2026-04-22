@@ -44,12 +44,12 @@ interface SignCategory {
 }
 
 const signCategories: SignCategory[] = [
-  { id: 1, title: "Way Finder & Safety Signs", image: "/ws.jpg", href: "/services/way-finder" },
-  { id: 2, title: "Vehicles Signs", image: "/pps.jpg", href: "/services/vehicle-signs" },
-  { id: 3, title: "Indoor Signs", image: "/iis.jpg", href: "/services/indoor-signs" },
+  { id: 1, title: "Way Finder & Safety Signs", image: "/signarama/signarama-usa-standard-safety-signage-banner-61a5c3a64e6a0.webp", href: "/services/way-finder" },
+  { id: 2, title: "Vehicles Signs", image: "/signarama/signarama-usa-vehicle-graphics-belmont-bruins-original-66982480691b0.jpg.jpeg", href: "/services/vehicle-signs" },
+  { id: 3, title: "Indoor Signs", image: "/signarama/signarama-usa-reception-square-61a5eeeadab88.jpg.jpeg", href: "/services/indoor-signs" },
   { id: 4, title: "Promotional Signs", image: "/ps.jpg", href: "/services/promotional-signs" },
-  { id: 5, title: "Illuminated Signs", image: "/is.jpg", href: "/services/illuminated-signs" },
-  { id: 6, title: "Non Illuminated Signs", image: "/nis.jpg", href: "/services/non-illuminated" },
+  { id: 5, title: "Illuminated Signs", image: "/signarama/signarama-usa-illuminated-signs-square-61a5c73aeaba5.webp", href: "/services/illuminated-signs" },
+  { id: 6, title: "Non Illuminated Signs", image: "/signarama/signarama-usa-window-graphics-square-61a5e9cac1c73.jpg.jpeg", href: "/services/non-illuminated" },
 ];
 
 export default function SignageGrid() {

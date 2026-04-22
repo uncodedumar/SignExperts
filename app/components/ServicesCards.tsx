@@ -3,14 +3,14 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { 
-  Cpu, 
+  PenTool, 
+  Palette, 
+  Search, 
   Layers, 
-  Layout, 
-  MessageSquare, 
-  BarChart3, 
-  Globe, 
-  Cloud, 
-  Zap 
+  MapPin, 
+  Settings, 
+  Wrench, 
+  Focus 
 } from 'lucide-react';
 
 interface FeatureProps {
@@ -54,67 +54,62 @@ const FeaturesSection = () => {
     offset: ["start start", "end end"]
   });
 
-  // Smoothly transition the background slide
   const x = useTransform(scrollYProgress, [0, 0.8], ["100%", "0%"]);
-  // Fade the header text color based on the background slide
   const textColor = useTransform(scrollYProgress, [0.4, 0.6], ["#ffffff", "#000000"]);
 
   const services = [
     {
-      icon: <Cpu size={24} />,
-      title: "Custom AI Models",
-      description: "Proprietary LLMs and machine learning solutions tailored to your specific enterprise datasets."
+      icon: <PenTool size={24} />,
+      title: "Sign Writing",
+      description: "Traditional and modern hand-crafted lettering techniques for a distinctive, professional finish."
     },
     {
-      icon: <MessageSquare size={24} />,
-      title: "Intelligent Chatbots",
-      description: "Next-gen conversational AI that handles complex logic, lead gen, and 24/7 customer support."
+      icon: <Palette size={24} />,
+      title: "Custom Signs",
+      description: "Tailor-made signage solutions designed from the ground up to match your unique brand requirements."
+    },
+    {
+      icon: <Search size={24} />,
+      title: "Brand Audit & Consultation",
+      description: "Expert analysis of your physical presence to ensure maximum visibility and brand consistency."
     },
     {
       icon: <Layers size={24} />,
-      title: "Full-Stack SaaS",
-      description: "Scalable software architectures built with modern stacks (Next.js, Node, Go) for high performance."
+      title: "Fabricated Signage",
+      description: "High-quality 3D lettering and structural signs built with premium materials for durability."
     },
     {
-      icon: <Layout size={24} />,
-      title: "UI/UX Design",
-      description: "Bold, authentic digital interfaces designed to maximize conversion and user retention."
+      icon: <MapPin size={24} />,
+      title: "Installations",
+      description: "Precision fitting and secure mounting across all environments, from retail fronts to high-rise locations."
     },
     {
-      icon: <Globe size={24} />,
-      title: "Web & Mobile",
-      description: "Seamless cross-platform applications across iOS, Android, and web environments."
+      icon: <Settings size={24} />,
+      title: "Sign Methodology",
+      description: "Strategic planning and technical workflows that ensure every project is executed with engineering excellence."
     },
     {
-      icon: <Cloud size={24} />,
-      title: "Cloud Infrastructure",
-      description: "Robust AWS/Azure deployments with automated scaling and enterprise-grade security."
+      icon: <Wrench size={24} />,
+      title: "Maintenance",
+      description: "Comprehensive upkeep and repair services to keep your signage looking sharp and performing optimally."
     },
     {
-      icon: <BarChart3 size={24} />,
-      title: "Growth Analytics",
-      description: "Data-driven performance marketing and automation to dominate your digital landscape."
-    },
-    {
-      icon: <Zap size={24} />,
-      title: "BPO Solutions",
-      description: "Elite technical outsourcing and support to help your business scale effortlessly."
+      icon: <Focus size={24} />,
+      title: "Creative Design",
+      description: "Conceptual visual identity and graphic design that transforms your ideas into impactful physical signs."
     }
   ];
 
   return (
-    // bg-[#08103a] set as primary. h-auto on mobile, h-[250vh] on desktop to allow scroll animation
     <section ref={containerRef} className="relative h-auto md:h-[250vh] bg-white md:bg-[#08103a] py-16 md:py-0">
       <div className="md:sticky md:top-0 md:h-screen flex items-center overflow-hidden">
         
-        {/* Sliding Contrast Background - Hidden on mobile to remove animation */}
         <motion.div 
           style={{ x }}
           className="hidden md:block absolute inset-0 bg-neutral-100 z-0"
         />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
-          {/* Section Headers */}
           <div className="mb-12 text-center">
             <motion.span 
               className="text-yellow-500 font-mono text-xs tracking-[0.3em] uppercase mb-4 block"
@@ -122,7 +117,6 @@ const FeaturesSection = () => {
               Capabilities
             </motion.span>
             <motion.h2 
-              // Mobile defaults to black text (on white bg), Desktop uses the transform color
               className="text-4xl md:text-6xl font-black tracking-tighter mb-6 text-black md:text-white"
               style={{ color: typeof window !== 'undefined' && window.innerWidth >= 768 ? textColor : '#000000' }}
             >
@@ -134,7 +128,6 @@ const FeaturesSection = () => {
             />
           </div>
 
-          {/* Cards Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
             {services.map((service, index) => (
               <FeatureCard 

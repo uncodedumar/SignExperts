@@ -128,7 +128,7 @@ const Navbar = () => {
             <Link href="/products/non-illuminated-signs" onClick={toggleMobileMenu}>Non-Illuminated Signs</Link>
             <Link href="/products/shop-signs" onClick={toggleMobileMenu}>Building Signs</Link>
             <Link href="/products/digital-led-solutions" onClick={toggleMobileMenu}>LED Signs</Link>
-            <Link href="/products/wayfinder-safety-signs" onClick={toggleMobileMenu}>Wayfinder & Safety Signs</Link>
+            <Link href="/products/wayfinder-and-saftey-signs" onClick={toggleMobileMenu}>Wayfinder & Safety Signs</Link>
             <Link href="/products/office-signs" onClick={toggleMobileMenu}>Office Signs</Link>
             <Link href="/products/vehicles-signs" onClick={toggleMobileMenu}>Vehicle Sign</Link>
             <Link href="/products/promotional-signs" onClick={toggleMobileMenu}>Promotional Sign</Link>

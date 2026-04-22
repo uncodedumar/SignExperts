@@ -12,28 +12,28 @@ interface FAQData {
 const faqsData: FAQData[] = [
   {
     id: 1,
-    question: "What services does Bricklix offer?",
-    answer: "At Bricklix, we specialize in digital creation that ignites passion and innovation. Our core services include custom software development, AI model integration, UI/UX design, web and mobile app development, branding, and digital illustrations."
+    question: "What services does Sign Experts IL offer?",
+    answer: "We specialize in high-impact visual communication. Our core services include custom outdoor and indoor signage, LED channel letters, monument signs, vehicle wraps, large-format printing, and comprehensive sign installation and maintenance."
   },
   {
     id: 2,
-    question: "How does Bricklix approach new client projects?",
-    answer: "We start with deep discovery sessions to understand your vision, goals, and challenges. From there, we build a custom roadmap — from concept to execution — ensuring you’re involved at every step."
+    question: "How does Sign Experts IL approach new signage projects?",
+    answer: "We begin with a detailed site survey and consultation to understand your brand and location requirements. Our team then handles everything from design and local permit acquisition to precision fabrication and professional installation."
   },
   {
     id: 3,
-    question: "What industries does Bricklix work with?",
-    answer: "Our team thrives on diversity. We’ve worked across tech, education, fashion, gaming, design, and AI-driven industries. If your project has innovation written all over it, we’re in."
+    question: "What industries does Sign Experts IL work with?",
+    answer: "Our expertise spans a wide range of sectors. We regularly partner with retail businesses, corporate offices, healthcare facilities, restaurants, and real estate developers to create signage that captures attention and drives foot traffic."
   },
   {
     id: 4,
-    question: "How long does it take to complete a project?",
-    answer: "Timelines depend on the project’s scope and complexity. A standard web design might take 2–4 weeks, while full-scale applications or AI systems can range from 2–6 months."
+    question: "How long does it take to complete a sign project?",
+    answer: "Timelines vary based on the project's scale and permit requirements. Simple vinyl graphics can be ready in a few days, while custom-fabricated electrical signs typically range from 3–6 weeks, including the permitting process."
   },
   {
     id: 5,
-    question: "Why should I choose Bricklix over other software agencies?",
-    answer: "Because Bricklix isn’t just about code — it’s about creating digital experiences that inspire. Our blend of artistic creativity, technical precision, and genuine passion makes us stand out."
+    question: "Why should I choose Sign Experts IL over other sign companies?",
+    answer: "Sign Experts IL combines craftsmanship with durable materials and expert local knowledge. We don't just make signs; we build brand landmarks designed to withstand the elements and make a lasting first impression."
   }
 ];
 
@@ -44,7 +44,7 @@ const FAQItem = ({ faq, isOpen, onToggle, index }: { faq: FAQData; isOpen: boole
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
       viewport={{ once: true }}
-      className={`group border-b border-gray-100 last:border-0 transition-all duration-500`}
+      className="group border-b border-gray-100 last:border-0 transition-all duration-500"
     >
       <button
         onClick={onToggle}
@@ -105,13 +105,14 @@ export default function FAQsSection() {
               Common <br /> <span className="text-gray-300 italic">Questions.</span>
             </h2>
             <p className="text-gray-500 text-lg md:text-xl max-w-sm leading-relaxed font-light">
-              Our strategies help businesses grow and exhibit themselves in the modern world. 
-              Find the clarity you need to start your journey.
+              Empowering brands to stand out in a crowded marketplace through precision design and strategic visibility. Your path to a clearer, bolder presence starts here.
             </p>
             
             <div className="mt-12 flex items-center gap-4 group cursor-pointer">
               <div className="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center group-hover:bg-black group-hover:border-black transition-all duration-300">
-                <svg className="w-5 h-5 text-black group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                <svg className="w-5 h-5 text-black group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
               </div>
               <span className="font-medium tracking-tight">Contact Support</span>
             </div>

@@ -39,7 +39,7 @@ const ProductAccordion = ({ slug }: ProductAccordionProps) => {
               >
                 <div className="flex items-center gap-8 md:gap-16">
                   <span className="text-sm font-mono text-black/20 font-bold">0{index + 1}</span>
-                  <h2 className="text-2xl md:text-[3vw] font-semibold tracking-[-0.03em] leading-none transition-transform duration-500 group-hover:translate-x-2">
+                  <h2 className="text-1xl md:text-[2vw] font-semibold tracking-[-0.03em] leading-none transition-transform duration-500 group-hover:translate-x-2">
                     {acc.title}
                   </h2>
                 </div>

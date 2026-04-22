@@ -64,7 +64,7 @@ interface SubService {
   title: string;
   highlight: string;
   description: string;
-  visualText: string;
+  visualImage: string; // Changed from visualText to visualImage
 }
 
 interface MainService {
@@ -80,11 +80,11 @@ const SERVICES_DATA: MainService[] = [
     title: 'Creative Services',
     quote: '"We\'re more than just sign makers. We\'re an extension of your marketing team."',
     subServices: [
-      { id: 'custom', highlight: 'Bespoke Solutions', title: 'Tailored for your Brand', description: 'Sign Experts specializes in custom signs for your brand! Bring your business to life with custom signage designed specifically for your unique space.', visualText: '[ Custom Sign Visual ]' },
-      { id: 'fab', highlight: 'Precision Engineering', title: 'Expert Sign Fabrication', description: 'Sophisticated cutting and printing technology to create outstanding signs and letters. We shape raw materials into high-impact physical structures.', visualText: '[ Fabrication Gallery ]' },
-      { id: 'design', highlight: 'Visual Strategy', title: 'Branding and Visibility', description: 'Professional signage begins long before the first cut. Our design services transform abstract ideas into high-performance, readable signage.', visualText: '[ Design Portfolio ]' },
-      { id: 'writing', highlight: 'The Human Touch', title: 'Art of Communication', description: 'Hand-finished detail meets modern brand precision. We apply high-clarity typography to glass shopfronts and modern vehicle fleets.', visualText: '[ Sign Writing Art ]' },
-      { id: 'audit', highlight: 'Strategic Growth', title: 'Expert Consultation', description: 'Identify critical gaps and visibility opportunities. We evaluate existing signage for consistency, durability, and brand alignment.', visualText: '[ Audit Report Visual ]' },
+      { id: 'custom', highlight: 'Bespoke Solutions', title: 'Sign Writings', description: 'Sign Experts specializes in custom signs for your brand! Bring your business to life with custom signage designed specifically for your unique space.', visualImage: '/signarama/signarama-usa-sunset-skatepark-outdoor-signs-original-65c12009bef73.jpg_2.jpeg' },
+      { id: 'fab', highlight: 'Precision Engineering', title: 'Custom Signs', description: 'Sophisticated cutting and printing technology to create outstanding signs and letters. We shape raw materials into high-impact physical structures.', visualImage: '/signarama/signarama-usa-cafe-restaurant-square-61a5efdf37379.jpg.jpeg' },
+      { id: 'design', highlight: 'Visual Strategy', title: 'Design', description: 'Professional signage begins long before the first cut. Our design services transform abstract ideas into high-performance, readable signage.', visualImage: '/signarama/signarama-usa-illuminated-signs-square-648b7160458ae.jpg.jpeg'  },
+      { id: 'writing', highlight: 'The Human Touch', title: 'Brand Audits & Consultaions', description: 'Hand-finished detail meets modern brand precision. We apply high-clarity typography to glass shopfronts and modern vehicle fleets.', visualImage: '/signarama/signarama-usa-channel-letter-installation-square-64b9364c807e3.webp' },
+      { id: 'audit', highlight: 'Strategic Growth', title: 'Fabricated Signage', description: 'Identify critical gaps and visibility opportunities. We evaluate existing signage for consistency, durability, and brand alignment.', visualImage: '/signarama/signarama-usa-professional-printing-services-48600977087-o-square-64b5c5cc4ff68.webp'},
     ]
   },
   {
@@ -92,9 +92,9 @@ const SERVICES_DATA: MainService[] = [
     title: 'Installation Services',
     quote: '"Precision from production to the final placement."',
     subServices: [
-      { id: 'install-act', highlight: 'On-Site Excellence', title: 'Professional Placement', description: 'Our expert installers ensure your signage is mounted safely, securely, and with perfect alignment. We handle everything from high-rise banners to delicate interior lettering.', visualText: '[ Installation Team ]' },
-      { id: 'methods', highlight: 'Built to Last', title: 'Quality Construction', description: 'Utilizing industry-leading techniques, we build durability into every project. From weather-resistant coatings to structural welding, our methods guarantee longevity.', visualText: '[ Technical Workshop ]' },
-      { id: 'repair', highlight: 'Longevity Strategy', title: 'Keeping You Shining', description: "Maintain your brand's image with our repair and maintenance services. We handle LED replacements, cleaning, and structural repairs to ensure your sign looks brand new for years.", visualText: '[ Maintenance Services ]' },
+      { id: 'install-act', highlight: 'On-Site Excellence', title: 'Professional Placement', description: 'Our expert installers ensure your signage is mounted safely, securely, and with perfect alignment. We handle everything from high-rise banners to delicate interior lettering.', visualImage: '/signarama/signarama-usa-manufacturing-square-61a5e2f85022f.webp' },
+      { id: 'methods', highlight: 'Built to Last', title: 'Signage Methods', description: 'Utilizing industry-leading techniques, we build durability into every project. From weather-resistant coatings to structural welding, our methods guarantee longevity.', visualImage: '/signarama/signarama-usa-installation-square-61a5d0404508b.webp' },
+      { id: 'repair', highlight: 'Longevity Strategy', title: 'Maintainences', description: "Maintain your brand's image with our repair and maintenance services. We handle LED replacements, cleaning, and structural repairs to ensure your sign looks brand new for years.", visualImage: '/signarama/signarama-usa-channel-letters-geico-square-6033d32d29d37.webp' },
     ]
   }
 ];
@@ -197,19 +197,23 @@ export default function ServicesAccordion() {
                                   transition={{ duration: 0.6, ease: "easeOut" }}
                                   className="w-full lg:w-1/2 h-[450px] bg-[#1a1a1a] rounded-3xl relative overflow-hidden flex items-center justify-center text-white/20 font-bold text-4xl group/img shadow-2xl"
                                 >
-                                  <span className="z-10">{sub.visualText}</span>
+                                  {/* Replaced visualText span with img tag */}
+                                  <img 
+                                    src={sub.visualImage} 
+                                    alt={sub.title} 
+                                    className="absolute inset-0 w-full h-full object-cover z-0" 
+                                  />
                                   <motion.div 
                                     animate={{ 
-                                      scale: [1, 1.1, 1],
-                                      rotate: [0, 2, 0]
+                                      scale: [1, 1.03, 1],
                                     }}
-                                    transition={{ duration: 10, repeat: Infinity }}
-                                    className="absolute inset-0 bg-gradient-to-tr from-[#ffc107]/20 to-transparent"
+                                    transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
+                                    className="absolute inset-0 bg-gradient-to-tr from-[#ffc107]/30 to-black/50 z-10"
                                   />
                                 </motion.div>
 
                                 {/* Content Area */}
-                                <div className="w-full lg:w-1/2 space-y-6">
+                                <div className="w-full lg:w-1/2 space-y-6 relative z-10">
                                   <span className="bg-[#ffc107]/10 text-[#ffc107] px-4 py-1 rounded-full font-bold uppercase text-xs tracking-[0.2em]">
                                     {sub.highlight}
                                   </span>
