@@ -126,7 +126,6 @@ const Navbar = () => {
             <p className="text-[#FFC107] text-base tracking-[0.2em] uppercase font-bold">Categories</p>
             <Link href="/products/illuminated-signs" onClick={toggleMobileMenu}>Illuminated Signs</Link>
             <Link href="/products/non-illuminated-signs" onClick={toggleMobileMenu}>Non-Illuminated Signs</Link>
-            <Link href="/products/shop-signs" onClick={toggleMobileMenu}>Building Signs</Link>
             <Link href="/products/digital-led-solutions" onClick={toggleMobileMenu}>LED Signs</Link>
             <Link href="/products/wayfinder-and-saftey-signs" onClick={toggleMobileMenu}>Wayfinder & Safety Signs</Link>
             <Link href="/products/office-signs" onClick={toggleMobileMenu}>Office Signs</Link>
