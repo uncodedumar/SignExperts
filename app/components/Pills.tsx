@@ -112,7 +112,7 @@ const ProductsPage: NextPage = () => {
       <style jsx>{`
         .page-container {
           min-height: 100vh;
-          background-color: #08103a;
+          background-color: #091242;
           color: #FFFFFF;
           font-family: 'Inter', sans-serif;
           padding: 80px 24px;

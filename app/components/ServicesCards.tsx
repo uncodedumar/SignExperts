@@ -60,7 +60,7 @@ const FeaturesSection = () => {
   const services = [
     {
       icon: <PenTool size={24} />,
-      title: "Sign Writing",
+      title: "Graphic Desining",
       description: "Traditional and modern hand-crafted lettering techniques for a distinctive, professional finish."
     },
     {
@@ -70,8 +70,8 @@ const FeaturesSection = () => {
     },
     {
       icon: <Search size={24} />,
-      title: "Brand Audit & Consultation",
-      description: "Expert analysis of your physical presence to ensure maximum visibility and brand consistency."
+      title: "Printing Services",
+      description: "Expert Printing of your physical presence to ensure maximum visibility and brand consistency."
     },
     {
       icon: <Layers size={24} />,
