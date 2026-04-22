@@ -84,7 +84,6 @@ const Navbar = () => {
             <div className="absolute top-full left-0 w-64 bg-[#050B33] border border-white/10 shadow-xl z-50 animate-in fade-in slide-in-from-top-2 duration-200">
               <Link href="/products/illuminated-signs" className="block px-4 py-3 hover:bg-[#FFC107] hover:text-[#050B33] transition-colors border-b border-white/5">Illuminated Signs</Link>
               <Link href="/products/non-illuminated-signs" className="block px-4 py-3 hover:bg-[#FFC107] hover:text-[#050B33] transition-colors border-b border-white/5">Non-Illuminated Signs</Link>
-              <Link href="/products/building-signs" className="block px-4 py-3 hover:bg-[#FFC107] hover:text-[#050B33] transition-colors">Building Signs</Link>
             </div>
           )}
         </div>
@@ -102,7 +101,7 @@ const Navbar = () => {
           </span>
           {isIndoorOpen && (
             <div className="absolute top-full left-0 w-64 bg-[#050B33] border border-white/10 shadow-xl z-50 animate-in fade-in slide-in-from-top-2 duration-200">
-              <Link href="/products/wayfinder-safety-signs" className="block px-4 py-3 hover:bg-[#FFC107] hover:text-[#050B33] transition-colors border-b border-white/5">Wayfinder & Safety Signs</Link>
+              <Link href="/products/wayfinder-and-saftey-signs" className="block px-4 py-3 hover:bg-[#FFC107] hover:text-[#050B33] transition-colors border-b border-white/5">Wayfinder & Safety Signs</Link>
               <Link href="/products/office-signs" className="block px-4 py-3 hover:bg-[#FFC107] hover:text-[#050B33] transition-colors">Office Signs</Link>
             </div>
           )}
