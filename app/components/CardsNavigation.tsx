@@ -44,7 +44,7 @@ interface SignCategory {
 }
 
 const signCategories: SignCategory[] = [
-  { id: 1, title: "Way Finder & Safety Signs", image: "/signarama/signarama-usa-standard-safety-signage-banner-61a5c3a64e6a0.webp", href: "/services/way-finder" },
+  { id: 1, title: "Digital Led Signs", image: "/signarama/Auto-Evaluators-Night-Discover-How-Digital-LED-Signs-Light-the-Way-To-Brand-Visibility-and-Profitability-.jpg", href: "/services/way-finder" },
   { id: 2, title: "Vehicles Signs", image: "/signarama/signarama-usa-vehicle-graphics-belmont-bruins-original-66982480691b0.jpg.jpeg", href: "/services/vehicle-signs" },
   { id: 3, title: "Indoor Signs", image: "/signarama/signarama-usa-reception-square-61a5eeeadab88.jpg.jpeg", href: "/services/indoor-signs" },
   { id: 4, title: "Promotional Signs", image: "/ps.jpg", href: "/services/promotional-signs" },
