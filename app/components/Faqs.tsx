@@ -114,7 +114,6 @@ export default function FAQsSection() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>
               </div>
-              <span className="font-medium tracking-tight">Contact Support</span>
             </div>
           </motion.div>
         </div>
