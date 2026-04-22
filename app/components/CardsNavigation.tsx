@@ -48,8 +48,8 @@ const signCategories: SignCategory[] = [
   { id: 2, title: "Vehicles Signs", image: "/signarama/signarama-usa-vehicle-graphics-belmont-bruins-original-66982480691b0.jpg.jpeg", href: "/services/vehicle-signs" },
   { id: 3, title: "Indoor Signs", image: "/signarama/signarama-usa-reception-square-61a5eeeadab88.jpg.jpeg", href: "/services/indoor-signs" },
   { id: 4, title: "Promotional Signs", image: "/ps.jpg", href: "/services/promotional-signs" },
-  { id: 5, title: "Illuminated Signs", image: "/signarama/signarama-usa-illuminated-signs-square-61a5c73aeaba5.webp", href: "/services/illuminated-signs" },
-  { id: 6, title: "Non Illuminated Signs", image: "/signarama/signarama-usa-window-graphics-square-61a5e9cac1c73.jpg.jpeg", href: "/services/non-illuminated" },
+  { id: 5, title: "Illuminated Signs", image: "/signarama/LED SIGN BOARD.jpg", href: "/services/illuminated-signs" },
+  { id: 6, title: "Non Illuminated Signs", image: "/signarama/signarama-usa-factory-and-industrial-square-61a5efccb32f8.jpg_3.jpeg", href: "/services/non-illuminated" },
 ];
 
 export default function SignageGrid() {
