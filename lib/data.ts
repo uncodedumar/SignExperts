@@ -165,11 +165,11 @@ export const PrdData: Record<string, PrdContent> = {
         description: "Remind people of distance and hygiene rules with these best practice safety signs, or Sign Experts can make something to your requirements.",
         products: [
           { title: "Window Graphics", description: "Turning underutilized storefronts and interior glass into high-impact visual displays", imageUrl: "https://images.unsplash.com/photo-1506744038136-46273834b3fb" },
-          { title: "Choroplast signs", description: "The go-to solution for businesses needing a balance of affordability and resilience.", imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f" },
-          { title: "Safety Signs", description: "Critical component of any operational environment, designed to mitigate risk.", imageUrl: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158" },
-          { title: "Window Decals", description: "Ultimate tool for converting glass storefronts into premium advertising space.", imageUrl: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0" },
-          { title: "Protection Screens", description: "Essential for maintaining a safe and professional interface between staff and customers.", imageUrl: "https://images.unsplash.com/photo-1503387762-592dea58ef21" },
-          { title: "Cough Screens", description: "Hygiene shields, commonly known as sneeze screens, for high-traffic environments.", imageUrl: "https://images.unsplash.com/photo-1581092160562-40aa08e78837" },
+          { title: "Choroplast signs", description: "The go-to solution for businesses needing a balance of affordability and resilience.", imageUrl: "/SIGNS/INDOOR/Way finder and safety signs/hygine and safety signs/choroplast signs/Screenshot 2026-04-23 at 4.37.10ΓÇ»PM.png" },
+          { title: "Safety Signs", description: "Critical component of any operational environment, designed to mitigate risk.", imageUrl: "/SIGNS/INDOOR/Way finder and safety signs/hygine and safety signs/safety signs/Screenshot 2026-04-23 at 4.39.31ΓÇ»PM.png" },
+          { title: "Window Decals", description: "Ultimate tool for converting glass storefronts into premium advertising space.", imageUrl: "/SIGNS/INDOOR/Way finder and safety signs/hygine and safety signs/window decals/Screenshot 2026-04-23 at 4.40.08ΓÇ»PM.png" },
+          { title: "Protection Screens", description: "Essential for maintaining a safe and professional interface between staff and customers.", imageUrl: "/SIGNS/INDOOR/Way finder and safety signs/hygine and safety signs/protection screens/Screenshot 2026-04-23 at 4.39.02ΓÇ»PM.png" },
+          { title: "Cough Screens", description: "Hygiene shields, commonly known as sneeze screens, for high-traffic environments.", imageUrl: "/SIGNS/INDOOR/Way finder and safety signs/hygine and safety signs/cough screens/Screenshot 2026-04-23 at 4.38.26ΓÇ»PM.png" },
         ]
       },
       {
@@ -178,8 +178,8 @@ export const PrdData: Record<string, PrdContent> = {
         subheading: "Logo and visual design integration",
         description: "Work with our design team to translate your brand guidelines into stunning physical assets that command attention.",
         products: [
-          { title: "Logo Fabrication", description: "3D dimensional logos crafted from acrylic, metal, or wood.", imageUrl: "https://images.unsplash.com/photo-1572044162444-ad60f128bde2" },
-          { title: "Brand Wall Graphics", description: "Full-scale vinyl wraps that tell your brand story on any interior wall.", imageUrl: "https://images.unsplash.com/photo-1497366216548-37526070297c" }
+          { title: "Logo Fabrication", description: "3D dimensional logos crafted from acrylic, metal, or wood.", imageUrl: "/SIGNS/INDOOR/Way finder and safety signs/customs brand identity/logo fabrications/Screenshot 2026-04-23 at 4.42.46ΓÇ»PM.png" },
+          { title: "Brand Wall Graphics", description: "Full-scale vinyl wraps that tell your brand story on any interior wall.", imageUrl:"/SIGNS/INDOOR/Way finder and safety signs/customs brand identity/brand wall graphics/Screenshot 2026-04-23 at 4.43.14ΓÇ»PM.png"  }
         ]
       },
       {
@@ -188,8 +188,8 @@ export const PrdData: Record<string, PrdContent> = {
         subheading: "Navigation and flow management",
         description: "Ensure a seamless visitor experience with intuitive mapping, directional arrows, and room identification signs.",
         products: [
-          { title: "Directory Boards", description: "Elegant slat systems or digital displays for building lobbies.", imageUrl: "https://images.unsplash.com/photo-1568244035171-8041c2c3666b" },
-          { title: "Floor Decals", description: "High-durability non-slip graphics for pathway guidance.", imageUrl: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4" }
+          { title: "Directory Boards", description: "Elegant slat systems or digital displays for building lobbies.", imageUrl: "/SIGNS/INDOOR/Way finder and safety signs/wayfinding and directional/directory boards/Screenshot 2026-04-23 at 4.44.58ΓÇ»PM.png" },
+          { title: "Floor Decals", description: "High-durability non-slip graphics for pathway guidance.", imageUrl: "/SIGNS/INDOOR/Way finder and safety signs/wayfinding and directional/floor decals/Screenshot 2026-04-23 at 4.45.28ΓÇ»PM.png" }
         ]
       },
       {
@@ -198,8 +198,8 @@ export const PrdData: Record<string, PrdContent> = {
         subheading: "24/7 brand visibility",
         description: "Stay visible day or night with energy-efficient LED solutions, including backlit letters and lightboxes.",
         products: [
-          { title: "LED Channel Letters", description: "Premium front-lit or halo-lit lettering for maximum impact.", imageUrl: "https://images.unsplash.com/photo-1563245372-f21724e3856d" },
-          { title: "Slim Lightboxes", description: "Ultra-thin profiles for high-end retail displays.", imageUrl: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853" }
+          { title: "LED Channel Letters", description: "Premium front-lit or halo-lit lettering for maximum impact.", imageUrl: "/SIGNS/INDOOR/Way finder and safety signs/iluminated signage/led channel letters/Screenshot 2026-04-23 at 4.48.00ΓÇ»PM.png" },
+          { title: "Slim Lightboxes", description: "Ultra-thin profiles for high-end retail displays.", imageUrl: "/SIGNS/INDOOR/Way finder and safety signs/iluminated signage/slim lightboxes/Screenshot 2026-04-23 at 4.47.14ΓÇ»PM.png" }
         ]
       },
       {
@@ -208,8 +208,8 @@ export const PrdData: Record<string, PrdContent> = {
         subheading: "Portable and modular displays",
         description: "Everything you need for a professional presence on the road, from pop-up banners to modular booth systems.",
         products: [
-          { title: "Roll-up Banners", description: "Lightweight, portable, and sets up in seconds.", imageUrl: "https://images.unsplash.com/photo-1540575467063-178a50c2df87" },
-          { title: "Fabric Backdrops", description: "Seamless, wrinkle-free graphics for event photography.", imageUrl: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678" }
+          { title: "Roll-up Banners", description: "Lightweight, portable, and sets up in seconds.", imageUrl: "/SIGNS/INDOOR/Way finder and safety signs/tradeshow and events/rollups banners/Screenshot 2026-04-23 at 4.53.02ΓÇ»PM.png" },
+          { title: "Fabric Backdrops", description: "Seamless, wrinkle-free graphics for event photography.", imageUrl: "/SIGNS/INDOOR/Way finder and safety signs./tradeshow and events/fabric backdrops/Screenshot 2026-04-23 at 4.52.32ΓÇ»PM.png" }
         ]
       },
       {
@@ -218,8 +218,8 @@ export const PrdData: Record<string, PrdContent> = {
         subheading: "Outdoor durability and impact",
         description: "Weather-resistant materials designed to withstand the elements while maintaining a premium look.",
         products: [
-          { title: "Pylon Signs", description: "Freestanding structures for maximum roadside visibility.", imageUrl: "https://images.unsplash.com/photo-1519608487953-e999c86e7455" },
-          { title: "Awnings & Canopies", description: "Combining functional shade with custom branding.", imageUrl: "https://images.unsplash.com/photo-1520690214124-2405c5217036" }
+          { title: "Pylon Signs", description: "Freestanding structures for maximum roadside visibility.", imageUrl: "/SIGNS/INDOOR/Way finder and safety signs/exterior storefronts/awnings canopies/Screenshot 2026-04-23 at 4.51.23ΓÇ»PM.png" },
+          { title: "Awnings & Canopies", description: "Combining functional shade with custom branding.", imageUrl: "/SIGNS/INDOOR/Way finder and safety signs/exterior storefronts/awnings canopies/Screenshot 2026-04-23 at 4.51.58ΓÇ»PM.png" }
         ]
       }
     ]
@@ -237,9 +237,9 @@ export const PrdData: Record<string, PrdContent> = {
         "subheading": "Dimensional LED Storefront Signage",
         "description": "Maximize brand depth with custom-fabricated 3D letters. Our dimensional signs offer superior visibility and a professional finish for modern retail and corporate exteriors.",
         "products": [
-          { "title": "Acrylic 3D Letters", "description": "Precision-cut acrylic lettering with internal LED modules for a vibrant, uniform glow.", "imageUrl": '/signarama/signarama-usa-installation-square-61a5d0404508b.webp'},
-          { "title": "Stainless Steel 3D Signs", "description": "High-durability metal letters with face-lit illumination for a premium architectural look.", "imageUrl": '/signarama/signarama-usa-illuminated-signs-square-648b7160458ae.jpg.jpeg'},
-          { "title": "Trimless 3D Letters", "description": "Sleek, modern design with no visible borders for a clean and seamless light output.", "imageUrl": '/signarama/signarama-usa-illuminated-3d-sign-brushed-gold-plated-square-61a5d2451c74b.webp' }
+          { "title": "Acrylic 3D Letters", "description": "Precision-cut acrylic lettering with internal LED modules for a vibrant, uniform glow.", "imageUrl": '/SIGNS/OUTDOOR/ILUMINATED/3D ILLUMINATED/ACRYLIC 3D LETTERS/download (1).jpeg'},
+          { "title": "Stainless Steel 3D Signs", "description": "High-durability metal letters with face-lit illumination for a premium architectural look.", "imageUrl": '/SIGNS/OUTDOOR/ILUMINATED/3D ILLUMINATED/Stainless Steel 3D Signs/download (2).jpeg'},
+          { "title": "Trimless 3D Letters", "description": "Sleek, modern design with no visible borders for a clean and seamless light output.", "imageUrl": '/SIGNS/OUTDOOR/ILUMINATED/3D ILLUMINATED/Trimless 3D Letters/download (4).jpeg' }
         ]
       },
       {
@@ -248,9 +248,9 @@ export const PrdData: Record<string, PrdContent> = {
         "subheading": "Classic & Modern Neon Signage",
         "description": "Capture the iconic glow of neon with our custom glass or LED neon flex options. Perfect for interior branding, restaurants, and high-traffic entertainment venues.",
         "products": [
-          { "title": "Custom Glass Neon", "description": "Traditional hand-crafted gas-filled tubes for an authentic vintage aesthetic and warm glow.", "imageUrl":  '/signarama/signarama-usa-illuminated-signs-square-61a5c73aeaba5.webp' },
-          { "title": "LED Neon Flex", "description": "Energy-efficient, durable, and flexible alternative to traditional neon with color-changing options.", "imageUrl":  '/signarama/signarama-usa-church-led-display-banner-63bc37b98ed27.webp' },
-          { "title": "Neon Art Displays", "description": "Bespoke neon wall art and logos designed to create Instagrammable moments in your space.", "imageUrl":  '/signarama/signarama-usa-owners-corp-square-61a5efe7433bd.jpg.jpeg' }
+          { "title": "Custom Glass Neon", "description": "Traditional hand-crafted gas-filled tubes for an authentic vintage aesthetic and warm glow.", "imageUrl":  '/SIGNS/OUTDOOR/ILUMINATED/NEON LIGHTS/Custom Glass Neon/download (5).jpeg' },
+          { "title": "LED Neon Flex", "description": "Energy-efficient, durable, and flexible alternative to traditional neon with color-changing options.", "imageUrl":  '/SIGNS/OUTDOOR/ILUMINATED/NEON LIGHTS/LED Neon Flex/' },
+          { "title": "Neon Art Displays", "description": "Bespoke neon wall art and logos designed to create Instagrammable moments in your space.", "imageUrl":  '/SIGNS/OUTDOOR/ILUMINATED/NEON LIGHTS/Neon Art Displays/DOWNLOAD.png' }
         ]
       },
       {
@@ -259,9 +259,9 @@ export const PrdData: Record<string, PrdContent> = {
         "subheading": "Programmable Electronic Message Centers",
         "description": "Communicate in real-time with high-resolution digital LED displays. Perfect for dynamic promotions, community updates, and versatile outdoor advertising.",
         "products": [
-          { "title": "Outdoor LED Displays", "description": "Weather-resistant, high-brightness screens for roadside visibility and large-scale messaging.", "imageUrl": "/signarama/signarama-usa-church-led-display-banner-63bc37b98ed27.webp" },
-          { "title": "Indoor Digital Posters", "description": "Slim, high-definition LED screens for retail promotions and interactive lobby directories.", "imageUrl": "/signarama/signarama-usa-digital-banner-60345fd90e8be.webp" },
-          { "title": "Scrolling LED Tickers", "description": "Dynamic text displays for stock updates, news feeds, or real-time event announcements.", "imageUrl": "/signarama/signarama-usa-etown-led-banner-630cfe3b8270f.webp" }
+          { "title": "Outdoor LED Displays", "description": "Weather-resistant, high-brightness screens for roadside visibility and large-scale messaging.", "imageUrl": "/SIGNS/OUTDOOR/ILUMINATED/Digital Led Signs/Outdoor LED Displays/download (7).jpeg" },
+          { "title": "Indoor Digital Posters", "description": "Slim, high-definition LED screens for retail promotions and interactive lobby directories.", "imageUrl": "/SIGNS/OUTDOOR/ILUMINATED/Digital Led Signs/Indoor Digital Posters/download (8).jpeg" },
+          { "title": "Scrolling LED Tickers", "description": "Dynamic text displays for stock updates, news feeds, or real-time event announcements.", "imageUrl": "/SIGNS/OUTDOOR/ILUMINATED/Digital Led Signs/Scrolling LED Tickers/Scrolling LED Tickers.jpeg" }
         ]
       },
       {
@@ -270,9 +270,9 @@ export const PrdData: Record<string, PrdContent> = {
         "subheading": "Backlit Cabinet & Fabric Signs",
         "description": "Ensure your message is seen 24/7 with professional light box cabinets. Our durable frames and high-quality graphics offer a cost-effective lighting solution.",
         "products": [
-          { "title": "Double-Sided Projecting Boxes", "description": "Maximize sidewalk visibility with illuminated blade signs that catch traffic from both directions.", "imageUrl": "/signarama/signarama-usa-pepper-brand-managers-lightbox-banner-61a5d18db247f.webp" },
-          { "title": "LED Fabric Lightboxes", "description": "Ultra-slim frames with tension fabric graphics for a vibrant, glare-free indoor display.", "imageUrl": "/signarama/signarama-usa-tender-gourmet-butchery-banner-61a5d52eab592.webp" },
-          { "title": "Aluminum Sign Cabinets", "description": "Heavy-duty outdoor light boxes featuring translucent acrylic faces and long-lasting LED kits.", "imageUrl": "/signarama/signarama-usa-ankeny-butter-sweet-lightbox-banner-6908f4d5c2017.webp" }
+          { "title": "Double-Sided Projecting Boxes", "description": "Maximize sidewalk visibility with illuminated blade signs that catch traffic from both directions.", "imageUrl": "/SIGNS/OUTDOOR/ILUMINATED/Light Box Signs/DS Projections/Screenshot 2026-04-22 at 11.09.03ΓÇ»PM.png" },
+          { "title": "LED Fabric Lightboxes", "description": "Ultra-slim frames with tension fabric graphics for a vibrant, glare-free indoor display.", "imageUrl": "/SIGNS/OUTDOOR/ILUMINATED/Light Box Signs/LED Fabric Lightboxes/2.png" },
+          { "title": "Aluminum Sign Cabinets", "description": "Heavy-duty outdoor light boxes featuring translucent acrylic faces and long-lasting LED kits.", "imageUrl": "/SIGNS/OUTDOOR/ILUMINATED/Light Box Signs/Aluminum Sign Cabinets/download (10).jpeg" }
         ]
       },
       {
@@ -281,9 +281,9 @@ export const PrdData: Record<string, PrdContent> = {
         "subheading": "Elegant Reverse Channel Lighting",
         "description": "Create a sophisticated 'halo' effect with reverse-lit channel letters. These signs cast a soft glow against the wall, perfect for high-end boutiques and corporate offices.",
         "products": [
-          { "title": "Halo-Lit Metal Letters", "description": "Premium brushed metal letters with rear-facing LEDs for a subtle, upscale atmospheric glow.", "imageUrl": "/signarama/signarama-usa-3d-front-backlit-shopfront-sign-banner-61a5e71ebf4f3.webp" },
-          { "title": "Backlit Logo Panels", "description": "Custom-cut metal panels with integrated backlighting for a modern, multi-dimensional look.", "imageUrl": "/signarama/signarama-usa-ramada-scarborough-banner-61a5e4b8cf991.webp" },
-          { "title": "RGB Halo Lighting", "description": "Smart LED systems that allow you to change the halo color via remote or mobile app.", "imageUrl": "/signarama/signarama-usa-led-signs-newcastle-banner-61a5e8decb8d6.webp" }
+          { "title": "Halo-Lit Metal Letters", "description": "Premium brushed metal letters with rear-facing LEDs for a subtle, upscale atmospheric glow.", "imageUrl": "/SIGNS/OUTDOOR/ILUMINATED/Halo lit/Halo-Lit Metal Letters/Screenshot 2026-04-22 at 11.16.36ΓÇ»PM.png" },
+          { "title": "Backlit Logo Panels", "description": "Custom-cut metal panels with integrated backlighting for a modern, multi-dimensional look.", "imageUrl": "/SIGNS/OUTDOOR/ILUMINATED/Halo lit/Backlit/Screenshot 2026-04-22 at 11.17.24ΓÇ»PM.png" },
+          { "title": "RGB Halo Lighting", "description": "Smart LED systems that allow you to change the halo color via remote or mobile app.", "imageUrl": "/SIGNS/OUTDOOR/ILUMINATED/Halo lit/RGB Halo Lighting/Screenshot 2026-04-22 at 11.21.11ΓÇ»PM.png" }
         ]
       },
       {
@@ -292,9 +292,9 @@ export const PrdData: Record<string, PrdContent> = {
         "subheading": "Standard & Custom Channel Lettering",
         "description": "The industry standard for commercial buildings. Our channel letters are custom-designed to match your font and brand colors with maximum brightness and clarity.",
         "products": [
-          { "title": "Front-Lit Channel Letters", "description": "The most popular choice for retail, featuring colorful acrylic faces that pop at night.", "imageUrl": "/signarama/signarama-usa-channel-letters-geico-square-6033d32d29d37.webp" },
-          { "title": "Dual-Lit Channel Signs", "description": "Hybrid lighting that illuminates both the face and the back for a striking visual impact.", "imageUrl": "/signarama/signarama-usa-tender-gourmet-butchery-banner-61a5d52eab592.webp" },
-          { "title": "Raceway Mounted Signs", "description": "Pre-assembled channel letters on a metal bar for easy installation and minimal building wall penetrations.", "imageUrl": "/signarama/signarama-usa-3d-front-backlit-shopfront-sign-banner-61a5e71ebf4f3.webp" }
+          { "title": "Front-Lit Channel Letters", "description": "The most popular choice for retail, featuring colorful acrylic faces that pop at night.", "imageUrl": "/SIGNS/OUTDOOR/ILUMINATED/Channel Signs/Front-Lit Channel Letters/Screenshot 2026-04-22 at 11.23.22ΓÇ»PM.png" },
+          { "title": "Dual-Lit Channel Signs", "description": "Hybrid lighting that illuminates both the face and the back for a striking visual impact.", "imageUrl": "/SIGNS/OUTDOOR/ILUMINATED/Channel Signs/Dual-Lit Channel Signs/images.jpeg" },
+          { "title": "Raceway Mounted Signs", "description": "Pre-assembled channel letters on a metal bar for easy installation and minimal building wall penetrations.", "imageUrl": "/SIGNS/OUTDOOR/ILUMINATED/Channel Signs/Raceway Mounted Signs/download (12).jpeg" }
         ]
       }
     ]
@@ -310,9 +310,9 @@ export const PrdData: Record<string, PrdContent> = {
         "subheading": "Compliant Braille and Wayfinding",
         "description": "Ensure your facility meets all legal requirements with high-quality ADA-compliant signage. We specialize in tactile lettering, Grade 2 Braille, and high-contrast designs.",
         "products": [
-          { "title": "Tactile Room IDs", "description": "Custom ADA signs with raised text and Braille for offices, restrooms, and exits.", "imageUrl": "/signarama/signarama-usa-monument-signs-original-61a5c3c48f7ba.webp" },
-          { "title": "Wayfinding Plaques", "description": "Accessible directional signage designed for high-traffic public environments.", "imageUrl": "/signarama/signarama-usa-monument-signs-original-61a5c3c48f7ba.webp" },
-          { "title": "Safety Evacuation Maps", "description": "Durable, high-contrast maps and emergency exit signs for building compliance.", "imageUrl": "/signarama/signarama-usa-monument-signs-original-61a5c3c48f7ba.webp" }
+          { "title": "Tactile Room IDs", "description": "Custom ADA signs with raised text and Braille for offices, restrooms, and exits.", "imageUrl": "/SIGNS/OUTDOOR/Non ILLUMINATED/ADA/Tactile Room IDs/a.png" },
+          { "title": "Wayfinding Plaques", "description": "Accessible directional signage designed for high-traffic public environments.", "imageUrl": "/SIGNS/OUTDOOR/Non ILLUMINATED/ADA/Wayfinding Plaques/a.png" },
+          { "title": "Safety Evacuation Maps", "description": "Durable, high-contrast maps and emergency exit signs for building compliance.", "imageUrl": "/SIGNS/OUTDOOR/Non ILLUMINATED/ADA/Safety Evacuation Maps/s.png" }
         ]
       },
       {
@@ -321,9 +321,9 @@ export const PrdData: Record<string, PrdContent> = {
         "subheading": "Non-Lit 3D Wall Signage",
         "description": "Add depth and texture to your brand without the need for electrical wiring. Ideal for reception areas, exterior facades, and architectural branding.",
         "products": [
-          { "title": "Flat-Cut Acrylic", "description": "Sleek, high-gloss letters available in various thicknesses and custom brand colors.", "imageUrl": "/signarama/signarama-usa-monument-signs-original-61a5c3c48f7ba.webp" },
+          { "title": "Flat-Cut Acrylic", "description": "Sleek, high-gloss letters available in various thicknesses and custom brand colors.", "imageUrl": "/SIGNS/OUTDOOR/Non ILLUMINATED/Dimensional Letters/Flat-Cut Acrylic/a.png" },
           { "title": "Metal Laminates", "description": "The look of solid metal at a fraction of the weight, perfect for professional lobbies.", "imageUrl": "/signarama/signarama-usa-monument-signs-original-61a5c3c48f7ba.webp" },
-          { "title": "High-Density Urethane", "description": "Weather-resistant, carved signs that mimic the texture of wood or stone.", "imageUrl": "/signarama/signarama-usa-monument-signs-original-61a5c3c48f7ba.webp" }
+          { "title": "High-Density Urethane", "description": "Weather-resistant, carved signs that mimic the texture of wood or stone.", "imageUrl": "/SIGNS/OUTDOOR/Non ILLUMINATED/Dimensional Letters/Metal Laminates sign/Screenshot 2026-04-22 at 11.38.09ΓÇ»PM.png" }
         ]
       },
       {
@@ -332,9 +332,9 @@ export const PrdData: Record<string, PrdContent> = {
         "subheading": "Versatile Site and Directional Signs",
         "description": "The perfect solution for business parks, construction sites, and real estate. Durable, professional, and easy to update.",
         "products": [
-          { "title": "Aluminum Site Signs", "description": "Heavy-duty double-post systems designed for long-term outdoor brand exposure.", "imageUrl": "/signarama/signarama-usa-monument-signs-original-61a5c3c48f7ba.webp" },
-          { "title": "M-Panel Real Estate Signs", "description": "Reinforced panels that offer a rigid, high-end look for commercial listings.", "imageUrl": "/signarama/signarama-usa-monument-signs-original-61a5c3c48f7ba.webp" },
-          { "title": "Directional Totems", "description": "Slim-profile post signs used to guide visitors through large campus layouts.", "imageUrl": "/signarama/signarama-usa-monument-signs-original-61a5c3c48f7ba.webp" }
+          { "title": "Aluminum Site Signs", "description": "Heavy-duty double-post systems designed for long-term outdoor brand exposure.", "imageUrl": "//SIGNS/OUTDOOR/Non ILLUMINATED/Posts and Panels Signs/Aluminum Site Signs/Screenshot 2026-04-22 at 11.43.15ΓÇ»PM.png" },
+          { "title": "M-Panel Real Estate Signs", "description": "Reinforced panels that offer a rigid, high-end look for commercial listings.", "imageUrl": "/SIGNS/OUTDOOR/Non ILLUMINATED/Posts and Panels Signs/M-Panel Real Estate Signs/Screenshot 2026-04-22 at 11.44.47ΓÇ»PM.png" },
+          { "title": "Directional Totems", "description": "Slim-profile post signs used to guide visitors through large campus layouts.", "imageUrl": "/SIGNS/OUTDOOR/Non ILLUMINATED/Posts and Panels Signs/Directional Totems/Screenshot 2026-04-22 at 11.46.01ΓÇ»PM.png" }
         ]
       },
       {
@@ -343,9 +343,9 @@ export const PrdData: Record<string, PrdContent> = {
         "subheading": "Portable Outdoor Promotional Displays",
         "description": "Catch the breeze and the attention of passersby. Our custom flags are lightweight, weather-resistant, and perfect for outdoor events.",
         "products": [
-          { "title": "Custom Teardrop Flags", "description": "Unique shape prevents wrapping and ensures your logo is always visible.", "imageUrl": "/signarama/signarama-usa-monument-signs-original-61a5c3c48f7ba.webp" },
-          { "title": "Feather Banners", "description": "Tall, slim promotional flags designed for maximum height and roadside impact.", "imageUrl": "/signarama/signarama-usa-monument-signs-original-61a5c3c48f7ba.webp" },
-          { "title": "Event Flags with Bases", "description": "Interchangeable flag systems with ground stakes or heavy-duty indoor bases.", "imageUrl": "/signarama/signarama-usa-monument-signs-original-61a5c3c48f7ba.webp" }
+          { "title": "Custom Teardrop Flags", "description": "Unique shape prevents wrapping and ensures your logo is always visible.", "imageUrl": "/SIGNS/OUTDOOR/Non ILLUMINATED/Teardrops flags/Customs/a.png" },
+          { "title": "Feather Banners", "description": "Tall, slim promotional flags designed for maximum height and roadside impact.", "imageUrl": "/SIGNS/OUTDOOR/Non ILLUMINATED/Teardrops flags/Feather/Screenshot 2026-04-22 at 11.49.08ΓÇ»PM.png" },
+          { "title": "Event Flags with Bases", "description": "Interchangeable flag systems with ground stakes or heavy-duty indoor bases.", "imageUrl": "/SIGNS/OUTDOOR/Non ILLUMINATED/Teardrops flags/Event Flags with Bases/Screenshot 2026-04-22 at 11.50.05ΓÇ»PM.png" }
         ]
       },
       {
@@ -354,9 +354,9 @@ export const PrdData: Record<string, PrdContent> = {
         "subheading": "High-Impact Large Format Graphics",
         "description": "From grand openings to seasonal sales, our vinyl banners offer a cost-effective way to get your message across in vibrant color.",
         "products": [
-          { "title": "Heavy-Duty Scrim Vinyl", "description": "Reinforced material designed to withstand wind and rain for outdoor use.", "imageUrl": "/signarama/signarama-usa-monument-signs-original-61a5c3c48f7ba.webp" },
-          { "title": "Mesh Banners", "description": "Perforated vinyl that allows wind to pass through, ideal for fences and scaffolding.", "imageUrl": "/signarama/signarama-usa-monument-signs-original-61a5c3c48f7ba.webp" },
-          { "title": "Retractable Banners", "description": "Portable pull-up stands for trade shows, presentations, and retail displays.", "imageUrl": "/signarama/signarama-usa-monument-signs-original-61a5c3c48f7ba.webp" }
+          { "title": "Heavy-Duty Scrim Vinyl", "description": "Reinforced material designed to withstand wind and rain for outdoor use.", "imageUrl": "/SIGNS/OUTDOOR/Non ILLUMINATED/Vinyl Banners/Heavy-Duty Scrim Vinyl/Screenshot 2026-04-22 at 11.52.49ΓÇ»PM.png" },
+          { "title": "Mesh Banners", "description": "Perforated vinyl that allows wind to pass through, ideal for fences and scaffolding.", "imageUrl": "/SIGNS/OUTDOOR/Non ILLUMINATED/Vinyl Banners/Mesh Banners/Screenshot 2026-04-22 at 11.53.40ΓÇ»PM.png" },
+          { "title": "Retractable Banners", "description": "Portable pull-up stands for trade shows, presentations, and retail displays.", "imageUrl": "/SIGNS/OUTDOOR/Non ILLUMINATED/Vinyl Banners/Retractable Banners/a.png" }
         ]
       },
       {
@@ -365,9 +365,9 @@ export const PrdData: Record<string, PrdContent> = {
         "subheading": "High-Rise Roadside Identity",
         "description": "Stand tall above the competition. Our non-illuminated pylon structures provide massive brand visibility for shopping centers and industrial parks.",
         "products": [
-          { "title": "Multi-Tenant Pylons", "description": "Large-scale structures featuring individual panels for multiple businesses.", "imageUrl": "/signarama/signarama-usa-monument-signs-original-61a5c3c48f7ba.webp" },
+          { "title": "Multi-Tenant Pylons", "description": "Large-scale structures featuring individual panels for multiple businesses.", "imageUrl": "/SIGNS/OUTDOOR/Non ILLUMINATED/Pylons/Multi-Tenant Pylons/a.png" },
           { "title": "Monolithic Pylons", "description": "Sleek, modern towers designed for a single corporate brand identity.", "imageUrl": "/signarama/signarama-usa-monument-signs-original-61a5c3c48f7ba.webp" },
-          { "title": "Reflective Pylon Graphics", "description": "Using high-intensity reflective vinyl for night visibility without electricity.", "imageUrl": "/signarama/signarama-usa-monument-signs-original-61a5c3c48f7ba.webp" }
+          { "title": "Reflective Pylon Graphics", "description": "Using high-intensity reflective vinyl for night visibility without electricity.", "imageUrl": "/SIGNS/OUTDOOR/Non ILLUMINATED/Pylons/Reflective Pylon Graphics/q.png" }
         ]
       },
       {
@@ -376,9 +376,9 @@ export const PrdData: Record<string, PrdContent> = {
         "subheading": "Low-Profile Architectural Landmarks",
         "description": "Make a permanent statement. Our monument signs are built from stone, brick, or high-end foam to blend seamlessly with your landscaping.",
         "products": [
-          { "title": "Brick & Stone Monuments", "description": "Traditional masonry signs that provide a sense of permanence and prestige.", "imageUrl": "/signarama/signarama-usa-monument-signs-original-61a5c3c48f7ba.webp" },
-          { "title": "Faux Stone EPS Signs", "description": "Lightweight, durable foam signs that look identical to real stone and masonry.", "imageUrl": "/signarama/signarama-usa-monument-signs-original-61a5c3c48f7ba.webp" },
-          { "title": "Contemporary Metal Monuments", "description": "Modern aluminum or steel monuments for a sharp, tech-forward brand image.", "imageUrl": "/signarama/signarama-usa-monument-signs-original-61a5c3c48f7ba.webp" }
+          { "title": "Brick & Stone Monuments", "description": "Traditional masonry signs that provide a sense of permanence and prestige.", "imageUrl": "//SIGNS/OUTDOOR/Non ILLUMINATED/Monument signs/Brick & Stone Monuments/Screenshot 2026-04-23 at 12.04.34ΓÇ»AM.png" },
+          { "title": "Faux Stone EPS Signs", "description": "Lightweight, durable foam signs that look identical to real stone and masonry.", "imageUrl": "/SIGNS/OUTDOOR/Non ILLUMINATED/Monument signs/Faux Stone EPS Signs/a.png" },
+          { "title": "Contemporary Metal Monuments", "description": "Modern aluminum or steel monuments for a sharp, tech-forward brand image.", "imageUrl": "/SIGNS/OUTDOOR/Non ILLUMINATED/Monument signs/Contemporary Metal Monuments/Screenshot 2026-04-23 at 12.05.17ΓÇ»AM" }
         ]
       },
       {
@@ -387,9 +387,9 @@ export const PrdData: Record<string, PrdContent> = {
         "subheading": "Economical Yard & Event Signage",
         "description": "The industry standard for temporary signage. Perfect for political campaigns, lawn care, and short-term event directions.",
         "products": [
-          { "title": "H-Stake Yard Signs", "description": "Affordable corrugated plastic signs that are easy to install in grass or soil.", "imageUrl": "/signarama/signarama-usa-monument-signs-original-61a5c3c48f7ba.webp" },
-          { "title": "Custom Die-Cut Coroplast", "description": "Signs cut to custom shapes for unique branding and promotional standees.", "imageUrl": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158" },
-          { "title": "Large Format Coroplast", "description": "Over-sized panels for construction site barriers or large outdoor displays.", "imageUrl": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0" }
+          { "title": "H-Stake Yard Signs", "description": "Affordable corrugated plastic signs that are easy to install in grass or soil.", "imageUrl": "/SIGNS/OUTDOOR/Non ILLUMINATED/Coroplast signs/H-Stake Yard Signs/s.png" },
+          { "title": "Custom Die-Cut Coroplast", "description": "Signs cut to custom shapes for unique branding and promotional standees.", "imageUrl": "/SIGNS/OUTDOOR/Non ILLUMINATED/Coroplast signs/Custom Die-Cut Coroplast/q.png" },
+          { "title": "Large Format Coroplast", "description": "Over-sized panels for construction site barriers or large outdoor displays.", "imageUrl": "/SIGNS/OUTDOOR/Non ILLUMINATED/Coroplast signs/Large Format Coroplast/e.png" }
         ]
       },
       {
@@ -398,9 +398,9 @@ export const PrdData: Record<string, PrdContent> = {
         "subheading": "Large-Scale Outdoor Advertising",
         "description": "Dominate the skyline. We design and install high-impact billboard graphics that reach thousands of daily commuters.",
         "products": [
-          { "title": "Highway Bulletins", "description": "Extra-large format displays designed for maximum readability from a distance.", "imageUrl": "https://images.unsplash.com/photo-1519608487953-e999c86e7455" },
-          { "title": "Poster Billboards", "description": "Standardized advertising panels for local street-level brand awareness.", "imageUrl": "https://images.unsplash.com/photo-1520690214124-2405c5217036" },
-          { "title": "Wall Murals & Wraps", "description": "Transform building exteriors into massive advertisements with vinyl wraps.", "imageUrl": "https://images.unsplash.com/photo-1505373877841-8d25f7d46678" }
+          { "title": "Highway Bulletins", "description": "Extra-large format displays designed for maximum readability from a distance.", "imageUrl": "/SIGNS/OUTDOOR/Non ILLUMINATED/Billboards/Highway Bulletins/e.png" },
+          { "title": "Poster Billboards", "description": "Standardized advertising panels for local street-level brand awareness.", "imageUrl": "/SIGNS/OUTDOOR/Non ILLUMINATED/Billboards/Poster Billboards/e.png" },
+          { "title": "Wall Murals & Wraps", "description": "Transform building exteriors into massive advertisements with vinyl wraps.", "imageUrl": "/SIGNS/OUTDOOR/Non ILLUMINATED/Billboards/Wall Murals/r.png" }
         ]
       },
       {
@@ -409,9 +409,9 @@ export const PrdData: Record<string, PrdContent> = {
         "subheading": "Regulatory and Informational Signage",
         "description": "Keep your parking lots and private roads safe. We provide DOT-compliant street signs, parking markers, and safety instructions.",
         "products": [
-          { "title": "Reflective Traffic Signs", "description": "Standardized stop, yield, and speed limit signs with high-visibility finishes.", "imageUrl": "https://images.unsplash.com/photo-1581092160562-40aa08e78837" },
-          { "title": "Custom Parking Signs", "description": "Branded reserved parking, handicap, and directional signs for your facility.", "imageUrl": "https://images.unsplash.com/photo-1503387762-592dea58ef21" },
-          { "title": "Street Name Plaques", "description": "Durable aluminum street identification signs for residential and commercial zones.", "imageUrl": "https://images.unsplash.com/photo-1506744038136-46273834b3fb" }
+          { "title": "Reflective Traffic Signs", "description": "Standardized stop, yield, and speed limit signs with high-visibility finishes.", "imageUrl": "/SIGNS/OUTDOOR/Non ILLUMINATED/Traffic Signs/Reflective Traffic Signs/d.png" },
+          { "title": "Custom Parking Signs", "description": "Branded reserved parking, handicap, and directional signs for your facility.", "imageUrl": "/SIGNS/OUTDOOR/Non ILLUMINATED/Traffic Signs/Custom Parking Signs/e.png" },
+          { "title": "Street Name Plaques", "description": "Durable aluminum street identification signs for residential and commercial zones.", "imageUrl": "/SIGNS/OUTDOOR/Non ILLUMINATED/Traffic Signs/Street Name Plaques/a.png" }
         ]
       }
     ]

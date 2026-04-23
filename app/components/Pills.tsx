@@ -137,7 +137,7 @@ const ProductsPage: NextPage = () => {
         .accent-line {
           width: 40px; 
           height: 2px; 
-          background-color: #6366F1; 
+          background-color:#ffb92d; 
           margin-bottom: 24px;
         }
 
@@ -182,7 +182,7 @@ const ProductsPage: NextPage = () => {
         .index-number {
           font-size: 14px; 
           font-family: monospace; 
-          color: #6366F1; 
+          color: #ffb92d; 
           margin-top: 8px;
         }
 
@@ -216,9 +216,9 @@ const ProductsPage: NextPage = () => {
         }
 
         .tag-link:hover {
-          background-color: #6366F1;
+          background-color: #ffb92d;
           color: white;
-          border-color: #6366F1;
+          border-color:#ffb92d;
         }
 
         .view-more-btn {
@@ -243,11 +243,11 @@ const ProductsPage: NextPage = () => {
 
         .group-card:hover {
           padding-left: 15px;
-          border-bottom-color: #6366F1;
+          border-bottom-color:#ffb92d;
         }
 
         .group-card:hover .category-title {
-          color: #6366F1;
+          color: #ffb92d;
         }
 
         /* Responsive Adjustments */
