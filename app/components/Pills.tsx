@@ -54,7 +54,7 @@ const ProductsPage: NextPage = () => {
           <div className="sidebar">
             <div className="accent-line" />
             <h1 className="main-title">
-              Crafting <br className="desktop-only" /> Visual <br className="desktop-only" /> Authority.
+              Crafting <br className="desktop-only" /> <span className='text-[#ffb92d]'>Visual</span> <br className="desktop-only" /> Authority.
             </h1>
             <p className="description">
               We don&apos;t just print signs; we engineer physical brand experiences through light, vinyl, and scale.
