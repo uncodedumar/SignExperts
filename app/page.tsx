@@ -14,10 +14,10 @@ export default function Home() {
 
       <HeroSection />
       <Quotation />
-      
-      <Pills />
+
+      <Pills />  <Cards />
       <ServicesCards />
-      <Cards />
+
       <CTA />
       <Imagee />
       <Form />
