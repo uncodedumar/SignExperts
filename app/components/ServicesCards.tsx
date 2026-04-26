@@ -101,7 +101,7 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section ref={containerRef} className="relative h-auto md:h-[250vh] bg-white md:bg-[#091242] py-16 md:py-0">
+    <section ref={containerRef} className="relative h-auto md:h-[250vh] bg-white md:bg-[#101b55] py-16 md:py-0">
       <div className="md:sticky md:top-0 md:h-screen flex items-center overflow-hidden">
         
         <motion.div 

@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Plus } from 'lucide-react';
 import Image from 'next/image';
-import { PrdData } from '../../lib/data';
+import { productsData } from '../../lib/data';
 
 interface ProductAccordionProps {
   slug: string;
@@ -12,9 +12,18 @@ interface ProductAccordionProps {
 
 const ProductAccordion = ({ slug }: ProductAccordionProps) => {
   const normalizedSlug = decodeURIComponent(slug).trim().toLowerCase();
-  const categoryData = PrdData[normalizedSlug];
+  const categoryData =
+    productsData.find((item) => item.slug.toLowerCase() === normalizedSlug) ??
+    productsData[0];
+  const accordions = (categoryData?.services ?? []).map((service, index) => ({
+    id: `acc-${index}`,
+    title: service.title,
+    subheading: 'Product Category',
+    description: service.description,
+    products: categoryData?.products ?? [],
+  }));
   const [openId, setOpenId] = useState<string | null>(
-    categoryData?.accordions?.[0]?.id ?? "acc-0"
+    accordions[0]?.id ?? "acc-0"
   );
 
   const toggleAccordion = (id: string) => {
@@ -25,7 +34,7 @@ const ProductAccordion = ({ slug }: ProductAccordionProps) => {
     <section className="max-w-[100vw] overflow-x-hidden bg-white text-[#1a1a1a] font-sans selection:bg-black selection:text-white">
       <div className="max-w-[1600px] mx-auto px-6 md:px-12 py-24">
         <div className="flex flex-col gap-6">
-          {(categoryData?.accordions ?? []).map((acc, index) => (
+          {accordions.map((acc, index) => (
             <div
               key={acc.id}
               className={`transition-all duration-700 ease-in-out border border-black/5 bg-white ${

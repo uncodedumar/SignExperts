@@ -13,22 +13,36 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-4 p-8 md:p-12 border-b md:border-b-0 md:border-r border-white/10 flex flex-col justify-between min-h-[350px]">
             <div className="space-y-8">
               <h3 className="text-[13px] opacity-60">Join the circle</h3>
-              <form className="relative group" onSubmit={(e) => e.preventDefault()}>
-                <input 
-                  type="email" 
-                  placeholder="EMAIL ADDRESS" 
-                  className="w-full bg-transparent border-b border-white/30 py-4 focus:border-white focus:outline-none transition-colors transition-all duration-300"
-                  required
-                />
-                <button type="submit" className="absolute right-0 bottom-4 hover:translate-x-2 transition-transform">
-                  —&gt;
-                </button>
-              </form>
+              <form 
+  action="https://formspree.io/f/mreonybj" 
+  method="POST" 
+  className="relative group mt-8"
+>
+  <input 
+    type="email" 
+    name="email" // Required for Formspree
+    placeholder="EMAIL ADDRESS" 
+    className="w-full bg-transparent border-b border-white/30 py-4 text-white placeholder:text-white/50 focus:border-white focus:outline-none transition-all duration-500 tracking-widest text-sm"
+    required
+  />
+  
+  <button 
+    type="submit" 
+    className="absolute right-0 bottom-4 group/btn flex items-center gap-3 text-white tracking-tighter font-light"
+  >
+    <span className="text-xs opacity-0 group-hover/btn:opacity-100 -translate-x-4 group-hover/btn:translate-x-0 transition-all duration-500 ease-out">
+      SUBMIT
+    </span>
+    <span className="text-2xl group-hover/btn:translate-x-2 transition-transform duration-500 ease-in-out">
+      —&gt;
+    </span>
+  </button>
+</form>
             </div>
 
             <div className="flex flex-col gap-4 lowercase text-[14px] normal-case tracking-normal">
-              <a href="mailto:hello@signexperts.com" className="hover:italic transition-all">hello@signexperts.com</a>
-              <p className="opacity-50">+1 (415) 840 4427</p>
+              <a href="mailto:hello@signexperts.com" className="hover:italic transition-all">sign.eexperts@gmail.com</a>
+              <p className="opacity-50">+1 929 392-8337</p>
             </div>
           </div>
 

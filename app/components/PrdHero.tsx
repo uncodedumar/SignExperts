@@ -2,8 +2,7 @@
 
 import React from 'react';
 import { motion, type Variants } from 'framer-motion';
-// Ensure these are exported from your data file
-import { PrdData } from '../../lib/data'; 
+import { productsData } from '../../lib/data';
 
 interface PrdSectionProps {
   slug: string;
@@ -50,14 +49,17 @@ const imageVariants: Variants = {
 };
 
 export default function PrdSection({ slug }: PrdSectionProps) {
-  // Fetch data based on the slug. 
-  // If slug doesn't exist, we fallback to 'design-and-installation' or a null check.
-  const content = PrdData[slug] || PrdData["design-and-installation"];
+  const normalizedSlug = decodeURIComponent(slug).trim().toLowerCase();
+  const content =
+    productsData.find((item) => item.slug.toLowerCase() === normalizedSlug) ??
+    productsData[0];
 
   // Guard clause if no data is found at all
   if (!content) return null;
 
-  const { imageUrl, title, description } = content;
+  const imageUrl = content.image;
+  const title = `${content.title} ${content.highlightTitle}`.trim();
+  const description = content.descriptionMain || content.descriptionSecondary;
 
   return (
     <motion.section

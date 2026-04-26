@@ -45,7 +45,7 @@ const imageVariants: Variants = {
 };
 
 export default function SupportSection() {
-  const { imageUrl, heading, subheading } = supportData;
+  const {  heading, subheading } = supportData;
 
   return (
     <motion.section
@@ -63,27 +63,7 @@ export default function SupportSection() {
         padding: '100px 20px', // Increased vertical padding for breathability
       }}
     >
-      {/* Animated Image Header */}
-      <motion.div
-        variants={imageVariants}
-        whileHover={{ 
-          scale: 1.02,
-          transition: { duration: 0.6, ease: "easeOut" }
-        }}
-        style={{
-          width: '90%', 
-          maxWidth: '1400px', 
-          height: '450px',
-          margin: '0 auto 60px auto',
-          backgroundImage: `url(${imageUrl})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          borderRadius: '24px', // Slightly rounder for modern look
-          overflow: 'hidden',
-          position: 'relative',
-          boxShadow: '0 25px 50px -12px rgba(0,0,0,0.1)',
-        }}
-      />
+     
 
       {/* Text Content */}
       <div style={{ maxWidth: '1100px', margin: '0 auto' }}>

@@ -5,9 +5,10 @@ import { motion, type Variants } from 'framer-motion';
 
 const FinancialFrontiers = () => {
   const pillars = [
-    { id: "01", title: "Architectural Precision" },
-    { id: "02", title: "Innovative Technology" },
-    { id: "03", title: "Strategic Brand Placement" },
+    { id: "04", title: "Masterful Craftsmanship" },
+    { id: "05", title: "High-Impact Visibility" },
+    { id: "06", title: "Seamless Concept-to-Completion" },
+    { id: "07", title: "Distinguished Brand Identity" }
   ];
 
   // Animation variants for the container to stagger children
@@ -43,7 +44,8 @@ const FinancialFrontiers = () => {
             variants={itemVariants}
             className="text-4xl md:text-5xl font-medium tracking-tight leading-tight max-w-md"
           >
-            Exploring Tomorrow’s <span className="text-[#D4AF37]">Financial</span> Frontiers
+           Your Partner in 
+           <span className="text-[#D4AF37]"> Visual </span>Communications
           </motion.h2>
 
           <div className="space-y-0">
@@ -87,9 +89,9 @@ const FinancialFrontiers = () => {
 
           <motion.p 
             variants={itemVariants}
-            className="text-sm md:text-base text-gray-600 leading-relaxed max-w-sm"
+            className="text-sm md:text-base text-gray-600 leading-relaxed max-w-3xl"
           >
-            We believe in a minimalist, &quot;less is more&quot; philosophy where quality materials and clean lines do the talking. Our commitment to excellence ensures your legacy stays secured for years to come.
+            We start with your goals—whether it's building brand awareness, launching a new product, or increasing your visibility—and develop a comprehensive strategy to meet them. You don’t just receive signs; you get a plan that leverages our expertise in digital displays, content creation, graphic design and more, to help you connect with your audience and drive results.
           </motion.p>
         </motion.div>
 

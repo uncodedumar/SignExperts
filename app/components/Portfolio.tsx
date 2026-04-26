@@ -1,161 +1,83 @@
 "use client";
 
-import React, { useState } from 'react';
-import { motion, useSpring, useMotionValue, type Variants, AnimatePresence } from 'framer-motion';
+import React from 'react';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 interface Project {
   id: string;
   title: string;
   image: string;
+  category: string;
 }
 
 const projects: Project[] = [
-  { id: "01", title: "Project One", image: "/a.jpg" },
-  { id: "02", title: "Project Two", image: "/b.jpg" },
-  { id: "03", title: "Project Three", image: "/c.jpg" },
-  { id: "04", title: "Project Four", image: "/g1.jpg" },
-  { id: "05", title: "Project Five", image: "/g2.jpg" },
-  { id: "06", title: "Project Six", image: "/o.jpg" },
+  { id: "01", title: "Outdoor Signage", image: "/a.jpg", category: "Illuminated" },
+  { id: "02", title: "Custom LED", image: "/b.jpg", category: "Digital" },
+  { id: "03", title: "Vehicle Wrap", image: "/c.jpg", category: "Fleet" },
+  { id: "04", title: "Wayfinding", image: "/g1.jpg", category: "Indoor" },
+  { id: "05", title: "Office Graphics", image: "/g2.jpg", category: "Interior" },
+  { id: "06", title: "Pylon Signs", image: "/o.jpg", category: "Industrial" },
 ];
 
-const containerVariants: Variants = {
-  initial: {},
-  animate: {
-    transition: { staggerChildren: 0.1 },
-  },
-};
-
-const itemVariants: Variants = {
-  initial: { opacity: 0, y: 20 },
-  animate: { 
-    opacity: 1, 
-    y: 0,
-    transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] }
-  },
-};
-
 export default function PortfolioSection() {
-  const [activeProjectId, setActiveProjectId] = useState<string | null>(null);
-  
-  const mouseX = useMotionValue(0);
-  const mouseY = useMotionValue(0);
-
-  const springConfig = { damping: 25, stiffness: 150 };
-  const x = useSpring(mouseX, springConfig);
-  const y = useSpring(mouseY, springConfig);
-
-  const handleMouseMove = (e: React.MouseEvent) => {
-    // Offset so the image centers on the cursor
-    mouseX.set(e.clientX - 150); 
-    mouseY.set(e.clientY - 200);
-  };
-
-  const activeProject = projects.find(p => p.id === activeProjectId);
-
   return (
-    <section 
-      className="py-24 px-4 bg-black min-h-screen cursor-default overflow-hidden select-none"
-      onMouseMove={handleMouseMove}
-    >
+    <section className="py-24 px-6 bg-[#101b55] min-h-screen">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-medium mb-16 text-white/50">Our Portfolio</h2>
-        
-        <motion.div 
-          variants={containerVariants}
-          initial="initial"
-          animate="animate"
-          className="border-t border-white/10"
-        >
-          {projects.map((project) => {
-            const isActive = activeProjectId === project.id;
+        {/* Header */}
+        <div className="mb-16">
+          <h2 className="text-5xl font-black text-white uppercase italic tracking-tighter">
+            Our <span className="text-[#ffb92d] underline">Work</span>
+          </h2>
+          <p className="text-blue-200 mt-4 max-w-xl">
+            Explore our latest projects across various industries, from massive outdoor billboards to precision-engineered indoor branding.
+          </p>
+        </div>
 
-            return (
-              <motion.div
-                key={project.id}
-                variants={itemVariants}
-                // Desktop: Hover state
-                onMouseEnter={() => setActiveProjectId(project.id)}
-                onMouseLeave={() => setActiveProjectId(null)}
-                // Mobile: Toggle state on tap
-                onClick={() => setActiveProjectId(isActive ? null : project.id)}
-                className="group relative border-b border-white/10 py-10 md:py-16 flex flex-col md:flex-row items-start md:items-center justify-between overflow-hidden cursor-pointer"
-              >
-                {/* White Background Slide */}
-                <motion.div 
-                  className="absolute inset-0 bg-white z-0 hidden md:block"
-                  initial={{ x: "-100%" }}
-                  animate={{ x: isActive ? "0%" : "-100%" }}
-                  transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+        {/* Project Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project, idx) => (
+            <motion.div
+              key={project.id}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: idx * 0.1 }}
+              whileHover={{ y: -10 }}
+              className="group bg-white border-2 border-black rounded-3xl overflow-hidden shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[4px] hover:translate-y-[4px] transition-all cursor-pointer"
+            >
+              {/* Image Container */}
+              <div className="relative h-64 w-full overflow-hidden border-b-2 border-black">
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
+               
+              </div>
 
-                <div className="relative z-10 flex items-baseline gap-8 px-4 w-full">
-                  <span className={`text-sm md:text-lg font-light transition-colors duration-300 ${
-                    isActive ? "text-black/40 md:text-black/40" : "text-white/30"
-                  }`}>
-                    {project.id}
-                  </span>
-                  <h3 className={`text-4xl md:text-7xl font-normal transition-all duration-300 ${
-                    isActive ? "text-white md:text-black translate-x-0 md:translate-x-6" : "text-white/80"
-                  }`}>
-                    {project.title}
-                  </h3>
+              {/* Content Box */}
+              <div className="p-6 bg-white">
+                <div className="flex justify-between items-center">
+                  <div>
+    
+                    <h3 className="text-2xl font-black text-gray-900 uppercase italic leading-tight mt-1">
+                      {project.title}
+                    </h3>
+                  </div>
+                  <div className="w-12 h-12 rounded-full border-2 border-black flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                    
+                  </div>
                 </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
 
-                {/* Mobile-Only Image Reveal (Accordian style) */}
-                <AnimatePresence>
-                  {isActive && (
-                    <motion.div
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: "auto", opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
-                      className="relative z-10 w-full px-4 mt-6 md:hidden overflow-hidden"
-                    >
-                      <Image
-                        src={project.image}
-                        alt={project.title}
-                        width={800}
-                        height={1000}
-                        className="w-full aspect-[4/5] object-cover rounded-lg"
-                      />
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </motion.div>
-            );
-          })}
-        </motion.div>
+        {/* Bottom Call to Action */}
+      
       </div>
-
-      {/* Desktop-Only Floating Image */}
-      <motion.div
-        style={{
-          position: "fixed",
-          left: x,
-          top: y,
-          pointerEvents: "none",
-          width: 300,
-          height: 400,
-          zIndex: 50,
-        }}
-        className="hidden md:block rounded-lg overflow-hidden shadow-2xl"
-        initial={{ scale: 0, opacity: 0 }}
-        animate={{ 
-          scale: activeProject ? 1 : 0.8, 
-          opacity: activeProject ? 1 : 0 
-        }}
-        transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-      >
-        {activeProject && (
-          <Image
-            src={activeProject.image}
-            alt={activeProject.title}
-            width={300}
-            height={400}
-            className="w-full h-full object-cover"
-          />
-        )}
-      </motion.div>
     </section>
   );
 }

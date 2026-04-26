@@ -27,6 +27,7 @@ const SignageSection = () => {
     window.addEventListener("resize", checkMobile);
 
     const handleMouseMove = (e: MouseEvent) => {
+      // Logic only runs if not on mobile
       if (window.innerWidth < 768) return;
 
       mouseX.set(e.clientX);
@@ -49,7 +50,7 @@ const SignageSection = () => {
   }, [mouseX, mouseY, nudgeX, nudgeY]);
 
   const textVariants: Variants = {
-    rest: { y: isMobile ? 0 : 20, opacity: isMobile ? 1 : 0 },
+    rest: { y: 20, opacity: 0 },
     hover: { 
       y: 0, 
       opacity: 1,
@@ -58,11 +59,12 @@ const SignageSection = () => {
   };
 
   return (
-    <section className="relative w-full flex flex-col items-center justify-center py-12 md:py-24 bg-white font-sans overflow-hidden">
+    /* hidden md:flex ensures the entire section is removed from the DOM on mobile */
+    <section className="relative w-full hidden md:flex flex-col items-center justify-center py-24 bg-white font-sans overflow-hidden">
       
-      {/* Octagon Cursor Follower - Hidden on Mobile */}
+      {/* Octagon Cursor Follower */}
       <motion.div
-        className="fixed top-0 left-0 w-12 h-12 pointer-events-none z-50 mix-blend-difference hidden md:block"
+        className="fixed top-0 left-0 w-12 h-12 pointer-events-none z-50 mix-blend-difference"
         style={{
           x: cursorX,
           y: cursorY,
@@ -73,20 +75,20 @@ const SignageSection = () => {
         }}
       />
 
-      <div className="w-full px-4 md:px-8">
+      <div className="w-full px-8">
         <motion.div 
           ref={containerRef}
-          className="relative w-full aspect-[4/5] md:aspect-[21/9] overflow-hidden rounded-sm shadow-2xl md:cursor-none group"
-          initial={isMobile ? "hover" : "rest"}
-          whileHover={isMobile ? "" : "hover"}
-          style={isMobile ? {} : { x: nudgeX, y: nudgeY }}
+          className="relative w-full aspect-[21/9] overflow-hidden rounded-sm shadow-2xl cursor-none group"
+          initial="rest"
+          whileHover="hover"
+          style={{ x: nudgeX, y: nudgeY }}
         >
           {/* Main Image */}
           <motion.div
             className="w-full h-full"
             variants={{
               rest: { scale: 1 },
-              hover: { scale: 1.1 }
+              hover: { scale: 1.05 }
             }}
             transition={{ duration: 0.8, ease: [0.33, 1, 0.68, 1] }}
           >
@@ -97,22 +99,22 @@ const SignageSection = () => {
               className="object-cover"
               priority
             />
-            {/* Dark Overlay - Constant on mobile, transition on desktop */}
-            <div className={`absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent transition-opacity duration-500 ${isMobile ? 'opacity-100' : 'opacity-90 group-hover:opacity-80'}`} />
+            {/* Dark Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-90 group-hover:opacity-80 transition-opacity duration-500" />
           </motion.div>
 
           {/* Text Content */}
-          <div className="absolute inset-0 flex flex-col justify-end p-6 md:p-16">
+          <div className="absolute inset-0 flex flex-col justify-end p-16">
             <motion.div variants={textVariants} className="max-w-3xl">
-              <p className="text-white text-2xl md:text-4xl font-semibold leading-tight tracking-tight drop-shadow-lg">
+              <p className="text-white text-4xl font-semibold leading-tight tracking-tight drop-shadow-lg">
                 Your signs should work as hard as you do.
               </p>
               <motion.p 
                 variants={{
-                    rest: { opacity: isMobile ? 1 : 0, x: isMobile ? 0 : -10 },
+                    rest: { opacity: 0, x: -10 },
                     hover: { opacity: 1, x: 0, transition: { delay: 0.1 } }
                 }}
-                className="text-white/90 text-base md:text-xl mt-4 font-light max-w-xl"
+                className="text-white/90 text-xl mt-4 font-light max-w-xl"
               >
                 Quality signs attract new customers, brand your location and turn foot traffic into sales.
               </motion.p>

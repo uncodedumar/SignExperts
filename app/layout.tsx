@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import LoadingBar from "./components/Loading";
 import Navigation from "./components/Navbar";
+import NavigationMob from "./components/NavbarMob";
+
 import Footer from './components/Footer';
 
 
@@ -38,6 +40,7 @@ export default function RootLayout({
       <LoadingBar>
           <>
             <Navigation />
+            <NavigationMob />
             {children}
             
             <Footer />

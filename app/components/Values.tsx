@@ -5,41 +5,39 @@ import { motion, useInView, type Variants } from "framer-motion";
 
 const processSteps = [
   {
-    id: "01",
-    description: "We take the time to understand your business before creating the right sign for your space. We're happy to meet you on site or at our showroom.",
+    title: "Consultative Discovery",
+    description: "We dive deep into your brand’s DNA before the first sketch is made. Our team meets you on-site to ensure the final product aligns with your environment.",
   },
   {
-    id: "02",
-    description: "Each sign is designed and crafted at your local location by our graphic designers and expert production team.",
+    title: "Precision Production",
+    description: "Your signage is designed by award-winning artists and crafted by our expert team using state-of-the-art technology and premium materials.",
   },
   {
-    id: "03",
-    description: "A dedicated account manager keeps you informed every step of the way, providing personal service and ensuring a hassle-free process.",
+    title: "Project Stewardship",
+    description: "Experience a high-touch process with a dedicated account manager providing real-time updates and handling all logistical complexities.",
   },
   {
-    id: "04",
-    description: "We will contact you to arrange collection or to schedule a time for our specialists to install your sign.",
-  },
+    title: "Expert Installation",
+    description: "Our certified specialists ensure your sign is mounted securely and positioned for maximum visibility and long-term brand impact.",
+  }
 ];
 
-// Smooth staggered container
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.2,
-      delayChildren: 0.3,
+      staggerChildren: 0.15,
+      delayChildren: 0.2,
     },
   },
 };
 
-// Elegant slide-up for items
 const itemVariants: Variants = {
   hidden: { 
     opacity: 0, 
-    y: 40,
-    filter: "blur(4px)" 
+    y: 30,
+    filter: "blur(8px)" 
   },
   visible: { 
     opacity: 1, 
@@ -47,40 +45,47 @@ const itemVariants: Variants = {
     filter: "blur(0px)",
     transition: { 
       duration: 0.8, 
-      ease: [0.215, 0.61, 0.355, 1] // Custom cubic-bezier for smoothness
+      ease: [0.215, 0.61, 0.355, 1] 
     } 
   },
 };
 
 export default function SignProcessSection() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.2 });
+  const isInView = useInView(ref, { once: true, amount: 0.1 });
 
   return (
     <section 
       ref={ref}
       className="bg-white py-24 px-8 md:px-16 lg:px-24 font-sans text-black overflow-hidden"
     >
-      {/* Main Headings */}
-      <div className="mb-24 space-y-6">
+      {/* Header Section */}
+      <div className="mb-20 space-y-8">
         <motion.h1 
-          initial={{ opacity: 0, x: -30 }}
-          animate={isInView ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 1, ease: "easeOut" }}
-          className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[0.9]"
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8 }}
+          className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tighter leading-[0.85] uppercase"
         >
-          Art Comes First – <br /> 
-          <span className="text-gray-400 italic">Creative Above All</span>
+          Art Comes First. <br /> 
+          <span className="text-gray-300 italic font-light lowercase tracking-normal">Creative above all.</span>
         </motion.h1>
         
-        <motion.h2 
+        <motion.div 
+          initial={{ width: 0 }}
+          animate={isInView ? { width: "100px" } : {}}
+          transition={{ duration: 1, delay: 0.5 }}
+          className="h-[2px] bg-black"
+        />
+        
+        <motion.p
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
-          transition={{ duration: 1, delay: 0.5 }}
-          className="text-2xl md:text-4xl font-light tracking-wide border-l-4 border-black pl-6"
+          transition={{ duration: 1, delay: 0.6 }}
+          className="text-sm uppercase tracking-[0.3em] font-medium text-gray-500"
         >
-          Process at Sign Experts
-        </motion.h2>
+          Our Process at Sign Experts
+        </motion.p>
       </div>
 
       {/* Process Grid */}
@@ -88,34 +93,29 @@ export default function SignProcessSection() {
         variants={containerVariants}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
-        className="grid grid-cols-1 md:grid-cols-4"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-12"
       >
         {processSteps.map((step, index) => (
-          <div key={step.id} className="relative flex group">
-            {/* Content Container 
-                - Added px-12 for generous spacing from the lines
-                - Increased bottom padding for vertical rhythm
-            */}
+          <div key={index} className="relative group flex">
             <motion.div 
               variants={itemVariants}
-              className="flex flex-col pt-4 pb-16 px-6 md:px-12 w-full"
+              className="flex flex-col pr-8 lg:pr-12"
             >
-              <span className="text-5xl md:text-6xl font-extralight mb-10 block text-gray-300 group-hover:text-black transition-colors duration-500">
-                {step.id}
-              </span>
-              <p className="text-lg md:text-xl leading-relaxed text-gray-800 font-light">
+              {/* Animated Accent Line */}
+              <div className="w-8 h-[1px] bg-gray-200 mb-8 group-hover:w-full group-hover:bg-black transition-all duration-700 ease-in-out" />
+              
+              <h3 className="text-xl md:text-2xl font-bold mb-4 tracking-tight uppercase">
+                {step.title}
+              </h3>
+              
+              <p className="text-base md:text-lg leading-relaxed text-gray-600 font-light">
                 {step.description}
               </p>
             </motion.div>
 
-            {/* Vertical Divider - Perfectly positioned between the padded containers */}
+            {/* Vertical Divider for Desktop */}
             {index !== processSteps.length - 1 && (
-              <motion.div 
-                initial={{ scaleY: 0 }}
-                animate={isInView ? { scaleY: 1 } : {}}
-                transition={{ duration: 1.5, delay: 0.8, ease: "easeInOut" }}
-                className="hidden md:block absolute right-0 top-0 bottom-0 w-[1px] bg-gray-200 origin-top"
-              />
+              <div className="hidden lg:block absolute right-0 top-12 bottom-0 w-[1px] bg-gray-100" />
             )}
           </div>
         ))}

@@ -25,11 +25,11 @@ const ContactForm: React.FC = () => {
           </div>
 
           <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium text-gray-400">
-            <span>contact@yoursaas.ai</span>
+            <span>sign.eexperts@gmail.com</span>
             <span>•</span>
-            <span>+1 (800) 123 XX21</span>
+            <span>929 392-8337</span>
             <span>•</span>
-            <span>support@yoursaas.ai</span>
+            <span>12632 S Kroll Dr, Alsip, IL 60803</span>
           </div>
           
           {/* World Map section has been removed from here */}
@@ -69,7 +69,7 @@ const ContactForm: React.FC = () => {
                 type="email"
                 id="email"
                 name="email"
-                placeholder="support@aceternity.com"
+                placeholder="example@gmail.com"
                 className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all bg-white text-gray-800"
                 required
               />
@@ -98,7 +98,21 @@ const ContactForm: React.FC = () => {
                 type="text"
                 id="businessName"
                 name="businessName"
-                placeholder="Aceternity Labs LLC"
+                placeholder="Sign Experts "
+                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all bg-white text-gray-800"
+              />
+            </div>
+
+             {/* Business Location */}
+             <div className="flex flex-col space-y-1.5">
+              <label htmlFor="businessName" className="text-sm font-semibold text-gray-600 ml-1">
+                Business Name
+              </label>
+              <input
+                type="text"
+                id="businessName"
+                name="businessName"
+                placeholder="Sign Experts "
                 className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all bg-white text-gray-800"
               />
             </div>

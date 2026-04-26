@@ -126,7 +126,7 @@ export default function AboutSection() {
             
             <motion.h2 
               variants={itemVariants}
-              className="text-5xl md:text-7xl font-black text-[#1a1a1a] mb-8 leading-[0.9] tracking-tighter"
+              className="text-3xl md:text-5xl font-black text-[#1a1a1a] mb-8 leading-[0.9] tracking-tighter"
             >
               ABOUT <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1a1a1a] to-[#634832]">
@@ -136,11 +136,11 @@ export default function AboutSection() {
             
             <motion.p 
               variants={itemVariants}
-              className="text-[#3d2b26] max-w-xl text-xl leading-relaxed mb-10 border-l-4 border-[#ffc107] pl-6"
+              className="text-[#3d2b26] max-w-xl text-md leading-relaxed mb-10 border-l-4 border-[#ffc107] pl-6"
             >
-              At Sign Experts IL, we transform your brand identity into physical landmarks. 
-              We merge <span className="font-bold underline decoration-[#ffc107]">traditional craftsmanship</span> with 
-              modern technology, ensuring your business doesn&apos;t just occupy a space-it commands it.
+             At Sign Experts, we believe your vision deserves to be seen with absolute clarity. Whether you are looking to revitalize an established brand or build a bold new identity from the ground up, our team is ready to bring your ideas to life. From initial consultation to final installation, we handle every detail—design, strategy, and execution—so you can focus on what you do best while we ensure a seamless journey from concept to completion.
+<br />
+             <span className="font-bold underline decoration-[#ffc107]">Your success is our greatest achievement.</span> With a commitment to craftsmanship and a deep understanding of visual impact, we are here to take your project to the next level. Elevate your presence and achieve more than you thought possible with Sign Experts. 
             </motion.p>
 
             <motion.div variants={itemVariants} className="relative group w-fit">

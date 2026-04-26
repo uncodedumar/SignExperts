@@ -76,6 +76,16 @@ interface MainService {
 
 const SERVICES_DATA: MainService[] = [
   {
+    id: 'installation',
+    title: 'Installation Services',
+    quote: '"Precision from production to the final placement."',
+    subServices: [
+      { id: 'install-act', highlight: 'On-Site Excellence', title: 'Professional Placement', description: 'Our expert installers ensure your signage is mounted safely, securely, and with perfect alignment. We handle everything from high-rise banners to delicate interior lettering.', visualImage: '/signarama/signarama-usa-manufacturing-square-61a5e2f85022f.webp' },
+      { id: 'methods', highlight: 'Built to Last', title: 'Signage Methods', description: 'Utilizing industry-leading techniques, we build durability into every project. From weather-resistant coatings to structural welding, our methods guarantee longevity.', visualImage: '/signarama/signarama-usa-installation-square-61a5d0404508b.webp' },
+      { id: 'repair', highlight: 'Longevity Strategy', title: 'Maintainences', description: "Maintain your brand's image with our repair and maintenance services. We handle LED replacements, cleaning, and structural repairs to ensure your sign looks brand new for years.", visualImage: '/signarama/signarama-usa-channel-letters-geico-square-6033d32d29d37.webp' },
+    ]
+  },
+  {
     id: 'creative',
     title: 'Creative Services',
     quote: '"We\'re more than just sign makers. We\'re an extension of your marketing team."',
@@ -86,17 +96,8 @@ const SERVICES_DATA: MainService[] = [
       { id: 'writing', highlight: 'The Human Touch', title: 'Brand Audits & Consultaions', description: 'Hand-finished detail meets modern brand precision. We apply high-clarity typography to glass shopfronts and modern vehicle fleets.', visualImage: '/signarama/signarama-usa-channel-letter-installation-square-64b9364c807e3.webp' },
       { id: 'audit', highlight: 'Strategic Growth', title: 'Fabricated Signage', description: 'Identify critical gaps and visibility opportunities. We evaluate existing signage for consistency, durability, and brand alignment.', visualImage: '/signarama/signarama-usa-professional-printing-services-48600977087-o-square-64b5c5cc4ff68.webp'},
     ]
-  },
-  {
-    id: 'installation',
-    title: 'Installation Services',
-    quote: '"Precision from production to the final placement."',
-    subServices: [
-      { id: 'install-act', highlight: 'On-Site Excellence', title: 'Professional Placement', description: 'Our expert installers ensure your signage is mounted safely, securely, and with perfect alignment. We handle everything from high-rise banners to delicate interior lettering.', visualImage: '/signarama/signarama-usa-manufacturing-square-61a5e2f85022f.webp' },
-      { id: 'methods', highlight: 'Built to Last', title: 'Signage Methods', description: 'Utilizing industry-leading techniques, we build durability into every project. From weather-resistant coatings to structural welding, our methods guarantee longevity.', visualImage: '/signarama/signarama-usa-installation-square-61a5d0404508b.webp' },
-      { id: 'repair', highlight: 'Longevity Strategy', title: 'Maintainences', description: "Maintain your brand's image with our repair and maintenance services. We handle LED replacements, cleaning, and structural repairs to ensure your sign looks brand new for years.", visualImage: '/signarama/signarama-usa-channel-letters-geico-square-6033d32d29d37.webp' },
-    ]
   }
+  
 ];
 
 export default function ServicesAccordion() {
