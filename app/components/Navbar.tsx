@@ -296,7 +296,7 @@ export default function Navbar() {
 
           {/* Right: Quote Button */}
           <div className="hidden md:flex items-center z-10">
-            <Link href="/quote" className="bg-white text-blue-600 px-6 py-2.5 rounded-full font-bold text-sm hover:bg-blue-50 transition-all shadow-lg flex items-center gap-2">
+            <Link href="/quote" className="bg-[#ffb92d] text-blue-600 px-6 py-2.5 rounded-full font-bold text-sm hover:bg-blue-50 transition-all shadow-lg flex items-center gap-2">
               Get a Free Quote <MoveRight size={16} />
             </Link>
           </div>
