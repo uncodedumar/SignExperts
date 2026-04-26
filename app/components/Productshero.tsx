@@ -41,7 +41,9 @@ const IlluminatedLetters = ({ data }: HeroProps) => {
             whileTap={{ scale: 0.95 }}
             className="mt-4 px-10 py-4 bg-[#ffb92d] text-white font-bold rounded-full shadow-xl hover:bg-[#ffcd45] transition-all"
           >
-            Get A Free Quote
+            <link rel="stylesheet" href="/#contact-form" >
+            
+            Get A Quote  </link>
           </motion.button>
         </motion.div>
 

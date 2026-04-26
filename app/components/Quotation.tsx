@@ -3,6 +3,7 @@ import React from 'react';
 import { Lexend } from 'next/font/google';
 import { Mail, Phone, ArrowUpRight, Map, Square } from 'lucide-react';
 import { motion, useScroll, useTransform, type Variants } from 'framer-motion';
+import Link from 'next/link';
 
 const lexend = Lexend({ 
   subsets: ['latin'],
@@ -126,27 +127,29 @@ const SignageHero = () => {
                 className="absolute inset-0 bg-[#FFC119] rounded-xl z-0"
               />
               
-              <motion.button 
-                variants={mainBtnVariants}
-                initial="initial"
-                animate="animate"
-                whileHover="hover"
-                className="relative z-10 bg-[#FFC119] hover:bg-[#e5ac16] text-white px-10 py-5 rounded-xl text-[20px] font-bold shadow-[0_10px_20px_rgba(255,193,25,0.3)] border-2 border-white/20"
-              >
-                Get A Quote
-              </motion.button>
-            </div>
+              <Link href="/#contact-form" passHref legacyBehavior>
+  <motion.a
+    variants={mainBtnVariants}
+    initial="initial"
+    animate="animate"
+    whileHover="hover"
+    className="relative z-10 inline-block bg-[#FFC119] hover:bg-[#e5ac16] text-white px-10 py-5 rounded-xl text-[20px] font-bold shadow-[0_10px_20px_rgba(255,193,25,0.3)] border-2 border-white/20 cursor-pointer"
+  >
+    Get A Quote
+  </motion.a>
+</Link>
 
+            </div>
             <div className="flex gap-4">
               <motion.a 
-                href="mailto:contact@example.com" 
+                href="mailto:sign.eexperts@gmail.com" 
                 whileHover={{ scale: 1.1, rotate: 5 }}
                 className="bg-black p-4 rounded-full text-white shadow-md flex items-center justify-center transition-colors hover:bg-[#101b55]"
               >
                 <Mail size={24} />
               </motion.a>
               <motion.a 
-                href="tel:+123456789" 
+                href="tel:+19293928337" 
                 whileHover={{ scale: 1.1, rotate: -5 }}
                 className="bg-black p-4 rounded-full text-white shadow-md flex items-center justify-center transition-colors hover:bg-[#101b55]"
               >

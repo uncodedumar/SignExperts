@@ -27,25 +27,13 @@ const textRevealVariants: Variants = {
     filter: 'blur(0px)',
     transition: {
       duration: 1,
-      ease: [0.16, 1, 0.3, 1], // Custom cubic-bezier for a "premium" feel
-    },
-  },
-};
-
-const imageVariants: Variants = {
-  hidden: { scale: 1.05, opacity: 0 },
-  visible: {
-    scale: 1,
-    opacity: 1,
-    transition: { 
-      duration: 1.5, 
-      ease: [0.22, 1, 0.36, 1] 
+      ease: [0.16, 1, 0.3, 1],
     },
   },
 };
 
 export default function SupportSection() {
-  const {  heading, subheading } = supportData;
+  const { heading, subheading } = supportData;
 
   return (
     <motion.section
@@ -56,25 +44,24 @@ export default function SupportSection() {
       style={{
         width: '100%',
         backgroundColor: '#ffffff',
-        margin: '0 auto',
+        margin: '0 auto', // Cleaned up margin
         fontFamily: "'Century Gothic', Futura, sans-serif",
         textAlign: 'center',
         color: '#000000',
-        padding: '100px 20px', // Increased vertical padding for breathability
+        /* Added top padding (160px) and removed bottom padding (0px)
+        */
+        padding: '160px 20px 0px 20px', 
       }}
     >
-     
-
       {/* Text Content */}
       <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
         <motion.h1
           variants={textRevealVariants}
           style={{
-            // Increased font size significantly
-            fontSize: 'clamp(40px, 6vw, 68px)', 
+            fontSize: 'clamp(20px, 5vw, 40px)', 
             fontWeight: 700,
             lineHeight: 1.05,
-            margin: '0 0 35px 0',
+            margin: '10px 0 35px 0',
             letterSpacing: '-0.03em',
             color: '#000000',
             whiteSpace: 'pre-line',
@@ -89,14 +76,16 @@ export default function SupportSection() {
         <motion.p
           variants={textRevealVariants}
           style={{
-            // Increased subheading size and adjusted leading
-            fontSize: 'clamp(20px, 3vw, 26px)',
+            fontSize: 'clamp(16px, 3vw, 20px)', // Fixed font-size logic for accessibility
             lineHeight: 1.6,
             color: '#444444',
             margin: '0 auto',
             maxWidth: '900px',
             fontWeight: 400,
             letterSpacing: '-0.01em',
+            /* Ensures no extra margin-bottom is pushing the layout 
+            */
+            paddingBottom: '0px',
           }}
         >
           {subheading}

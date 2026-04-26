@@ -1,5 +1,5 @@
 "use client";
-
+import Link from 'next/link';
 import React from 'react';
 import { motion } from 'framer-motion';
 
@@ -50,7 +50,8 @@ const FinalCTA: React.FC = () => {
             <div className="absolute inset-0 w-0 bg-[#ffb92d] group-hover:w-full transition-all duration-500 ease-out" />
             
             <span className="relative z-10 text-white font-bold text-sm uppercase tracking-[0.15em] transition-colors duration-500">
-              Get A Free Quote
+            <link rel="stylesheet" href="/#contact-form" >
+            Get A Quote  </link>
             </span>
           </button>
         </motion.div>

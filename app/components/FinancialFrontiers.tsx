@@ -69,9 +69,7 @@ const FinancialFrontiers = () => {
                   whileHover={{ x: 10 }}
                   className="flex items-baseline space-x-4 pb-8 transition-all"
                 >
-                  <span className="text-lg font-light text-gray-400 group-hover:text-[#D4AF37] transition-colors">
-                    {pillar.id}
-                  </span>
+                  
                   <h3 className="text-2xl md:text-3xl font-normal transition-colors group-hover:text-black">
                     {pillar.title}
                   </h3>

@@ -153,10 +153,12 @@ const productsData: ProductNavCategory[] = productMenuDefinition.map((category) 
 
 const navLinks = [
   { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
-  { name: "Blogs", href: "/blog" },
   { name: "Services", href: "/services" },
   { name: "Products", href: "/products", hasDropdown: true },
+  { name: "Blogs", href: "/blog" },
+  { name: "About", href: "/about" },
+
+
 ];
 
 const BouncingLink = ({ name, href }: { name: string; href: string }) => (
@@ -296,7 +298,7 @@ export default function Navbar() {
 
           {/* Right: Quote Button */}
           <div className="hidden md:flex items-center z-10">
-            <Link href="/quote" className="bg-[#ffb92d] text-[#101b55] px-6 py-2.5 rounded-full font-bold text-sm hover:bg-[#ffcd45] transition-all shadow-lg flex items-center gap-2">
+            <Link href="/#contact-form" className="bg-[#ffb92d] text-[#101b55] px-6 py-2.5 rounded-full font-bold text-sm hover:bg-[#ffcd45] transition-all shadow-lg flex items-center gap-2">
               Get a Free Quote <MoveRight size={16} />
             </Link>
           </div>

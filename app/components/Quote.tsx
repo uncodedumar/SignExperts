@@ -54,13 +54,15 @@ const ActionSection = () => {
         whileTap="tap"
         className="px-8 py-4 bg-[#FFC107] text-white font-semibold rounded-full text-lg shadow-sm"
       >
-        Get A Quote
+       <link rel="stylesheet" href="/#contact-form" >
+            
+            Get A Quote  </link>
       </motion.button>
 
       {/* Right Side: Icon Buttons */}
       <div className="flex items-center gap-4">
         <motion.a
-          href="mailto:example@domain.com"
+          href="mailto:sign.eexperts@gmail.com"
           variants={itemVariants}
           whileHover="hover"
           whileTap="tap"
@@ -70,7 +72,7 @@ const ActionSection = () => {
         </motion.a>
 
         <motion.a
-          href="tel:+123456789"
+          href="tel:+1929 392-8337"
           variants={itemVariants}
           whileHover="hover"
           whileTap="tap"

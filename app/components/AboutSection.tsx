@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { Bebas_Neue, Lexend } from 'next/font/google';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import Link from 'next/link';
 
 const bebas = Bebas_Neue({ weight: '400', subsets: ['latin'] });
 const lexend = Lexend({ subsets: ['latin'] });
@@ -77,8 +78,8 @@ export default function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-4xl mx-auto text-white">
-        <h1 className={`${bebas.className} text-6xl md:text-8xl lg:text-[120px] leading-none mb-6 tracking-tight`}>
+      <div className="relative z-10 max-w-4xl mx-auto text-white mt-10">
+        <h1 className={`${bebas.className} text-5xl md:text-6xl lg:text-[100px] leading-none mb-6 tracking-tight`}>
           The Standards of Signage Excellence
         </h1>
         
@@ -88,9 +89,12 @@ export default function HeroSection() {
           back after the pandemic.
         </p>
 
-        <button className={`${lexend.className} bg-[#FFC121] hover:bg-[#e5ae1d] text-white px-10 py-4 rounded-full text-lg font-medium transition-all transform hover:scale-105 shadow-lg`}>
-          Get a Quote
-        </button>
+        <Link 
+  href="/#contact-form" 
+  className={`${lexend.className} inline-block bg-[#FFC121] hover:bg-[#e5ae1d] text-white px-10 py-4 rounded-full text-lg font-bold uppercase tracking-wider transition-all transform hover:scale-105 hover:shadow-xl active:scale-95 shadow-lg shadow-yellow-500/20`}
+>
+  Get a Quote
+</Link>
       </div>
 
       {/* Navigation Arrows */}

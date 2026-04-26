@@ -52,9 +52,7 @@ const FAQItem = ({ faq, isOpen, onToggle, index }: { faq: FAQData; isOpen: boole
         aria-expanded={isOpen}
       >
         <div className="flex gap-6 md:gap-10">
-          <span className="text-xs md:text-sm font-mono text-red-500 mt-1.5 opacity-60">
-            0{index + 1}
-          </span>
+          
           <span className={`text-xl md:text-2xl tracking-tight transition-all duration-300 ${isOpen ? 'text-black font-medium' : 'text-gray-500 group-hover:text-black'}`}>
             {faq.question}
           </span>
@@ -102,19 +100,13 @@ export default function FAQsSection() {
             className="lg:sticky lg:top-32"
           >
             <h2 className="text-6xl md:text-8xl font-medium tracking-tighter text-black mb-8">
-              Common <br /> <span className="text-gray-300 italic">Questions.</span>
+              Common <br /> <span className="text-[#ffb92d] italic">Questions.</span>
             </h2>
             <p className="text-gray-500 text-lg md:text-xl max-w-sm leading-relaxed font-light">
               Empowering brands to stand out in a crowded marketplace through precision design and strategic visibility. Your path to a clearer, bolder presence starts here.
             </p>
             
-            <div className="mt-12 flex items-center gap-4 group cursor-pointer">
-              <div className="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center group-hover:bg-black group-hover:border-black transition-all duration-300">
-                <svg className="w-5 h-5 text-black group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
-              </div>
-            </div>
+            
           </motion.div>
         </div>
 

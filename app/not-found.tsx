@@ -33,11 +33,10 @@ const NotFound = () => {
 
           {/* Action Button */}
           <Link 
-            href="/Contact" 
+            href="/#contact-form" 
             className="inline-block px-8 py-4 bg-purple-600 text-black font-bold text-sm uppercase tracking-widest hover:bg-purple-500 transition-all duration-300 transform hover:scale-105 active:scale-95]"
           >
-            Connect with Invantros
-          </Link>
+Get a Quote          </Link>
         </div>
       </div>
 

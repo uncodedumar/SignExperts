@@ -269,7 +269,7 @@ const Navbar = () => {
           </div>
 
           <Link 
-            href="/quote" 
+           href="/#contact-form"
             onClick={closeMobileMenu}
             className="bg-[#FFC107] text-[#050B33] font-bold py-4 text-center rounded-xl uppercase text-xl"
           >

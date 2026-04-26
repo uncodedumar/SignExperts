@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactForm: React.FC = () => {
   return (
-    <div className="bg-white min-h-screen flex items-center justify-center p-6 md:p-12 font-sans">
+    <div id="contact-form" className="bg-white min-h-screen flex items-center  justify-center p-6 md:p-12 font-sans">
       <div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
         
         {/* Left Side: Content */}

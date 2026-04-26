@@ -26,8 +26,8 @@ const FeatureCard = ({ icon, title, description, index }: FeatureProps) => {
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="group relative flex flex-col p-8 transition-all duration-500 bg-neutral-900/80 backdrop-blur-sm border border-neutral-800 hover:border-yellow-500/50 rounded-2xl overflow-hidden"
+      transition={{ duration: 0.5, delay: index * 0.05 }}
+      className="group relative flex flex-col p-8 transition-all duration-500 bg-neutral-900/90 backdrop-blur-md border border-neutral-800 hover:border-yellow-500/50 rounded-2xl overflow-hidden shadow-2xl"
     >
       <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
       
@@ -38,7 +38,7 @@ const FeatureCard = ({ icon, title, description, index }: FeatureProps) => {
         <h3 className="text-xl font-bold text-white mb-3 tracking-tight group-hover:text-yellow-500 transition-colors">
           {title}
         </h3>
-        <p className="text-neutral-400 leading-relaxed text-sm group-hover:text-neutral-300 transition-colors">
+        <p className="text-neutral-400 leading-relaxed text-sm group-hover:text-neutral-200 transition-colors line-clamp-3">
           {description}
         </p>
       </div>
@@ -54,13 +54,15 @@ const FeaturesSection = () => {
     offset: ["start start", "end end"]
   });
 
+  // Smooth horizontal background transition
   const x = useTransform(scrollYProgress, [0, 0.8], ["100%", "0%"]);
-  const textColor = useTransform(scrollYProgress, [0.4, 0.6], ["#ffffff", "#000000"]);
+  // Synchronized color flip for the title
+  const titleColor = useTransform(scrollYProgress, [0.45, 0.55], ["#ffffff", "#171717"]);
 
   const services = [
     {
       icon: <PenTool size={24} />,
-      title: "Graphic Desining",
+      title: "Graphic Design",
       description: "Traditional and modern hand-crafted lettering techniques for a distinctive, professional finish."
     },
     {
@@ -71,7 +73,7 @@ const FeaturesSection = () => {
     {
       icon: <Search size={24} />,
       title: "Printing Services",
-      description: "Expert Printing of your physical presence to ensure maximum visibility and brand consistency."
+      description: "Expert printing of your physical presence to ensure maximum visibility and brand consistency."
     },
     {
       icon: <Layers size={24} />,
@@ -101,29 +103,32 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section ref={containerRef} className="relative h-auto md:h-[250vh] bg-white md:bg-[#101b55] py-16 md:py-0">
-      <div className="md:sticky md:top-0 md:h-screen flex items-center overflow-hidden">
+    <section ref={containerRef} className="relative h-auto md:h-[300vh] bg-[#101b55]">
+      <div className="md:sticky md:top-0 md:h-screen flex items-center overflow-hidden py-20 md:py-0">
         
+        {/* Animated Background Overlay */}
         <motion.div 
           style={{ x }}
-          className="hidden md:block absolute inset-0 bg-neutral-100 z-0"
+          className="hidden md:block absolute inset-0 bg-white z-0"
         />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
-          <div className="mb-12 text-center">
+          <div className="mb-16 text-center">
             <motion.span 
-              className="text-yellow-500 font-mono text-xs tracking-[0.3em] uppercase mb-4 block"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              className="text-yellow-500 font-bold text-xs tracking-[0.4em] uppercase mb-4 block"
             >
-              Capabilities
+              Expert Capabilities
             </motion.span>
             <motion.h2 
-              className="text-4xl md:text-6xl font-black tracking-tighter mb-6 text-black md:text-white"
-              style={{ color: typeof window !== 'undefined' && window.innerWidth >= 768 ? textColor : '#000000' }}
+              className="text-5xl md:text-7xl font-black tracking-tighter mb-8 text-white md:text-white"
+              style={{ color: titleColor }}
             >
               Our Services
             </motion.h2>
             <motion.div 
-              className="h-1.5 w-24 bg-yellow-500 mx-auto rounded-full"
+              className="h-2 w-24 bg-yellow-500 mx-auto rounded-full shadow-[0_0_15px_rgba(234,179,8,0.5)]"
               layoutId="underline"
             />
           </div>

@@ -3,7 +3,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#101b55] text-white w-full font-sans uppercase text-[11px] font-medium tracking-[0.1em]">
+    <footer className="bg-[#091242] text-white w-full font-sans uppercase text-[11px] font-medium tracking-[0.1em]">
       <div className="max-w-[1800px] mx-auto border-t border-white/10">
         
         {/* Main Content Grid */}
