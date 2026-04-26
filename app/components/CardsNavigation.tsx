@@ -1,27 +1,23 @@
 import React from 'react';
-import { Search, PenTool, Settings, CheckCircle } from 'lucide-react'; // Example icons
+import { Search, PenTool, Settings, CheckCircle } from 'lucide-react';
 
 const processSteps = [
   {
-
     title: 'Consultancy',
     description: 'We take the time to explore your brand and understand how we can develop it manually.',
     icon: <Search className="w-8 h-8 text-white" />,
   },
   {
-
     title: 'The Branding',
     description: 'We understand how important your brand is and that’s why our team of designers work.',
     icon: <PenTool className="w-8 h-8 text-white" />,
   },
   {
-   
     title: 'Manufacturing',
     description: 'Transparency & communication are key to staying on track. We completely follow.',
     icon: <Settings className="w-8 h-8 text-white" />,
   },
   {
-   
     title: 'Installation',
     description: 'We take pride in our production capabilities and invest heavily in our factory.',
     icon: <CheckCircle className="w-8 h-8 text-white" />,
@@ -44,7 +40,8 @@ const WorkProcess = () => {
           </div>
           <div className="md:w-1/2">
             <p className="text-gray-300 text-lg leading-relaxed">
-              Created for impact and awareness, billboard signs can be a showstopper for your business. In an increasingly digital world. Here, how we’re doing
+              Created for impact and awareness, billboard signs can be a showstopper for your business. 
+              In an increasingly digital world, here is how we make it happen.
             </p>
           </div>
         </div>
@@ -52,20 +49,20 @@ const WorkProcess = () => {
         {/* Steps Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 relative">
           {processSteps.map((step, index) => (
-            <div  className="relative group">
+            <div key={index} className="relative group">
               {/* Icon Container */}
               <div className="relative mb-8 inline-block">
-                <div className="w-20 h-20 border border-gray-500 flex items-center justify-center relative">
+                <div className="w-20 h-20 border border-gray-500 flex items-center justify-center relative bg-[#101b55] z-10">
                   {step.icon}
                   {/* Step Number Badge */}
-                  <div className="absolute -bottom-2 -right-2 bg-[#ff5e14] text-white text-xs font-bold w-6 h-6 rounded-full flex items-center justify-center">
-                    
+                  <div className="absolute -bottom-2 -right-2 bg-[#ff5e14] text-white text-[10px] font-bold w-6 h-6 rounded-full flex items-center justify-center">
+                    0{index + 1}
                   </div>
                 </div>
                 
-                {/* Connecting Arrow (Hidden on mobile/last item) */}
+                {/* Connecting Line (Only visible on Large screens for non-last items) */}
                 {index !== processSteps.length - 1 && (
-                  <div className="hidden lg:block absolute top-1/2 -right-full w-full h-[1px] bg-gray-600 z-0">
+                  <div className="hidden lg:block absolute top-1/2 left-full w-[calc(100%+3rem)] h-[1px] bg-gray-600 -translate-y-1/2 z-0">
                      <div className="absolute right-0 -top-1 border-t border-r border-gray-600 w-2 h-2 rotate-45"></div>
                   </div>
                 )}

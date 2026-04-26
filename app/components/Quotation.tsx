@@ -12,9 +12,9 @@ const lexend = Lexend({
 
 const SignageHero = () => {
   const { scrollYProgress } = useScroll();
+  // Using motion.value for the style prop below
   const textColor = useTransform(scrollYProgress, [0, 0.3], ["#9ca3af", "#000000"]);
 
-  // Enhanced "Forced Click" animation for the main CTA
   const mainBtnVariants: Variants = {
     initial: { scale: 1 },
     animate: {
@@ -59,8 +59,8 @@ const SignageHero = () => {
     <section className={`${lexend.className} bg-white relative overflow-hidden min-h-[600px] flex flex-col justify-center px-8 md:px-20 py-16 text-[#000000]`}>
       
       {/* --- BACKGROUND GRAPHICS --- */}
-      <div className="absolute inset-0 z-0 overflow-hidden">
-        {/* CSS Grid Pattern - Covers 100% of the container perfectly */}
+      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+        {/* CSS Grid Pattern */}
         <div 
           className="absolute inset-0 opacity-[0.1]" 
           style={{
@@ -69,16 +69,14 @@ const SignageHero = () => {
           }}
         />
         
-        {/* Wayfinding Floating Signs */}
         <motion.div 
-  custom={1}
-  variants={floatingVariants}
-  animate="animate"
-  // Added rotate-180 to the className
-  className="absolute top-[15%] right-[12%] text-[#FF0000] hidden md:block "
->
-  <ArrowUpRight size={120} strokeWidth={1} />
-</motion.div>
+          custom={1}
+          variants={floatingVariants}
+          animate="animate"
+          className="absolute top-[15%] right-[12%] text-[#FF0000] hidden md:block"
+        >
+          <ArrowUpRight size={120} strokeWidth={1} />
+        </motion.div>
 
         <motion.div 
           custom={2}
@@ -107,39 +105,43 @@ const SignageHero = () => {
             whileHover={{ fontStyle: "italic" }}
             className="text-[38px] md:text-[64px] leading-[1.1] font-bold tracking-tight mb-8 max-w-[850px] cursor-default transition-all duration-300"
           >
-            Put your best foot forward.
-            Better signs, every time,
+            Put your best foot forward.<br />
+            Better signs, every time,<br />
             across the United States.
           </motion.h1>
 
           {/* Subtext */}
-          <p className="text-[16px] md:text-[18px] opacity-80 leading-relaxed max-w-[80%] mb-12 font-normal">
-         <span className="text-[20px] md:text-[24px] font-bold"> Signage is more than hardware—it’s your brand’s silent ambassador.</span><br></br> We blend architectural precision with visual storytelling to create custom signs that build trust, capture attention, and turn every passerby into a loyal customer.
-          </p>
+          <div className="text-[16px] md:text-[18px] opacity-80 leading-relaxed max-w-[80%] mb-12 font-normal">
+            <p className="text-[20px] md:text-[24px] font-bold mb-2">
+              Signage is more than hardware—it’s your brand’s silent ambassador.
+            </p>
+            <p>
+              We blend architectural precision with visual storytelling to create custom signs that build trust, capture attention, and turn every passerby into a loyal customer.
+            </p>
+          </div>
 
           {/* Action Row */}
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
             <div className="relative">
-              {/* Eye-catching Ping Effect */}
               <motion.div 
                 variants={pingVariants}
                 animate="animate"
                 className="absolute inset-0 bg-[#FFC119] rounded-xl z-0"
               />
               
-              <Link href="/#contact-form" passHref legacyBehavior>
-  <motion.a
-    variants={mainBtnVariants}
-    initial="initial"
-    animate="animate"
-    whileHover="hover"
-    className="relative z-10 inline-block bg-[#FFC119] hover:bg-[#e5ac16] text-white px-10 py-5 rounded-xl text-[20px] font-bold shadow-[0_10px_20px_rgba(255,193,25,0.3)] border-2 border-white/20 cursor-pointer"
-  >
-    Get A Quote
-  </motion.a>
-</Link>
-
+              <Link href="/#contact-form" className="relative z-10">
+                <motion.div
+                  variants={mainBtnVariants}
+                  initial="initial"
+                  animate="animate"
+                  whileHover="hover"
+                  className="inline-block bg-[#FFC119] hover:bg-[#e5ac16] text-white px-10 py-5 rounded-xl text-[20px] font-bold shadow-[0_10px_20px_rgba(255,193,25,0.3)] border-2 border-white/20 cursor-pointer transition-colors"
+                >
+                  Get A Quote
+                </motion.div>
+              </Link>
             </div>
+
             <div className="flex gap-4">
               <motion.a 
                 href="mailto:sign.eexperts@gmail.com" 
