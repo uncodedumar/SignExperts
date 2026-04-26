@@ -3,6 +3,7 @@
 import React from 'react';
 import { motion, type Variants } from 'framer-motion';
 import { Mail, Phone } from 'lucide-react';
+import Link from 'next/link';
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -42,22 +43,22 @@ const itemVariants: Variants = {
 const ActionSection = () => {
   return (
     <motion.section
-      className="flex items-center justify-between w-max-7xl mx-auto px-6 py-10 bg-white"
+      className="flex items-center justify-between max-w-full mx-auto px-6 py-10 bg-white"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
     >
       {/* Left Side: Get A Quote Button */}
-      <motion.button
-        variants={itemVariants}
-        whileHover="hover"
-        whileTap="tap"
-        className="px-8 py-4 bg-[#FFC107] text-white font-semibold rounded-full text-lg shadow-sm"
-      >
-       <link rel="stylesheet" href="/#contact-form" >
-            
-            Get A Quote  </link>
-      </motion.button>
+      <Link href="/#contact-form" passHref>
+        <motion.button
+          variants={itemVariants}
+          whileHover="hover"
+          whileTap="tap"
+          className="px-8 py-4 bg-[#FFC107] text-white font-semibold rounded-full text-lg shadow-sm cursor-pointer"
+        >
+          Get A Quote
+        </motion.button>
+      </Link>
 
       {/* Right Side: Icon Buttons */}
       <div className="flex items-center gap-4">
@@ -72,7 +73,7 @@ const ActionSection = () => {
         </motion.a>
 
         <motion.a
-          href="tel:+1929 392-8337"
+          href="tel:+19293928337"
           variants={itemVariants}
           whileHover="hover"
           whileTap="tap"

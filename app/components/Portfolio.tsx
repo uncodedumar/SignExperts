@@ -16,7 +16,7 @@ interface Project {
 
 const projects: Project[] = [
   { id: "01", title: "Outdoor Signage", image: "/allimages/2EC731A9-9DF6-4D99-AFD6-502D6C38244E.JPG", category: "Illuminated", slug: "outdoor-signage" },
-  { id: "02", title: "Custom LED", image: "/b.jpg", category: "Digital", slug: "custom-led" },
+  { id: "02", title: "Promotional Signs", image: "/allimages/1f674588-30d4-4ac3-89d6-79347c896f1d.JPG", category: "Promotional", slug: "custom-led" },
   { id: "03", title: "Vehicle Wrap", image: "/c.jpg", category: "Fleet", slug: "vehicle-wrap" },
   { id: "04", title: "Wayfinding", image: "/g1.jpg", category: "Indoor", slug: "wayfinding" },
   { id: "05", title: "Office Graphics", image: "/g2.jpg", category: "Interior", slug: "office-graphics" },

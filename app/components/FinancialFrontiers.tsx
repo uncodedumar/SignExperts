@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { motion, type Variants } from 'framer-motion';
+import Image from 'next/image';
 
 const FinancialFrontiers = () => {
   const pillars = [
@@ -69,7 +70,6 @@ const FinancialFrontiers = () => {
                   whileHover={{ x: 10 }}
                   className="flex items-baseline space-x-4 pb-8 transition-all"
                 >
-                  
                   <h3 className="text-2xl md:text-3xl font-normal transition-colors group-hover:text-black">
                     {pillar.title}
                   </h3>
@@ -93,14 +93,13 @@ const FinancialFrontiers = () => {
           </motion.p>
         </motion.div>
 
-        {/* Right Card Side */}
+        {/* Right Image Side */}
         <div className="relative">
-          {/* Floating Card Animation */}
           <motion.div 
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             animate={{ 
-              y: [0, -15, 0], // Floating effect
+              y: [0, -15, 0], 
             }}
             transition={{ 
               duration: 0.8, 
@@ -111,59 +110,37 @@ const FinancialFrontiers = () => {
                 ease: "easeInOut"
               }
             }}
-            className="relative bg-black rounded-[2.5rem] p-12 aspect-square flex flex-col justify-between shadow-[0_50px_100px_-20px_rgba(0,0,0,0.5)] overflow-hidden group"
+            className="relative rounded-[2.5rem] aspect-square shadow-[0_50px_100px_-20px_rgba(0,0,0,0.3)] overflow-hidden group border border-gray-100"
           >
-            {/* Decorative Circles with Staggered Entrance */}
-            <div className="flex -space-x-4">
-              {[1, 2, 3, 4].map((i) => (
-                <motion.div 
-                  key={i} 
-                  initial={{ opacity: 0, scale: 0 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: 1 + (i * 0.1) }}
-                  className="w-12 h-12 rounded-full border border-white/10 bg-[#3D2B24] z-0" 
-                />
-              ))}
-              <motion.span 
-                initial={{ opacity: 0, x: -10 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ delay: 1.5 }}
-                className="ml-8 self-center text-[10px] text-gray-400 tracking-[0.2em] uppercase font-medium"
-              >
-                10K+ reviews
-              </motion.span>
-            </div>
-
-            {/* Large Stat Display with Counter-like feel */}
-            <div className="relative z-10">
-              <motion.div 
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.8, delay: 0.5 }}
-              >
-                <h4 className="text-8xl md:text-9xl font-light text-white mb-2 tracking-tighter">
-                  10<span className="text-[#D4AF37]">+</span>
-                </h4>
-                <motion.p 
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  transition={{ delay: 1 }}
-                  className="text-gray-400 text-lg tracking-[0.1em] uppercase"
-                >
-                  Awards Gained
-                </motion.p>
-              </motion.div>
-            </div>
-
-            {/* Moving Glow Gradient */}
-            <motion.div 
-              animate={{ 
-                scale: [1, 1.2, 1],
-                opacity: [0.1, 0.2, 0.1] 
-              }}
-              transition={{ duration: 8, repeat: Infinity }}
-              className="absolute -bottom-20 -right-20 w-96 h-96 bg-[#D4AF37]/20 blur-[120px] rounded-full" 
+            {/* Main Image Replacement */}
+            <Image
+              src="/allimages/2EC731A9-9DF6-4D99-AFD6-502D6C38244E.JPG" // Replace with your actual image path
+              alt="Visual Communications Excellence"
+              fill
+              className="object-cover transition-transform duration-700 group-hover:scale-105"
+              priority
             />
+
+            {/* Subtle Overlay Gradient for Depth */}
+            <div className="absolute inset-0 bg-gradient-to-tr from-black/20 via-transparent to-transparent pointer-events-none" />
+
+            {/* Floating Info Badge over Image */}
+            <motion.div 
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.8 }}
+              className="absolute bottom-10 left-10 right-10 p-6 bg-white/90 backdrop-blur-md rounded-2xl flex items-center justify-between"
+            >
+              <div>
+                <p className="text-[#D4AF37] font-bold text-2xl">10+</p>
+                <p className="text-[10px] uppercase tracking-widest font-semibold text-gray-500">Awards Gained</p>
+              </div>
+              <div className="h-8 w-[1px] bg-gray-200" />
+              <div>
+                <p className="text-black font-bold text-2xl">10K+</p>
+                <p className="text-[10px] uppercase tracking-widest font-semibold text-gray-500">Reviews</p>
+              </div>
+            </motion.div>
           </motion.div>
 
           {/* Background Accent Element */}
@@ -171,7 +148,7 @@ const FinancialFrontiers = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 1.2 }}
-            className="absolute -top-10 -left-10 w-32 h-32 border border-gray-200 rounded-full -z-10"
+            className="absolute -top-10 -right-10 w-32 h-32 border border-[#D4AF37]/30 rounded-full -z-10"
           />
         </div>
 
