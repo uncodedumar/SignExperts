@@ -14,9 +14,10 @@ export default function Home() {
 
       <HeroSection />
       <Quotation />
-      <Cards />
+      
       <Pills />
       <ServicesCards />
+      <Cards />
       <CTA />
       <Imagee />
       <Form />

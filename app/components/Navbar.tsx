@@ -212,7 +212,7 @@ export default function Navbar() {
           
           {/* Left: Logo & Text */}
           <Link href="/" className="flex items-center gap-3 flex-shrink-0 z-10">
-            <Image src="/logo.png" alt="Logo" width={40} height={40} className="w-10 h-10" />
+            <Image src="/Logo.png" alt="Logo" width={40} height={40} className="w-10 h-10" />
             <span className="text-white font-bold text-xl tracking-tight hidden sm:block">SIGN EXPERTS</span>
           </Link>
 

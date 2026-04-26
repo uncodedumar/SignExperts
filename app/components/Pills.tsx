@@ -74,12 +74,12 @@ export default function ProductPlayground() {
   const activeItems = getActiveItems();
 
   return (
-    <section className="py-24 bg-[#101b55] overflow-hidden min-h-screen">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="py-24 bg-[#101b55] overflow-hidden min-h-screen flex flex-col">
+      <div className="max-w-7xl mx-auto px-6 flex-grow">
         {/* Header Section */}
         <div className="text-center mb-16">
           <h2 className="text-5xl font-black text-white mb-4 uppercase italic">
-            What We <span className="text-[#fff2d8] underline">Make</span>
+            What We <span className="text-[#ffcd45] underline">Make</span>
           </h2>
           <p className="text-gray-300 max-w-2xl mx-auto">
             From industrial pylon signs to custom vehicle wraps, select a category to explore our high-impact signage solutions.
@@ -105,7 +105,7 @@ export default function ProductPlayground() {
         </div>
 
         {/* Animated Product Grid */}
-        <div className="min-h-[500px]">
+        <div className="min-h-[400px] mb-12">
           <AnimatePresence mode="wait">
             <motion.div
               key={activeTab}
@@ -124,7 +124,7 @@ export default function ProductPlayground() {
                   whileHover={{ scale: 1.03, rotate: idx % 2 === 0 ? 0.5 : -0.5 }}
                   className="bg-white border-2 border-black p-8 rounded-2xl shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] transition-all group cursor-pointer flex items-center justify-center min-h-[120px]"
                 >
-                  <h3 className="font-black text-lg leading-tight uppercase group-hover:text-blue-600 transition-colors text-center">
+                  <h3 className="font-black text-black  text-lg leading-tight uppercase group-hover:text-blue-600 transition-colors text-center">
                     {item}
                   </h3>
                 </motion.div>
@@ -134,11 +134,11 @@ export default function ProductPlayground() {
         </div>
       </div>
 
-      {/* Bottom Marquee - Direction: Reverse (Left to Right) */}
-      <div className="mt-24 overflow-hidden relative py-4 border-y-2 border-black bg-white -rotate-1 scale-105">
+      {/* Bottom Marquee - Adjusted with mt-auto to push to bottom and fixed vertical spacing */}
+      <div className="mt-auto overflow-hidden relative py-6  bg-[#ffcd45] -rotate-1 scale-105 mb-10">
         <div className="flex animate-loop-scroll-reverse space-x-12 whitespace-nowrap">
           {[...activeItems, ...activeItems].map((text, i) => (
-            <span key={i} className="text-xl font-black uppercase italic tracking-tighter">
+            <span key={i} className="text-xl font-black text-gray-700 uppercase italic tracking-tighter">
               • {text}
             </span>
           ))}
