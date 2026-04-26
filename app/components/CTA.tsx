@@ -5,11 +5,11 @@ import { motion } from 'framer-motion';
 
 const FinalCTA: React.FC = () => {
   return (
-    /* Section BG is White */
-    <section className="w-full py-20 bg-white flex items-center justify-center px-6">
+    /* Section BG is White - Reduced py-10 to py-6 */
+    <section className="w-full py-6 bg-white flex items-center justify-center px-6">
       
-      {/* Inner Area: Blue BG, 80% Width, Rounded Borders, Left Aligned Content */}
-      <div className="relative z-10 w-full md:w-[80%] bg-[#101b55] rounded-[2rem] md:rounded-[4rem] p-8 md:p-16 flex flex-col md:flex-row items-center justify-between gap-8 shadow-2xl overflow-hidden">
+      {/* Inner Area: Reduced p-8/md:p-16 to p-6/md:p-10 and adjusted rounded corners */}
+      <div className="relative z-10 w-full md:w-[80%] bg-[#101b55] rounded-[1.5rem] md:rounded-[3rem] p-6 md:p-10 flex flex-col md:flex-row items-center justify-between gap-8 shadow-2xl overflow-hidden">
         
         {/* Background Subtle Pattern restricted to the box */}
         <div className="absolute inset-0 opacity-5 pointer-events-none">
@@ -28,7 +28,7 @@ const FinalCTA: React.FC = () => {
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="block text-[#ffb92d] text-[10px] md:text-xs font-black tracking-[0.4em] uppercase mb-4 opacity-80"
+            className="block text-[#ffb92d] text-[10px] md:text-xs font-black tracking-[0.4em] uppercase mb-2 opacity-80"
           >
             Project Inquiry
           </motion.span>
@@ -39,7 +39,7 @@ const FinalCTA: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-white text-1xl md:text-2xl font-light tracking-tight md:tracking-wide leading-snug"
+            className="text-white text-xl md:text-2xl font-light tracking-tight md:tracking-wide leading-snug"
           >
             Consult with our architectural specialists for <br className="hidden md:block" />
             <span className="font-semibold italic">custom sizing</span> and material selection.
@@ -54,11 +54,11 @@ const FinalCTA: React.FC = () => {
           transition={{ delay: 0.2 }}
           className="flex-shrink-0 relative z-20"
         >
-          <Link href="/#contact-form" className="group relative inline-block px-12 py-5 bg-[#0000CC] transition-all duration-500 hover:shadow-[0_10px_30px_rgba(0,0,204,0.3)] rounded-full overflow-hidden">
+          <Link href="/#contact-form" className="group relative inline-block px-10 py-4 bg-[#ffb92d] transition-all duration-500 hover:shadow-[0_10px_30px_rgba(0,0,204,0.3)] rounded-full overflow-hidden">
             {/* Hover Slide Effect */}
-            <div className="absolute inset-0 w-0 bg-[#ffb92d] group-hover:w-full transition-all duration-500 ease-out" />
+            <div className="absolute inset-0 w-0 bg-[#091242] group-hover:w-full transition-all duration-500 ease-out" />
             
-            <span className="relative z-10 text-white group-hover:text-[#101b55] font-bold text-sm uppercase tracking-[0.15em] transition-colors duration-500">
+            <span className="relative z-10 text-white group-hover:text-white font-bold text-sm uppercase tracking-[0.15em] transition-colors duration-500">
                Get A Quote
             </span>
           </Link>

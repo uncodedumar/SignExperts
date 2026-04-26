@@ -55,8 +55,8 @@ const WorkProcess = () => {
                 <div className="w-20 h-20 border border-gray-500 flex items-center justify-center relative bg-[#101b55] z-10">
                   {step.icon}
                   {/* Step Number Badge */}
-                  <div className="absolute -bottom-2 -right-2 bg-[#ff5e14] text-white text-[10px] font-bold w-6 h-6 rounded-full flex items-center justify-center">
-                    0{index + 1}
+                  <div className="absolute -bottom-2 -right-2 bg-[#ffb92d] text-white text-[10px] font-bold w-6 h-6 rounded-full flex items-center justify-center">
+                    
                   </div>
                 </div>
                 

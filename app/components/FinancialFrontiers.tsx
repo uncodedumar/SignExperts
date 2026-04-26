@@ -114,7 +114,7 @@ const FinancialFrontiers = () => {
           >
             {/* Main Image Replacement */}
             <Image
-              src="/allimages/2EC731A9-9DF6-4D99-AFD6-502D6C38244E.JPG" // Replace with your actual image path
+              src="/allimages/2.png              " // Replace with your actual image path
               alt="Visual Communications Excellence"
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-105"
