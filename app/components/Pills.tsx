@@ -12,11 +12,11 @@ const signData = [
     divisions: [
       {
         name: "Illuminated signs",
-        links: ["3d illuminated signs", "digital led signs", "light box signs", "led backlight/halo signs", "channel signs"]
+        links: ["3d-illuminated-letters", "digital-illuminated-signs", "light-box-signs", "led-backlight-halo-lit", "channel-signs"]
       },
       {
         name: "Non-Illuminated signs",
-        links: ["ADA & Accessibilty Signs", "Dimensional Signs", "Post AND Panel SIgns", "teardrop banners and flags", "Vinyl SIgns", "pylon Signs", "Monumental Signs", "Coroplast Signs", "Billboards", "Street and traffic signs"]
+        links: ["ada-and-accessibility-signs", "dimensional-letters", "post-and-panels-signs", "teardrops-banners-and-flags", "vinyl-banners", "pylon-signs", "coroplast-signs", "billboards", "streets-and-traffic-signs"]
       }
     ]
   },
@@ -25,7 +25,7 @@ const signData = [
     category: "Led Signs",
     icon: <Lightbulb className="w-5 h-5" />,
     color: 'bg-yellow-400',
-    links: ["Led screen", "menu screens", "led lights"]
+    links: ["led-screens", "menu-screens", "led-lights"]
   },
   {
     id: 'indoor',
@@ -35,11 +35,11 @@ const signData = [
     divisions: [
       {
         name: "Way finder and safety signs",
-        links: ["hygiene and safety signs", "custom brand signs", "wayfinding and Directional signs", "illuminated signage", "train show & events", "Exterior storefronts"]
+        links: ["hygiene-and-safety-signs", "custom-brand-identity", "way-finding-and-directional", "illuminated-signage", "trade-show-and-events", "exterior-storefronts"]
       },
       {
         name: "Office signs",
-        links: ["indoor sign", "Retractable Banner signs", "Room/Door Signs", "Window Frosting", "Reception Signs", "Led Backlit Signs", "Directional Signs", "Wall Graphics"]
+        links: ["indoor-signs", "room/door-signs", "window-frosting", "reception-signs", "led-backlit-signs", "directional-signs", "wall-graphics"]
       }
     ]
   },
@@ -48,14 +48,14 @@ const signData = [
     category: "Vehicles Signs",
     icon: <Truck className="w-5 h-5" />,
     color: 'bg-blue-400',
-    links: ["fleet graphics", "car wraps", "one way visions", "vehicles lettering", "van wraps", "truck graphices", "trailer signs", "refelective vehicles signs"]
+    links: ["fleet-graphics", "car-graphics", "one-way-vision", "vehicle-lettering", "van-wraps", "truck-graphics", "trailer-signs", "boat-graphics", "magnetic-vehicles-signs"]
   },
   {
     id: 'promotional',
     category: "Promotional signs",
     icon: <Star className="w-5 h-5" />,
     color: 'bg-orange-400',
-    links: ["Banner and Signs", "Exhibition Signage", "Digital printing", "poster", "window lettering", "window decals"]
+    links: ["banners-and-flags", "exhibition-signage", "digital-printing", "posters", "window-lettering", "window-decals"]
   }
 ];
 
@@ -69,6 +69,11 @@ export default function ProductPlayground() {
       return active.divisions.flatMap(div => div.links);
     }
     return active.links || [];
+  };
+
+  // Helper to make slugs look like titles for the UI
+  const formatSlug = (slug: string): string => {
+    return slug.split('-').join(' ');
   };
 
   const activeItems = getActiveItems();
@@ -113,33 +118,34 @@ export default function ProductPlayground() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -20 }}
               transition={{ duration: 0.3 }}
-              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
+              className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6"
             >
-              {activeItems.map((item, idx) => (
-                <motion.div
-                  key={`${activeTab}-${item}`}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: idx * 0.03 }}
-                  whileHover={{ scale: 1.03, rotate: idx % 2 === 0 ? 0.5 : -0.5 }}
-                  className="bg-white border-2 border-black p-8 rounded-2xl shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] transition-all group cursor-pointer flex items-center justify-center min-h-[120px]"
-                >
-                  <h3 className="font-black text-black  text-lg leading-tight uppercase group-hover:text-blue-600 transition-colors text-center">
-                    {item}
-                  </h3>
-                </motion.div>
+              {activeItems.map((slug, idx) => (
+                <a key={`${activeTab}-${slug}`} href={`/products/${slug}`}>
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ delay: idx * 0.03 }}
+                    whileHover={{ scale: 1.03, rotate: idx % 2 === 0 ? 0.5 : -0.5 }}
+                    className="bg-white border-2 border-black p-4 md:p-8 rounded-2xl shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] md:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px] transition-all group cursor-pointer flex items-center justify-center min-h-[100px] md:min-h-[120px]"
+                  >
+                    <h3 className="font-black text-black text-sm md:text-lg leading-tight uppercase group-hover:text-blue-600 transition-colors text-center">
+                      {formatSlug(slug)}
+                    </h3>
+                  </motion.div>
+                </a>
               ))}
             </motion.div>
           </AnimatePresence>
         </div>
       </div>
 
-      {/* Bottom Marquee - Adjusted with mt-auto to push to bottom and fixed vertical spacing */}
-      <div className="mt-auto overflow-hidden relative py-6  bg-[#ffcd45] -rotate-1 scale-105 mb-10">
+      {/* Bottom Marquee */}
+      <div className="mt-auto overflow-hidden relative py-6 bg-[#ffcd45] -rotate-1 scale-105 mb-10">
         <div className="flex animate-loop-scroll-reverse space-x-12 whitespace-nowrap">
-          {[...activeItems, ...activeItems].map((text, i) => (
+          {[...activeItems, ...activeItems].map((slug, i) => (
             <span key={i} className="text-xl font-black text-gray-700 uppercase italic tracking-tighter">
-              • {text}
+              • {formatSlug(slug)}
             </span>
           ))}
         </div>
