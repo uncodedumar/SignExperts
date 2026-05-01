@@ -1806,28 +1806,14 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Layered Multi-Color Text",
         description: "Eye-catching multi-layered vinyl text designs that add depth, vibrancy, and style to your vehicle lettering.",
-        imageUrl: "/SignsImages/"
+        imageUrl: "/SignsImages/Layered Multi-Color Tex.jpg"
       },
       {
         title: "Service Listing Decals",
         description: "Custom decals that list your services directly on vehicles, turning them into mobile advertisements.",
-        imageUrl: "/SignsImages/"
+        imageUrl: "/SignsImages/Service Listing Decal.webp"
       },
-      {
-        title: "Corporate Logo Decals",
-        description: "Precision-cut vinyl decals featuring your company logo, perfect for consistent branding across vehicles.",
-        imageUrl: "/SignsImages/"
-      },
-      {
-        title: "Fleet Identification Numbering",
-        description: "Durable numbering and lettering solutions for fleet vehicles, ensuring clear identification and compliance.",
-        imageUrl: "/SignsImages/"
-      },
-      {
-        title: "Cohesive Partial Wraps",
-        description: "Strategic partial wraps that integrate seamlessly with lettering for a unified, professional design.",
-        imageUrl: "/SignsImages/"
-      }
+
     ]
   },
   {
@@ -1857,16 +1843,7 @@ export const productsData: ProductHeroData[] = [
         description: "High-quality vinyl lettering engineered to withstand weather, UV exposure, and daily wear.",
         iconName: "Image"
       },
-      {
-        title: "Expert Application",
-        description: "Precision installation with clean alignment and bubble-free finishing for a polished look.",
-        iconName: "Tool"
-      },
-      {
-        title: "Update & Refresh Services",
-        description: "Support for updating contact info, refreshing faded lettering, or adding new service details.",
-        iconName: "RefreshCw"
-      }
+ 
     ],
 
 
@@ -1876,12 +1853,12 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Cut-Vinyl Contact Info",
         description: "Clean, professional lettering for phone numbers, websites, and addresses, ensuring customers can easily reach you.",
-        imageUrl: "/SignsImages/"
+        imageUrl: "/SignsImages/Cut-Vinyl Contact Inf.jpg"
       },
       {
         title: "Layered Multi-Color Text",
         description: "Eye-catching multi-layered vinyl text designs that add depth, vibrancy, and style to your vehicle lettering.",
-        imageUrl: "/SignsImages/"
+        imageUrl: "/SignsImages/Layered Multi-Color Tex.jpg"
       },
 
 
@@ -1916,16 +1893,8 @@ export const productsData: ProductHeroData[] = [
         description: "Unique designs for full, partial, or panel wraps that maximize visibility and brand recognition.",
         iconName: "PenTool"
       },
-      {
-        title: "Premium Vinyl Printing",
-        description: "Weather-resistant, high-resolution printing on durable vinyl for long-lasting van graphics.",
-        iconName: "Image"
-      },
-      {
-        title: "Professional Installation",
-        description: "Expert application with seamless alignment and bubble-free finishing for a flawless van transformation.",
-        iconName: "Tool"
-      },
+ 
+  
       {
         title: "Maintenance & Refresh Services",
         description: "Support for refreshing, repairing, or updating wraps to keep your vans looking sharp.",
@@ -1940,17 +1909,17 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Contractor Branding",
         description: "Custom wraps designed for contractors, showcasing services and contact details with a professional finish.",
-        imageUrl: "/SignsImages/"
+        imageUrl: "/SignsImages/Contractor Brandin.jpg"
       },
       {
         title: "Delivery Van Wraps",
         description: "High-visibility wraps for delivery vans that promote your brand while on the move.",
-        imageUrl: "/SignsImages/"
+        imageUrl: "/SignsImages/Delivery Van Wrap.jpg"
       },
       {
         title: "Panel Van Graphics",
         description: "Strategic graphics tailored for panel vans, combining bold visuals with practical branding placement.",
-        imageUrl: "/SignsImages/"
+        imageUrl: "/SignsImages/Panel Van Graphic.jpg"
       },
     ]
   },
@@ -1976,21 +1945,13 @@ export const productsData: ProductHeroData[] = [
         description: "Unique designs for full, partial, or tailgate wraps that maximize visibility and brand recognition.",
         iconName: "PenTool"
       },
-      {
-        title: "Heavy-Duty Vinyl Printing",
-        description: "High-resolution, weather-resistant printing on durable vinyl engineered for large truck surfaces.",
-        iconName: "Image"
-      },
+    
       {
         title: "Professional Installation",
         description: "Expert application with seamless alignment and bubble-free finishing for a flawless truck transformation.",
         iconName: "Tool"
       },
-      {
-        title: "Maintenance & Refresh Services",
-        description: "Support for refreshing, repairing, or updating graphics to keep your trucks looking sharp.",
-        iconName: "RefreshCw"
-      }
+  
     ],
 
 
@@ -2000,17 +1961,17 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Tailgate Wraps",
         description: "Bold tailgate wraps that maximize rear visibility, turning every stop into a branding opportunity.",
-        imageUrl: "/SignsImages/"
+        imageUrl: "/SignsImages/Tailgate Wrap.jpg"
       },
       {
         title: "Box Truck Side Panels",
         description: "Large-format side panel graphics for box trucks, delivering high-impact advertising on expansive surfaces.",
-        imageUrl: "/SignsImages/"
+        imageUrl: "/SignsImages/Box Truck Side Panels.jpg"
       },
       {
         title: "Cab & Door Branding",
         description: "Strategic cab and door graphics that highlight your logo and key details with professional precision.",
-        imageUrl: "/SignsImages/"
+        imageUrl: "/SignsImages/Cab & Door Branding.jpg"
       },
     ]
   },
@@ -2041,16 +2002,7 @@ export const productsData: ProductHeroData[] = [
         description: "High-resolution, weather-resistant printing on durable vinyl engineered for large trailer surfaces.",
         iconName: "Image"
       },
-      {
-        title: "Professional Installation",
-        description: "Expert application with seamless alignment and bubble-free finishing for a flawless trailer transformation.",
-        iconName: "Tool"
-      },
-      {
-        title: "Maintenance & Safety Refresh",
-        description: "Support for refreshing graphics, updating safety strips, or repairing panels to keep trailers compliant and sharp.",
-        iconName: "RefreshCw"
-      }
+
     ],
 
 
@@ -2060,81 +2012,21 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Enclosed Trailer Wraps",
         description: "Full wraps for enclosed trailers that deliver maximum brand exposure while protecting the trailer exterior.",
-        imageUrl: "/SignsImages/"
+        imageUrl: "/SignsImages/Enclosed Trailer Wrap.webp"
       },
       {
         title: "Utility Trailer Sign Panels",
         description: "Custom panels for utility trailers, combining bold visuals with practical branding placement.",
-        imageUrl: "/SignsImages/"
+        imageUrl: "/SignsImages/Utility Trailer Sign Panel.jpg"
       },
       {
         title: "Reflective Safety Strips",
         description: "High-visibility reflective strips that enhance nighttime safety while reinforcing your brand identity.",
-        imageUrl: "/SignsImages/"
+        imageUrl: "/SignsImages/Reflective Safety Strip.webp"
       },
     ]
   },
-  {
-    slug: "boat-graphics",
-    title: "Boat Graphics",
-    highlightTitle: "Presence",
-    descriptionMain: "Make waves with custom boat graphics that turn your vessel into a striking showcase of your brand or personal style. From hull wraps to registration lettering, our marine graphics are designed to withstand the elements while delivering bold, lasting impact.",
-    descriptionSecondary: "Our boat graphics services combine creative design, marine-grade vinyl printing, and expert installation to deliver durable, high-visibility visuals. Perfect for commercial fleets, private boats, and promotional vessels, we help your brand stand out on the water.",
-    image: "/SignsImages/",
 
-
-
-
-    services: [
-      {
-        title: "Marine Branding Consultation",
-        description: "We assess your boat type and branding goals to craft a tailored graphics strategy for the water.",
-        iconName: "Briefcase"
-      },
-      {
-        title: "Custom Hull & Deck Design",
-        description: "Creative designs for full hull wraps, deck accents, and lettering that maximize visibility and style.",
-        iconName: "PenTool"
-      },
-      {
-        title: "Marine-Grade Vinyl Printing",
-        description: "High-resolution printing on UV- and saltwater-resistant vinyl engineered for long-lasting marine performance.",
-        iconName: "Image"
-      },
-      {
-        title: "Professional Marine Installation",
-        description: "Expert application with precise alignment and bubble-free finishing for a flawless boat transformation.",
-        iconName: "Tool"
-      },
-      {
-        title: "Maintenance & Refresh Services",
-        description: "Support for refreshing, repairing, or updating graphics to keep your boat looking sharp season after season.",
-        iconName: "RefreshCw"
-      }
-    ],
-
-
-
-
-    products: [
-      {
-        title: "Boat Name & Registration",
-        description: "Custom lettering for boat names and registration numbers, designed for clarity, compliance, and style.",
-        imageUrl: "/SignsImages/"
-      },
-      {
-        title: "Full Hull Wraps",
-        description: "Complete hull wraps that transform your boat into a floating billboard or personalized design statement.",
-        imageUrl: "/SignsImages/"
-      },
-      {
-        title: "Marine Brand Logos",
-        description: "Precision-cut vinyl logos tailored for marine environments, ensuring your brand stands out on the water.",
-        imageUrl: "/SignsImages/"
-      },
-
-    ]
-  },
   {
     slug: "magnetic-vehicles-signs",
     title: "Magnetic Vehicle Signs",
@@ -2158,16 +2050,6 @@ export const productsData: ProductHeroData[] = [
         iconName: "PenTool"
       },
       {
-        title: "Heavy-Duty Magnetic Printing",
-        description: "High-resolution printing on durable magnetic sheets engineered for outdoor use and repeated application.",
-        iconName: "Image"
-      },
-      {
-        title: "Precision Cutting & Finishing",
-        description: "Expert shaping and finishing for clean edges, smooth surfaces, and professional presentation.",
-        iconName: "Tool"
-      },
-      {
         title: "Maintenance & Replacement Support",
         description: "Assistance with refreshing worn signs or producing updated designs to keep your fleet sharp.",
         iconName: "RefreshCw"
@@ -2181,17 +2063,17 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Heavy-Duty Door Magnets",
         description: "Strong, weather-resistant door magnets that securely attach to vehicles, delivering reliable branding on the move.",
-        imageUrl: "/SignsImages/"
+        imageUrl: "/SignsImages/Heavy-Duty Door Magnet.jpg"
       },
       {
         title: "Custom Shaped Magnets",
         description: "Unique magnet designs cut to custom shapes, adding personality and distinction to your vehicle signage.",
-        imageUrl: "/SignsImages/"
+        imageUrl: "/SignsImages/Custom Shaped Magnet.jpg"
       },
       {
         title: "Reflective Magnetic Signs",
         description: "High-visibility reflective magnets that enhance nighttime safety while keeping your brand message clear.",
-        imageUrl: "/SignsImages/"
+        imageUrl: "/SignsImages/Reflective Magnetic Signs.jpg"
       },
     ]
   }
@@ -2226,21 +2108,7 @@ export const productsData: ProductHeroData[] = [
         description: "High-resolution printing on durable magnetic sheets engineered for outdoor use and repeated application.",
         iconName: "Image"
       },
-      {
-        title: "Precision Cutting & Finishing",
-        description: "Expert shaping and finishing for clean edges, smooth surfaces, and professional presentation.",
-        iconName: "Tool"
-      },
-      {
-        title: "Safety & Compliance Enhancements",
-        description: "Integration of reflective decals and chevron strips to meet safety standards while boosting visibility.",
-        iconName: "Shield"
-      },
-      {
-        title: "Maintenance & Replacement Support",
-        description: "Assistance with refreshing worn signs or producing updated designs to keep your fleet sharp.",
-        iconName: "RefreshCw"
-      }
+  
     ],
 
 
@@ -2250,22 +2118,22 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Heavy-Duty Door Magnets",
         description: "Strong, weather-resistant door magnets that securely attach to vehicles, delivering reliable branding on the move.",
-        imageUrl: "/SignsImages/"
+        imageUrl: "/SignsImages/Heavy-Duty Door Magnet.jpg"
       },
       {
         title: "Custom Shaped Magnets",
         description: "Unique magnet designs cut to custom shapes, adding personality and distinction to your vehicle signage.",
-        imageUrl: "/SignsImages/"
+        imageUrl: "/SignsImages/Custom Shaped Magnet.jpg"
       },
       {
         title: "Reflective Magnetic Signs",
         description: "High-visibility reflective magnets that enhance nighttime safety while keeping your brand message clear.",
-        imageUrl: "/SignsImages/"
+        imageUrl: "/SignsImages/Reflective Magnetic Signs.jpg"
       },
       {
         title: "Chevron Safety Strips",
         description: "Magnetic chevron-patterned strips designed for rear and side panels, improving safety and compliance in low-light conditions.",
-        imageUrl: "/SignsImages/"
+        imageUrl: "/SignsImages/_"
       },
 
     ]
@@ -2310,24 +2178,8 @@ export const productsData: ProductHeroData[] = [
           "High-resolution printing using fade-resistant inks on durable materials for both indoor and outdoor use.",
         iconName: "Image"
       },
-      {
-        title: "Precision Finishing & Stitching",
-        description:
-          "Reinforced edges, strong stitching, and professional finishing for long-lasting durability in all weather conditions.",
-        iconName: "Scissors"
-      },
-      {
-        title: "Event & Outdoor Setup Support",
-        description:
-          "Guidance on installation, mounting systems, and positioning for maximum visibility at events and outdoor spaces.",
-        iconName: "MapPin"
-      },
-      {
-        title: "Replacement & Seasonal Updates",
-        description:
-          "Quick redesign and replacement services to keep your promotional campaigns fresh and relevant throughout the year.",
-        iconName: "RefreshCw"
-      }
+  
+  
     ],
 
 
@@ -2338,19 +2190,19 @@ export const productsData: ProductHeroData[] = [
         title: "Vinyl Event Banners",
         description:
           "Durable, weather-resistant vinyl banners designed for events, promotions, and storefront displays with vibrant full-color printing.",
-        imageUrl: "/SignsImages/"
+        imageUrl: "/SignsImages/Vinyl Event Banners.jpg"
       },
       {
         title: "Feather & Teardrop Flags",
         description:
           "Dynamic, wind-responsive flags perfect for outdoor branding, exhibitions, and roadside visibility with eye-catching motion.",
-        imageUrl: "/SignsImages/"
+        imageUrl: "/SignsImages/Feather Bann.jpg"
       },
       {
         title: "Retractable Banner Stands",
         description:
           "Portable indoor display stands that set up in seconds, ideal for trade shows, presentations, and retail promotions.",
-        imageUrl: "/SignsImages/"
+        imageUrl: "/SignsImages/Retractable Bann.jpg"
       }
     ]
   },
@@ -2390,24 +2242,8 @@ export const productsData: ProductHeroData[] = [
           "Premium-quality printing for banners, panels, and fabric displays ensuring sharp visuals even at large viewing distances.",
         iconName: "Image"
       },
-      {
-        title: "Modular Setup & Fabrication",
-        description:
-          "Flexible booth structures and modular systems that are easy to assemble, transport, and reuse across multiple events.",
-        iconName: "Grid"
-      },
-      {
-        title: "On-Site Installation Guidance",
-        description:
-          "Professional support and instructions for quick setup and alignment of exhibition displays for perfect presentation.",
-        iconName: "MapPin"
-      },
-      {
-        title: "Event Branding Refresh Services",
-        description:
-          "Quick updates and redesign options for recurring events to keep your exhibition presence modern and impactful.",
-        iconName: "RefreshCw"
-      }
+ 
+    
     ],
 
 
@@ -2418,19 +2254,19 @@ export const productsData: ProductHeroData[] = [
         title: "Backlit Fabric Displays",
         description:
           "Illuminated fabric panels that enhance brand visuals with vibrant lighting, perfect for drawing attention in low-light exhibition halls.",
-        imageUrl: "/SignsImages/"
+        imageUrl: "/SignsImages/Backlit Fabric Lightbox.webp"
       },
       {
         title: "Table Throws & Runners",
         description:
           "Custom-printed table covers that add a professional finishing touch to your booth while reinforcing brand identity.",
-        imageUrl: "/SignsImages/"
+        imageUrl: "/SignsImages/Table Throws & Runners.jpg"
       },
       {
         title: "Modular Booth Graphics",
         description:
           "Interchangeable graphic panels designed for flexible booth setups, allowing easy customization across different exhibitions.",
-        imageUrl: "/SignsImages/"
+        imageUrl: "/SignsImages/Modular Booth Graphics.jpg"
       }
     ]
   }
@@ -2482,24 +2318,7 @@ export const productsData: ProductHeroData[] = [
           "Advanced printing technology that produces crisp details, rich colors, and consistent quality on a wide range of materials.",
         iconName: "Image"
       },
-      {
-        title: "Material Selection & Matching",
-        description:
-          "Guidance on choosing the right substrates such as vinyl, paper, fabric, or adhesive materials based on your application.",
-        iconName: "Layers"
-      },
-      {
-        title: "Precision Cutting & Finishing",
-        description:
-          "Professional cutting, lamination, and finishing techniques to ensure polished, ready-to-install printed materials.",
-        iconName: "Scissors"
-      },
-      {
-        title: "Bulk Production & Scaling",
-        description:
-          "Efficient large-volume printing solutions ideal for campaigns, franchises, and multi-location branding consistency.",
-        iconName: "Package"
-      }
+  
     ],
 
 
@@ -2510,19 +2329,19 @@ export const productsData: ProductHeroData[] = [
         title: "Custom Wall Murals",
         description:
           "Large-format printed wall designs that transform interiors with immersive branding, storytelling visuals, and high-impact aesthetics.",
-        imageUrl: "/SignsImages/"
+        imageUrl: "/SignsImages/Full Wall Brand Mura.jpg"
       },
       {
         title: "Floor Graphics",
         description:
           "Durable, slip-resistant printed floor decals designed for wayfinding, promotions, and creative branding in high-traffic areas.",
-        imageUrl: "/SignsImages/"
+        imageUrl: "/SignsImages/Floor Dec.webp"
       },
       {
         title: "Window Clings",
         description:
           "Reusable adhesive graphics for glass surfaces that enhance storefront visibility while allowing easy installation and removal.",
-        imageUrl: "/SignsImages/"
+        imageUrl: "/SignsImages/Window Clings.jpg"
       }
     ]
   },
@@ -2570,24 +2389,8 @@ export const productsData: ProductHeroData[] = [
           "Ultra-clear printing with vibrant colors and sharp detailing, ensuring your posters stand out in any environment.",
         iconName: "Image"
       },
-      {
-        title: "Paper & Material Selection",
-        description:
-          "Guidance on choosing the ideal paper type, finish, and thickness based on indoor or semi-outdoor usage requirements.",
-        iconName: "Layers"
-      },
-      {
-        title: "Lamination & Protection Coating",
-        description:
-          "Optional matte or gloss lamination to enhance durability, protect against moisture, and improve visual appeal.",
-        iconName: "Shield"
-      },
-      {
-        title: "Bulk Poster Production",
-        description:
-          "Efficient large-scale printing solutions for campaigns, events, and retail promotions with consistent quality across all prints.",
-        iconName: "Package"
-      }
+
+
     ],
 
 
@@ -2598,19 +2401,19 @@ export const productsData: ProductHeroData[] = [
         title: "Backlit Film Posters",
         description:
           "Translucent posters designed for illuminated displays, delivering vibrant visuals that shine brightly in lightboxes and signage frames.",
-        imageUrl: "/SignsImages/"
+        imageUrl: "/SignsImages/Backlit Logo Panels.jpg"
       },
       {
         title: "Mounting Board Posters",
         description:
           "Rigid, high-strength posters mounted on durable boards for long-lasting indoor displays, exhibitions, and presentations.",
-        imageUrl: "/SignsImages/"
+        imageUrl: "/SignsImages/Mounting Board Posters.jpg"
       },
       {
         title: "Laminated Safety Posters",
         description:
           "Protective laminated posters designed for safety instructions, industrial signage, and high-traffic environments requiring durability.",
-        imageUrl: "/SignsImages/"
+        imageUrl: "/SignsImages/Laminated Safety Posters.jpg"
       }
     ]
   },
@@ -2658,24 +2461,8 @@ export const productsData: ProductHeroData[] = [
           "High-accuracy cutting technology that produces clean edges and perfectly shaped lettering for a polished finish.",
         iconName: "Scissors"
       },
-      {
-        title: "Professional Application Support",
-        description:
-          "Expert installation guidance or on-site application to ensure bubble-free, aligned, and long-lasting adhesion.",
-        iconName: "Tool"
-      },
-      {
-        title: "Material & Finish Selection",
-        description:
-          "Options including matte, gloss, frosted, or specialty vinyl finishes to match your brand tone and environment.",
-        iconName: "Layers"
-      },
-      {
-        title: "Replacement & Seasonal Updates",
-        description:
-          "Easy removal and replacement services for promotions, seasonal campaigns, or updated branding requirements.",
-        iconName: "RefreshCw"
-      }
+
+  
     ],
 
 
@@ -2686,19 +2473,19 @@ export const productsData: ProductHeroData[] = [
         title: "Metallic Vinyl Lettering",
         description:
           "Premium reflective metallic vinyl that adds a bold, premium look to storefront windows while maintaining high durability.",
-        imageUrl: "/SignsImages/"
+        imageUrl: "/SignsImages/Metal Lami.jpg"
       },
       {
         title: "Fluorescent Storefront Text",
         description:
           "High-visibility neon-style lettering designed to grab attention instantly, especially effective for promotions and nighttime appeal.",
-        imageUrl: "/SignsImages/"
+        imageUrl: "/SignsImages/Fluorescent Storefront Text.jpg"
       },
       {
         title: "Etched Glass Vinyl",
         description:
           "Frosted glass-effect vinyl that delivers a sophisticated etched appearance, ideal for offices, partitions, and privacy branding.",
-        imageUrl: "/SignsImages/"
+        imageUrl: "/SignsImages/Etched Glass Vinyl.webp"
       }
     ]
   },
@@ -2758,19 +2545,19 @@ export const productsData: ProductHeroData[] = [
         title: "Die-Cut Logo Decals",
         description:
           "Custom-shaped decals featuring your logo, cut with precision for a clean, professional look on storefronts or vehicles.",
-        imageUrl: "/SignsImages/"
+        imageUrl: "/SignsImages/Die-Cut Logo Decals.avif"
       },
       {
         title: "Perforated Window Wraps",
         description:
           "One-way vision wraps that display bold designs outside while maintaining clear visibility inside.",
-        imageUrl: "/SignsImages/"
+        imageUrl: "/SignsImages/Window Clings.jpg"
       },
       {
         title: "Double-Sided Window Decals",
         description:
           "Graphics visible from both inside and outside, perfect for maximizing promotional impact on glass surfaces.",
-        imageUrl: "/SignsImages/"
+        imageUrl: "/SignsImages/Transparent LED Scre.avif"
       },
 
     ]
