@@ -230,7 +230,7 @@ export const productsData: ProductHeroData[] = [
     highlightTitle: "Letters",
     descriptionMain: "3D Illuminated Channel Letters have become an extremely popular signage solution for businesses that need bold, high-visibility branding. They deliver the look of neon signs with the benefits of LED cost-effectiveness, low power consumption, brightness, and durability. Custom illuminated channel letters are widely used for storefront signs, office signage, senior living facility signs, student housing signage, mixed-use development signs, hospitality signage, and exterior building signs where day and night visibility matters",
     descriptionSecondary: "All your customers think differently...",
-    image: "/images/illuminated-hero.jpg",
+    image: "/SignsImages/3dilluminated.webp",
     services: [
       {
         title: "3D Illuminated Letters",
@@ -252,17 +252,17 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Backlit Channel Letters",
         description: "The base of a 3D illuminated letter. Durable and affordable. Customise the style, size and colour to suit your brand. They may be laser/ router cut and made into 3D fabricated hollow acrylic letters, with the option of LED illumination.",
-        imageUrl: "/SignsImages/backlit.jpg",
+        imageUrl: "/SignsImages/Backlit Channel Let.webp",
       },
       {
         title: "Front-Lit Signs",
         description: "The most common type of 3D illuminated letter. These often have an acrylic face and aluminium sides (known as 'returns') and back, but are fully customisable. They have LED modules hidden on the interior of each letter, illuminating the 'face'. They are best for long distance visibility. Usually, the colour elements of the logo are made with cut translucent vinyl, or if the colour of the face is solid, the acrylic can be a specific colour.",
-        imageUrl: "/SignsImages/Front-Lit Signs.jpg",
+        imageUrl: "/SignsImages/Front-Lit Sig.webp",
       },
       {
         title: "Halo-lit Letters",
         description: "Also called 'Back-lit letters' or 'Reverse-lit letters', these are a softer and classy look, usually metal or aluminium letters that are illuminated from the back to cast a halo glow effect.",
-        imageUrl: "/SignsImages/Halo-lit Letters.jpg",
+        imageUrl: "/SignsImages/Halo-lit Lette.jpg",
       },
     ]
   },
@@ -273,7 +273,7 @@ export const productsData: ProductHeroData[] = [
     highlightTitle: "Letters",
     descriptionMain: "3D Illuminated Channel Letters have become an extremely popular signage solution for businesses that need bold, high-visibility branding. They deliver the look of neon signs with the benefits of LED cost-effectiveness, low power consumption, brightness, and durability. Custom illuminated channel letters are widely used for storefront signs, office signage, senior living facility signs, student housing signage, mixed-use development signs, hospitality signage, and exterior building signs where day and night visibility matters. ",
     descriptionSecondary: "Sign experts deals in 3D illuminated signage, helping businesses create custom signs that strengthen brand presence and improve visibility.",
-    image: "/images/illuminated-hero.jpg",
+    image: "/SignsImages/Digital Illuminated Sign.jpg",
     services: [
       {
         title: "24/7 Brand Visibility",
@@ -295,17 +295,17 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Outdoor LED Displays",
         description: "Weatherproof, high-brightness digital screens designed for maximum impact. Deliver dynamic advertisements and real-time content that stays visible even in direct sunlight.",
-        imageUrl: "/SignsImages/Outdoor LED Displays.jpg",
+        imageUrl: "/SignsImages/Outdoor LED Display.webp",
       },
       {
         title: "Indoor Digital Posters",
         description: "Sleek, high-resolution slimline displays that replace traditional static posters. Perfect for retail promotions, menu boards, and engaging indoor brand storytelling.",
-        imageUrl: "/SignsImages/Indoor Digital Posters.jpg",
+        imageUrl: "/SignsImages/Indoor Digital Posters.webp",
       },
       {
         title: "Scrolling LED Tickers",
         description: "Streamline communication with programmable scrolling text. Ideal for stock updates, breaking news, or promotional alerts in corporate environments and storefronts.",
-        imageUrl: "/SignsImages/Scrolling LED Tickers.jpg",
+        imageUrl: "/SignsImages/Scrolling LED Ticker.jpg",
       },]
   },
 
@@ -316,7 +316,7 @@ export const productsData: ProductHeroData[] = [
     highlightTitle: "Cabinets",
     descriptionMain: "Light box signs, or cabinet signs, are the gold standard for businesses seeking maximum brand impact with a sleek, uniform glow. Unlike individual letters, these signs provide a large, seamless canvas for complex logos and vibrant graphics, ensuring your brand is unmistakable from a distance.",
     descriptionSecondary: "From ultra-slim interior displays to rugged outdoor monument cabinets, we design and manufacture custom light boxes that ensure your business never fades into the background.",
-    image: "/images/illuminated-hero.jpg",
+    image: "/SignsImages/lightboxx.webp",
     services: [
       {
         title: "All-Day Brand Dominance",
@@ -338,17 +338,17 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Double-Sided Projecting Boxes",
         description: "Maximize visibility from both directions with perpendicular mounting. These durable cabinets are engineered to capture foot traffic and vehicular flow, making them essential for narrow streets and busy storefronts.",
-        imageUrl: "/SignsImages/Double-Sided Projecting Boxes.jpg",
+        imageUrl: "/SignsImages/Double-Sided Projecting Boxes.avif",
       },
       {
         title: "LED Fabric Lightboxes",
         description: "Achieve a premium, frameless look with tensioned fabric graphics. Our LED fabric boxes provide a sophisticated, soft-glow aesthetic with easily swappable prints, perfect for high-end retail and showroom environments.",
-        imageUrl: "/SignsImages/LED Fabric Lightboxes.jpg",
+        imageUrl: "/SignsImages/LED Fabric Lightboxe.jpg",
       },
       {
-        title: "Aluminum Sign Cabinets",
+        title: "Aluminum Sign",
         description: "The industry standard for durability and scale. These heavy-duty aluminum frames are rust-resistant and built to house large-format graphics, offering a robust, long-term signage solution for exterior building facades.",
-        imageUrl: "/SignsImages/Aluminum Sign Cabinets.jpg",
+        imageUrl: "/SignsImages/Aluminum Sig.webp",
       },
     ]
   },
@@ -360,7 +360,7 @@ export const productsData: ProductHeroData[] = [
     highlightTitle: "Aura",
     descriptionMain: "Backlit Signs are produced with high-quality, efficient materials that provide a professional look to your business. Whether for building exteriors, windows, or rooftops, a backlit sign will shine bright. We work collaboratively with you to create effective backlit signage that suits your budget, brand, and environment, enticing customers with an elegant 'halo' effect.",
     descriptionSecondary: "Sophisticated silhouette lighting solutions designed to add depth and a high-end architectural finish to your brand identity.",
-    image: "/images/illuminated-hero.jpg",
+    image: "/SignsImages/LED Backlight  Halo Lit.webp",
     services: [
       {
         title: "Sophisticated Halo Effect",
@@ -382,12 +382,12 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Halo-Lit Metal Letters",
         description: "Fabricated from premium stainless steel or aluminum, these letters feature an open back that allows light to wash against the wall. This creates a prestigious, floating silhouette effect ideal for high-end corporate branding.",
-        imageUrl: "/SignsImages/Halo-Lit Metal Letters.jpg",
+        imageUrl: "/SignsImages/Halo-Lit Metal Letter.avif",
       },
       {
         title: "Backlit Logo Panels",
         description: "Combine precise laser-cut detailing with integrated rear-illumination. These panels provide a clean, modern aesthetic where the light outlines your entire brand mark, perfect for reception areas and luxury storefronts.",
-        imageUrl: "/SignsImages/Backlit Logo Panels.jpg",
+        imageUrl: "/SignsImages/Backlit Logo Pane.avif",
       },
       {
         title: "RGB Halo Lighting",
@@ -404,7 +404,7 @@ export const productsData: ProductHeroData[] = [
     highlightTitle: "Letters",
     descriptionMain: "Channel signs are individually crafted 3D letters that bring depth, visibility, and a premium look to your storefront. Built with durable materials and integrated LED lighting, they ensure your brand stands out clearly—day or night.",
     descriptionSecondary: "From front-lit and backlit (halo) letters to fully custom fabricated designs, our channel signs are engineered for long-lasting performance and high visual impact.",
-    image: "/images/channel-signs-hero.jpg",
+    image: "/SignsImages/Channel Signs.jpg",
     services: [
       {
         title: "Day & Night Visibility",
@@ -426,17 +426,17 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Front-Lit Channel Letters",
         description: "The most popular signage choice for maximum visibility. These 3D letters feature illuminated acrylic faces with high-efficiency LEDs, ensuring your brand is bold, bright, and readable from long distances.",
-        imageUrl: "/SignsImages/Front-Lit Signs.jpg",
+        imageUrl: "/SignsImages/Front-Lit Channel Letters.jpg",
       },
       {
         title: "Dual-Lit Channel Signs",
         description: "Combine front illumination with a halo backlit effect for a premium, eye-catching look. Dual-lit channel letters offer enhanced depth and sophistication, making them ideal for high-end retail.",
-        imageUrl: "/SignsImages/Dual.jpg",
+        imageUrl: "/SignsImages/Dual-Lit Channel Sign.jpg",
       },
       {
         title: "Raceway Mounted Signs",
         description: "A practical and clean installation solution where all wiring and components are enclosed within a single raceway. This method reduces wall penetration and installation time.",
-        imageUrl: "/SignsImages/Raceway .jpg",
+        imageUrl: "/SignsImages/Raceway Mounted Sign.jpg",
       },
     ]
   },
@@ -450,7 +450,7 @@ export const productsData: ProductHeroData[] = [
     highlightTitle: "Compliance",
     descriptionMain: "Ensure your facility is inclusive and code-compliant with professional ADA signage. These signs are specifically engineered to meet federal and local accessibility standards, featuring Grade 2 Braille, tactile raised lettering, and high-contrast finishes. Beyond mere compliance, our accessibility signs provide essential wayfinding for all visitors, ensuring that restrooms, exits, and rooms are easily identifiable for those with visual impairments.",
     descriptionSecondary: "Our experts design custom ADA-compliant signage that seamlessly integrates with your building’s interior aesthetic while adhering to strict regulatory requirements.",
-    image: "/images/ada-accessibility-hero.jpg",
+    image: "/SignsImages/ADAnd Accessibility Sigs.webp",
     services: [
       {
         title: "Braille & Tactile Integration",
@@ -472,17 +472,17 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Room Identification Signs",
         description: "Custom office and room number signs featuring tactile text and Braille, available in various materials to match your interior design.",
-        imageUrl: "/SignsImages/Room Identific.jpg",
+        imageUrl: "/SignsImages/Room Identification Sign.webp",
       },
       {
         title: "Restroom Accessibility Signs",
         description: "Standardized ADA restroom signs with universal icons and Braille, essential for public buildings and commercial spaces.",
-        imageUrl: "/SignsImages/Restroom Accessibilit.jpg",
+        imageUrl: "/SignsImages/Restroom Accessibility Sign.webp",
       },
       {
         title: "Emergency Exit Signs",
         description: "Durable, high-contrast tactile exit signs and floor level markers designed to meet life-safety codes and emergency regulations.",
-        imageUrl: "/SignsImages/Emergency Exit.jpg",
+        imageUrl: "/SignsImages/Emergency Exit Sign.webp",
       },
     ]
   },
@@ -494,7 +494,7 @@ export const productsData: ProductHeroData[] = [
     highlightTitle: "Depth",
     descriptionMain: "Dimensional letters offer a high-impact, 3D branding solution that adds depth and character to any surface. Unlike flat vinyl, these precision-cut letters create a professional and permanent look for storefronts, reception areas, and corporate offices. Available in a wide array of materials, thicknesses, and finishes, dimensional lettering allows you to transform your brand identity into a physical architectural element that commands attention through shadow and scale.",
     descriptionSecondary: "Our experts specialize in custom-fabricated non-illuminated signage, helping you select the perfect material and finish to match your brand's unique aesthetic.",
-    image: "/images/dimensional-letters-hero.jpg",
+    image: "/SignsImages/Dimensional Letter.jpg",
     services: [
       {
         title: "Versatile Material Selection",
@@ -516,17 +516,17 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Flat-Cut Acrylic",
         description: "A versatile and cost-effective choice for a sleek, modern look. Our acrylic letters are laser-cut with polished edges and available in a spectrum of vibrant colors or crystal-clear finishes.",
-        imageUrl: "/SignsImages/Flatcut.jpg",
+        imageUrl: "/SignsImages/Flat-Cut Acrylic.webp",
       },
       {
         title: "Metal Laminates",
         description: "Achieve the high-end look of solid metal at a fraction of the weight and cost. These letters feature a real metal face bonded to a high-density core, perfect for sophisticated lobby displays.",
-        imageUrl: "/SignsImages/Metal Lami.jpg",
+        imageUrl: "/SignsImages/Metal Laminate.webp",
       },
       {
         title: "High-Density Urethane (HDU)",
         description: "The premier choice for large-scale outdoor signage. HDU is waterproof, rot-resistant, and can be carved or sandblasted to create intricate, deep-dimension designs that withstand the elements.",
-        imageUrl: "/SignsImages/High-Density Uretha.jpg",
+        imageUrl: "/SignsImages/High-Density Urethane .jpg",
       },
     ]
   },
@@ -538,7 +538,7 @@ export const productsData: ProductHeroData[] = [
     highlightTitle: "Direction",
     descriptionMain: "Post and panel signs are the versatile workhorses of outdoor branding, offering a clean and effective solution for site identification and wayfinding. These freestanding signs are engineered for maximum durability, providing a professional presence for business parks, residential developments, and commercial properties. Whether you need a temporary real estate display or a permanent architectural monument, our post and panel systems offer high-visibility messaging that is built to withstand the elements.",
     descriptionSecondary: "Our team designs custom exterior signage solutions that simplify navigation and strengthen your property’s curb appeal through robust, high-quality fabrication.",
-    image: "/images/post-panel-hero.jpg",
+    image: "/SignsImages/Post and Panel Signs.jpg",
     services: [
       {
         title: "Freestanding Site ID",
@@ -560,12 +560,12 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Aluminum Site Signs",
         description: "Heavy-duty aluminum panels mounted between sturdy posts for a permanent, premium look. Ideal for commercial property identification and long-term business park signage.",
-        imageUrl: "/SignsImages/Aluminum Site .jpg",
+        imageUrl: "/SignsImages/Aluminum Site Si.avif",
       },
       {
         title: "M-Panel Real Estate Signs",
         description: "A cost-effective, high-impact solution for large-scale property listings. These lightweight yet rigid panels are specifically designed for high-visibility real estate marketing and development announcements.",
-        imageUrl: "/SignsImages/M-Panel Real Est.jpg",
+        imageUrl: "/SignsImages/M-Panel Real Estate Si.webp",
       },
       {
         title: "Directional Totems",
