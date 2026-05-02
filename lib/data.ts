@@ -67,7 +67,7 @@ export const blogs: BlogEntry[] = [
       },
       {
         "type": "paragraph",
-        "value": "Modern facility management now requires a 'Safety-First' mindset. This involves building robust visual infrastructures capable of handling high-traffic wear and tear while maintaining seamless, intuitive UI/UX (User Interface/Experience) for the staff on the ground."
+        "value": "Modern facility management now requires a 'Safety-First' mindset. This involves building robust visual infrastructures capable of Lightbulbling high-traffic wear and tear while maintaining seamless, intuitive UI/UX (User Interface/Experience) for the staff on the ground."
       },
       {
         "type": "paragraph",
@@ -124,7 +124,7 @@ export interface SupportContent {
 
 export const supportData: SupportContent = {
   heading: "From Concept to Installation.",
-  subheading: "Whether you need specialized design input or a full-scale rollout, our expert team manages the entire lifecycle of your signage. We handle the technical details, logistics, and craftsmanship, ensuring a seamless transition from your initial idea to a professional on-site finish.",
+  subheading: "Whether you need specialized design input or a full-scale rollout, our expert team manages the entire lifecycle of your signage. We Lightbulble the technical details, logistics, and craftsmanship, ensuring a seamless transition from your initial idea to a professional on-site finish.",
 };
 
 // data.ts
@@ -165,51 +165,7 @@ export interface ServiceCard {
   iconName: | 'Lightbulb'
   | 'Sun'
   | 'Layers'
-  | 'Eye'
-  | 'Zap'
-  | 'Sparkles'
-  | 'Hand'
-  | 'CheckCircle'
-  | 'Map'
-  | 'Palette'
-  | 'Maximize'
-  | 'MapPin'
-  | 'Layout'
-  | 'Wind'
-  | 'Shield'
-  | 'Image'
-  | 'Anchor'
-  | 'Binoculars'
-  | 'Construction'
-  | 'CloudRain'
-  | 'Clipboard'
-  | 'TrendingUp'
-  | 'ShieldCheck'
-  | 'Moon'
-  | 'HardHat'
-  | 'Globe'
-  | 'Monitor'
-  | 'Clock'
-  | 'RefreshCw'
-  | 'ClipboardCheck'
-  | 'Settings'
-  | 'Award'
-  | 'Tool'
-  | 'Brush'
-  | 'Crosshair'
-  | 'Navigation'
-  | 'Leaf'
-  | 'Briefcase'
-  | 'Home'
-  | 'CloudSun'
-  | 'Move'
-  | 'Accessibility'
-  | 'PenTool'
-  | 'EyeOff'
-  | 'LayoutGrid'
-  | 'Package'
-  | 'Grid'
-  | 'Scissors';
+  ;
 }
 
 export interface ProductHeroData {
@@ -278,17 +234,17 @@ export const productsData: ProductHeroData[] = [
       {
         title: "24/7 Brand Visibility",
         description: "Maximize your reach with vibrant LED illumination that ensures your brand stands out day and night, regardless of weather conditions.",
-        iconName: "Eye"
+        iconName: "Lightbulb"
       },
       {
         title: "Energy-Efficient Impact",
         description: "Utilize advanced low-voltage LED technology to achieve high-intensity brightness with significantly lower power consumption than traditional neon.",
-        iconName: "Zap"
+        iconName: "Sun"
       },
       {
         title: "Dynamic Visual Appeal",
         description: "Capture attention with sharp contrast and modern aesthetics that give your storefront a premium, high-tech edge over the competition.",
-        iconName: "Sparkles"
+        iconName: "Layers"
       }
     ],
     products: [
@@ -321,17 +277,17 @@ export const productsData: ProductHeroData[] = [
       {
         title: "All-Day Brand Dominance",
         description: "Maximize your market reach with vibrant LED backlighting that ensures your brand remains sharp and unmistakable, from high-noon sun to the darkest night.",
-        iconName: "Eye"
+        iconName: "Lightbulb"
       },
       {
         title: "Low-Cost Performance",
         description: "Cut overhead costs without sacrificing shine. Our advanced LED systems deliver maximum lumens with a fraction of the power consumption of traditional neon or fluorescent cabinets.",
-        iconName: "Zap"
+        iconName: "Sun"
       },
       {
         title: "Architectural Precision",
         description: "Give your storefront a premium edge. Our light boxes offer uniform edge-to-edge glow and high-contrast graphics that command attention in any crowded commercial landscape.",
-        iconName: "Sparkles"
+        iconName: "Layers"
       }
     ],
     products: [
@@ -375,7 +331,7 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Eco-Friendly Brilliance",
         description: "Achieve intense silhouette lighting using ultra-efficient, low-voltage LED modules that provide long-lasting radiance with minimal energy draw.",
-        iconName: "Zap"
+        iconName: "Sun"
       }
     ],
     products: [
@@ -409,12 +365,12 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Day & Night Visibility",
         description: "Stand out 24/7 with precision-engineered LED illumination. Our channel letters ensure your brand remains bold, legible, and impactful in both daylight and nighttime environments.",
-        iconName: "Eye"
+        iconName: "Lightbulb"
       },
       {
         title: "Energy-Efficient Illumination",
         description: "Reduce operating costs with modern LED modules that deliver high brightness, long lifespan, and minimal power consumption compared to traditional signage lighting.",
-        iconName: "Zap"
+        iconName: "Sun"
       },
       {
         title: "Custom 3D Fabrication",
@@ -430,7 +386,7 @@ export const productsData: ProductHeroData[] = [
       },
       {
         title: "Dual-Lit Channel Signs",
-        description: "Combine front illumination with a halo backlit effect for a premium, eye-catching look. Dual-lit channel letters offer enhanced depth and sophistication, making them ideal for high-end retail.",
+        description: "Combine front illumination with a halo backlit effect for a premium, Lightbulb-catching look. Dual-lit channel letters offer enhanced depth and sophistication, making them ideal for high-end retail.",
         imageUrl: "/SignsImages/Dual-Lit Channel Sign.jpg",
       },
       {
@@ -455,17 +411,17 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Braille & Tactile Integration",
         description: "Standardized Grade 2 Braille and 1/32\" raised tactile characters ensure your signage meets all legal requirements for touch-based identification.",
-        iconName: "Hand"
+        iconName: "Lightbulb"
       },
       {
         title: "Regulatory Compliance",
         description: "Our signs are designed with precise character spacing, non-glare finishes, and correct mounting heights to pass local building inspections with ease.",
-        iconName: "CheckCircle"
+        iconName: "Sun"
       },
       {
         title: "Wayfinding Accessibility",
         description: "Clear, high-contrast pictograms and text help navigate visitors safely through offices, hospitals, schools, and public facilities.",
-        iconName: "Map"
+        iconName: "Layers"
       }
     ],
     products: [
@@ -499,17 +455,17 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Versatile Material Selection",
         description: "Choose from high-grade acrylic, precision-cut metals, or durable foams to achieve the exact texture and weight your brand requires.",
-        iconName: "Layers"
+        iconName: "Lightbulb"
       },
       {
         title: "Custom Finish Matching",
         description: "From matte paints and polished metallics to natural wood grains, we provide custom color and finish matching for a seamless brand experience.",
-        iconName: "Palette"
+        iconName: "Sun"
       },
       {
         title: "Architectural Depth",
         description: "Add a 3D dimension to your walls with various thickness options, creating natural shadows that increase legibility and visual interest.",
-        iconName: "Maximize"
+        iconName: "Layers"
       }
     ],
     products: [
@@ -543,7 +499,7 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Freestanding Site ID",
         description: "Create a prominent brand landmark with durable freestanding structures that don't require wall mounting, perfect for setbacks and green spaces.",
-        iconName: "MapPin"
+        iconName: "Lightbulb"
       },
       {
         title: "Weather-Resistant Finishes",
@@ -553,7 +509,7 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Modular & Scalable Design",
         description: "From simple single-panel layouts to complex multi-panel configurations, our systems are easily customized to grow alongside your development.",
-        iconName: "Layout"
+        iconName: "Layers"
       }
     ],
     products: [
@@ -586,18 +542,18 @@ export const productsData: ProductHeroData[] = [
     services: [
       {
         title: "High-Motion Visibility",
-        description: "Utilize wind-driven movement to draw the eye, making flags a superior choice for attracting attention in busy outdoor commercial corridors.",
-        iconName: "Wind"
+        description: "Utilize wind-driven movement to draw the Lightbulb, making flags a superior choice for attracting attention in busy outdoor commercial corridors.",
+        iconName: "Lightbulb"
       },
       {
         title: "Portable & Easy Setup",
         description: "Engineered for rapid deployment, our flag and banner systems are lightweight and can be assembled or relocated in minutes without tools.",
-        iconName: "Zap"
+        iconName: "Sun"
       },
       {
         title: "Sublimated Color Depth",
         description: "We use advanced dye-sublimation printing to ensure your graphics are deeply embedded into the fabric for fade-resistant, double-sided brilliance.",
-        iconName: "Palette"
+        iconName: "Layers"
       }
     ],
     products: [
@@ -631,17 +587,17 @@ export const productsData: ProductHeroData[] = [
       {
         title: "All-Weather Durability",
         description: "Utilizing UV-resistant inks and reinforced scrim vinyl to ensure your banner remains vibrant and tear-resistant through wind, rain, and sun.",
-        iconName: "Shield"
+        iconName: "Lightbulb"
       },
       {
         title: "High-Definition Printing",
         description: "Experience stunning clarity with our large-format digital printing, capable of rendering complex logos and high-resolution photography with vivid color accuracy.",
-        iconName: "Image"
+        iconName: "Sun"
       },
       {
         title: "Custom Finishing Options",
         description: "From heavy-duty heat-welded hems to brass grommets and pole pockets, we provide the hardware preparation needed for a secure and professional mount.",
-        iconName: "Anchor"
+        iconName: "Layers"
       }
     ],
     products: [
@@ -675,17 +631,17 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Long-Range Impact",
         description: "Strategically designed for height and scale to ensure your business is visible to high-speed traffic and from long distances, well before customers reach your entrance.",
-        iconName: "Binoculars"
+        iconName: "Lightbulb"
       },
       {
         title: "Structural Engineering",
         description: "Built to withstand high wind loads and harsh weather, our pylons feature heavy-duty steel internal structures and high-grade aluminum cladding.",
-        iconName: "Construction"
+        iconName: "Sun"
       },
       {
         title: "Illumination Excellence",
         description: "Equipped with high-output LED systems for uniform internal lighting, ensuring every tenant panel is bright, legible, and energy-efficient 24/7.",
-        iconName: "Lightbulb"
+        iconName: "Layers"
       }
     ],
     products: [
@@ -719,17 +675,17 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Rapid Deployment",
         description: "Engineered for speed, these signs can be installed instantly using simple wire stakes, making them ideal for large-scale marketing blitzes and directional needs.",
-        iconName: "Zap"
+        iconName: "Lightbulb"
       },
       {
         title: "All-Weather Performance",
         description: "The twin-wall plastic structure is naturally waterproof and chemical resistant, ensuring your graphics stay crisp through rain, snow, and sun.",
-        iconName: "CloudRain"
+        iconName: "Sun"
       },
       {
         title: "Budget-Friendly Impact",
         description: "Get maximum ROI with a low per-unit cost. Coroplast is the perfect choice for businesses needing multiple signs to saturate a local area or neighborhood.",
-        iconName: "TrendingUp"
+        iconName: "Layers"
       }
     ],
     products: [
@@ -763,17 +719,17 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Massive Brand Reach",
         description: "Achieve unparalleled market saturation with signage that works 24/7, reaching thousands of commuters daily and establishing your brand as a household name.",
-        iconName: "Globe"
+        iconName: "Lightbulb"
       },
       {
         title: "High-Visibility Locations",
         description: "We focus on strategic placement and sheer scale to ensure your message remains legible and impactful even at high speeds and from great distances.",
-        iconName: "Eye"
+        iconName: "Sun"
       },
       {
         title: "Weather-Shield Fabrication",
         description: "Produced on heavy-duty, UV-treated vinyl with reinforced edges to ensure your advertisement remains vibrant and tensioned against high winds and sun exposure.",
-        iconName: "Wind"
+        iconName: "Layers"
       }
     ],
     products: [
@@ -807,17 +763,17 @@ export const productsData: ProductHeroData[] = [
       {
         title: "MUTCD Compliance",
         description: "We manufacture signs that strictly adhere to the Manual on Uniform Traffic Control Devices (MUTCD) standards for shape, color, and font typography.",
-        iconName: "ShieldCheck"
+        iconName: "Lightbulb"
       },
       {
         title: "Nighttime Retroreflectivity",
         description: "Utilizing advanced prismatic reflective sheeting to ensure signs are brightly visible to motorists' headlights from extreme angles and distances.",
-        iconName: "Moon"
+        iconName: "Sun"
       },
       {
         title: "Vandal-Resistant Coating",
         description: "Available with protective overlays that allow for easy removal of graffiti and resist fading from harsh UV exposure and environmental pollutants.",
-        iconName: "HardHat"
+        iconName: "Layers"
       }
     ],
     products: [
@@ -851,7 +807,7 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Seamless Integration",
         description: "We design and install bezel-free displays that create a unified, continuous canvas for a truly immersive viewing experience without visual gaps.",
-        iconName: "Maximize"
+        iconName: "Lightbulb"
       },
       {
         title: "Dynamic Brightness Control",
@@ -861,7 +817,7 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Remote CMS Management",
         description: "Control your content from anywhere with cloud-based management systems, allowing for real-time updates and scheduled playback across your network.",
-        iconName: "Monitor"
+        iconName: "Layers"
       }
     ],
     products: [
@@ -893,17 +849,17 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Automated Day-Parting",
         description: "Seamlessly transition your menu from breakfast to lunch and dinner schedules automatically, ensuring relevant content is always displayed.",
-        iconName: "Clock"
+        iconName: "Lightbulb"
       },
       {
         title: "Real-Time Updates",
         description: "Instantly update prices, mark items as sold out, or launch limited-time offers across one or multiple locations via a secure cloud portal.",
-        iconName: "RefreshCw"
+        iconName: "Sun"
       },
       {
         title: "Nutritional Compliance",
         description: "Easily integrate FDA-mandated calorie counts and allergen information into your layout without compromising your brand's aesthetic.",
-        iconName: "ClipboardCheck"
+        iconName: "Layers"
       }
     ],
     products: [
@@ -935,17 +891,17 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Smart Dimming & Control",
         description: "Integrate with DMX or IoT systems for precise control over brightness levels and automated scheduling to maximize energy savings.",
-        iconName: "Settings"
+        iconName: "Lightbulb"
       },
       {
         title: "High Color Rendering (CRI)",
         description: "We utilize LEDs with high CRI ratings to ensure colors appear vivid and natural, essential for retail displays and architectural highlights.",
-        iconName: "Palette"
+        iconName: "Sun"
       },
       {
         title: "Weatherproof Durability",
         description: "Our outdoor fixtures carry high IP ratings, ensuring reliable performance against moisture, dust, and extreme temperature fluctuations.",
-        iconName: "CloudRain"
+        iconName: "Layers"
       }
     ],
     products: [
@@ -978,17 +934,17 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Custom Compliance Audits",
         description: "We assess your facility to ensure all safety signs and hazard markers meet local health and safety regulations.",
-        iconName: "ShieldCheck"
+        iconName: "Lightbulb"
       },
       {
         title: "Durable Material Sourcing",
         description: "We utilize UV-resistant inks and industrial-grade substrates to ensure your signs remain legible in high-traffic or outdoor areas.",
-        iconName: "Award"
+        iconName: "Sun"
       },
       {
         title: "Rapid Professional Install",
         description: "Our installation experts ensure that decals, screens, and signage are mounted securely and positioned for maximum visibility.",
-        iconName: "Tool"
+        iconName: "Layers"
       }
     ],
     products: [
@@ -1028,17 +984,17 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Brand Environment Design",
         description: "We translate your digital brand guidelines into physical space, ensuring color accuracy and aesthetic consistency across all touchpoints.",
-        iconName: "Brush"
+        iconName: "Lightbulb"
       },
       {
         title: "Premium Material Selection",
         description: "From brushed metals to high-end acrylics, we source materials that reflect the quality and prestige of your corporate identity.",
-        iconName: "Layers"
+        iconName: "Sun"
       },
       {
         title: "Precision Execution",
         description: "Our craftsmen use CNC routing and high-resolution printing to ensure your logo and graphics are produced with mathematical precision.",
-        iconName: "Crosshair"
+        iconName: "Layers"
       }
     ],
     products: [
@@ -1068,18 +1024,18 @@ export const productsData: ProductHeroData[] = [
     services: [
       {
         title: "Spatial Analysis",
-        description: "We map out traffic flow and decision points to determine the most effective placement for directional signage and information hubs.",
-        iconName: "Map"
+        description: "We Layers out traffic flow and decision points to determine the most effective placement for directional signage and information hubs.",
+        iconName: "Layers"
       },
       {
         title: "Regulatory Compliance",
         description: "Ensuring all directional and safety signage adheres to local accessibility standards and emergency protocols for total peace of mind.",
-        iconName: "ShieldCheck"
+        iconName: "Sun"
       },
       {
         title: "Integrated Wayfinding",
         description: "Our craftsmen produce high-visibility signs using CNC routing and premium materials to ensure longevity in high-traffic environments.",
-        iconName: "Navigation"
+        iconName: "Lightbulb"
       }
     ],
     products: [
@@ -1096,13 +1052,6 @@ export const productsData: ProductHeroData[] = [
     ]
   },
 
-
-
-
-
-
-
-
   // --- Illuminated Signage ---
   {
     slug: "illuminated-signage",
@@ -1115,17 +1064,17 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Luminous Engineering",
         description: "We calculate optimal LED density and light diffusion to ensure even illumination without hotspots or shadows across your entire sign.",
-        iconName: "Zap"
+        iconName: "Sun"
       },
       {
         title: "Energy Efficiency",
         description: "Utilizing the latest LED modules to provide maximum brightness with minimal power consumption and a long operational lifespan.",
-        iconName: "Leaf"
+        iconName: "Lightbulb"
       },
       {
         title: "Custom Fabrication",
         description: "Our craftsmen use precision CNC cutting and acrylic molding to create complex shapes and letterforms that glow perfectly.",
-        iconName: "Settings"
+        iconName: "Layers"
       }
     ],
     products: [
@@ -1161,17 +1110,17 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Portable Branding",
         description: "We design lightweight, collapsible systems that maximize your visual footprint while minimizing shipping and storage costs.",
-        iconName: "Briefcase"
+        iconName: "Lightbulb"
       },
       {
         title: "Large-Format Printing",
         description: "Utilizing high-definition dye-sublimation and UV printing to ensure colors pop under bright convention center lighting.",
-        iconName: "Maximize"
+        iconName: "Sun"
       },
       {
         title: "Rapid Deployment",
         description: "Our products are engineered for tool-free assembly, allowing your team to focus on networking rather than complicated booth setups.",
-        iconName: "Clock"
+        iconName: "Layers"
       }
     ],
     products: [
@@ -1202,17 +1151,17 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Architectural Integration",
         description: "We design signage that complements your building’s unique architecture while maximizing brand visibility from the street or highway.",
-        iconName: "Home"
+        iconName: "Lightbulb"
       },
       {
         title: "Weatherproofing",
         description: "Utilizing UV-resistant coatings and rust-proof hardware to ensure your storefront remains pristine despite sun, rain, or wind exposure.",
-        iconName: "CloudSun"
+        iconName: "Sun"
       },
       {
         title: "Structural Engineering",
         description: "Our team ensures all large-scale installations are wind-load rated and securely anchored for long-term public safety.",
-        iconName: "Tool"
+        iconName: "Layers"
       }
     ],
     products: [
@@ -1227,23 +1176,7 @@ export const productsData: ProductHeroData[] = [
         imageUrl: "/SignsImages/Awnings & Canop.png"
       }
     ]
-
-
-
-
-
-
-
-
   },
-
-
-
-
-
-
-
-
   {
     slug: "indoor-signs",
     title: "Indoor Signs",
@@ -1256,17 +1189,17 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Architectural Integration",
         description: "We design signage that blends seamlessly with your interior space, complementing walls, lighting, and overall design aesthetics.",
-        iconName: "Home"
+        iconName: "Lightbulb"
       },
       {
         title: "Premium Finishes",
         description: "Utilizing high-end materials such as acrylic, metal, and vinyl to deliver a refined and professional indoor appearance.",
-        iconName: "Sparkles"
+        iconName: "Layers"
       },
       {
         title: "Precision Installation",
         description: "Our team ensures accurate placement and secure installation for a clean, aligned, and long-lasting finish.",
-        iconName: "Tool"
+        iconName: "Sun"
       }
     ],
 
@@ -1300,17 +1233,17 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Portable Design",
         description: "Lightweight and easy-to-carry systems that can be set up or packed away in seconds, perfect for on-the-go marketing.",
-        iconName: "Move"
+        iconName: "Lightbulb"
       },
       {
         title: "High-Resolution Printing",
         description: "Crisp, vibrant graphics printed on premium materials to ensure your brand stands out in any environment.",
-        iconName: "Image"
+        iconName: "Sun"
       },
       {
         title: "Durable Mechanism",
         description: "Smooth retractable systems built for repeated use, maintaining stability and professional appearance over time.",
-        iconName: "Tool"
+        iconName: "Layers"
       }
     ],
 
@@ -1348,17 +1281,17 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Custom Room Identification",
         description: "Tailored signage solutions for offices, meeting rooms, and facilities that ensure clarity and consistency across your space.",
-        iconName: "Home"
+        iconName: "Layers"
       },
       {
         title: "Accessibility Compliance",
         description: "Design and production of ADA-compliant signage, including braille and tactile elements for inclusive navigation.",
-        iconName: "Accessibility"
+        iconName: "Sun"
       },
       {
         title: "Modular & Replaceable Systems",
         description: "Flexible signage systems that allow easy updates for changing names, departments, or room functions.",
-        iconName: "RefreshCw"
+        iconName: "Lightbulb"
       }
     ],
 
@@ -1380,10 +1313,6 @@ export const productsData: ProductHeroData[] = [
       }
     ]
   },
-
-
-
-
   {
     slug: "window-frosting",
     title: "Window Frosting",
@@ -1396,17 +1325,17 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Custom Frosted Designs",
         description: "Tailor-made frosting solutions including logos, patterns, and branding elements to match your interior identity.",
-        iconName: "PenTool"
+        iconName: "Lightbulb"
       },
       {
         title: "Privacy Enhancement",
         description: "Create private workspaces without sacrificing natural light, ideal for offices, conference rooms, and glass partitions.",
-        iconName: "EyeOff"
+        iconName: "Sun"
       },
       {
         title: "Professional Installation",
         description: "Seamless, bubble-free application ensuring a clean, long-lasting finish with precise alignment.",
-        iconName: "Tool"
+        iconName: "Layers"
       }
     ],
 
@@ -1444,7 +1373,7 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Custom Logo Design",
         description: "We transform your brand identity into striking physical signage that enhances visibility and reinforces professionalism.",
-        iconName: "PenTool"
+        iconName: "Lightbulb"
       },
       {
         title: "Premium Materials",
@@ -1454,7 +1383,7 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Expert Installation",
         description: "Precise alignment and secure mounting to ensure a flawless, long-lasting display in your reception area.",
-        iconName: "Tool"
+        iconName: "Sun"
       }
     ],
 
@@ -1497,12 +1426,12 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Energy-Efficient LED Technology",
         description: "Advanced LED systems that provide bright, consistent illumination while minimizing energy consumption and maintenance.",
-        iconName: "Zap"
+        iconName: "Sun"
       },
       {
         title: "Professional Installation",
         description: "Secure and precise installation ensuring optimal lighting performance and long-term durability.",
-        iconName: "Tool"
+        iconName: "Layers"
       }
     ],
 
@@ -1540,12 +1469,12 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Wayfinding Strategy & Planning",
         description: "We design intuitive signage systems based on user flow and space layout, ensuring visitors can navigate your environment with ease.",
-        iconName: "Map"
+        iconName: "Lightbulb"
       },
       {
         title: "Consistent Visual Systems",
         description: "Unified typography, icons, and color coding across all signs to create a seamless and professional navigation experience.",
-        iconName: "LayoutGrid"
+        iconName: "Sun"
       },
       {
         title: "Durable & High-Visibility Materials",
@@ -1588,17 +1517,17 @@ export const productsData: ProductHeroData[] = [
 
         title: "Custom Visual Design",
         description: "We create tailored wall graphic concepts that align with your brand, space, and messaging goals.",
-        iconName: "PenTool"
+        iconName: "Lightbulb"
       },
       {
         title: "High-Resolution Printing",
         description: "Crisp, vibrant prints using premium vinyl materials to ensure sharp visuals and long-lasting color quality.",
-        iconName: "Image"
+        iconName: "Sun"
       },
       {
         title: "Seamless Installation",
         description: "Professional application with precise alignment and bubble-free finishing for a flawless wall transformation.",
-        iconName: "Tool"
+        iconName: "Layers"
       }
     ],
 
@@ -1614,9 +1543,9 @@ export const productsData: ProductHeroData[] = [
         imageUrl: "/SignsImages/Motivational Vinyl Quot.jpg"
       },
       {
-        title: "Topographic & Map Graphics",
-        description: "Detailed map-based or topographic designs that add a unique and modern visual identity to your interior.",
-        imageUrl: "/SignsImages/Topographic & Map Grap.jpg"
+        title: "Topographic & Layers Graphics",
+        description: "Detailed Layers-based or topographic designs that add a unique and modern visual identity to your interior.",
+        imageUrl: "/SignsImages/Topographic & Layers Grap.jpg"
       }
     ]
   },
@@ -1632,17 +1561,17 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Fleet Branding Strategy",
         description: "We develop comprehensive branding concepts for your fleet, ensuring consistent identity across all vehicles.",
-        iconName: "Briefcase"
+        iconName: "Lightbulb"
       },
       {
         title: "Custom Vehicle Wrap Design",
         description: "Tailored designs for full or partial wraps that highlight your brand while maintaining a sleek look.",
-        iconName: "PenTool"
+        iconName: "Sun"
       },
       {
         title: "Durable Vinyl Printing",
         description: "High-resolution, weather-resistant printing using premium vinyl materials for long-lasting fleet graphics.",
-        iconName: "Image"
+        iconName: "Layers"
       },     
     ],
 
@@ -1668,7 +1597,7 @@ export const productsData: ProductHeroData[] = [
     slug: "car-graphics",
     title: "Car Graphics",
     highlightTitle: "Presence",
-    descriptionMain: "Elevate your vehicles into moving brand ambassadors with custom car graphics. From sleek full wraps to eye-catching spot graphics, our solutions transform cars into powerful marketing tools that communicate your identity wherever they go.",
+    descriptionMain: "Elevate your vehicles into moving brand ambassadors with custom car graphics. From sleek full wraps to Lightbulb-catching spot graphics, our solutions transform cars into powerful marketing tools that communicate your identity wherever they go.",
     descriptionSecondary: "Our car graphics combine creative design, premium vinyl printing, and professional installation to deliver durable, high-impact visuals. Whether for commercial fleets or individual vehicles, we ensure your brand stands out on the road.",
     image: "/SignsImages/Car Graphi.jpg",
 
@@ -1676,18 +1605,18 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Car Branding Consultation",
         description: "We analyze your brand goals and vehicle type to craft a tailored car graphics strategy.",
-        iconName: "Briefcase"
+        iconName: "Lightbulb"
       },
       {
         title: "Custom Wrap Design",
         description: "Unique designs for full, partial, or spot wraps that maximize visibility and style.",
-        iconName: "PenTool"
+        iconName: "Sun"
       },
     
       {
         title: "Care & Refresh Services",
         description: "Support for maintaining, refreshing, or replacing graphics to keep your cars looking sharp.",
-        iconName: "RefreshCw"
+        iconName: "Layers"
       }
     ],
 
@@ -1721,17 +1650,17 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Privacy & Branding Consultation",
         description: "We assess your needs to design one-way vision graphics that balance privacy with promotional impact.",
-        iconName: "Briefcase"
+        iconName: "Lightbulb"
       },
       {
         title: "Custom Window Graphic Design",
         description: "Tailored designs for rear, side, or storefront windows that maximize visibility and brand presence.",
-        iconName: "PenTool"
+        iconName: "Sun"
       },
       {
         title: "UV-Rated Perforated Vinyl Printing",
         description: "High-resolution printing on perforated vinyl that resists fading and ensures long-lasting clarity.",
-        iconName: "Image"
+        iconName: "Layers"
       },
       
     ],
@@ -1744,7 +1673,7 @@ export const productsData: ProductHeroData[] = [
       },
       {
         title: "Side Window Graphics",
-        description: "Eye-catching side window designs that add promotional impact without obstructing passenger visibility.",
+        description: "Lightbulb-catching side window designs that add promotional impact without obstructing passenger visibility.",
         imageUrl: "/SignsImages/UV-Rated Perforated Vin.webp"
       },
       {
@@ -1769,17 +1698,17 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Lettering Strategy Consultation",
         description: "We work with you to determine the best lettering style, placement, and messaging for maximum impact.",
-        iconName: "Briefcase"
+        iconName: "Lightbulb"
       },
       {
         title: "Custom Typography Design",
         description: "Unique, brand-aligned text designs that make your vehicles stand out while staying professional.",
-        iconName: "PenTool"
+        iconName: "Sun"
       },
       {
         title: "Durable Vinyl Lettering",
         description: "High-quality vinyl lettering engineered to withstand weather, UV exposure, and daily wear.",
-        iconName: "Image"
+        iconName: "Layers"
       },
      
     ],
@@ -1795,7 +1724,7 @@ export const productsData: ProductHeroData[] = [
       },
       {
         title: "Layered Multi-Color Text",
-        description: "Eye-catching multi-layered vinyl text designs that add depth, vibrancy, and style to your vehicle lettering.",
+        description: "Lightbulb-catching multi-layered vinyl text designs that add depth, vibrancy, and style to your vehicle lettering.",
         imageUrl: "/SignsImages/Layered Multi-Color Te.jpg"
       },
       {
@@ -1825,25 +1754,21 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Van Branding Consultation",
         description: "We analyze your business needs and van type to craft a tailored wrap strategy.",
-        iconName: "Briefcase"
+        iconName: "Lightbulb"
       },
       {
         title: "Custom Wrap Design",
         description: "Unique designs for full, partial, or panel wraps that maximize visibility and brand recognition.",
-        iconName: "PenTool"
+        iconName: "Sun"
       },
  
   
       {
         title: "Maintenance & Refresh Services",
         description: "Support for refreshing, repairing, or updating wraps to keep your vans looking sharp.",
-        iconName: "RefreshCw"
+        iconName: "Layers"
       }
     ],
-
-
-
-
     products: [
       {
         title: "Contractor Branding",
@@ -1869,34 +1794,25 @@ export const productsData: ProductHeroData[] = [
     descriptionMain: "Transform your trucks into commanding mobile billboards with custom wrap solutions. From tailgate wraps to box truck side panels, our designs ensure your brand message travels with impact and professionalism across every mile.",
     descriptionSecondary: "Our truck graphics services combine bold design, premium vinyl printing, and expert installation to deliver durable, high-impact visuals. Perfect for logistics fleets, contractors, and promotional trucks, we help your brand dominate the road.",
     image: "/SignsImages/Truck Graphi.webp",
-
-
-
-
     services: [
       {
         title: "Truck Branding Consultation",
         description: "We assess your business needs and truck type to craft a tailored graphics strategy.",
-        iconName: "Briefcase"
+        iconName: "Lightbulb"
       },
       {
         title: "Custom Truck Wrap Design",
         description: "Unique designs for full, partial, or tailgate wraps that maximize visibility and brand recognition.",
-        iconName: "PenTool"
+        iconName: "Sun"
       },
     
       {
         title: "Professional Installation",
         description: "Expert application with seamless alignment and bubble-free finishing for a flawless truck transformation.",
-        iconName: "Tool"
-      },
-  
+        iconName: "Layers"
+      },  
     ],
-
-
-
-
-    products: [
+products: [
       {
         title: "Tailgate Wraps",
         description: "Bold tailgate wraps that maximize rear visibility, turning every stop into a branding opportunity.",
@@ -1921,25 +1837,21 @@ export const productsData: ProductHeroData[] = [
     descriptionMain: "Transform your trailers into high-impact mobile billboards with custom signage solutions. From enclosed trailer wraps to utility panels, our designs ensure your brand message travels with strength and professionalism across every route.",
     descriptionSecondary: "Our trailer signage services combine bold design, heavy-duty vinyl printing, and expert installation to deliver durable, high-visibility graphics. Perfect for logistics fleets, contractors, and promotional trailers, we help your brand command attention on the road.",
     image: "/SignsImages/Trailer Si.jpg",
-
-
-
-
     services: [
       {
         title: "Trailer Branding Consultation",
         description: "We evaluate your trailer type and business needs to craft a tailored signage strategy.",
-        iconName: "Briefcase"
+        iconName: "Lightbulb"
       },
       {
         title: "Custom Trailer Wrap Design",
         description: "Creative designs for enclosed trailers, utility panels, and partial wraps that maximize visibility.",
-        iconName: "PenTool"
+        iconName: "Sun"
       },
       {
         title: "Heavy-Duty Vinyl Printing",
         description: "High-resolution, weather-resistant printing on durable vinyl engineered for large trailer surfaces.",
-        iconName: "Image"
+        iconName: "Layers"
       },
 
     ],
@@ -1981,17 +1893,17 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Magnetic Sign Consultation",
         description: "We evaluate your vehicle type and branding needs to design magnetic signs that fit perfectly.",
-        iconName: "Briefcase"
+        iconName: "Lightbulb"
       },
       {
         title: "Custom Magnetic Design",
         description: "Creative layouts tailored to your brand, ensuring your magnetic signs stand out on the road.",
-        iconName: "PenTool"
+        iconName: "Sun"
       },
       {
         title: "Maintenance & Replacement Support",
         description: "Assistance with refreshing worn signs or producing updated designs to keep your fleet sharp.",
-        iconName: "RefreshCw"
+        iconName: "Layers"
       }
     ],
 
@@ -2028,42 +1940,28 @@ export const productsData: ProductHeroData[] = [
     descriptionMain:
       "Boost your brand presence with high-impact banners and flags designed for indoor and outdoor advertising. From events to storefront promotions, our solutions ensure your message stands tall, visible, and unforgettable in any environment.",
     descriptionSecondary:
-      "We combine premium materials, vibrant printing technology, and durable finishing techniques to create banners and flags that withstand weather conditions while maintaining sharp, eye-catching visuals. Perfect for events, exhibitions, retail promotions, and outdoor campaigns.",
-
-
-
-
+      "We combine premium materials, vibrant printing technology, and durable finishing techniques to create banners and flags that withstand weather conditions while maintaining sharp, Lightbulb-catching visuals. Perfect for events, exhibitions, retail promotions, and outdoor campaigns.",
     image: "/SignsImages/Banners and Fla.jpg",
-
-
-
-
     services: [
       {
         title: "Brand Visibility Consultation",
         description:
           "We analyze your campaign goals and location to recommend the most effective banner and flag solutions for maximum exposure.",
-        iconName: "Eye"
+        iconName: "Lightbulb"
       },
       {
         title: "Custom Banner Design",
         description:
           "Creative, high-impact designs tailored to your brand identity, ensuring your message stands out in crowded spaces.",
-        iconName: "PenTool"
+        iconName: "Sun"
       },
       {
         title: "Premium Large-Format Printing",
         description:
           "High-resolution printing using fade-resistant inks on durable materials for both indoor and outdoor use.",
-        iconName: "Image"
+        iconName: "Layers"
       },
-  
-  
     ],
-
-
-
-
     products: [
       {
         title: "Vinyl Event Banners",
@@ -2074,7 +1972,7 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Feather & Teardrop Flags",
         description:
-          "Dynamic, wind-responsive flags perfect for outdoor branding, exhibitions, and roadside visibility with eye-catching motion.",
+          "Dynamic, wind-responsive flags perfect for outdoor branding, exhibitions, and roadside visibility with Lightbulb-catching motion.",
         imageUrl: "/SignsImages/Event Flags with Ba.webp"
       },
       {
@@ -2093,41 +1991,27 @@ export const productsData: ProductHeroData[] = [
       "Create powerful brand experiences at exhibitions, trade shows, and corporate events with premium signage solutions designed to attract, engage, and convert visitors. Our exhibition displays combine visual excellence with strategic placement to maximize attention in competitive environments.",
     descriptionSecondary:
       "We specialize in high-quality exhibition branding systems using modern display technologies, precision printing, and modular setups. Whether it's a trade show booth or a corporate expo, our solutions help your brand stand out with professionalism and clarity.",
-
-
-
-
     image: "/SignsImages/Exhibition Signa.jpg",
-
-
-
-
     services: [
       {
         title: "Exhibition Space Planning",
         description:
           "Strategic layout planning to maximize booth visibility, visitor flow, and engagement within your allocated exhibition space.",
-        iconName: "Layout"
+        iconName: "Lightbulb"
       },
       {
         title: "Custom Booth Branding Design",
         description:
           "Tailor-made exhibition graphics that reflect your brand identity and create a strong visual presence in crowded trade shows.",
-        iconName: "PenTool"
+        iconName: "Sun"
       },
       {
         title: "High-Resolution Display Printing",
         description:
           "Premium-quality printing for banners, panels, and fabric displays ensuring sharp visuals even at large viewing distances.",
-        iconName: "Image"
+        iconName: "Layers"
       },
- 
-    
     ],
-
-
-
-
     products: [
       {
         title: "Backlit Fabric Displays",
@@ -2148,61 +2032,36 @@ export const productsData: ProductHeroData[] = [
         imageUrl: "/SignsImages/Modular Booth Graphics.jpg"
       }
     ]
-  }
-
-  ,
-
-
+  },
   {
     slug: "digital-printing",
     title: "Digital Printing",
     highlightTitle: "Precision",
-
-
-
-
     descriptionMain:
       "Bring your ideas to life with high-quality digital printing solutions designed for sharp detail, vibrant colors, and professional-grade output. From marketing materials to large-format visuals, we help brands communicate with clarity and impact across every medium.",
-
-
-
-
     descriptionSecondary:
       "Our digital printing services combine advanced print technology, premium substrates, and color-accurate processes to deliver consistent, high-resolution results. Whether for branding, advertising, or interior graphics, we ensure every print reflects your brand at its best.",
-
-
-
-
     image: "/SignsImages/Digital Printi.webp",
-
-
-
-
     services: [
       {
         title: "Print Requirement Consultation",
         description:
           "We assess your project needs to recommend the best printing materials, sizes, and finishes for optimal visual impact and durability.",
-        iconName: "Clipboard"
+        iconName: "Lightbulb"
       },
       {
         title: "Custom Graphic Preparation",
         description:
           "We refine and optimize your artwork to ensure perfect color balance, resolution, and print readiness across all formats.",
-        iconName: "PenTool"
+        iconName: "Sun"
       },
       {
         title: "High-Definition Digital Printing",
         description:
           "Advanced printing technology that produces crisp details, rich colors, and consistent quality on a wide range of materials.",
-        iconName: "Image"
+        iconName: "Layers"
       },
-  
     ],
-
-
-
-
     products: [
       {
         title: "Custom Wall Murals",
@@ -2228,27 +2087,11 @@ export const productsData: ProductHeroData[] = [
     slug: "posters",
     title: "Posters",
     highlightTitle: "Clarity",
-
-
-
-
     descriptionMain:
       "Capture attention instantly with high-impact poster printing designed for bold visuals, sharp detail, and vibrant color reproduction. Ideal for advertising, promotions, events, and indoor displays, our posters turn ideas into visually powerful communication tools.",
-
-
-
-
     descriptionSecondary:
       "We use advanced digital printing technology and premium paper stocks to produce posters that stand out in both close-up and distance viewing. Whether for retail promotions or corporate messaging, our posters ensure maximum visibility and professional presentation.",
-
-
-
-
     image: "/SignsImages/Poster.jpg",
-
-
-
-
     services: [
       {
         title: "Poster Concept Consultation",
@@ -2260,21 +2103,15 @@ export const productsData: ProductHeroData[] = [
         title: "Creative Layout Design",
         description:
           "Professionally crafted poster layouts that balance typography, imagery, and branding for maximum visual impact.",
-        iconName: "PenTool"
+        iconName: "Sun"
       },
       {
         title: "High-Resolution Poster Printing",
         description:
           "Ultra-clear printing with vibrant colors and sharp detailing, ensuring your posters stand out in any environment.",
-        iconName: "Image"
+        iconName: "Layers"
       },
-
-
     ],
-
-
-
-
     products: [
       {
         title: "Backlit Film Posters",
@@ -2300,53 +2137,31 @@ export const productsData: ProductHeroData[] = [
     slug: "window-lettering",
     title: "Window Lettering",
     highlightTitle: "Clarity",
-
-
-
-
     descriptionMain:
       "Enhance your storefront visibility with professional window lettering designed to communicate your brand message with precision and style. Perfect for retail shops, offices, and commercial spaces, our lettering solutions turn glass surfaces into powerful branding assets.",
-
-
-
-
     descriptionSecondary:
       "We specialize in high-quality vinyl lettering that combines durability, clean application, and striking visual appeal. Whether for promotions, branding, or essential business information, our window graphics ensure maximum readability and aesthetic balance.",
-
-
-
-
     image: "/SignsImages/Window Letteri.jpg",
-
-
-
-
-    services: [
+   services: [
       {
         title: "Storefront Visibility Planning",
         description:
           "We analyze your glass space and branding goals to design window lettering that maximizes visibility and customer engagement.",
-        iconName: "Eye"
+        iconName: "Lightbulb"
       },
       {
         title: "Custom Typography Design",
         description:
           "Professionally crafted lettering styles tailored to your brand identity, ensuring clear and attractive communication on glass surfaces.",
-        iconName: "PenTool"
+        iconName: "Sun"
       },
       {
         title: "Precision Vinyl Cutting",
         description:
           "High-accuracy cutting technology that produces clean edges and perfectly shaped lettering for a polished finish.",
-        iconName: "Scissors"
-      },
-
-  
+        iconName: "Layers"
+      }, 
     ],
-
-
-
-
     products: [
       {
         title: "Metallic Vinyl Lettering",
@@ -2368,57 +2183,36 @@ export const productsData: ProductHeroData[] = [
       }
     ]
   },
-
-
-
-
   {
     slug: "window-decals",
     title: "Window Decals",
     highlightTitle: "Clarity",
-
-
-
-
     descriptionMain:
       "Transform your windows into dynamic branding surfaces with custom decals that balance style, visibility, and impact. From die-cut logos to perforated wraps, our solutions enhance storefronts, offices, and fleet vehicles with professional precision.",
 
     descriptionSecondary:
       "Our window decal services combine creative design, durable vinyl materials, and expert application to deliver sharp, long-lasting visuals. Perfect for promotions, branding, or privacy solutions, we help your glass surfaces communicate with clarity and style.",
-
-
-
-
     image: "/SignsImages/Wall Murals & Wr.jpg",
-
-
-
-
     services: [
       {
         title: "Window Branding Consultation",
         description:
           "We assess your glass surfaces and branding goals to design decals that maximize visibility and engagement.",
-        iconName: "Briefcase"
+        iconName: "Layers"
       },
       {
         title: "Custom Decal Design",
         description:
           "Creative layouts tailored to your brand identity, including logos, text, and promotional graphics.",
-        iconName: "PenTool"
+        iconName: "Sun"
       },
       {
         title: "Precision Die-Cutting",
         description:
           "Advanced cutting technology for clean edges and perfectly shaped decals that look professional on glass.",
-        iconName: "Scissors"
+        iconName: "Layers"
       },
-
     ],
-
-
-
-
     products: [
       {
         title: "Die-Cut Logo Decals",
@@ -2438,7 +2232,6 @@ export const productsData: ProductHeroData[] = [
           "Graphics visible from both inside and outside, perfect for maximizing promotional impact on glass surfaces.",
         imageUrl: "/SignsImages/Transparent LED Scre.avif"
       },
-
     ]
   }
 ]
