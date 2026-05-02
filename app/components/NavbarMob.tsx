@@ -84,7 +84,7 @@ const productMenuDefinition: ProductMenuDefinition[] = [
         name: 'Office signs',
         slugs: [
           'indoor-signs',
-          'room/door-signs',
+          'room-door-signs',
           'window-frosting',
           'reception-signs',
           'led-backlit-signs',
@@ -104,7 +104,6 @@ const productMenuDefinition: ProductMenuDefinition[] = [
       'van-wraps',
       'truck-graphics',
       'trailer-signs',
-      'boat-graphics',
       'magnetic-vehicles-signs',
     ],
   },

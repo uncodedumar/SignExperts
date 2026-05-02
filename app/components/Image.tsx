@@ -27,7 +27,6 @@ const SignageSection = () => {
     window.addEventListener("resize", checkMobile);
 
     const handleMouseMove = (e: MouseEvent) => {
-      // Logic only runs if not on mobile
       if (window.innerWidth < 768) return;
 
       mouseX.set(e.clientX);
@@ -54,12 +53,11 @@ const SignageSection = () => {
     hover: { 
       y: 0, 
       opacity: 1,
-      transition: { duration: 0.5, ease: [0.16, 1, 0.3, 1] }
+      transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] }
     }
   };
 
   return (
-    /* hidden md:flex ensures the entire section is removed from the DOM on mobile */
     <section className="relative w-full hidden md:flex flex-col items-center justify-center py-24 bg-white font-sans overflow-hidden">
       
       {/* Octagon Cursor Follower */}
@@ -80,7 +78,7 @@ const SignageSection = () => {
           ref={containerRef}
           className="relative w-full aspect-[21/9] overflow-hidden rounded-sm shadow-2xl cursor-none group"
           initial="rest"
-          whileHover="hover"
+          animate="hover" // Changed from whileHover to animate for permanent state
           style={{ x: nudgeX, y: nudgeY }}
         >
           {/* Main Image */}
@@ -90,7 +88,7 @@ const SignageSection = () => {
               rest: { scale: 1 },
               hover: { scale: 1.05 }
             }}
-            transition={{ duration: 0.8, ease: [0.33, 1, 0.68, 1] }}
+            transition={{ duration: 1.2, ease: [0.33, 1, 0.68, 1] }}
           >
             <Image
               src="/AA.jpg" 
@@ -99,8 +97,8 @@ const SignageSection = () => {
               className="object-cover"
               priority
             />
-            {/* Dark Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-90 group-hover:opacity-80 transition-opacity duration-500" />
+            {/* Dark Overlay - Set to permanent opacity */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-85 transition-opacity duration-500" />
           </motion.div>
 
           {/* Text Content */}
@@ -112,7 +110,7 @@ const SignageSection = () => {
               <motion.p 
                 variants={{
                     rest: { opacity: 0, x: -10 },
-                    hover: { opacity: 1, x: 0, transition: { delay: 0.1 } }
+                    hover: { opacity: 1, x: 0, transition: { delay: 0.2 } }
                 }}
                 className="text-white/90 text-xl mt-4 font-light max-w-xl"
               >
