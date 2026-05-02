@@ -12,9 +12,9 @@ import TestimonialSlider from "../components/Testimonials";
 
 
 export const metadata: Metadata = {
-  title: "About Invantros | The Intersection of Academic Brilliance & Industrial Excellence",
+  title: "About Sign Experts",
   description:
-    " Invantros is the definitive tech ecosystem for Pakistan’s next-gen leaders. By uniting the research power of top-tier universities—including NUST, FAST-NUCES, and LUMS—with seasoned industry experts, we turn sophisticated technology into market-dominant solutions. Our mission is to bridge the gap between academic theory and industrial impact, fostering an elite community where innovation meets ROI and raw talent becomes a global powerhouse.",
+    " Sign Experts ",
     keywords: [
      
   ],

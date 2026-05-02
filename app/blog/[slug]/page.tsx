@@ -4,14 +4,15 @@ import Image from 'next/image';
 import { blogs } from '../../../lib/data';
 
 interface PageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
-export default function BlogPostPage({ params }: PageProps) {
+export default async function BlogPostPage({ params }: PageProps) {
+  const { slug } = await params;
   // Find the blog matching the URL slug
-  const blog = blogs.find((b) => b.slug === params.slug);
+  const blog = blogs.find((b) => b.slug === slug);
 
   // Trigger 404 if the blog doesn't exist
   if (!blog) {
@@ -19,14 +20,14 @@ export default function BlogPostPage({ params }: PageProps) {
   }
 
   return (
-    <article className="min-h-screen bg-white pb-20">
+    <article className="min-h-screen bg-white pb-20 ">
       {/* --- Progress Bar (Optional UI touch) --- */}
       <div className="fixed top-0 left-0 w-full h-1 bg-gray-100 z-50">
         <div className="h-full bg-blue-600 w-1/3"></div>
       </div>
 
       {/* --- Header / Hero Section --- */}
-      <header className="pt-20 pb-12 container mx-auto px-6 max-w-4xl">
+      <header className="pt-30 pb-12 container mx-auto px-6 max-w-4xl">
         <div className="flex items-center gap-4 mb-6">
           <span className="text-xs font-bold uppercase tracking-widest px-3 py-1 bg-black text-white">
             Journal Entry

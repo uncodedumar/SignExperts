@@ -56,7 +56,7 @@ const BlogListPage = () => {
               <div className="py-6 flex flex-col flex-grow">
                 <div className="flex items-center gap-2 mb-3">
                   <span className="text-[10px] font-bold uppercase px-2 py-1 bg-black text-white">
-                    Technology
+                    Signage
                   </span>
                   <span className="text-xs font-medium text-gray-500 uppercase tracking-widest">
                     {blog.date}

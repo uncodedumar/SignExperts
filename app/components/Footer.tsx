@@ -1,5 +1,14 @@
 "use client";
 import React from 'react';
+import Link from 'next/link';
+import { productsData } from '@/lib/data';
+
+const menuLinks = [
+  { label: 'Home', href: '/' },
+  { label: 'Services', href: '/services' },
+  { label: 'About', href: '/about' },
+  { label: 'Blogs', href: '/blog' },
+];
 
 const Footer = () => {
   return (
@@ -9,94 +18,102 @@ const Footer = () => {
         {/* Main Content Grid */}
         <div className="grid grid-cols-1 md:grid-cols-12">
           
-          {/* Left: Brand & Newsletter */}
-          <div className="col-span-1 md:col-span-4 p-8 md:p-12 border-b md:border-b-0 md:border-r border-white/10 flex flex-col justify-between min-h-[350px]">
-            <div className="space-y-8">
-              <h3 className="text-[13px] opacity-60">Join the circle</h3>
-              <form 
-  action="https://formspree.io/f/mreonybj" 
-  method="POST" 
-  className="relative group mt-8"
->
-  <input 
-    type="email" 
-    name="email" // Required for Formspree
-    placeholder="EMAIL ADDRESS" 
-    className="w-full bg-transparent border-b border-white/30 py-4 text-white placeholder:text-white/50 focus:border-white focus:outline-none transition-all duration-500 tracking-widest text-sm"
-    required
-  />
-  
-  <button 
-    type="submit" 
-    className="absolute right-0 bottom-4 group/btn flex items-center gap-3 text-white tracking-tighter font-light"
-  >
-    <span className="text-xs opacity-0 group-hover/btn:opacity-100 -translate-x-4 group-hover/btn:translate-x-0 transition-all duration-500 ease-out">
-      SUBMIT
-    </span>
-    <span className="text-2xl group-hover/btn:translate-x-2 transition-transform duration-500 ease-in-out">
-      —&gt;
-    </span>
-  </button>
-</form>
+          {/* Left Column: Brand, Newsletter & Socials */}
+          <div className="col-span-1 md:col-span-4 p-8 md:p-12 border-b md:border-b-0 md:border-r border-white/10 flex flex-col justify-between min-h-[450px]">
+            <div className="space-y-12">
+              <div>
+                <h3 className="text-[13px] opacity-60 mb-8">Join the circle</h3>
+                <form 
+                  action="https://formspree.io/f/mreonybj" 
+                  method="POST" 
+                  className="relative group"
+                >
+                  <input 
+                    type="email" 
+                    name="email" 
+                    placeholder="EMAIL ADDRESS" 
+                    className="w-full bg-transparent border-b border-white/30 py-4 text-white placeholder:text-white/50 focus:border-white focus:outline-none transition-all duration-500 tracking-widest text-sm"
+                    required
+                  />
+                  <button 
+                    type="submit" 
+                    className="absolute right-0 bottom-4 group/btn flex items-center gap-3 text-white tracking-tighter font-light"
+                  >
+                    <span className="text-xs opacity-0 group-hover/btn:opacity-100 -translate-x-4 group-hover/btn:translate-x-0 transition-all duration-500 ease-out">
+                      SUBMIT
+                    </span>
+                    <span className="text-2xl group-hover/btn:translate-x-2 transition-transform duration-500 ease-in-out">
+                      —&gt;
+                    </span>
+                  </button>
+                </form>
+              </div>
+
+              {/* Socials moved here */}
+              <nav className="space-y-3">
+                <p className="opacity-40 mb-4 text-[10px]">Connect</p>
+                <div className="flex gap-6">
+                    <a href="#" className="hover:text-[#ffb92d] transition-all">Instagram ↗</a>
+                    <a href="#" className="hover:text-[#ffb92d] transition-all">LinkedIn ↗</a>
+                </div>
+              </nav>
             </div>
 
-            <div className="flex flex-col gap-4 lowercase text-[14px] normal-case tracking-normal">
-              <a href="mailto:hello@signexperts.com" className="hover:italic transition-all">sign.eexperts@gmail.com</a>
+            <div className="flex flex-col gap-4 lowercase text-[14px] normal-case tracking-normal mt-12">
+              <a href="mailto:sign.eexperts@gmail.com" className="hover:italic transition-all">sign.eexperts@gmail.com</a>
               <p className="opacity-50">+1 929 392-8337</p>
+              <p className="text-[10px] opacity-40 mt-4 uppercase tracking-widest font-bold">©2026 SIGN EXPERTS</p>
             </div>
           </div>
 
-          {/* Right: Condensed Navigation */}
-          <div className="col-span-1 md:col-span-8 grid grid-cols-2 md:grid-cols-3">
-            {/* Quick Links */}
-            <nav className="p-8 md:p-12 border-r border-white/10 space-y-6">
+          {/* Right Area: Menu & Multi-Column Products */}
+          <div className="col-span-1 md:col-span-8 grid grid-cols-1 md:grid-cols-4">
+            
+            {/* Quick Links (1 Column) */}
+            <nav className="p-8 md:p-12 border-b md:border-b-0 border-r border-white/10 space-y-8 col-span-1">
               <p className="opacity-40">Menu</p>
-              <ul className="space-y-2">
-                {['About', 'Work', 'Services', 'Contact'].map(link => (
-                  <li key={link}><a href={`/${link.toLowerCase()}`} className="hover:pl-2 transition-all block">{link}</a></li>
+              <ul className="space-y-3">
+                {menuLinks.map((link) => (
+                  <li key={link.href}>
+                    <Link href={link.href} className="hover:text-[#ffb92d] transition-all block">
+                      {link.label}
+                    </Link>
+                  </li>
                 ))}
               </ul>
             </nav>
 
-            {/* Product Focus */}
-            <nav className="p-8 md:p-12 border-r border-white/10 space-y-6">
-              <p className="opacity-40">Expertise</p>
-              <ul className="space-y-2 text-[10px]">
-                <li><a href="#" className="hover:opacity-50 transition-opacity">Indoor / Outdoor</a></li>
-                <li><a href="#" className="hover:opacity-50 transition-opacity">Illuminated</a></li>
-                <li><a href="#" className="hover:opacity-50 transition-opacity">Vehicle Wraps</a></li>
-                <li><a href="#" className="hover:opacity-50 transition-opacity">Wayfinding</a></li>
+            {/* Products (3 Columns worth of space using CSS Multi-Column) */}
+            <nav className="p-8 md:p-12 space-y-8 col-span-1 md:col-span-3">
+              <p className="opacity-40">Our Products</p>
+              <ul className="columns-2 lg:columns-3 xl:columns-4 gap-8 space-y-4 text-[10px] [column-fill:balance]">
+                {productsData.map((product) => (
+                  <li key={product.slug} className="break-inside-avoid">
+                    <Link
+                      href={`/products/${product.slug}`}
+                      className="hover:text-[#ffb92d] transition-colors block leading-relaxed"
+                    >
+                      {product.title}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </nav>
-
-            {/* Socials & Copyright */}
-            <div className="col-span-2 md:col-span-1 p-8 md:p-12 flex flex-col justify-between">
-              <nav className="space-y-2">
-                <p className="opacity-40 mb-6">Social</p>
-                <a href="#" className="block hover:italic transition-all">Instagram ↗</a>
-                <a href="#" className="block hover:italic transition-all">LinkedIn ↗</a>
-              </nav>
-              <p className="text-[10px] opacity-40 mt-12 md:mt-0">©2026 SIGN EXPERTS</p>
-            </div>
           </div>
         </div>
 
-        {/* Bottom Bar: Ultra Slim */}
+        {/* Bottom Bar */}
         <div className="border-t border-white/10 px-8 md:px-12 py-6 flex flex-col md:flex-row justify-between items-center gap-4 text-[9px] opacity-50">
-          <div className="flex gap-8">
-            <a href="#">Privacy</a>
-            <a href="#">Terms</a>
-            <a href="#">Cookies</a>
-          </div>
-          <a href="https://bricklix.com" className="hover:opacity-100 transition-opacity">
-            Crafted by Bricklix
+          
+          <a href="https://www.bricklix.com" className="hover:opacity-100 transition-opacity flex items-center gap-2">
+            Engineered by <span className="font-black tracking-tighter text-white">BRICKLIX</span>
           </a>
         </div>
 
-        {/* Wordmark: Tighter & More Aggressive */}
+        {/* Brand Wordmark */}
         <div className="w-full overflow-hidden bg-white text-[#101b55]">
-          <h1 className="text-[12vw] font-black leading-[0.75] tracking-[-0.05em] text-center py-2">
-            SIGN E<span className="font-black ">X</span>PERTS
+          <h1 className="text-[8vw] font-black leading-[0.75] tracking-[-0.05em] text-center py-2">
+            SIGN E<span className="font-black">X</span>PERTS
           </h1>
         </div>
       </div>
