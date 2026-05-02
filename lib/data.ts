@@ -331,7 +331,7 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Eco-Friendly Brilliance",
         description: "Achieve intense silhouette lighting using ultra-efficient, low-voltage LED modules that provide long-lasting radiance with minimal energy draw.",
-        iconName: "Sun"
+        iconName: "Lightbulb"
       }
     ],
     products: [
