@@ -3,7 +3,7 @@
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 
-const POSTER_SRC = "/AA.webp";
+const POSTER_SRC = "/AA-2000.webp";
 
 export default function HeroSection() {
   const sectionRef = useRef<HTMLElement>(null);

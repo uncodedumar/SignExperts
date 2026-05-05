@@ -91,11 +91,11 @@ const SignageSection = () => {
             transition={{ duration: 1.2, ease: [0.33, 1, 0.68, 1] }}
           >
             <Image
-              src="/AA.webp" 
+              src="/AA-2000.webp" 
               alt="Restaurant Signage"
               fill
+              sizes="100vw"
               className="object-cover"
-              priority
             />
             {/* Dark Overlay - Set to permanent opacity */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-85 transition-opacity duration-500" />

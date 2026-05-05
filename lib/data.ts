@@ -521,7 +521,7 @@ export const productsData: ProductHeroData[] = [
       {
         title: "M-Panel Real Estate Signs",
         description: "A cost-effective, high-impact solution for large-scale property listings. These lightweight yet rigid panels are specifically designed for high-visibility real estate marketing and development announcements.",
-        imageUrl: "/SignsImages/M-Panel Real Estate Si.webp",
+        imageUrl: "/SignsImages/M-Panel Real Estate Si-1600.webp",
       },
       {
         title: "Directional Totems",
@@ -1816,7 +1816,7 @@ products: [
       {
         title: "Tailgate Wraps",
         description: "Bold tailgate wraps that maximize rear visibility, turning every stop into a branding opportunity.",
-        imageUrl: "/SignsImages/Tailgate Wra.webp"
+        imageUrl: "/SignsImages/Tailgate Wra-1600.webp"
       },
       {
         title: "Box Truck Side Panels",

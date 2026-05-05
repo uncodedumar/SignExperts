@@ -11,7 +11,7 @@ export const portfolioProjects: PortfolioProject[] = [
   {
     id: "01",
     title: "Outdoor Signage",
-    image: "/allimages/2EC731A9-9DF6-4D99-AFD6-502D6C38244E.webp",
+    image: "/allimages/2EC731A9-9DF6-4D99-AFD6-502D6C38244E-1600.webp",
     category: "Illuminated",
     slug: "outdoor-signage",
     summary:
@@ -38,7 +38,7 @@ export const portfolioProjects: PortfolioProject[] = [
   {
     id: "04",
     title: "Wayfinding",
-    image: "/g1.webp",
+    image: "/g1-1600.webp",
     category: "Indoor",
     slug: "wayfinding",
     summary:
@@ -47,7 +47,7 @@ export const portfolioProjects: PortfolioProject[] = [
   {
     id: "05",
     title: "Office Graphics",
-    image: "/g2.webp",
+    image: "/g2-1600.webp",
     category: "Interior",
     slug: "office-graphics",
     summary:

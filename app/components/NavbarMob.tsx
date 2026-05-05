@@ -185,7 +185,6 @@ const Navbar = () => {
             width={45} 
             height={45}
             className="object-contain"
-            priority 
           />
           <span className="text-white text-3xl tracking-wider pt-1">
             SIGN EXPERTS

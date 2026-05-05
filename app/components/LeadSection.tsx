@@ -84,7 +84,7 @@ const RelatedProducts = ({ currentSlug }: RelatedProductsProps) => {
                     alt={product.title}
                     fill
                     className="object-cover opacity-85 group-hover:opacity-100 transition-opacity duration-700"
-                    sizes="(max-w-768px) 100vw, 33vw"
+                    sizes="(max-width: 768px) 100vw, 33vw"
                   />
                 </motion.div>
 

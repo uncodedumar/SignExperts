@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence, type Variants } from 'framer-motion';
 import { Plus, Mail, Phone } from 'lucide-react';
+import Image from "next/image";
 
 // --- Animation Variants ---
 
@@ -198,11 +199,12 @@ export default function ServicesAccordion() {
                                   transition={{ duration: 0.6, ease: "easeOut" }}
                                   className="w-full lg:w-1/2 h-[450px] bg-[#1a1a1a] rounded-3xl relative overflow-hidden flex items-center justify-center text-white/20 font-bold text-4xl group/img shadow-2xl"
                                 >
-                                  {/* Replaced visualText span with img tag */}
-                                  <img 
-                                    src={sub.visualImage} 
-                                    alt={sub.title} 
-                                    className="absolute inset-0 w-full h-full object-cover z-0" 
+                                  <Image
+                                    src={sub.visualImage}
+                                    alt={sub.title}
+                                    fill
+                                    sizes="(max-width: 1024px) 100vw, 50vw"
+                                    className="object-cover z-0"
                                   />
                                   <motion.div 
                                     animate={{ 

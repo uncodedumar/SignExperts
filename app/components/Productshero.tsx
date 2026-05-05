@@ -64,6 +64,7 @@ const IlluminatedLetters = ({ data }: HeroProps) => {
               src={data.image}
               alt={data.highlightTitle || "Sign Experts Illuminated Letters"}
               fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover transition-transform duration-1000 group-hover:scale-110"
               priority
             />
