@@ -38,7 +38,7 @@ const ContactForm: React.FC = () => {
         {/* Right Side: Form Card */}
         <div className="bg-[#f0f2f5] p-8 md:p-10 rounded-[2.5rem] shadow-sm relative overflow-hidden">
           {/* Decorative Grid Pattern Overlay */}
-          <div className="absolute inset-0 opacity-[0.05] pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/grid-me.png')]"></div>
+          <div className="absolute inset-0 opacity-[0.05] pointer-events-none bg-[url('/textures/grid-me.png')]" />
 
           <form 
             action="https://formspree.io/f/mreonybj" 

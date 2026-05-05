@@ -1,12 +1,15 @@
 "use client";
 
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 import Image from 'next/image';
 import { motion, useMotionValue, useSpring, type Variants } from 'framer-motion';
 
 const SignageSection = () => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const [isMobile, setIsMobile] = useState(false);
+  const moveRafRef = useRef<number | null>(null);
+  const pendingPointerRef = useRef<{ clientX: number; clientY: number } | null>(
+    null
+  );
   
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
@@ -19,32 +22,40 @@ const SignageSection = () => {
   const cursorY = useSpring(mouseY, { damping: 20, stiffness: 250 });
 
   useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
+    const flushPointerFrame = () => {
+      moveRafRef.current = null;
+      const pending = pendingPointerRef.current;
+      if (!pending) return;
 
-    checkMobile();
-    window.addEventListener("resize", checkMobile);
+      mouseX.set(pending.clientX);
+      mouseY.set(pending.clientY);
+
+      const el = containerRef.current;
+      if (!el || window.innerWidth < 768) return;
+
+      const rect = el.getBoundingClientRect();
+      const centerX = rect.left + rect.width / 2;
+      const centerY = rect.top + rect.height / 2;
+      nudgeX.set((pending.clientX - centerX) / 15);
+      nudgeY.set((pending.clientY - centerY) / 15);
+    };
 
     const handleMouseMove = (e: MouseEvent) => {
       if (window.innerWidth < 768) return;
 
-      mouseX.set(e.clientX);
-      mouseY.set(e.clientY);
-
-      if (containerRef.current) {
-        const rect = containerRef.current.getBoundingClientRect();
-        const centerX = rect.left + rect.width / 2;
-        const centerY = rect.top + rect.height / 2;
-        nudgeX.set((e.clientX - centerX) / 15);
-        nudgeY.set((e.clientY - centerY) / 15);
-      }
+      pendingPointerRef.current = { clientX: e.clientX, clientY: e.clientY };
+      if (moveRafRef.current != null) return;
+      moveRafRef.current = window.requestAnimationFrame(flushPointerFrame);
     };
 
-    window.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener("mousemove", handleMouseMove, { passive: true });
     return () => {
+      pendingPointerRef.current = null;
+      if (moveRafRef.current != null) {
+        window.cancelAnimationFrame(moveRafRef.current);
+        moveRafRef.current = null;
+      }
       window.removeEventListener("mousemove", handleMouseMove);
-      window.removeEventListener("resize", checkMobile);
     };
   }, [mouseX, mouseY, nudgeX, nudgeY]);
 

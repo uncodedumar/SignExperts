@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { usePathname } from "next/navigation";
 import { Menu, X, ChevronDown, MoveRight, Phone, ChevronRight } from "lucide-react";
 import { motion, AnimatePresence, LayoutGroup } from "framer-motion";
@@ -179,10 +179,11 @@ const BouncingLink = ({ name, href }: { name: string; href: string }) => (
 export default function Navbar() {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [scrollY, setScrollY] = useState(0);
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(false);
   const [activeCategory, setActiveCategory] = useState(productsData[0]);
+  const scrollRafRef = useRef<number | null>(null);
+  const lastScrolledRef = useRef(false);
 
   const closeMobileMenu = useCallback(() => {
     setIsMenuOpen(false);
@@ -191,11 +192,28 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrollY(window.scrollY);
-      setIsScrolled(window.scrollY > 20);
+      if (scrollRafRef.current != null) return;
+
+      scrollRafRef.current = window.requestAnimationFrame(() => {
+        scrollRafRef.current = null;
+        const scrolled = window.scrollY > 20;
+        if (scrolled !== lastScrolledRef.current) {
+          lastScrolledRef.current = scrolled;
+          setIsScrolled(scrolled);
+        }
+      });
     };
+
     window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
+    handleScroll();
+
+    return () => {
+      if (scrollRafRef.current != null) {
+        window.cancelAnimationFrame(scrollRafRef.current);
+        scrollRafRef.current = null;
+      }
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   useEffect(() => { closeMobileMenu(); }, [pathname, closeMobileMenu]);

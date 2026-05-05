@@ -3,7 +3,10 @@
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 
-const POSTER_SRC = "/AA-2000.webp";
+/** Mobile hero + any full-width poster path uses the sharper asset. */
+const POSTER_IMAGE_SRC = "/AA-2000.webp";
+/** Desktop video poster only: smaller dimensions match typical display → less decode work. */
+const VIDEO_POSTER_SRC = "/AA-1500.webp";
 
 export default function HeroSection() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -50,7 +53,7 @@ export default function HeroSection() {
       {/* Mobile: static poster only (no hero video download). */}
       <div className="relative md:hidden w-full min-h-[45vh] max-h-[85vh] aspect-[4/3]">
         <Image
-          src={POSTER_SRC}
+          src={POSTER_IMAGE_SRC}
           alt="Professional signage by Sign Experts"
           fill
           priority
@@ -65,7 +68,7 @@ export default function HeroSection() {
       <div className="hidden md:block absolute inset-0 z-0">
         <video
           ref={videoRef}
-          poster={POSTER_SRC}
+          poster={VIDEO_POSTER_SRC}
           loop
           muted
           playsInline
