@@ -8,29 +8,35 @@ import Quote from "../components/Quote";
 import ValuesSection from "../components/Values";
 import CTA from "../components/CTA"
 import TestimonialSlider from "../components/Testimonials";
+import { getSiteUrl, SITE_NAME } from "@/lib/site";
 
-
+const aboutDescription =
+  "Learn about Sign Experts IL—Chicago-area signage specialists focused on craftsmanship, visibility, and end-to-end project support from design to installation.";
 
 export const metadata: Metadata = {
-  title: "About Sign Experts",
-  description:
-    " Sign Experts ",
-    keywords: [
-     
-  ],
+  title: "About",
+  description: aboutDescription,
+  alternates: { canonical: "/about" },
   openGraph: {
-    title: "The Story of Invantros | Bridging Academic Brilliance & Industrial Excellence",
-    description: "Invantros is Pakistan’s premier tech ecosystem, engineered to bridge the gap between academic brilliance and industrial excellence. In partnership with the country's top-tier universities, we turn sophisticated technology into market-dominant solutions. Our mission is to foster an elite community where researchers from NUST, FAST-NUCES, and LUMS collaborate with industry visionaries to redefine the global digital landscape.",
-    url: "https://invantros.com/about",
+    title: `About Us | ${SITE_NAME}`,
+    description: aboutDescription,
+    url: `${getSiteUrl()}/about`,
+    siteName: SITE_NAME,
+    type: "website",
     images: [
       {
-        url: "/logo.svg", // Recommended: A photo of the leadership or team office
+        url: "/Logo.webp",
         width: 1200,
         height: 630,
-        alt: "About Invantros",
+        alt: SITE_NAME,
       },
     ],
-    type: "profile", // "profile" is great for About pages that highlight founders/teams
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `About Us | ${SITE_NAME}`,
+    description: aboutDescription,
+    images: ["/Logo.webp"],
   },
 };
 

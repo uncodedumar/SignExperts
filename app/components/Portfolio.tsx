@@ -5,23 +5,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowUpRight } from 'lucide-react';
-
-interface Project {
-  id: string;
-  title: string;
-  image: string;
-  category: string;
-  slug: string; // Added slug property
-}
-
-const projects: Project[] = [
-  { id: "01", title: "Outdoor Signage", image: "/allimages/2EC731A9-9DF6-4D99-AFD6-502D6C38244E.JPG", category: "Illuminated", slug: "outdoor-signage" },
-  { id: "02", title: "Promotional Signs", image: "/allimages/1f674588-30d4-4ac3-89d6-79347c896f1d.JPG", category: "Promotional", slug: "custom-led" },
-  { id: "03", title: "Vehicle Wrap", image: "/c.jpg", category: "Fleet", slug: "vehicle-wrap" },
-  { id: "04", title: "Wayfinding", image: "/g1.jpg", category: "Indoor", slug: "wayfinding" },
-  { id: "05", title: "Office Graphics", image: "/g2.jpg", category: "Interior", slug: "office-graphics" },
-  { id: "06", title: "Pylon Signs", image: "/o.jpg", category: "Industrial", slug: "pylon-signs" },
-];
+import { portfolioProjects } from '@/lib/portfolio-projects';
 
 export default function PortfolioSection() {
   return (
@@ -39,7 +23,7 @@ export default function PortfolioSection() {
 
         {/* Project Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, idx) => (
+          {portfolioProjects.map((project, idx) => (
             <Link key={project.id} href={`/projects/${project.slug}`} className="block group">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -55,6 +39,7 @@ export default function PortfolioSection() {
                     src={project.image}
                     alt={project.title}
                     fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   {/* Category Tag Overlay */}

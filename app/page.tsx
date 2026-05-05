@@ -1,29 +1,29 @@
+import dynamic from "next/dynamic";
 import HeroSection from "./components/HeroSection";
-import Quotation from "./components/Quotation";
-import Cards from "./components/CardsNavigation";
-import Pills from "./components/Pills";
-import ServicesCards from "./components/ServicesCards";
-import CTA from "./components/CTA";
-import Imagee from "./components/Image"
-import Faqs from "./components/Faqs";
-import Form from "./components/Form";
-import Mapss from "./components/mapss";
+
+const Quotation = dynamic(() => import("./components/Quotation"));
+const Pills = dynamic(() => import("./components/Pills"));
+const Cards = dynamic(() => import("./components/CardsNavigation"));
+const ServicesCards = dynamic(() => import("./components/ServicesCards"));
+const CTA = dynamic(() => import("./components/CTA"));
+const Imagee = dynamic(() => import("./components/Image"));
+const Form = dynamic(() => import("./components/Form"));
+const Faqs = dynamic(() => import("./components/Faqs"));
+const Mapss = dynamic(() => import("./components/mapss"));
+
 export default function Home() {
   return (
     <>
-
       <HeroSection />
       <Quotation />
-
-      <Pills />  <Cards />
+      <Pills />
+      <Cards />
       <ServicesCards />
-
       <CTA />
       <Imagee />
       <Form />
       <Faqs />
       <Mapss />
-
     </>
   );
 }

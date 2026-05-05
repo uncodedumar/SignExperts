@@ -47,8 +47,9 @@ const FAQItem = ({ faq, isOpen, onToggle, index }: { faq: FAQData; isOpen: boole
       className="group border-b border-gray-100 last:border-0 transition-all duration-500"
     >
       <button
+        type="button"
         onClick={onToggle}
-        className="w-full py-8 flex items-start justify-between text-left focus:outline-none"
+        className="w-full py-8 flex items-start justify-between text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:ring-offset-white rounded-sm"
         aria-expanded={isOpen}
       >
         <div className="flex gap-6 md:gap-10">

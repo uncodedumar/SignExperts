@@ -128,7 +128,10 @@ export default async function BlogPostPage({ params }: PageProps) {
         <div className="bg-black text-white p-8 text-center">
           <h4 className="text-2xl font-bold mb-4">Want more insights?</h4>
           <p className="text-gray-400 mb-6">Stay ahead of the digital curve with our weekly briefings.</p>
-          <button className="px-8 py-3 bg-white text-black font-bold uppercase hover:bg-blue-600 hover:text-white transition-colors">
+          <button
+            type="button"
+            className="px-8 py-3 bg-white text-black font-bold uppercase hover:bg-blue-600 hover:text-white transition-colors"
+          >
             Subscribe Now
           </button>
         </div>

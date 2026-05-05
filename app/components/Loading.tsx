@@ -1,37 +1,46 @@
-
-
 ﻿"use client";
 
 import React, { useState } from "react";
-import { motion, AnimatePresence, Variants } from "framer-motion";
+import Image from "next/image";
+import { motion, AnimatePresence, type Variants } from "framer-motion";
 
 interface LoadingScreenProps {
   children: React.ReactNode;
 }
 
+/**
+ * Intro runs to completion before any page content is mounted.
+ * This matches the original “loader first” behavior; note that it delays
+ * LCP / first paint until the sequence finishes (expected tradeoff).
+ */
 const LoadingScreen = ({ children }: LoadingScreenProps) => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [showContent, setShowContent] = useState(false);
 
-  // Darkened version of your original color
   const primaryColor = "#101b55";
+
+  // ~1200ms total feel while keeping the same “columns” look.
+  // Grow completes quickly; exit collapses quickly right after.
+  const STAGGER_MS = 60;
+  const GROW_MS = 900;
+  const EXIT_MS = 360;
 
   const columnVariants: Variants = {
     initial: { height: "0%" },
     animate: (i: number) => ({
       height: "100%",
       transition: {
-        duration: 1.2,
+        duration: GROW_MS / 1000,
         ease: [0.45, 0, 0.55, 1],
-        delay: i * 0.1,
+        delay: (i * STAGGER_MS) / 1000,
       },
     }),
     exit: (i: number) => ({
       height: "0%",
       transition: {
-        duration: 0.8,
+        duration: EXIT_MS / 1000,
         ease: [0.45, 0, 0.55, 1],
-        delay: i * 0.1,
+        delay: (i * STAGGER_MS) / 1000,
       },
     }),
   };
@@ -42,8 +51,26 @@ const LoadingScreen = ({ children }: LoadingScreenProps) => {
         {!isLoaded && (
           <motion.div
             key="loader"
+            aria-hidden
             className="fixed inset-0 z-[9999] flex overflow-hidden bg-transparent"
           >
+            {/* Stable, real LCP candidate so Lighthouse doesn’t report NO_LCP */}
+            <div className="pointer-events-none absolute inset-0 z-10 grid place-items-center">
+              <div className="flex flex-col items-center gap-4">
+                <Image
+                  src="/Logo.webp"
+                  alt="Sign Experts"
+                  width={160}
+                  height={160}
+                  priority
+                  fetchPriority="high"
+                />
+                <div className="text-white text-lg font-extrabold tracking-[0.25em] uppercase">
+                  Sign Experts
+                </div>
+              </div>
+            </div>
+
             {[...Array(5)].map((_, i) => (
               <motion.div
                 key={i}
@@ -53,9 +80,8 @@ const LoadingScreen = ({ children }: LoadingScreenProps) => {
                 animate="animate"
                 exit="exit"
                 onAnimationComplete={() => {
-                  // Once the 5th column finished animating UP, 
-                  // we mark the loader as finished.
-                  if (i === 4) {
+                  // Last column finished growing — reveal app and start loader exit.
+                  if (!isLoaded && i === 4) {
                     setIsLoaded(true);
                     setShowContent(true);
                   }
@@ -68,9 +94,6 @@ const LoadingScreen = ({ children }: LoadingScreenProps) => {
         )}
       </AnimatePresence>
 
-      {/* This ensures that 'children' (your site) are only rendered 
-          once the loading animation is complete. 
-      */}
       {showContent && (
         <motion.div
           initial={{ opacity: 0 }}

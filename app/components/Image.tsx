@@ -91,7 +91,7 @@ const SignageSection = () => {
             transition={{ duration: 1.2, ease: [0.33, 1, 0.68, 1] }}
           >
             <Image
-              src="/AA.jpg" 
+              src="/AA.webp" 
               alt="Restaurant Signage"
               fill
               className="object-cover"

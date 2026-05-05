@@ -43,6 +43,7 @@ const ProductAccordion = ({ slug }: ProductAccordionProps) => {
             >
               {/* --- ACCORDION HEADER --- */}
               <button
+                type="button"
                 onClick={() => toggleAccordion(acc.id)}
                 className="w-full flex items-center justify-between px-8 md:px-16 py-10 md:py-14 text-left group"
               >

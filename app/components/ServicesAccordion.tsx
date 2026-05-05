@@ -90,9 +90,9 @@ const SERVICES_DATA: MainService[] = [
     title: 'Creative Services',
     quote: '"We\'re more than just sign makers. We\'re an extension of your marketing team."',
     subServices: [
-      { id: 'custom', highlight: 'Bespoke Solutions', title: 'Graphic Designing', description: 'Sign Experts specializes in custom signs for your brand! Bring your business to life with custom signage designed specifically for your unique space.', visualImage: '/signarama/signarama-usa-sunset-skatepark-outdoor-signs-original-65c12009bef73.jpg_2.jpeg' },
-      { id: 'fab', highlight: 'Precision Engineering', title: 'Custom Signs', description: 'Sophisticated cutting and printing technology to create outstanding signs and letters. We shape raw materials into high-impact physical structures.', visualImage: '/signarama/signarama-usa-cafe-restaurant-square-61a5efdf37379.jpg.jpeg' },
-      { id: 'design', highlight: 'Visual Strategy', title: 'Design', description: 'Professional signage begins long before the first cut. Our design services transform abstract ideas into high-performance, readable signage.', visualImage: '/signarama/signarama-usa-illuminated-signs-square-648b7160458ae.jpg.jpeg'  },
+      { id: 'custom', highlight: 'Bespoke Solutions', title: 'Graphic Designing', description: 'Sign Experts specializes in custom signs for your brand! Bring your business to life with custom signage designed specifically for your unique space.', visualImage: '/signarama/signarama-usa-sunset-skatepark-outdoor-signs-original-65c12009bef73.jpg_2.webp' },
+      { id: 'fab', highlight: 'Precision Engineering', title: 'Custom Signs', description: 'Sophisticated cutting and printing technology to create outstanding signs and letters. We shape raw materials into high-impact physical structures.', visualImage: '/signarama/signarama-usa-cafe-restaurant-square-61a5efdf37379.jpg.webp' },
+      { id: 'design', highlight: 'Visual Strategy', title: 'Design', description: 'Professional signage begins long before the first cut. Our design services transform abstract ideas into high-performance, readable signage.', visualImage: '/signarama/signarama-usa-illuminated-signs-square-648b7160458ae.jpg.webp' },
       { id: 'writing', highlight: 'The Human Touch', title: 'Brand Audits & Consultaions', description: 'Hand-finished detail meets modern brand precision. We apply high-clarity typography to glass shopfronts and modern vehicle fleets.', visualImage: '/signarama/signarama-usa-channel-letter-installation-square-64b9364c807e3.webp' },
       { id: 'audit', highlight: 'Strategic Growth', title: 'Fabricated Signage', description: 'Identify critical gaps and visibility opportunities. We evaluate existing signage for consistency, durability, and brand alignment.', visualImage: '/signarama/signarama-usa-professional-printing-services-48600977087-o-square-64b5c5cc4ff68.webp'},
     ]
@@ -226,7 +226,8 @@ export default function ServicesAccordion() {
                                   </p>
                                   
                                   <div className="flex items-center gap-6 pt-6 pb-4">
-                                    <motion.button 
+                                    <motion.button
+                                      type="button"
                                       whileHover={{ scale: 1.05 }}
                                       whileTap={{ scale: 0.95 }}
                                       className="bg-black text-white px-10 py-4 rounded-xl font-bold uppercase text-sm tracking-widest shadow-lg hover:bg-[#ffc107] hover:text-black transition-colors"
@@ -234,15 +235,22 @@ export default function ServicesAccordion() {
                                       Launch Project
                                     </motion.button>
                                     <div className="flex gap-3">
-                                      {[Mail, Phone].map((Icon, i) => (
-                                        <motion.div 
-                                          key={i}
-                                          whileHover={{ y: -5, backgroundColor: "#ffc107", color: "#fff" }}
-                                          className="w-12 h-12 border-2 border-black/10 rounded-xl flex items-center justify-center cursor-pointer transition-colors"
-                                        >
-                                          <Icon size={20} />
-                                        </motion.div>
-                                      ))}
+                                      <motion.a
+                                        href="mailto:sign.eexperts@gmail.com"
+                                        whileHover={{ y: -5, backgroundColor: "#ffc107", color: "#fff" }}
+                                        aria-label="Email Sign Experts"
+                                        className="w-12 h-12 border-2 border-black/10 rounded-xl flex items-center justify-center cursor-pointer transition-colors"
+                                      >
+                                        <Mail size={20} aria-hidden />
+                                      </motion.a>
+                                      <motion.a
+                                        href="tel:+19293928337"
+                                        whileHover={{ y: -5, backgroundColor: "#ffc107", color: "#fff" }}
+                                        aria-label="Call Sign Experts"
+                                        className="w-12 h-12 border-2 border-black/10 rounded-xl flex items-center justify-center cursor-pointer transition-colors"
+                                      >
+                                        <Phone size={20} aria-hidden />
+                                      </motion.a>
                                     </div>
                                   </div>
                                 </div>

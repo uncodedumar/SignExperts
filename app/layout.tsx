@@ -6,7 +6,9 @@ import Navigation from "./components/Navbar";
 import NavigationMob from "./components/NavbarMob";
 
 import Footer from './components/Footer';
+import { getSiteUrl, SITE_DESCRIPTION, SITE_NAME } from "@/lib/site";
 
+const siteUrl = getSiteUrl();
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,9 +21,37 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sign Experts IL",
-  description: "Sign Experts IL is a leading sign company in IL that provides a wide range of signage solutions for businesses and organizations.",
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://www.signexperts.net"),
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: `${SITE_NAME} | Custom Signs & Graphics`,
+    template: `%s | ${SITE_NAME}`,
+  },
+  description: SITE_DESCRIPTION,
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: siteUrl,
+    siteName: SITE_NAME,
+    title: SITE_NAME,
+    description: SITE_DESCRIPTION,
+    images: [
+      {
+        url: "/Logo.webp",
+        width: 1200,
+        height: 630,
+        alt: SITE_NAME,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: SITE_NAME,
+    description: SITE_DESCRIPTION,
+    images: ["/Logo.webp"],
+  },
 };
 
 export default function RootLayout({
@@ -35,14 +65,12 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
      
-      <body>
-
-      <LoadingBar>
+      <body className="min-h-full font-sans antialiased">
+        <LoadingBar>
           <>
             <Navigation />
             <NavigationMob />
             {children}
-            
             <Footer />
           </>
         </LoadingBar>

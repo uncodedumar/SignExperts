@@ -1,7 +1,32 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import type { Metadata } from 'next';
 import { blogs, type BlogEntry } from '../../lib/data';
+import { getSiteUrl, SITE_NAME } from '@/lib/site';
+
+const blogIndexDescription =
+  'Articles on signage trends, safety signage, fleet graphics, and visual branding from Sign Experts IL.';
+
+export const metadata: Metadata = {
+  title: 'Blog',
+  description: blogIndexDescription,
+  alternates: { canonical: '/blog' },
+  openGraph: {
+    title: `Signage Blog | ${SITE_NAME}`,
+    description: blogIndexDescription,
+    url: `${getSiteUrl()}/blog`,
+    siteName: SITE_NAME,
+    type: 'website',
+    images: [{ url: '/Logo.webp', width: 1200, height: 630, alt: SITE_NAME }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `Signage Blog | ${SITE_NAME}`,
+    description: blogIndexDescription,
+    images: ['/Logo.webp'],
+  },
+};
 
 const BlogListPage = () => {
   return (

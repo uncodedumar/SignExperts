@@ -214,7 +214,13 @@ export default function Navbar() {
           
           {/* Left: Logo & Text */}
           <Link href="/" className="flex items-center gap-3 flex-shrink-0 z-10">
-            <Image src="/Logo.png" alt="Logo" width={40} height={40} className="w-10 h-10" />
+            <Image
+              src="/Logo.webp"
+              alt="Sign Experts"
+              width={40}
+              height={40}
+              className="w-10 h-10"
+            />
             <span className="text-white font-bold text-xl tracking-tight hidden sm:block">SIGN EXPERTS</span>
           </Link>
 
@@ -245,6 +251,7 @@ export default function Navbar() {
                             <p className="text-[10px] uppercase tracking-widest text-blue-300 mb-4">Categories</p>
                             {productsData.map((item) => (
                               <button
+                                type="button"
                                 key={item.category}
                                 onMouseEnter={() => setActiveCategory(item)}
                                 className={`flex items-center justify-between w-full text-left p-2 rounded-lg transition-all ${activeCategory.category === item.category ? "bg-blue-600 text-white" : "hover:bg-[#ffb92d] text-[#ffb92d]"}`}
@@ -305,8 +312,13 @@ export default function Navbar() {
 
           {/* Mobile Menu Trigger */}
           <div className="md:hidden">
-            <button className="p-2 text-white" onClick={() => setIsMenuOpen(true)}>
-              <Menu size={28} />
+            <button
+              type="button"
+              className="p-2 text-white rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:ring-offset-2 focus-visible:ring-offset-[#101b55]"
+              onClick={() => setIsMenuOpen(true)}
+              aria-label="Open menu"
+            >
+              <Menu size={28} aria-hidden />
             </button>
           </div>
         </nav>
@@ -317,7 +329,14 @@ export default function Navbar() {
             <motion.div initial={{ x: "100%" }} animate={{ x: 0 }} exit={{ x: "100%" }} className="fixed inset-0 bg-blue-900 z-[10000] p-8 flex flex-col overflow-y-auto">
               <div className="flex justify-between items-center mb-8">
                 <span className="text-white font-bold text-xl">SIGN EXPERTS</span>
-                <button onClick={closeMobileMenu} className="text-white"><X size={32} /></button>
+                <button
+                  type="button"
+                  onClick={closeMobileMenu}
+                  className="text-white rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:ring-offset-2 focus-visible:ring-offset-blue-900"
+                  aria-label="Close menu"
+                >
+                  <X size={32} aria-hidden />
+                </button>
               </div>
               <div className="flex flex-col gap-6">
                 {navLinks.map(link => (

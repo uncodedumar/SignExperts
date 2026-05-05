@@ -10,9 +10,9 @@ const bebas = Bebas_Neue({ weight: '400', subsets: ['latin'] });
 const lexend = Lexend({ subsets: ['latin'] });
 
 const images = [
-  '/a.jpg', 
-  '/b.jpg',
-  '/c.jpg',
+  '/a.webp',
+  '/b.webp',
+  '/c.webp',
 ];
 
 export default function HeroSection() {
@@ -98,17 +98,21 @@ export default function HeroSection() {
       </div>
 
       {/* Navigation Arrows */}
-      <button 
+      <button
+        type="button"
         onClick={prevSlide}
-        className="absolute left-6 z-20 p-2 rounded-full border border-white/30 text-white hover:bg-white/20 transition-colors"
+        className="absolute left-6 z-20 p-2 rounded-full border border-white/30 text-white hover:bg-white/20 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC121] focus-visible:ring-offset-2 focus-visible:ring-offset-black/50"
+        aria-label="Previous slide"
       >
-        <ChevronLeft size={32} />
+        <ChevronLeft size={32} aria-hidden />
       </button>
-      <button 
+      <button
+        type="button"
         onClick={nextSlide}
-        className="absolute right-6 z-20 p-2 rounded-full border border-white/30 text-white hover:bg-white/20 transition-colors"
+        className="absolute right-6 z-20 p-2 rounded-full border border-white/30 text-white hover:bg-white/20 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#FFC121] focus-visible:ring-offset-2 focus-visible:ring-offset-black/50"
+        aria-label="Next slide"
       >
-        <ChevronRight size={32} />
+        <ChevronRight size={32} aria-hidden />
       </button>
 
       {/* Slide Indicators */}

@@ -77,20 +77,22 @@ export default function TestimonialSlider() {
       <div className="relative w-full max-w-[90%] mx-auto px-6">
         
         {/* Navigation Arrows - Adjusted for white background */}
-        <button 
+        <button
+          type="button"
           onClick={prevStep}
-          className="absolute left-0 top-1/2 -translate-y-1/2 z-10 p-2 text-black/30 hover:text-black transition-colors"
+          className="absolute left-0 top-1/2 -translate-y-1/2 z-10 p-2 text-black/55 hover:text-black transition-colors"
           aria-label="Previous testimonial"
         >
-          <ChevronLeft size={40} strokeWidth={1} />
+          <ChevronLeft size={40} strokeWidth={1} aria-hidden />
         </button>
 
-        <button 
+        <button
+          type="button"
           onClick={nextStep}
-          className="absolute right-0 top-1/2 -translate-y-1/2 z-10 p-2 text-black/30 hover:text-black transition-colors"
+          className="absolute right-0 top-1/2 -translate-y-1/2 z-10 p-2 text-black/55 hover:text-black transition-colors"
           aria-label="Next testimonial"
         >
-          <ChevronRight size={40} strokeWidth={1} />
+          <ChevronRight size={40} strokeWidth={1} aria-hidden />
         </button>
 
         <div className="min-h-[400px] flex items-center justify-center">
@@ -142,12 +144,15 @@ export default function TestimonialSlider() {
         <div className="flex justify-center space-x-3 mt-8">
           {testimonials.map((_, i) => (
             <button
+              type="button"
               key={i}
               onClick={() => {
                 setDirection(i > index ? 1 : -1);
                 setIndex(i);
               }}
-              className={`h-1.5 transition-all duration-500 rounded-full ${
+              aria-label={`Show testimonial ${i + 1} of ${testimonials.length}`}
+              aria-current={i === index ? "true" : undefined}
+              className={`h-1.5 transition-all duration-500 rounded-full focus:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:ring-offset-white ${
                 i === index ? "bg-black w-8" : "bg-black/10 w-4"
               }`}
             />

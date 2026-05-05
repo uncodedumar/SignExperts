@@ -180,7 +180,7 @@ const Navbar = () => {
         {/* Logo & Name */}
         <Link href="/" className="flex items-center gap-3">
           <Image 
-            src="/Logo.png" 
+            src="/Logo.webp" 
             alt="Sign Experts Logo"
             width={45} 
             height={45}

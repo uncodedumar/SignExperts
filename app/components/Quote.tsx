@@ -49,16 +49,14 @@ const ActionSection = () => {
       animate="visible"
     >
       {/* Left Side: Get A Quote Button */}
-      <Link href="/#contact-form" passHref>
-        <motion.button
-          variants={itemVariants}
-          whileHover="hover"
-          whileTap="tap"
-          className="px-8 py-4 bg-[#FFC107] text-white font-semibold rounded-full text-lg shadow-sm cursor-pointer"
+      <motion.div variants={itemVariants} whileHover="hover" whileTap="tap">
+        <Link
+          href="/#contact-form"
+          className="inline-flex px-8 py-4 bg-[#FFC107] text-white font-semibold rounded-full text-lg shadow-sm cursor-pointer"
         >
           Get A Quote
-        </motion.button>
-      </Link>
+        </Link>
+      </motion.div>
 
       {/* Right Side: Icon Buttons */}
       <div className="flex items-center gap-4">
@@ -67,9 +65,10 @@ const ActionSection = () => {
           variants={itemVariants}
           whileHover="hover"
           whileTap="tap"
+          aria-label="Email Sign Experts"
           className="flex items-center justify-center w-14 h-14 bg-[#FFC107] rounded-full text-white shadow-sm"
         >
-          <Mail size={24} strokeWidth={2.5} />
+          <Mail size={24} strokeWidth={2.5} aria-hidden />
         </motion.a>
 
         <motion.a
@@ -77,9 +76,10 @@ const ActionSection = () => {
           variants={itemVariants}
           whileHover="hover"
           whileTap="tap"
+          aria-label="Call Sign Experts"
           className="flex items-center justify-center w-14 h-14 bg-[#FFC107] rounded-full text-white shadow-sm"
         >
-          <Phone size={24} strokeWidth={2.5} />
+          <Phone size={24} strokeWidth={2.5} aria-hidden />
         </motion.a>
       </div>
     </motion.section>

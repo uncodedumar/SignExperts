@@ -105,14 +105,14 @@ const ContactForm: React.FC = () => {
 
              {/* Business Location */}
              <div className="flex flex-col space-y-1.5">
-              <label htmlFor="businessName" className="text-sm font-semibold text-gray-600 ml-1">
-                Business Name
+              <label htmlFor="businessLocation" className="text-sm font-semibold text-gray-600 ml-1">
+                Business location
               </label>
               <input
                 type="text"
-                id="businessName"
-                name="businessName"
-                placeholder="Sign Experts "
+                id="businessLocation"
+                name="businessLocation"
+                placeholder="City, IL or full address"
                 className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all bg-white text-gray-800"
               />
             </div>

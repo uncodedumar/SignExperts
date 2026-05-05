@@ -95,9 +95,10 @@ export default function ProductPlayground() {
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           {signData.map((cat) => (
             <button
+              type="button"
               key={cat.id}
               onClick={() => setActiveTab(cat.id)}
-              className={`flex items-center gap-2 px-6 py-3 rounded-full font-bold transition-all transform hover:scale-105 ${
+              className={`flex items-center gap-2 px-6 py-3 rounded-full font-bold transition-all transform hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#101b55] ${
                 activeTab === cat.id 
                 ? `${cat.color} text-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] translate-x-[-2px] translate-y-[-2px]` 
                 : 'bg-white text-gray-600 hover:bg-gray-100 border-2 border-transparent shadow-sm'

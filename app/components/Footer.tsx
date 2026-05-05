@@ -35,8 +35,9 @@ const Footer = () => {
                     className="w-full bg-transparent border-b border-white/30 py-4 text-white placeholder:text-white/50 focus:border-white focus:outline-none transition-all duration-500 tracking-widest text-sm"
                     required
                   />
-                  <button 
-                    type="submit" 
+                  <button
+                    type="submit"
+                    aria-label="Submit email to newsletter"
                     className="absolute right-0 bottom-4 group/btn flex items-center gap-3 text-white tracking-tighter font-light"
                   >
                     <span className="text-xs opacity-0 group-hover/btn:opacity-100 -translate-x-4 group-hover/btn:translate-x-0 transition-all duration-500 ease-out">
@@ -53,8 +54,22 @@ const Footer = () => {
               <nav className="space-y-3">
                 <p className="opacity-40 mb-4 text-[10px]">Connect</p>
                 <div className="flex gap-6">
-                    <a href="#" className="hover:text-[#ffb92d] transition-all">Instagram ↗</a>
-                    <a href="#" className="hover:text-[#ffb92d] transition-all">LinkedIn ↗</a>
+                    <a
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-[#ffb92d] transition-all"
+                    >
+                      Instagram ↗
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-[#ffb92d] transition-all"
+                    >
+                      LinkedIn ↗
+                    </a>
                 </div>
               </nav>
             </div>

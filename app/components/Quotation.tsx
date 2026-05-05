@@ -143,19 +143,21 @@ const SignageHero = () => {
             </div>
 
             <div className="flex gap-4">
-              <motion.a 
-                href="mailto:sign.eexperts@gmail.com" 
+              <motion.a
+                href="mailto:sign.eexperts@gmail.com"
                 whileHover={{ scale: 1.1, rotate: 5 }}
+                aria-label="Email Sign Experts"
                 className="bg-black p-4 rounded-full text-white shadow-md flex items-center justify-center transition-colors hover:bg-[#101b55]"
               >
-                <Mail size={24} />
+                <Mail size={24} aria-hidden />
               </motion.a>
-              <motion.a 
-                href="tel:+19293928337" 
+              <motion.a
+                href="tel:+19293928337"
                 whileHover={{ scale: 1.1, rotate: -5 }}
+                aria-label="Call Sign Experts"
                 className="bg-black p-4 rounded-full text-white shadow-md flex items-center justify-center transition-colors hover:bg-[#101b55]"
               >
-                <Phone size={24} fill="white" />
+                <Phone size={24} fill="white" aria-hidden />
               </motion.a>
             </div>
           </div>

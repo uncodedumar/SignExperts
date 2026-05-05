@@ -48,15 +48,14 @@ const RelatedProducts = ({ currentSlug }: RelatedProductsProps) => {
             Related <span className="text-[#5D2E2E]">Products</span>
           </motion.h2>
           
-          <Link href="/products">
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-6 py-3 border border-gray-300 rounded-full text-sm font-semibold text-gray-700 hover:border-[#5D2E2E] hover:text-[#5D2E2E] transition-colors whitespace-nowrap"
+          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <Link
+              href="/products"
+              className="inline-flex px-6 py-3 border border-gray-300 rounded-full text-sm font-semibold text-gray-700 hover:border-[#5D2E2E] hover:text-[#5D2E2E] transition-colors whitespace-nowrap"
             >
               View All
-            </motion.button>
-          </Link>
+            </Link>
+          </motion.div>
         </div>
 
         {/* 3-Card Grid */}

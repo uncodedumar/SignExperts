@@ -19,7 +19,7 @@ export const blogs: BlogEntry[] = [
     "slug": "evolution-of-workplace-safety-signage-2026",
     "title": "The Visual Shield: How Modern Safety & Hygiene Signage Redefined the Workplace",
     "subheading": "Moving beyond basic stickers to intelligent, high-compliance safety ecosystems.",
-    "featuredImage": "/SignsImages/Safety Signage.png",
+    "featuredImage": "/SignsImages/Safety Signage.webp",
     "author": "Sign Experts iL",
     "date": "May 2, 2026",
     "content": [
@@ -33,7 +33,7 @@ export const blogs: BlogEntry[] = [
       },
       {
         "type": "image",
-        "value": "/images/blog/industrial-safety-visualization.jpg",
+        "value": "/SignsImages/Regulatory Safety Si.webp",
         "alt": "A visualization of a modern facility with integrated safety and hygiene signage"
       },
       {
@@ -58,7 +58,7 @@ export const blogs: BlogEntry[] = [
       },
       {
         "type": "image",
-        "value": "/images/blog/hygienic-facility-setting.jpg",
+        "value": "/SignsImages/Hygiene and Safe.webp",
         "alt": "A sterile facility setting showing advanced hygiene signage integration"
       },
       {
@@ -89,7 +89,7 @@ export const blogs: BlogEntry[] = [
       },
       {
         "type": "image",
-        "value": "/images/blog/premium-wrap-example.jpg",
+        "value": "/SignsImages/Van Wra.webp",
         "alt": "An example of a high-impact commercial van wrap layout"
       },
       {
@@ -218,7 +218,7 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Halo-lit Letters",
         description: "Also called 'Back-lit letters' or 'Reverse-lit letters', these are a softer and classy look, usually metal or aluminium letters that are illuminated from the back to cast a halo glow effect.",
-        imageUrl: "/SignsImages/Halo-lit Lette.jpg",
+        imageUrl: "/SignsImages/Halo-lit Lette.webp",
       },
     ]
   },
@@ -229,7 +229,7 @@ export const productsData: ProductHeroData[] = [
     highlightTitle: "Letters",
     descriptionMain: "3D Illuminated Channel Letters have become an extremely popular signage solution for businesses that need bold, high-visibility branding. They deliver the look of neon signs with the benefits of LED cost-effectiveness, low power consumption, brightness, and durability. Custom illuminated channel letters are widely used for storefront signs, office signage, senior living facility signs, student housing signage, mixed-use development signs, hospitality signage, and exterior building signs where day and night visibility matters. ",
     descriptionSecondary: "Sign experts deals in 3D illuminated signage, helping businesses create custom signs that strengthen brand presence and improve visibility.",
-    image: "/SignsImages/Digital Illuminated Sign.jpg",
+    image: "/SignsImages/Digital Illuminated Sign.webp",
     services: [
       {
         title: "24/7 Brand Visibility",
@@ -261,7 +261,7 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Scrolling LED Tickers",
         description: "Streamline communication with programmable scrolling text. Ideal for stock updates, breaking news, or promotional alerts in corporate environments and storefronts.",
-        imageUrl: "/SignsImages/Scrolling LED Ticker.jpg",
+        imageUrl: "/SignsImages/Scrolling LED Ticker.webp",
       },]
   },
 
@@ -294,12 +294,12 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Double-Sided Projecting Boxes",
         description: "Maximize visibility from both directions with perpendicular mounting. These durable cabinets are engineered to capture foot traffic and vehicular flow, making them essential for narrow streets and busy storefronts.",
-        imageUrl: "/SignsImages/Double-Sided Projecting Boxes.avif",
+        imageUrl: "/SignsImages/Double-Sided Projecting Boxes.webp",
       },
       {
         title: "LED Fabric Lightboxes",
         description: "Achieve a premium, frameless look with tensioned fabric graphics. Our LED fabric boxes provide a sophisticated, soft-glow aesthetic with easily swappable prints, perfect for high-end retail and showroom environments.",
-        imageUrl: "/SignsImages/LED Fabric Lightboxe.jpg",
+        imageUrl: "/SignsImages/LED Fabric Lightboxe.webp",
       },
       {
         title: "Aluminum Sign",
@@ -338,12 +338,12 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Halo-Lit Metal Letters",
         description: "Fabricated from premium stainless steel or aluminum, these letters feature an open back that allows light to wash against the wall. This creates a prestigious, floating silhouette effect ideal for high-end corporate branding.",
-        imageUrl: "/SignsImages/Halo-Lit Metal Letter.avif",
+        imageUrl: "/SignsImages/Halo-Lit Metal Letter.webp",
       },
       {
         title: "Backlit Logo Panels",
         description: "Combine precise laser-cut detailing with integrated rear-illumination. These panels provide a clean, modern aesthetic where the light outlines your entire brand mark, perfect for reception areas and luxury storefronts.",
-        imageUrl: "/SignsImages/Backlit Logo Pane.avif",
+        imageUrl: "/SignsImages/Backlit Logo Pane.webp",
       },
       {
         title: "RGB Halo Lighting",
@@ -360,7 +360,7 @@ export const productsData: ProductHeroData[] = [
     highlightTitle: "Letters",
     descriptionMain: "Channel signs are individually crafted 3D letters that bring depth, visibility, and a premium look to your storefront. Built with durable materials and integrated LED lighting, they ensure your brand stands out clearly—day or night.",
     descriptionSecondary: "From front-lit and backlit (halo) letters to fully custom fabricated designs, our channel signs are engineered for long-lasting performance and high visual impact.",
-    image: "/SignsImages/Channel Signs.jpg",
+    image: "/SignsImages/Channel Signs.webp",
     services: [
       {
         title: "Day & Night Visibility",
@@ -382,17 +382,17 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Front-Lit Channel Letters",
         description: "The most popular signage choice for maximum visibility. These 3D letters feature illuminated acrylic faces with high-efficiency LEDs, ensuring your brand is bold, bright, and readable from long distances.",
-        imageUrl: "/SignsImages/Front-Lit Channel Letters.jpg",
+        imageUrl: "/SignsImages/Front-Lit Channel Letters.webp",
       },
       {
         title: "Dual-Lit Channel Signs",
         description: "Combine front illumination with a halo backlit effect for a premium, Lightbulb-catching look. Dual-lit channel letters offer enhanced depth and sophistication, making them ideal for high-end retail.",
-        imageUrl: "/SignsImages/Dual-Lit Channel Sign.jpg",
+        imageUrl: "/SignsImages/Dual-Lit Channel Sign.webp",
       },
       {
         title: "Raceway Mounted Signs",
         description: "A practical and clean installation solution where all wiring and components are enclosed within a single raceway. This method reduces wall penetration and installation time.",
-        imageUrl: "/SignsImages/Raceway Mounted Sign.jpg",
+        imageUrl: "/SignsImages/Raceway Mounted Sign.webp",
       },
     ]
   },
@@ -450,7 +450,7 @@ export const productsData: ProductHeroData[] = [
     highlightTitle: "Depth",
     descriptionMain: "Dimensional letters offer a high-impact, 3D branding solution that adds depth and character to any surface. Unlike flat vinyl, these precision-cut letters create a professional and permanent look for storefronts, reception areas, and corporate offices. Available in a wide array of materials, thicknesses, and finishes, dimensional lettering allows you to transform your brand identity into a physical architectural element that commands attention through shadow and scale.",
     descriptionSecondary: "Our experts specialize in custom-fabricated non-illuminated signage, helping you select the perfect material and finish to match your brand's unique aesthetic.",
-    image: "/SignsImages/Dimensional Letter.jpg",
+    image: "/SignsImages/Dimensional Letter.webp",
     services: [
       {
         title: "Versatile Material Selection",
@@ -482,7 +482,7 @@ export const productsData: ProductHeroData[] = [
       {
         title: "High-Density Urethane (HDU)",
         description: "The premier choice for large-scale outdoor signage. HDU is waterproof, rot-resistant, and can be carved or sandblasted to create intricate, deep-dimension designs that withstand the elements.",
-        imageUrl: "/SignsImages/High-Density Urethane .jpg",
+        imageUrl: "/SignsImages/High-Density Urethane .webp",
       },
     ]
   },
@@ -494,7 +494,7 @@ export const productsData: ProductHeroData[] = [
     highlightTitle: "Direction",
     descriptionMain: "Post and panel signs are the versatile workhorses of outdoor branding, offering a clean and effective solution for site identification and wayfinding. These freestanding signs are engineered for maximum durability, providing a professional presence for business parks, residential developments, and commercial properties. Whether you need a temporary real estate display or a permanent architectural monument, our post and panel systems offer high-visibility messaging that is built to withstand the elements.",
     descriptionSecondary: "Our team designs custom exterior signage solutions that simplify navigation and strengthen your property’s curb appeal through robust, high-quality fabrication.",
-    image: "/SignsImages/Post and Panel Signs.jpg",
+    image: "/SignsImages/Post and Panel Signs.webp",
     services: [
       {
         title: "Freestanding Site ID",
@@ -516,7 +516,7 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Aluminum Site Signs",
         description: "Heavy-duty aluminum panels mounted between sturdy posts for a permanent, premium look. Ideal for commercial property identification and long-term business park signage.",
-        imageUrl: "/SignsImages/Aluminum Site Si.avif",
+        imageUrl: "/SignsImages/Aluminum Site Si.webp",
       },
       {
         title: "M-Panel Real Estate Signs",
@@ -526,7 +526,7 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Directional Totems",
         description: "Tall, sleek vertical structures designed to guide traffic through multi-tenant facilities. These 'pylon-style' panels offer multi-directional information for optimized site navigation.",
-        imageUrl: "/SignsImages/Directional Totem.jpg",
+        imageUrl: "/SignsImages/Directional Totem.webp",
       },
     ]
   },
@@ -560,7 +560,7 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Custom Teardrop Flags",
         description: "The unique taut shape of the teardrop flag ensures your message is always visible, even in high winds. Perfect for sleek, modern branding at storefronts and festivals.",
-        imageUrl: "/SignsImages/Custom Teardrop Fla.jpg",
+        imageUrl: "/SignsImages/Custom Teardrop Fla.webp",
       },
       {
         title: "Feather Banners",
@@ -692,17 +692,17 @@ export const productsData: ProductHeroData[] = [
       {
         title: "H-Stake Yard Signs",
         description: "The classic real estate and campaign solution. These signs slide directly onto galvanized steel H-stakes for a sturdy, ground-mounted display that takes seconds to install.",
-        imageUrl: "/SignsImages/H-Stake Yard S.png",
+        imageUrl: "/SignsImages/H-Stake Yard S.webp",
       },
       {
         title: "Custom Die-Cut Coroplast",
         description: "Break away from the rectangle. We can precision-cut Coroplast into custom shapes—like arrows, logos, or house silhouettes—to add a unique visual edge to your promotion.",
-        imageUrl: "/SignsImages/Custom Die-Cut Corop.png",
+        imageUrl: "/SignsImages/Custom Die-Cut Corop.webp",
       },
       {
         title: "Large Format Coroplast",
         description: "Perfect for oversized site signs or fence-mounted displays. These larger sheets offer a rigid, lightweight canvas for site plans, construction project info, or big event sponsors.",
-        imageUrl: "/SignsImages/Large Format Corop.jpg",
+        imageUrl: "/SignsImages/Large Format Corop.webp",
       },
     ]
   },
@@ -736,7 +736,7 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Highway Bulletins",
         description: "The largest and most impactful billboard format. These permanent structures are located along major freeways, offering a massive canvas for long-range visibility and maximum creative impact.",
-        imageUrl: "/SignsImages/Highway Bullet.jpg",
+        imageUrl: "/SignsImages/Highway Bullet.webp",
       },
       {
         title: "Poster Billboards",
@@ -746,7 +746,7 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Wall Murals & Wraps",
         description: "Transform the side of a building into a landmark. Custom-fitted vinyl wraps and murals turn urban surfaces into premium advertising space with a high-end, integrated look.",
-        imageUrl: "/SignsImages/Wall Murals & Wr.jpg",
+        imageUrl: "/SignsImages/Wall Murals & Wr.webp",
       },
     ]
   },
@@ -780,17 +780,17 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Reflective Traffic Signs",
         description: "From Stop and Yield to Speed Limit signs, these are produced on heavy-gauge aluminum with high-intensity reflective sheeting for critical roadway safety.",
-        imageUrl: "/SignsImages/Reflective Traffic Si.jpg",
+        imageUrl: "/SignsImages/Reflective Traffic Si.webp",
       },
       {
         title: "Custom Parking Signs",
         description: "Tailored solutions for private lots, including 'Reserved,' 'Customer Parking Only,' and ADA-compliant accessible stall markers with custom branding options.",
-        imageUrl: "/SignsImages/Custom Parking Si.png",
+        imageUrl: "/SignsImages/Custom Parking Si.webp",
       },
       {
         title: "Street Name Plaques",
         description: "Highly visible, double-sided plaques designed for intersections. Available in various mounting styles and colors to match municipal requirements or community aesthetics.",
-        imageUrl: "/SignsImages/Street Name Plaq.jpg",
+        imageUrl: "/SignsImages/Street Name Plaq.webp",
       },
     ]
   },
@@ -802,7 +802,7 @@ export const productsData: ProductHeroData[] = [
     highlightTitle: "Visual Impact",
     descriptionMain: "Digital LED screens are the gold standard for high-impact communication and immersive visual experiences. Engineered with cutting-edge diode technology, our displays deliver vibrant colors and stunning clarity even in direct sunlight. Built to withstand environmental rigors or provide seamless close-up viewing, these screens transform any space into a dynamic communication hub, ensuring your message is seen with unrivaled brightness and precision.",
     descriptionSecondary: "From stadium-sized outdoor displays to seamless indoor video walls, our experts provide end-to-end LED solutions focused on performance, longevity, and visual excellence.",
-    image: "/SignsImages/LED Screen.jpg",
+    image: "/SignsImages/LED Screen.webp",
     services: [
       {
         title: "Seamless Integration",
@@ -829,12 +829,12 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Indoor Fine-Pitch Displays",
         description: "Ultra-high-definition screens with small pixel pitches for close-proximity viewing. Perfect for corporate lobbies, command centers, and luxury retail environments.",
-        imageUrl: "/SignsImages/Indoor Fine-Pitch Displa.jpg",
+        imageUrl: "/SignsImages/Indoor Fine-Pitch Displa.webp",
       },
       {
         title: "Transparent LED Screens",
         description: "Innovative displays that offer up to 80% transparency, allowing natural light to pass through glass facades while showcasing high-resolution digital content.",
-        imageUrl: "/SignsImages/Transparent LED Scre.avif",
+        imageUrl: "/SignsImages/Transparent LED Scre.webp",
       },
     ]
   },
@@ -866,17 +866,17 @@ export const productsData: ProductHeroData[] = [
       {
         title: "QSR Digital Menu Boards",
         description: "High-contrast, glare-resistant indoor arrays designed for maximum readability. Features ultra-slim bezels for a seamless 'digital wall' look behind the counter.",
-        imageUrl: "/SignsImages/QSR Digital Menu Boar.png",
+        imageUrl: "/SignsImages/QSR Digital Menu Boar.webp",
       },
       {
         title: "Interactive Order Kiosks",
         description: "Self-service touchscreens that reduce wait times and increase average check size through automated upselling and intuitive user interfaces.",
-        imageUrl: "/SignsImages/Interactive Order Kiosk.jpg",
+        imageUrl: "/SignsImages/Interactive Order Kiosk.webp",
       },
       {
         title: "Promotional Lobby Screens",
         description: "High-brightness displays positioned to capture attention, perfect for showcasing seasonal specials, loyalty programs, and brand storytelling.",
-        imageUrl: "/SignsImages/Promotional Lobby Screen.jpg",
+        imageUrl: "/SignsImages/Promotional Lobby Screen.webp",
       },
     ]
   },
@@ -886,7 +886,7 @@ export const productsData: ProductHeroData[] = [
     highlightTitle: "Ambiance",
     descriptionMain: "Professional LED lighting solutions transform architectural spaces through precision, color, and efficiency. Our high-performance fixtures are engineered to enhance structural features while significantly reducing energy overhead. From vibrant color-changing facades to sophisticated interior accents, our lighting systems provide long-lasting, flicker-free illumination that sets the perfect mood for any environment.",
     descriptionSecondary: "Our experts provide commercial-grade lighting layouts that prioritize thermal management and superior color rendering to bring your vision to light.",
-    image: "/SignsImages/LED Light.avif",
+    image: "/SignsImages/LED Light.webp",
     services: [
       {
         title: "Smart Dimming & Control",
@@ -913,12 +913,12 @@ export const productsData: ProductHeroData[] = [
       {
         title: "LED Border Neon Flex",
         description: "A flexible, modern alternative to traditional neon. Provides a seamless line of light perfect for building outlines, signage, and decorative accents.",
-        imageUrl: "/SignsImages/LED Border Neon Fle.avif",
+        imageUrl: "/SignsImages/LED Border Neon Fle.webp",
       },
       {
         title: "Under-Cabinet & Cove Lighting",
         description: "Low-profile, high-output strips that provide discrete task lighting or indirect ambient glow for kitchens, hospitality suites, and recessed ceilings.",
-        imageUrl: "/SignsImages/Under-Cabinet & Cove Light.jpg",
+        imageUrl: "/SignsImages/Under-Cabinet & Cove Light.webp",
       },
     ]
   }
@@ -956,17 +956,17 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Coroplast Signs",
         description: "Lightweight, weather-resistant corrugated plastic signs. An ideal, cost-effective solution for temporary safety notices or directional outdoor signage.",
-        imageUrl: "/SignsImages/Coroplast Sign.avif"
+        imageUrl: "/SignsImages/Coroplast Sign.webp"
       },
       {
         title: "Regulatory Safety Signs",
         description: "Standardized hazard, caution, and PPE-requirement signage printed on aluminum or heavy-duty PVC for long-term durability.",
-        imageUrl: "/SignsImages/Regulatory Safety Si.jpg"
+        imageUrl: "/SignsImages/Regulatory Safety Si.webp"
       },
       {
         title: "Protection & Cough Screens",
         description: "Crystal-clear acrylic barriers and sneeze guards designed for reception desks and point-of-sale areas to provide a physical safety layer.",
-        imageUrl: "/SignsImages/Protection & Cough Scree.jpg"
+        imageUrl: "/SignsImages/Protection & Cough Scree.webp"
       }
     ]
   },
@@ -1006,7 +1006,7 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Coroplast Signs",
         description: "Lightweight, weather-resistant corrugated plastic signs. An ideal, cost-effective solution for temporary safety notices or directional outdoor signage.",
-        imageUrl: "/SignsImages/Coroplast Sign.avif"
+        imageUrl: "/SignsImages/Coroplast Sign.webp"
       }
     ]
   },
@@ -1059,7 +1059,7 @@ export const productsData: ProductHeroData[] = [
     highlightTitle: "Visibility",
     descriptionMain: "Make your brand shine day and night. We specialize in high-impact illuminated signage solutions that combine energy-efficient LED technology with premium fabrication. From iconic skyline letters to sleek indoor lightboxes, we ensure your business stands out with brilliant clarity in any lighting condition.",
     descriptionSecondary: "Our engineering team focuses on luminous efficacy and structural integrity, delivering low-maintenance, high-visibility signage that meets all electrical and safety standards.",
-    image: "/SignsImages/Halo-lit Lette.jpg",
+    image: "/SignsImages/Halo-lit Lette.webp",
     services: [
       {
         title: "Luminous Engineering",
@@ -1081,7 +1081,7 @@ export const productsData: ProductHeroData[] = [
       {
         title: "LED Channel Letters",
         description: "Custom-made 3D letters equipped with internal LED lighting. Available in front-lit, halo-lit, or side-lit options for a premium, high-dimensional look.",
-        imageUrl: "/SignsImages/Halo-Lit Metal Letter.avif"
+        imageUrl: "/SignsImages/Halo-Lit Metal Letter.webp"
       },
       {
         title: "Slim Lightboxes",
@@ -1105,7 +1105,7 @@ export const productsData: ProductHeroData[] = [
     highlightTitle: "Engagement",
     descriptionMain: "Command attention at every event with portable, high-impact display solutions. We specialize in creating immersive brand environments for trade shows, conferences, and pop-up activations. From vibrant large-format graphics to lightweight structural displays, we help you make a professional impression that travels anywhere.",
     descriptionSecondary: "Our event specialists focus on durability and ease of assembly, ensuring your brand assets are booth-ready in minutes and built to withstand the rigors of frequent travel.",
-    image: "/SignsImages/Trade Show and Event.jpg",
+    image: "/SignsImages/Trade Show and Event.webp",
     services: [
       {
         title: "Portable Branding",
@@ -1127,12 +1127,12 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Roll-up Banners",
         description: "Premium retractable banner stands featuring high-tension springs and stay-flat vinyl graphics for a sleek, professional look in seconds.",
-        imageUrl: "/SignsImages/Roll-up Bann.jpg"
+        imageUrl: "/SignsImages/Roll-up Bann.webp"
       },
       {
         title: "Fabric Backdrops",
         description: "Wrinkle-resistant tension fabric displays with lightweight aluminum frames. Ideal for step-and-repeat walls or seamless booth backgrounds.",
-        imageUrl: "/SignsImages/Fabric Backdro.jpg"
+        imageUrl: "/SignsImages/Fabric Backdro.webp"
       }
     ]
   },
@@ -1146,7 +1146,7 @@ export const productsData: ProductHeroData[] = [
     highlightTitle: "Prescence",
     descriptionMain: "Transform your building’s facade into a landmark. We specialize in high-durability exterior branding solutions designed to capture the attention of passing traffic and withstand the elements. From soaring pylon signs to elegant architectural awnings, we ensure your business makes a bold and professional first impression.",
     descriptionSecondary: "Our exterior specialists prioritize structural engineering and weather-resistant materials, delivering permanent signage solutions that maintain their vibrance and integrity year-round.",
-    image: "/SignsImages/Exterior Storefro.jpg",
+    image: "/SignsImages/Exterior Storefro.webp",
     services: [
       {
         title: "Architectural Integration",
@@ -1173,7 +1173,7 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Awnings & Canopies",
         description: "Custom-branded fabric or metal structures that provide shade, protection from the elements, and a sophisticated dimensional look for your entrance.",
-        imageUrl: "/SignsImages/Awnings & Canop.png"
+        imageUrl: "/SignsImages/Awnings & Canop.webp"
       }
     ]
   },
@@ -1183,7 +1183,7 @@ export const productsData: ProductHeroData[] = [
     highlightTitle: "Presence",
     descriptionMain: "Enhance your interior environment with visually striking indoor signage that guides, informs, and reinforces your brand identity. From elegant lobby displays to functional directional systems, our indoor signs are crafted to create a seamless and professional experience for visitors and employees alike.",
     descriptionSecondary: "Our indoor signage solutions focus on precision, aesthetics, and durability, using high-quality materials and finishes to maintain a polished look in any interior setting.",
-    image: "/SignsImages/Indoor Sign.jpg",
+    image: "/SignsImages/Indoor Sign.webp",
 
     services: [
       {
@@ -1212,7 +1212,7 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Wayfinding Suspended Signs",
         description: "Ceiling-mounted directional signs that help visitors navigate large indoor spaces such as offices, malls, and hospitals.",
-        imageUrl: "/SignsImages/Wayfinding Suspended Sign.png"
+        imageUrl: "/SignsImages/Wayfinding Suspended Sign.webp"
       },
       {
         title: "Directory Boards",
@@ -1227,7 +1227,7 @@ export const productsData: ProductHeroData[] = [
     highlightTitle: "Presence",
     descriptionMain: "Make a strong visual impact at events, exhibitions, and retail spaces with sleek and portable retractable banner stands. Designed for convenience and high visibility, these banners offer a professional way to showcase your brand, promotions, or messaging within seconds.",
     descriptionSecondary: "Our retractable banner stands combine lightweight portability with durable construction and high-resolution print quality, ensuring your display looks sharp, stable, and impactful wherever you set it up.",
-    image: "/SignsImages/Retractable Banner Sta.jpg",
+    image: "/SignsImages/Retractable Banner Sta.webp",
 
     services: [
       {
@@ -1299,12 +1299,12 @@ export const productsData: ProductHeroData[] = [
       {
         title: "ADA Compliant Braille Signs",
         description: "Accessible signage featuring raised text and braille, ensuring compliance with standards while maintaining a clean and professional look.",
-        imageUrl: "/SignsImages/ADA Compliant Braille Sig.jpg"
+        imageUrl: "/SignsImages/ADA Compliant Braille Sig.webp"
       },
       {
         title: "Sliding Availability Signs",
         description: "Interactive door signs with sliding indicators such as 'Occupied' or 'Vacant', ideal for meeting rooms and private offices.",
-        imageUrl: "/SignsImages/Sliding Availability Sig.jpg"
+        imageUrl: "/SignsImages/Sliding Availability Sig.webp"
       },
       {
         title: "Interchangeable Name Plates",
@@ -1319,7 +1319,7 @@ export const productsData: ProductHeroData[] = [
     highlightTitle: "Presence",
     descriptionMain: "Enhance privacy and elevate your interior aesthetics with premium window frosting solutions. Ideal for offices, meeting rooms, and storefronts, frosted films provide a sleek, modern look while allowing natural light to flow through your space.",
     descriptionSecondary: "Our window frosting solutions combine functionality and design, using high-quality films that offer privacy, durability, and custom branding options to suit any professional environment.",
-    image: "/SignsImages/Window Frosti.jpg",
+    image: "/SignsImages/Window Frosti.webp",
 
     services: [
       {
@@ -1343,7 +1343,7 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Branded Privacy Bands",
         description: "Frosted strips with integrated logos or text, offering privacy while reinforcing your brand across glass surfaces.",
-        imageUrl: "/SignsImages/Branded Privacy .jpg"
+        imageUrl: "/SignsImages/Branded Privacy .webp"
       },
       {
         title: "Full-Coverage Frosted Film",
@@ -1353,7 +1353,7 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Decorative Patterned Frosting",
         description: "Stylish frosted designs featuring patterns and textures that enhance visual appeal while maintaining functionality.",
-        imageUrl: "/SignsImages/Decorative Patterned Frosti.jpg"
+        imageUrl: "/SignsImages/Decorative Patterned Frosti.webp"
       }
     ]
   },
@@ -1367,7 +1367,7 @@ export const productsData: ProductHeroData[] = [
     highlightTitle: "Presence",
     descriptionMain: "Make a powerful first impression with premium reception signage that reflects your brand identity the moment visitors walk in. From bold 3D logos to elegant wall displays, our reception signs are designed to create a lasting visual impact in lobbies and front desks.",
     descriptionSecondary: "Our reception signage solutions combine high-end materials, precision craftsmanship, and modern design to deliver a professional and memorable brand presence in any corporate or commercial space.",
-    image: "/SignsImages/Reception Sig.jpg",
+    image: "/SignsImages/Reception Sig.webp",
 
     services: [
       {
@@ -1391,17 +1391,17 @@ export const productsData: ProductHeroData[] = [
       {
         title: "3D Acrylic Lobby Logos",
         description: "Bold, dimensional acrylic logos that stand out on reception walls, creating a modern and impactful brand statement.",
-        imageUrl: "/SignsImages/3D Acrylic Lobby .jpg"
+        imageUrl: "/SignsImages/3D Acrylic Lobby .webp"
       },
       {
         title: "Brushed Aluminum Signs",
         description: "Sleek metallic signage with a professional finish, perfect for corporate environments seeking a premium look.",
-        imageUrl: "/SignsImages/Brushed Aluminum Si.png"
+        imageUrl: "/SignsImages/Brushed Aluminum Si.webp"
       },
       {
         title: "Glass Stand-off Displays",
         description: "Elegant glass panels mounted with stand-offs, offering a clean and sophisticated floating appearance for logos and information.",
-        imageUrl: "/SignsImages/Glass Stand-off Displa.jpg"
+        imageUrl: "/SignsImages/Glass Stand-off Displa.webp"
       }
     ]
   },
@@ -1415,7 +1415,7 @@ export const productsData: ProductHeroData[] = [
     highlightTitle: "Presence",
     descriptionMain: "Stand out day and night with high-impact LED backlit signage designed to elevate your brand visibility. These illuminated signs create a striking visual presence, making your business instantly noticeable in both indoor and outdoor environments.",
     descriptionSecondary: "Our LED backlit signs combine energy-efficient lighting, premium materials, and precision fabrication to deliver vibrant, long-lasting illumination that enhances your brand’s presence around the clock.",
-    image: "/SignsImages/Backlit Logo Pane.avif",
+    image: "/SignsImages/Backlit Logo Pane.webp",
 
     services: [
       {
@@ -1439,12 +1439,12 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Halo-Lit Metal Logos",
         description: "Premium metal logos with soft backlit glow (halo effect), creating a sophisticated and upscale brand appearance.",
-        imageUrl: "/SignsImages/Halo-Lit Metal L.avif"
+        imageUrl: "/SignsImages/Halo-Lit Metal L.webp"
       },
       {
         title: "Edge-Lit Acrylic Panels",
         description: "Sleek acrylic signage illuminated from the edges, delivering a clean and modern glowing effect.",
-        imageUrl: "/SignsImages/Edge-Lit Acrylic Pan.jpg"
+        imageUrl: "/SignsImages/Edge-Lit Acrylic Pan.webp"
       },
       {
         title: "Backlit Fabric Lightboxes",
@@ -1487,7 +1487,7 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Wall-Mounted Wayfinding",
         description: "Fixed wall signage providing clear directions to rooms, departments, and facilities within your space.",
-        imageUrl: "/SignsImages/Wall-Mounted Wayfindi.avif"
+        imageUrl: "/SignsImages/Wall-Mounted Wayfindi.webp"
       },
       {
         title: "Freestanding Pedestal Signs",
@@ -1497,7 +1497,7 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Elevator & Lobby Directories",
         description: "Comprehensive directory boards displaying floor and tenant information for easy navigation in multi-level buildings.",
-        imageUrl: "/SignsImages/Elevator & Lobby Directo.jpg"
+        imageUrl: "/SignsImages/Elevator & Lobby Directo.webp"
       }
     ]
   },
@@ -1507,7 +1507,7 @@ export const productsData: ProductHeroData[] = [
     highlightTitle: "Presence",
     descriptionMain: "Transform blank walls into powerful visual statements with custom wall graphics. From bold brand murals to subtle design accents, our wall graphics enhance interiors, communicate your message, and create an engaging environment.",
     descriptionSecondary: "Our wall graphics solutions combine creative design, high-resolution printing, and durable materials to deliver vibrant, long-lasting visuals that elevate your space and reflect your brand identity.",
-    image: "/SignsImages/Wall Graphi.jpg",
+    image: "/SignsImages/Wall Graphi.webp",
 
     services: [
       {
@@ -1540,12 +1540,12 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Motivational Vinyl Quotes",
         description: "Inspirational typography designs applied directly to walls, perfect for offices, gyms, and creative spaces.",
-        imageUrl: "/SignsImages/Motivational Vinyl Quot.jpg"
+        imageUrl: "/SignsImages/Motivational Vinyl Quot.webp"
       },
       {
         title: "Topographic & Layers Graphics",
         description: "Detailed Layers-based or topographic designs that add a unique and modern visual identity to your interior.",
-        imageUrl: "/SignsImages/Topographic & Layers Grap.jpg"
+        imageUrl: "/SignsImages/Topographic & Map Grap.webp"
       }
     ]
   },
@@ -1555,7 +1555,7 @@ export const productsData: ProductHeroData[] = [
     highlightTitle: "Presence",
     descriptionMain: "Transform blank walls and vehicle surfaces into powerful visual statements with custom fleet graphics. From bold brand murals to cohesive vehicle wraps, our graphics enhance interiors, exteriors, and mobile assets to communicate your message and create an engaging environment.",
     descriptionSecondary: "Our fleet and wall graphics solutions combine creative design, high-resolution printing, and durable materials to deliver vibrant, long-lasting visuals that elevate your space, vehicles, and reflect your brand identity.",
-    image: "/SignsImages/Fleet Graphi.jpg",
+    image: "/SignsImages/Fleet Graphi.webp",
 
     services: [
       {
@@ -1579,7 +1579,7 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Corporate Logo Decals",
         description: "Precision-cut vinyl decals featuring your company logo, ideal for vehicles, office walls, and storefront branding.",
-        imageUrl: "/SignsImages/Corporate Logo Deca.jpg"
+        imageUrl: "/SignsImages/Corporate Logo Deca.webp"
       },
       {
         title: "Fleet Identification Numbering",
@@ -1589,7 +1589,7 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Cohesive Partial Wraps",
         description: "Strategic partial vehicle wraps that highlight your brand while maintaining a sleek, professional look.",
-        imageUrl: "/SignsImages/Cohesive Partial.jpg"
+        imageUrl: "/SignsImages/Cohesive Partial.webp"
       }
     ]
   },
@@ -1599,7 +1599,7 @@ export const productsData: ProductHeroData[] = [
     highlightTitle: "Presence",
     descriptionMain: "Elevate your vehicles into moving brand ambassadors with custom car graphics. From sleek full wraps to Lightbulb-catching spot graphics, our solutions transform cars into powerful marketing tools that communicate your identity wherever they go.",
     descriptionSecondary: "Our car graphics combine creative design, premium vinyl printing, and professional installation to deliver durable, high-impact visuals. Whether for commercial fleets or individual vehicles, we ensure your brand stands out on the road.",
-    image: "/SignsImages/Car Graphi.jpg",
+    image: "/SignsImages/Car Graphi.webp",
 
     services: [
       {
@@ -1624,12 +1624,12 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Full Commercial Wraps",
         description: "Complete vehicle wraps that turn cars into mobile billboards, delivering maximum brand exposure on the road.",
-        imageUrl: "/SignsImages/Full Commercial Wra.jpg"
+        imageUrl: "/SignsImages/Full Commercial Wra.webp"
       },
       {
         title: "Matte & Satin Finishes",
         description: "Stylish matte and satin vinyl finishes that give cars a modern, premium look while showcasing your brand.",
-        imageUrl: "/SignsImages/Matte & Satin Finishe.jpg"
+        imageUrl: "/SignsImages/Matte & Satin Finishe.webp"
       },
       {
         title: "Promotional Spot Graphics",
@@ -1669,7 +1669,7 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Rear Window Murals",
         description: "Bold, full-coverage rear window graphics that showcase your brand while maintaining interior visibility.",
-        imageUrl: "/SignsImages/Rear Window Mu.jpg"
+        imageUrl: "/SignsImages/Rear Window Mu.webp"
       },
       {
         title: "Side Window Graphics",
@@ -1679,7 +1679,7 @@ export const productsData: ProductHeroData[] = [
       {
         title: "UV-Rated Perforated Vinyl",
         description: "Durable perforated vinyl engineered to withstand sun exposure, ensuring vibrant colors and clear visibility.",
-        imageUrl: "/SignsImages/UV-Rated Perforated Vi.jpg"
+        imageUrl: "/SignsImages/UV-Rated Perforated Vi.webp"
       },
     ]
   },
@@ -1689,7 +1689,7 @@ export const productsData: ProductHeroData[] = [
     highlightTitle: "Presence",
     descriptionMain: "Turn your vehicles into rolling advertisements with custom lettering solutions. From bold contact details to layered multi-color text, our vehicle lettering ensures your brand message is clear, professional, and highly visible on the road.",
     descriptionSecondary: "Our lettering services combine precision design, durable vinyl materials, and expert installation to deliver sharp, long-lasting visuals. Perfect for service vehicles, fleets, and promotional cars, we help your brand speak directly to your audience.",
-    image: "/SignsImages/Vehicle Letteri.jpg",
+    image: "/SignsImages/Vehicle Letteri.webp",
 
 
 
@@ -1725,7 +1725,7 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Layered Multi-Color Text",
         description: "Lightbulb-catching multi-layered vinyl text designs that add depth, vibrancy, and style to your vehicle lettering.",
-        imageUrl: "/SignsImages/Layered Multi-Color Te.jpg"
+        imageUrl: "/SignsImages/Layered Multi-Color Te.webp"
       },
       {
         title: "Service Listing Decals",
@@ -1745,7 +1745,7 @@ export const productsData: ProductHeroData[] = [
     highlightTitle: "Presence",
     descriptionMain: "Transform your vans into powerful mobile billboards with custom wrap solutions. From contractor branding to delivery van wraps, our designs ensure your message travels with impact and professionalism wherever your vans go.",
     descriptionSecondary: "Our van wrap services combine creative design, premium vinyl printing, and expert installation to deliver durable, high-impact visuals. Perfect for contractors, delivery services, and promotional fleets, we help your brand stand out on the road.",
-    image: "/SignsImages/Van Wra.jpg",
+    image: "/SignsImages/Van Wra.webp",
 
 
 
@@ -1773,7 +1773,7 @@ export const productsData: ProductHeroData[] = [
       {
         title: "Contractor Branding",
         description: "Custom wraps designed for contractors, showcasing services and contact details with a professional finish.",
-        imageUrl: "/SignsImages/Contractor Brandin.jpg"
+        imageUrl: "/SignsImages/Contractor Brandin.webp"
       },
       {
         title: "Delivery Van Wraps",
@@ -1816,17 +1816,17 @@ products: [
       {
         title: "Tailgate Wraps",
         description: "Bold tailgate wraps that maximize rear visibility, turning every stop into a branding opportunity.",
-        imageUrl: "/SignsImages/Tailgate Wra.jpg"
+        imageUrl: "/SignsImages/Tailgate Wra.webp"
       },
       {
         title: "Box Truck Side Panels",
         description: "Large-format side panel graphics for box trucks, delivering high-impact advertising on expansive surfaces.",
-        imageUrl: "/SignsImages/Box Truck Side Panel.jpg"
+        imageUrl: "/SignsImages/Box Truck Side Panel.webp"
       },
       {
         title: "Cab & Door Branding",
         description: "Strategic cab and door graphics that highlight your logo and key details with professional precision.",
-        imageUrl: "/SignsImages/Cab  Door Brandi.jpg"
+        imageUrl: "/SignsImages/Cab  Door Brandi.webp"
       },
     ]
   },
@@ -1836,7 +1836,7 @@ products: [
     highlightTitle: "Presence",
     descriptionMain: "Transform your trailers into high-impact mobile billboards with custom signage solutions. From enclosed trailer wraps to utility panels, our designs ensure your brand message travels with strength and professionalism across every route.",
     descriptionSecondary: "Our trailer signage services combine bold design, heavy-duty vinyl printing, and expert installation to deliver durable, high-visibility graphics. Perfect for logistics fleets, contractors, and promotional trailers, we help your brand command attention on the road.",
-    image: "/SignsImages/Trailer Si.jpg",
+    image: "/SignsImages/Trailer Si.webp",
     services: [
       {
         title: "Trailer Branding Consultation",
@@ -1863,12 +1863,12 @@ products: [
       {
         title: "Enclosed Trailer Wraps",
         description: "Full wraps for enclosed trailers that deliver maximum brand exposure while protecting the trailer exterior.",
-        imageUrl: "/SignsImages/Enclosed Trailer Wra.jpg"
+        imageUrl: "/SignsImages/Enclosed Trailer Wra.webp"
       },
       {
         title: "Utility Trailer Sign Panels",
         description: "Custom panels for utility trailers, combining bold visuals with practical branding placement.",
-        imageUrl: "/SignsImages/Utility Trailer Sign Pane.jpg"
+        imageUrl: "/SignsImages/Utility Trailer Sign Pane.webp"
       },
       {
         title: "Reflective Safety Strips",
@@ -1884,7 +1884,7 @@ products: [
     highlightTitle: "Presence",
     descriptionMain: "Promote your brand with versatile magnetic vehicle signs that offer flexibility, durability, and high visibility. Easily removable and reusable, these signs transform your cars, trucks, and vans into mobile advertisements without permanent commitment.",
     descriptionSecondary: "Our magnetic signage solutions combine creative design, heavy-duty magnetic materials, and professional finishing to deliver sharp, long-lasting visuals. Perfect for contractors, delivery services, and promotional campaigns, we help your brand travel with impact.",
-    image: "/SignsImages/Magnetic Vehicle Sig.jpg",
+    image: "/SignsImages/Magnetic Vehicle Sig.webp",
 
 
 
@@ -1914,17 +1914,17 @@ products: [
       {
         title: "Heavy-Duty Door Magnets",
         description: "Strong, weather-resistant door magnets that securely attach to vehicles, delivering reliable branding on the move.",
-        imageUrl: "/SignsImages/Heavy-Duty Door Magnet.jpg"
+        imageUrl: "/SignsImages/Heavy-Duty Door Magnet.webp"
       },
       {
         title: "Custom Shaped Magnets",
         description: "Unique magnet designs cut to custom shapes, adding personality and distinction to your vehicle signage.",
-        imageUrl: "/SignsImages/Custom Shaped Magn.jpg"
+        imageUrl: "/SignsImages/Custom Shaped Magn.webp"
       },
       {
         title: "Reflective Magnetic Signs",
         description: "High-visibility reflective magnets that enhance nighttime safety while keeping your brand message clear.",
-        imageUrl: "/SignsImages/Reflective Magnetic Si.avif"
+        imageUrl: "/SignsImages/Reflective Magnetic Si.webp"
       },
     ]
   }
@@ -1941,7 +1941,7 @@ products: [
       "Boost your brand presence with high-impact banners and flags designed for indoor and outdoor advertising. From events to storefront promotions, our solutions ensure your message stands tall, visible, and unforgettable in any environment.",
     descriptionSecondary:
       "We combine premium materials, vibrant printing technology, and durable finishing techniques to create banners and flags that withstand weather conditions while maintaining sharp, Lightbulb-catching visuals. Perfect for events, exhibitions, retail promotions, and outdoor campaigns.",
-    image: "/SignsImages/Banners and Fla.jpg",
+    image: "/SignsImages/Banners and Fla.webp",
     services: [
       {
         title: "Brand Visibility Consultation",
@@ -1991,7 +1991,7 @@ products: [
       "Create powerful brand experiences at exhibitions, trade shows, and corporate events with premium signage solutions designed to attract, engage, and convert visitors. Our exhibition displays combine visual excellence with strategic placement to maximize attention in competitive environments.",
     descriptionSecondary:
       "We specialize in high-quality exhibition branding systems using modern display technologies, precision printing, and modular setups. Whether it's a trade show booth or a corporate expo, our solutions help your brand stand out with professionalism and clarity.",
-    image: "/SignsImages/Exhibition Signa.jpg",
+    image: "/SignsImages/Exhibition Signa.webp",
     services: [
       {
         title: "Exhibition Space Planning",
@@ -2023,13 +2023,13 @@ products: [
         title: "Table Throws & Runners",
         description:
           "Custom-printed table covers that add a professional finishing touch to your booth while reinforcing brand identity.",
-        imageUrl: "/SignsImages/Table Throws  Runner.jpg"
+        imageUrl: "/SignsImages/Table Throws  Runner.webp"
       },
       {
         title: "Modular Booth Graphics",
         description:
           "Interchangeable graphic panels designed for flexible booth setups, allowing easy customization across different exhibitions.",
-        imageUrl: "/SignsImages/Modular Booth Graphics.jpg"
+        imageUrl: "/SignsImages/Modular Booth Graphics.webp"
       }
     ]
   },
@@ -2079,7 +2079,7 @@ products: [
         title: "Window Clings",
         description:
           "Reusable adhesive graphics for glass surfaces that enhance storefront visibility while allowing easy installation and removal.",
-        imageUrl: "/SignsImages/Window Clings.jpg"
+        imageUrl: "/SignsImages/Window Clings.webp"
       }
     ]
   },
@@ -2091,7 +2091,7 @@ products: [
       "Capture attention instantly with high-impact poster printing designed for bold visuals, sharp detail, and vibrant color reproduction. Ideal for advertising, promotions, events, and indoor displays, our posters turn ideas into visually powerful communication tools.",
     descriptionSecondary:
       "We use advanced digital printing technology and premium paper stocks to produce posters that stand out in both close-up and distance viewing. Whether for retail promotions or corporate messaging, our posters ensure maximum visibility and professional presentation.",
-    image: "/SignsImages/Poster.jpg",
+    image: "/SignsImages/Poster.webp",
     services: [
       {
         title: "Poster Concept Consultation",
@@ -2117,19 +2117,19 @@ products: [
         title: "Backlit Film Posters",
         description:
           "Translucent posters designed for illuminated displays, delivering vibrant visuals that shine brightly in lightboxes and signage frames.",
-        imageUrl: "/SignsImages/Backlit Film Post.jpg"
+        imageUrl: "/SignsImages/Backlit Film Post.webp"
       },
       {
         title: "Mounting Board Posters",
         description:
           "Rigid, high-strength posters mounted on durable boards for long-lasting indoor displays, exhibitions, and presentations.",
-        imageUrl: "/SignsImages/Mounting Board Posters.jpg"
+        imageUrl: "/SignsImages/Mounting Board Posters.webp"
       },
       {
         title: "Laminated Safety Posters",
         description:
           "Protective laminated posters designed for safety instructions, industrial signage, and high-traffic environments requiring durability.",
-        imageUrl: "/SignsImages/Laminated Safety Posters.jpg"
+        imageUrl: "/SignsImages/Laminated Safety Posters.webp"
       }
     ]
   },
@@ -2141,7 +2141,7 @@ products: [
       "Enhance your storefront visibility with professional window lettering designed to communicate your brand message with precision and style. Perfect for retail shops, offices, and commercial spaces, our lettering solutions turn glass surfaces into powerful branding assets.",
     descriptionSecondary:
       "We specialize in high-quality vinyl lettering that combines durability, clean application, and striking visual appeal. Whether for promotions, branding, or essential business information, our window graphics ensure maximum readability and aesthetic balance.",
-    image: "/SignsImages/Window Letteri.jpg",
+    image: "/SignsImages/Window Letteri.webp",
    services: [
       {
         title: "Storefront Visibility Planning",
@@ -2173,7 +2173,7 @@ products: [
         title: "Fluorescent Storefront Text",
         description:
           "High-visibility neon-style lettering designed to grab attention instantly, especially effective for promotions and nighttime appeal.",
-        imageUrl: "/SignsImages/Fluorescent Storefront Text.jpg"
+        imageUrl: "/SignsImages/Fluorescent Storefront Text.webp"
       },
       {
         title: "Etched Glass Vinyl",
@@ -2192,7 +2192,7 @@ products: [
 
     descriptionSecondary:
       "Our window decal services combine creative design, durable vinyl materials, and expert application to deliver sharp, long-lasting visuals. Perfect for promotions, branding, or privacy solutions, we help your glass surfaces communicate with clarity and style.",
-    image: "/SignsImages/Wall Murals & Wr.jpg",
+    image: "/SignsImages/Wall Murals & Wr.webp",
     services: [
       {
         title: "Window Branding Consultation",
@@ -2218,7 +2218,7 @@ products: [
         title: "Die-Cut Logo Decals",
         description:
           "Custom-shaped decals featuring your logo, cut with precision for a clean, professional look on storefronts or vehicles.",
-        imageUrl: "/SignsImages/Die-Cut Logo Decals.avif"
+        imageUrl: "/SignsImages/Die-Cut Logo Decals.webp"
       },
       {
         title: "Perforated Window Wraps",
@@ -2230,7 +2230,7 @@ products: [
         title: "Double-Sided Window Decals",
         description:
           "Graphics visible from both inside and outside, perfect for maximizing promotional impact on glass surfaces.",
-        imageUrl: "/SignsImages/Transparent LED Scre.avif"
+        imageUrl: "/SignsImages/Transparent LED Scre.webp"
       },
     ]
   }
