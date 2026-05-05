@@ -41,7 +41,7 @@ const FinalCTA: React.FC = () => {
             transition={{ delay: 0.1 }}
             className="text-white text-xl md:text-2xl font-light tracking-tight md:tracking-wide leading-snug"
           >
-            Consult with our architectural specialists for <br className="hidden md:block" />
+            Consult with our Sign Experts for <br className="hidden md:block" />
             <span className="font-semibold italic">custom sizing</span> and material selection.
           </motion.h2>
         </div>

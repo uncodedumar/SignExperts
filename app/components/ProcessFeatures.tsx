@@ -56,9 +56,36 @@ const ProductList = ({ products }: ProductListProps) => {
                   {product.title}
                 </h3>
                 <div className="w-12 h-1 bg-[#5D2E2E] rounded-full" />
-                <p className="text-gray-600 text-lg leading-relaxed md:not-italic italic">
-                  {product.description}
-                </p>
+                <div className="text-gray-600 text-lg leading-relaxed md:not-italic italic space-y-2">
+                  {product.description
+                    .split('\n')
+                    .map((rawLine, lineIndex) => {
+                      const line = rawLine.trim();
+
+                      if (!line) {
+                        return <div key={lineIndex} className="h-2" />;
+                      }
+
+                      const isCallout = line.startsWith('👉');
+
+                      if (isCallout) {
+                        return (
+                          <div
+                            key={lineIndex}
+                            className="mt-3 rounded-2xl bg-[#ffb92d]/15 px-4 py-3 text-gray-900 font-medium not-italic"
+                          >
+                            {line}
+                          </div>
+                        );
+                      }
+
+                      return (
+                        <p key={lineIndex} className="m-0">
+                          {line}
+                        </p>
+                      );
+                    })}
+                </div>
                 
                 
               </div>

@@ -206,19 +206,40 @@ export const productsData: ProductHeroData[] = [
     ],
     products: [
       {
-        title: "Backlit Channel Letters",
-        description: "The base of a 3D illuminated letter. Durable and affordable. Customise the style, size and colour to suit your brand. They may be laser/ router cut and made into 3D fabricated hollow acrylic letters, with the option of LED illumination.",
-        imageUrl: "/SignsImages/Backlit Channel Let.webp",
-      },
-      {
-        title: "Front-Lit Signs",
-        description: "The most common type of 3D illuminated letter. These often have an acrylic face and aluminium sides (known as 'returns') and back, but are fully customisable. They have LED modules hidden on the interior of each letter, illuminating the 'face'. They are best for long distance visibility. Usually, the colour elements of the logo are made with cut translucent vinyl, or if the colour of the face is solid, the acrylic can be a specific colour.",
+        title: "Front-lit (face-lit) channel letters",
+        description: `Most common in the U.S.
+
+LEDs inside the letter shine through the acrylic face
+Sides (“returns”) are opaque aluminum
+Bright, highly visible for retail and storefronts
+
+👉 This is the standard “storefront sign” look you see in strip malls and shopping centers.`,
         imageUrl: "/SignsImages/Front-Lit Sig.webp",
       },
       {
-        title: "Halo-lit Letters",
-        description: "Also called 'Back-lit letters' or 'Reverse-lit letters', these are a softer and classy look, usually metal or aluminium letters that are illuminated from the back to cast a halo glow effect.",
+        title: "Reverse-lit (halo-lit / back-lit) channel letters",
+        description: `Light shines out the back of the letter onto the wall
+Creates a soft halo glow around each letter
+Typically uses metal faces with clear backs
+
+👉 Used for more upscale branding (banks, offices, hotels).`,
         imageUrl: "/SignsImages/Halo-lit Lette.webp",
+      },
+      {
+        title: "Front & back-lit (combination / “dual-lit”)",
+        description: `Illuminates both the face AND the halo behind
+Can use two different colors (front vs. back)
+
+👉 High-end, eye-catching option for maximum visibility.`,
+        imageUrl: "/SignsImages/Backlit Channel Let.webp",
+      },
+      {
+        title: "Open-face channel letters (exposed neon / LED)",
+        description: `No acrylic face — lighting is visible/exposed
+Often uses neon or LED “tubes”
+
+👉 Popular for retro, vintage, or entertainment venues.`,
+        imageUrl: "/SignsImages/open-face.webp",
       },
     ]
   },
@@ -1979,7 +2000,7 @@ products: [
         title: "Retractable Banner Stands",
         description:
           "Portable indoor display stands that set up in seconds, ideal for trade shows, presentations, and retail promotions.",
-        imageUrl: "/SignsImages/Premium Executive Roll-up.webp"
+        imageUrl: "/SignsImages/retractable%20banner%20stands.webp"
       }
     ]
   },
