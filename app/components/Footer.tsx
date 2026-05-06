@@ -69,12 +69,28 @@ const Footer = () => {
                       Instagram ↗
                     </a>
                     <a
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-[#ffb92d] transition-all"
+                    >
+                      Facebook ↗
+                    </a>
+                    <a
                       href="https://www.linkedin.com/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-[#ffb92d] transition-all"
                     >
                       LinkedIn ↗
+                    </a>
+                    <a
+                      href="https://x.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-[#ffb92d] transition-all"
+                    >
+                      X ↗
                     </a>
                 </div>
               </nav>

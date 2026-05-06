@@ -4,6 +4,9 @@ import HeroSection from "./components/HeroSection";
 const Quotation = dynamic(() => import("./components/Quotation"));
 const Pills = dynamic(() => import("./components/Pills"));
 const Cards = dynamic(() => import("./components/CardsNavigation"));
+const HighlightedServices = dynamic(
+  () => import("./components/HighlightedServices"),
+);
 const ServicesCards = dynamic(() => import("./components/ServicesCards"));
 const CTA = dynamic(() => import("./components/CTA"));
 const Imagee = dynamic(() => import("./components/Image"));
@@ -15,7 +18,9 @@ export default function Home() {
   return (
     <>
       <HeroSection />
+      
       <Quotation />
+      <HighlightedServices />
       <Pills />
       <Cards />
       <ServicesCards />

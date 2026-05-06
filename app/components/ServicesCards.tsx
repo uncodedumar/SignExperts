@@ -104,7 +104,7 @@ const FeaturesSection = () => {
 
   return (
     <section ref={containerRef} className="relative h-auto md:h-[300vh] bg-[#101b55]">
-      <div className="md:sticky md:top-0 md:h-screen flex items-center overflow-hidden py-20 md:py-0">
+      <div className="md:sticky md:top-0 md:min-h-screen flex items-start py-20 md:py-12 overflow-visible">
         
         {/* Animated Background Overlay */}
         <motion.div 
@@ -112,7 +112,7 @@ const FeaturesSection = () => {
           className="hidden md:block absolute inset-0 bg-white z-0"
         />
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full pb-16 md:pb-0">
           <div className="mb-16 text-center">
             <motion.span 
               initial={{ opacity: 0 }}
@@ -133,7 +133,7 @@ const FeaturesSection = () => {
             />
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 pb-10 md:pb-0">
             {services.map((service, index) => (
               <FeatureCard 
                 key={index}
