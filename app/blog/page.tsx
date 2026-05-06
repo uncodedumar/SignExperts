@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import type { Metadata } from 'next';
+import BlogHero from '@/app/components/BlogHero';
 import { blogs, type BlogEntry } from '../../lib/data';
 import { getSiteUrl, SITE_NAME } from '@/lib/site';
 
@@ -31,26 +32,7 @@ export const metadata: Metadata = {
 const BlogListPage = () => {
   return (
     <div className="min-h-screen bg-white text-black font-sans">
-      {/* --- Hero Section --- */}
-      <header className="relative py-24 border-b-2 border-black overflow-hidden bg-[#fafafa]">
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-4xl">
-            <h1 className="text-6xl md:text-8xl font-black uppercase tracking-tighter leading-none mb-6">
-              The Digital <span className="text-blue-600">Journal</span>
-            </h1>
-            <p className="text-xl md:text-2xl font-medium max-w-2xl text-gray-700 leading-relaxed">
-              Exploring the intersection of artificial intelligence, high-performance 
-              engineering, and the next generation of digital aesthetics.
-            </p>
-            <div className="mt-10 flex gap-4">
-              <div className="h-2 w-24 bg-black"></div>
-              <p className="text-sm uppercase font-bold tracking-widest">Est. 2026</p>
-            </div>
-          </div>
-        </div>
-        {/* Background Decorative Element */}
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-gray-100 -skew-x-12 transform translate-x-20 hidden lg:block"></div>
-      </header>
+      <BlogHero />
 
       {/* --- Blog Grid Section --- */}
       <main className="container mx-auto px-6 py-20">
