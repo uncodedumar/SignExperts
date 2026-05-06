@@ -142,9 +142,9 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-white/10 px-8 md:px-12 py-6 flex flex-col md:flex-row justify-between items-center gap-4 text-[9px] opacity-50">
+        <div className="border-t border-white/10 px-8 md:px-12 py-6 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px]">
           
-          <a href="https://www.bricklix.com" className="hover:opacity-100 transition-opacity flex items-center gap-2">
+          <a href="https://www.bricklix.com" className="opacity-100  flex items-center gap-2">
             Engineered by <span className="font-black tracking-tighter text-white">BRICKLIX</span>
           </a>
         </div>
@@ -153,7 +153,7 @@ const Footer = () => {
         <div className="w-full overflow-hidden bg-white text-[#101b55]">
           <div className="flex flex-col items-center justify-center py-2">
             <img
-              src="/Logofooter .svg"
+              src="/Logofooter.svg"
               alt="Sign Experts Footer Logo"
               width={480}
               height={80}
