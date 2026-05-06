@@ -339,7 +339,7 @@ const ContactForm: React.FC = () => {
             <div className="pt-2 flex justify-center">
               <button
                 type="submit"
-                className="bg-[#1a1a1a] text-white px-8 py-3 rounded-full font-bold hover:bg-black transition-all shadow-md active:scale-95"
+                className="bg-[#F5BD55] text-[#1D2754] px-8 py-3 rounded-full font-bold hover:bg-[#E9AE45] transition-all shadow-md active:scale-95"
               >
                 Submit
               </button>
