@@ -7,12 +7,6 @@ import { Menu, X, ChevronDown, MoveRight, Phone, ChevronRight } from "lucide-rea
 import { motion, AnimatePresence, LayoutGroup } from "framer-motion";
 import Image from "next/image";
 import { productsData as allProductsData } from "@/lib/data";
-import { Bebas_Neue } from "next/font/google";
-
-const bebas = Bebas_Neue({
-  weight: "400",
-  subsets: ["latin"],
-});
 
 type ProductNavLink = {
   name: string;
@@ -234,20 +228,19 @@ export default function Navbar() {
         : "max-w-full rounded-[30px] bg-[#101b55]"
       }`}
     >
-      <nav className="flex justify-between items-center h-20 px-6 lg:px-12 max-w-screen-2xl mx-auto relative">
+      <nav className="flex justify-between items-center h-20 px-6 lg:px-12 max-w-screen-2xl mx-auto relative font-[var(--font-navbar)]">
           
           {/* Left: Logo & Text */}
           <Link href="/" className="flex items-center gap-3 flex-shrink-0 z-10">
             <Image
-              src="/Logo.webp"
+              src="/logo.png"
               alt="Sign Experts"
-              width={40}
-              height={40}
-              className="w-10 h-10"
+              width={480}
+              height={80}
+              sizes="240px"
+              className="w-60 h-10 object-contain"
             />
-            <span className={`${bebas.className} text-white text-xl tracking-[0.06em] hidden sm:block`}>
-              SIGN EXPERTS
-            </span>
+            
           </Link>
 
           {/* Center: Nav Links */}
@@ -269,7 +262,7 @@ export default function Navbar() {
                     {link.hasDropdown && activeDropdown && (
                       <motion.div
                         initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 20 }}
-                        className="absolute left-1/2 -translate-x-1/2 mt-1 w-[900px] bg-blue-950 text-white rounded-[2rem] p-8 shadow-2xl border border-white/10"
+                        className="absolute left-1/2 -translate-x-1/2 mt-1 w-[900px] max-w-[calc(100vw-2rem)] bg-blue-950 text-white rounded-[2rem] p-8 shadow-2xl border border-white/10"
                       >
                         <div className="grid grid-cols-12 gap-8">
                           {/* Sidebar Categories */}

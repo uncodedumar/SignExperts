@@ -79,7 +79,7 @@ export default function ProductPlayground() {
   const activeItems = getActiveItems();
 
   return (
-    <section className="py-24 bg-[#101b55] overflow-hidden min-h-screen flex flex-col">
+    <section id="pills" className="py-24 bg-[#101b55] overflow-hidden min-h-screen flex flex-col">
       <div className="max-w-7xl mx-auto px-6 flex-grow">
         {/* Header Section */}
         <div className="text-center mb-16">

@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ChevronDown, Menu, X } from 'lucide-react';
-import { Bebas_Neue } from 'next/font/google';
 import { productsData } from '../../lib/data';
 
 type ProductNavLink = {
@@ -149,12 +148,6 @@ const mobileProductCategories: ProductNavCategory[] = productMenuDefinition.map(
   };
 });
 
-const bebas = Bebas_Neue({ 
-  weight: '400', 
-  subsets: ['latin'],
-  variable: '--font-bebas', 
-});
-
 const Navbar = () => {
   const [isCategoriesOpen, setIsCategoriesOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -174,7 +167,7 @@ const Navbar = () => {
 
   return (
     /* Added md:hidden to hide the entire navbar on desktop/tablets */
-    <nav className={`${bebas.className} w-full bg-[#050B33] tracking-wide relative md:hidden`}>
+    <nav className="w-full bg-[#050B33] tracking-wide relative md:hidden font-[var(--font-navbar)]">
       {/* Top Tier: Brand & Main Nav */}
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         {/* Logo & Name */}

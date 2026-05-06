@@ -9,7 +9,7 @@ const HighlightedServices = dynamic(
 );
 const ServicesCards = dynamic(() => import("./components/ServicesCards"));
 const CTA = dynamic(() => import("./components/CTA"));
-const Imagee = dynamic(() => import("./components/Image"));
+
 const Form = dynamic(() => import("./components/Form"));
 const Faqs = dynamic(() => import("./components/Faqs"));
 const Mapss = dynamic(() => import("./components/mapss"));
@@ -20,12 +20,12 @@ export default function Home() {
       <HeroSection />
       
       <Quotation />
-      <HighlightedServices />
+     
       <Pills />
       <Cards />
       <ServicesCards />
       <CTA />
-      <Imagee />
+      <HighlightedServices />
       <Form />
       <Faqs />
       <Mapss />

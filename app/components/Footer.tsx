@@ -96,9 +96,9 @@ const Footer = () => {
               </nav>
             </div>
 
-            <div className="flex flex-col gap-4 lowercase text-[14px] normal-case tracking-normal mt-12">
+            <div className="flex flex-col gap-4 lowercase text-[17px] normal-case tracking-normal mt-12">
               <a href="mailto:sign.eexperts@gmail.com" className="hover:italic transition-all">sign.eexperts@gmail.com</a>
-              <p className="opacity-50">+1 929 392 8337</p>
+              <p className="hover:italic transition-all">+1 929 392 8337</p>
               <p className="text-[10px] opacity-40 mt-4 uppercase tracking-widest font-bold">
                 ©2026 <span className={`${bebas.className} tracking-[0.08em]`}>SIGN EXPERTS</span>
               </p>
@@ -151,9 +151,17 @@ const Footer = () => {
 
         {/* Brand Wordmark */}
         <div className="w-full overflow-hidden bg-white text-[#101b55]">
-          <h1 className={`${bebas.className} text-[8vw] font-black leading-[0.75] tracking-[0.06em] text-center py-2`}>
-            SIGN <span className="text-[#ffb92d]">EXPERTS</span>
-          </h1>
+          <div className="flex flex-col items-center justify-center py-2">
+            <img
+              src="/Logofooter .svg"
+              alt="Sign Experts Footer Logo"
+              width={480}
+              height={80}
+              sizes="240px"
+              className="w-60 h-10 object-contain"
+            />
+          </div>
+        
         </div>
       </div>
     </footer>

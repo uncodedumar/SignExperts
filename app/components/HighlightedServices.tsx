@@ -91,12 +91,10 @@ export default function HighlightedServices() {
       <div className="mx-auto w-full max-w-7xl px-6 lg:px-8">
         <div className="mb-12 flex flex-col items-start gap-4 md:flex-row md:items-end md:justify-between">
           <div>
-            <span className="text-yellow-500 font-bold text-xs tracking-[0.4em] uppercase mb-4 block">
-              LED Signs
-            </span>
+            
             <h2 className="text-4xl md:text-6xl font-black tracking-tighter text-white">
-              LED{" "}
-              <span className="text-yellow-500">Highlights</span>
+              Featured{" "}
+              <span className="text-yellow-500">Products</span>
             </h2>
             <p className="mt-4 max-w-2xl text-base leading-relaxed text-white/70">
               Our top LED products, curated for fast browsing—tap a card to see
@@ -105,7 +103,7 @@ export default function HighlightedServices() {
           </div>
 
           <Link
-            href="/products"
+            href="/#pills"
             className={cn(
               "group inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-5 py-3",
               "text-[11px] font-bold uppercase tracking-[0.25em] text-white/80 backdrop-blur",

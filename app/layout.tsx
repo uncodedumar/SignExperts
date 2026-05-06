@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import LoadingBar from "./components/Loading";
 import Navigation from "./components/Navbar";
@@ -18,6 +19,12 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const navbarFont = localFont({
+  src: "../kenyan coffee bd it.otf",
+  variable: "--font-navbar",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -62,10 +69,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${navbarFont.variable} h-full antialiased`}
     >
      
-      <body className="min-h-full font-sans antialiased">
+      <body className="min-h-full font-sans antialiased overflow-x-hidden">
         <LoadingBar>
           <>
             <Navigation />
