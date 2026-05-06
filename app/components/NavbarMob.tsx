@@ -169,19 +169,17 @@ const Navbar = () => {
     /* Added md:hidden to hide the entire navbar on desktop/tablets */
     <nav className="w-full bg-[#050B33] tracking-wide relative md:hidden font-[var(--font-navbar)]">
       {/* Top Tier: Brand & Main Nav */}
-      <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <div className="max-w-7xl mx-2 h-20 flex items-center justify-between">
         {/* Logo & Name */}
         <Link href="/" className="flex items-center gap-3">
           <Image 
-            src="/Logo.webp" 
+            src="/logo.png" 
             alt="Sign Experts Logo"
-            width={45} 
-            height={45}
-            className="object-contain"
+            width={240} 
+            height={40}
+            className="w-60 h-10 object-contain"
           />
-          <span className="text-white text-3xl tracking-wider pt-1">
-            SIGN EXPERTS
-          </span>
+          
         </Link>
 
         {/* Right Side: Burger Menu */}

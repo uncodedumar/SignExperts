@@ -153,7 +153,7 @@ const ContactForm: React.FC = () => {
           <div className="absolute inset-0 opacity-[0.05] pointer-events-none bg-[url('/textures/grid-me.png')]" />
 
           <form 
-            action="https://formspree.io/f/mreonybj" 
+            action="https://formspree.io/f/xaqvboqz" 
             method="POST" 
             encType="multipart/form-data"
             className="space-y-5 relative z-10"
@@ -336,10 +336,10 @@ const ContactForm: React.FC = () => {
             </div>
 
             {/* Submit Button */}
-            <div className="pt-2">
+            <div className="pt-2 flex justify-center">
               <button
                 type="submit"
-                className="bg-[#1a1a1a] text-white px-8 py-3 rounded-lg font-bold hover:bg-black transition-all shadow-md active:scale-95"
+                className="bg-[#1a1a1a] text-white px-8 py-3 rounded-full font-bold hover:bg-black transition-all shadow-md active:scale-95"
               >
                 Submit
               </button>
