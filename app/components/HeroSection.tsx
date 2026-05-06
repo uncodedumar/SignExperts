@@ -4,9 +4,9 @@ import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 
 /** Mobile hero + any full-width poster path uses the sharper asset. */
-const POSTER_IMAGE_SRC = "/AA-2000.webp";
+const POSTER_IMAGE_SRC = "/Thumbnail.webp";
 /** Desktop video poster only: smaller dimensions match typical display → less decode work. */
-const VIDEO_POSTER_SRC = "/AA-1500.webp";
+const VIDEO_POSTER_SRC = "/Thumbnail.webp";
 
 export default function HeroSection() {
   const sectionRef = useRef<HTMLElement>(null);

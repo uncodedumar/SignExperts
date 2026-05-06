@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence, type Variants } from 'framer-motion';
 import { Plus, Mail, Phone } from 'lucide-react';
 import Image from "next/image";
+import Link from "next/link";
 
 // --- Animation Variants ---
 
@@ -228,14 +229,15 @@ export default function ServicesAccordion() {
                                   </p>
                                   
                                   <div className="flex items-center gap-6 pt-6 pb-4">
-                                    <motion.button
-                                      type="button"
-                                      whileHover={{ scale: 1.05 }}
-                                      whileTap={{ scale: 0.95 }}
-                                      className="bg-black text-white px-10 py-4 rounded-xl font-bold uppercase text-sm tracking-widest shadow-lg hover:bg-[#ffc107] hover:text-black transition-colors"
-                                    >
-                                      Launch Project
-                                    </motion.button>
+                                    <Link href="/#contact-form" className="inline-block">
+                                      <motion.div
+                                        whileHover={{ scale: 1.05 }}
+                                        whileTap={{ scale: 0.95 }}
+                                        className="bg-black text-white px-10 py-4 rounded-xl font-bold uppercase text-sm tracking-widest shadow-lg hover:bg-[#ffc107] hover:text-black transition-colors"
+                                      >
+                                        Launch Project
+                                      </motion.div>
+                                    </Link>
                                     <div className="flex gap-3">
                                       <motion.a
                                         href="mailto:sign.eexperts@gmail.com"

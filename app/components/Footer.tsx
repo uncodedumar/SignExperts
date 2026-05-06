@@ -2,6 +2,12 @@
 import React from 'react';
 import Link from 'next/link';
 import { productsData } from '@/lib/data';
+import { Bebas_Neue } from "next/font/google";
+
+const bebas = Bebas_Neue({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 const menuLinks = [
   { label: 'Home', href: '/' },
@@ -76,8 +82,10 @@ const Footer = () => {
 
             <div className="flex flex-col gap-4 lowercase text-[14px] normal-case tracking-normal mt-12">
               <a href="mailto:sign.eexperts@gmail.com" className="hover:italic transition-all">sign.eexperts@gmail.com</a>
-              <p className="opacity-50">+1 929 392-8337</p>
-              <p className="text-[10px] opacity-40 mt-4 uppercase tracking-widest font-bold">©2026 SIGN EXPERTS</p>
+              <p className="opacity-50">+1 929 392 8337</p>
+              <p className="text-[10px] opacity-40 mt-4 uppercase tracking-widest font-bold">
+                ©2026 <span className={`${bebas.className} tracking-[0.08em]`}>SIGN EXPERTS</span>
+              </p>
             </div>
           </div>
 
@@ -127,7 +135,7 @@ const Footer = () => {
 
         {/* Brand Wordmark */}
         <div className="w-full overflow-hidden bg-white text-[#101b55]">
-          <h1 className="text-[8vw] font-black leading-[0.75] tracking-[-0.05em] text-center py-2">
+          <h1 className={`${bebas.className} text-[8vw] font-black leading-[0.75] tracking-[0.06em] text-center py-2`}>
             SIGN E<span className="font-black">X</span>PERTS
           </h1>
         </div>

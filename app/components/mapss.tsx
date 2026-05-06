@@ -30,7 +30,7 @@ const ContactSection = () => {
           {/* Phone */}
           <div className="flex items-start gap-4">
             <Phone className="w-5 h-5 text-[#1a3a5a] mt-1 shrink-0" />
-            <p className="text-gray-600 font-medium">929 392-8337</p>
+            <p className="text-gray-600 font-medium">929 392 8337</p>
           </div>
 
           {/* Address */}

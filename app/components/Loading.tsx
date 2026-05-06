@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { motion, AnimatePresence, type Variants } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 
 interface LoadingScreenProps {
   children: React.ReactNode;
@@ -14,7 +14,7 @@ interface LoadingScreenProps {
  * LCP / first paint until the sequence finishes (expected tradeoff).
  */
 const LoadingScreen = ({ children }: LoadingScreenProps) => {
-  const [isLoaded, setIsLoaded] = useState(false);
+  const [phase, setPhase] = useState<"enter" | "exit" | "done">("enter");
   const [showContent, setShowContent] = useState(false);
 
   const primaryColor = "#101b55";
@@ -27,7 +27,7 @@ const LoadingScreen = ({ children }: LoadingScreenProps) => {
 
   const columnVariants: Variants = {
     initial: { height: "0%" },
-    animate: (i: number) => ({
+    enter: (i: number) => ({
       height: "100%",
       transition: {
         duration: GROW_MS / 1000,
@@ -47,14 +47,10 @@ const LoadingScreen = ({ children }: LoadingScreenProps) => {
 
   return (
     <>
-      <AnimatePresence mode="wait">
-        {!isLoaded && (
-          <motion.div
-            key="loader"
-            aria-hidden
-            className="fixed inset-0 z-[9999] flex overflow-hidden bg-transparent"
-          >
-            {/* Stable, real LCP candidate so Lighthouse doesn’t report NO_LCP */}
+      {phase !== "done" && (
+        <div aria-hidden className="fixed inset-0 z-[9999] flex overflow-hidden bg-transparent">
+          {/* Hide the logo immediately when exit starts (no lingering). */}
+          {phase === "enter" && (
             <div className="pointer-events-none absolute inset-0 z-10 grid place-items-center">
               <div className="flex flex-col items-center gap-4">
                 <Image
@@ -70,29 +66,34 @@ const LoadingScreen = ({ children }: LoadingScreenProps) => {
                 </div>
               </div>
             </div>
+          )}
 
-            {[...Array(5)].map((_, i) => (
-              <motion.div
-                key={i}
-                custom={i}
-                variants={columnVariants}
-                initial="initial"
-                animate="animate"
-                exit="exit"
-                onAnimationComplete={() => {
-                  // Last column finished growing — reveal app and start loader exit.
-                  if (!isLoaded && i === 4) {
-                    setIsLoaded(true);
-                    setShowContent(true);
-                  }
-                }}
-                className="relative h-full flex-1"
-                style={{ backgroundColor: primaryColor }}
-              />
-            ))}
-          </motion.div>
-        )}
-      </AnimatePresence>
+          {[...Array(5)].map((_, i) => (
+            <motion.div
+              key={i}
+              custom={i}
+              variants={columnVariants}
+              initial="initial"
+              animate={phase === "enter" ? "enter" : "exit"}
+              onAnimationComplete={() => {
+                if (i !== 4) return;
+
+                if (phase === "enter") {
+                  setPhase("exit");
+                  setShowContent(true);
+                  return;
+                }
+
+                if (phase === "exit") {
+                  setPhase("done");
+                }
+              }}
+              className="relative h-full flex-1"
+              style={{ backgroundColor: primaryColor }}
+            />
+          ))}
+        </div>
+      )}
 
       {showContent && (
         <motion.div

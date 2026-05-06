@@ -7,6 +7,12 @@ import { Menu, X, ChevronDown, MoveRight, Phone, ChevronRight } from "lucide-rea
 import { motion, AnimatePresence, LayoutGroup } from "framer-motion";
 import Image from "next/image";
 import { productsData as allProductsData } from "@/lib/data";
+import { Bebas_Neue } from "next/font/google";
+
+const bebas = Bebas_Neue({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 type ProductNavLink = {
   name: string;
@@ -239,7 +245,9 @@ export default function Navbar() {
               height={40}
               className="w-10 h-10"
             />
-            <span className="text-white font-bold text-xl tracking-tight hidden sm:block">SIGN EXPERTS</span>
+            <span className={`${bebas.className} text-white text-xl tracking-[0.06em] hidden sm:block`}>
+              SIGN EXPERTS
+            </span>
           </Link>
 
           {/* Center: Nav Links */}

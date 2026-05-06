@@ -111,8 +111,11 @@ const ContactForm: React.FC = () => {
   }, [isStateOpen]);
 
   return (
-    <div id="contact-form" className="bg-white min-h-screen flex items-center  justify-center p-6 md:p-12 font-sans">
-      <div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+    <div
+      id="contact-form"
+      className="bg-white flex justify-center px-6 py-14 md:px-12 md:py-16 lg:py-12 font-sans"
+    >
+      <div className="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-[1fr_1.35fr] gap-10 items-start">
         
         {/* Left Side: Content */}
         <div className="space-y-8">
@@ -155,19 +158,34 @@ const ContactForm: React.FC = () => {
             encType="multipart/form-data"
             className="space-y-5 relative z-10"
           >
-            {/* Full Name */}
-            <div className="flex flex-col space-y-1.5">
-              <label htmlFor="firstName" className="text-sm font-semibold text-gray-600 ml-1">
-                Full name
-              </label>
-              <input
-                type="text"
-                id="firstName"
-                name="firstName"
-                placeholder="Manu Arora"
-                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all bg-white text-gray-800"
-                required
-              />
+            {/* Full Name + Contact Number */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+              <div className="flex flex-col space-y-1.5">
+                <label htmlFor="firstName" className="text-sm font-semibold text-gray-600 ml-1">
+                  Full name
+                </label>
+                <input
+                  type="text"
+                  id="firstName"
+                  name="firstName"
+                  placeholder="Manu Arora"
+                  className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all bg-white text-gray-800"
+                  required
+                />
+              </div>
+
+              <div className="flex flex-col space-y-1.5">
+                <label htmlFor="contactNumber" className="text-sm font-semibold text-gray-600 ml-1">
+                  Contact Number
+                </label>
+                <input
+                  type="tel"
+                  id="contactNumber"
+                  name="contactNumber"
+                  placeholder="+1 (800) 123-4567"
+                  className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all bg-white text-gray-800"
+                />
+              </div>
             </div>
 
             {/* Email Address */}
@@ -182,20 +200,6 @@ const ContactForm: React.FC = () => {
                 placeholder="example@gmail.com"
                 className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all bg-white text-gray-800"
                 required
-              />
-            </div>
-
-            {/* Contact Number */}
-            <div className="flex flex-col space-y-1.5">
-              <label htmlFor="contactNumber" className="text-sm font-semibold text-gray-600 ml-1">
-                Contact Number
-              </label>
-              <input
-                type="tel"
-                id="contactNumber"
-                name="contactNumber"
-                placeholder="+1 (800) 123-4567"
-                className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all bg-white text-gray-800"
               />
             </div>
 
