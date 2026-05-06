@@ -136,7 +136,7 @@ const Footer = () => {
         {/* Brand Wordmark */}
         <div className="w-full overflow-hidden bg-white text-[#101b55]">
           <h1 className={`${bebas.className} text-[8vw] font-black leading-[0.75] tracking-[0.06em] text-center py-2`}>
-            SIGN E<span className="font-black">X</span>PERTS
+            SIGN <span className="text-[#ffb92d]">EXPERTS</span>
           </h1>
         </div>
       </div>
