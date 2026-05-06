@@ -103,22 +103,28 @@ const SERVICES_DATA: MainService[] = [
 ];
 
 export default function ServicesAccordion() {
-  const [activeMain, setActiveMain] = useState<string | null>('creative');
+  const [activeMain, setActiveMain] = useState<string | null>('installation');
   const [activeSub, setActiveSub] = useState<string | null>(null);
 
   const toggleMain = (id: string) => setActiveMain(activeMain === id ? null : id);
   const toggleSub = (id: string) => setActiveSub(activeSub === id ? null : id);
 
   return (
-    <div className="w-full bg-white py-0 px-4">
+    <div className="w-full bg-white py-8 px-4">
       <div className="max-w-[1200px] mx-auto font-sans text-black">
         {SERVICES_DATA.map((section) => (
-          <section key={section.id} className="mb-0">
+          <section key={section.id} className="mb-6">
             {/* Main Header */}
             <motion.div 
               whileHover={{ x: 10 }}
               onClick={() => toggleMain(section.id)}
-              className="flex justify-between items-center py-6 cursor-pointer group transition-all"
+              className={[
+                "flex justify-between items-center py-6 px-4 cursor-pointer group transition-all",
+                "rounded-2xl border",
+                activeMain === section.id
+                  ? "border-transparent shadow-none"
+                  : "border-[#ffc107]/60 shadow-[0_0_22px_rgba(255,193,7,0.35)]",
+              ].join(" ")}
             >
               <h1 className="text-2xl md:text-3xl font-black tracking-tighter uppercase">
                 {section.title}
