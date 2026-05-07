@@ -200,6 +200,7 @@ const Navbar = () => {
           <div className="flex flex-col gap-4 border-b border-white/10 pb-6">
             <Link href="/" onClick={closeMobileMenu}>Home</Link>
             <Link href="/services" onClick={closeMobileMenu}>Services</Link>
+            <Link href="/#pills" onClick={closeMobileMenu}>Products</Link>
             <Link href="/blog" onClick={closeMobileMenu}>Blogs</Link>
             <Link href="/about" onClick={closeMobileMenu}>About</Link>
           </div>

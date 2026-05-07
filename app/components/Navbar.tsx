@@ -154,7 +154,7 @@ const productsData: ProductNavCategory[] = productMenuDefinition.map((category) 
 const navLinks = [
   { name: "Home", href: "/" },
   { name: "Services", href: "/services" },
-  { name: "Products", href: "/products", hasDropdown: true },
+  { name: "Products", href: "/#pills", hasDropdown: true },
   { name: "Blogs", href: "/blog" },
   { name: "About", href: "/about" },
 
