@@ -23,7 +23,7 @@ const ContactSection = () => {
       {/* Information Card overlay */}
       <div className="relative z-10 w-full max-w-md bg-white p-8 md:p-12 shadow-2xl rounded-sm">
         <h2 className="text-[#1a3a5a] text-3xl font-bold mb-8">
-          We always welcome our patients
+          We always welcome our clients
         </h2>
 
         <div className="space-y-6">
